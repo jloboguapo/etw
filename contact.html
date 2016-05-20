@@ -180,16 +180,47 @@
                                 <label for="inf_field_Email" class="control-label">Email*</label>
                                 <input class="form-control" id="inf_field_Email" name="inf_field_Email" type="text">
                             </div>
+
                             <div class="form-group">
-                                <label for="inf_custom_OrganizationSize" class="control-label">Org Size*</label>
-                                <input class="form-control" id="inf_custom_OrganizationSize" name="inf_custom_OrganizationSize" type="text" >
+                              <label for="inf_custom_OrganizationSize0" class="control-label">Organization Size *</label>
+                              <select class="form-control"  id="inf_custom_OrganizationSize0" name="inf_custom_OrganizationSize0">
+                                <option value="">Please select one</option>
+                                <option value="Less than 50">Less than 50</option>
+                                <option value="50-100">50-100</option>
+                                <option value="100-200">100-200</option>
+                                <option value="200-500">200-500</option>
+                                <option value="500-1000">500-1000</option>
+                                <option value="1000-5000">1000-5000</option>
+                                <option value="5000-10000">5000-10000</option>
+                                <option value="10000-50000">10000-50000</option>
+                                <option value="50000">50000+</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="inf_custom_AnnualRevenue" class="control-label">Annual Revenue *</label>
+                              <select class="form-control" id="inf_custom_AnnualRevenue" name="inf_custom_AnnualRevenue">
+                                <option value="">Please select one</option>
+                                <option value="less than $5million">less than $5million</option>
+                                <option value="$5million to $25million">$5million to $25million</option>
+                                <option value="$25million to $50million">$25million to $50million</option>
+                                <option value="$50million to $100million">$50million to $100million</option>
+                                <option value="$100million to $500million">$100million to $500million</option>
+                                <option value="$500million to $1Billion">$500million to $1Billion</option>
+                                <option value="$1Billion to $10Billion">$1Billion to $10Billion</option>
+                                <option value="$10Billion">$10Billion+</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="inf_custom_CompanyWebsite">Company Website</label>
+                              <input  class="form-control" id="inf_custom_CompanyWebsite" name="inf_custom_CompanyWebsite" type="text" />
                             </div>
 
                             <div class="form-group">
                                  <label for="inf_custom_Comments" class="control-label">Comments</label>
                                 <textarea class="form-control" id="inf_custom_Comments" name="inf_custom_Comments" type="text" ></textarea>
                             </div>
-
 
                             <button type="submit" value="Submit" class="btn-u btn-u-blue">Submit</button>
                         </form>
