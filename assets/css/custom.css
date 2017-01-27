@@ -1,1 +1,121 @@
 /* Add here all your css styles (customizations) */
+
+.solutions-carousel .item {
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.solutions-carousel .item .carousel-text * {
+		color: #fff;
+	text-shadow: none;	
+	bac
+}
+.solutions-carousel .item .carousel-text {
+	min-height: 315px;
+	padding: 10px 80px 35px 80px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.5)
+}
+.solutions-carousel .item:nth-child(1) {
+	background-image: url("../img/sliders/solutions/slider1.jpg");
+}
+.solutions-carousel .item:nth-child(2) {
+	background-image: url("../img/sliders/solutions/slider2.jpg");
+}
+.solutions-carousel .item:nth-child(3) {
+	background-image: url("../img/sliders/solutions/slider3.jpg");
+}
+.solutions-carousel .item:nth-child(4) {
+	background-image: url("../img/sliders/solutions/slider4.jpg");
+}
+
+.solutions-carousel .item .btn-u {
+	text-shadow: none;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.solutions-carousel .item .white-line {
+	border-bottom: 1px solid #fff;
+	margin: 0 auto 15px auto;
+}
+.solutions-carousel .carousel-control {
+	width: 28px;
+	height: 70px;
+	font-size: 12px;
+	padding-top: 15px;
+
+	top:50%;
+	margin-top: -35px;
+}
+.solutions-carousel .carousel-control:link{
+		background: rgba(0, 0, 0, .70);
+}
+.solutions-carousel .carousel-control:hover{
+		background: rgba(0, 0, 0, .80);
+}
+.solutions-carousel .carousel-control .glyphicon {
+	font-size: 20px;
+	height: auto;
+	margin-top: -10px;
+}
+@media screen and (min-width: 768px) {
+
+	.solutions-carousel .item .highlight {
+		font-size: 18px;
+	}	
+	.solutions-carousel .item .white-line {
+		width: 100px;
+	}
+}
+
+.open-quote { 
+		color: #3293D4 !important;
+	font-size: 80px;
+	font-family: 'Times New Roman';
+	float: left;
+	margin: -50px 0 0 -25px;
+
+}
+
+.open-quote2 { 
+		color: #3293D4 !important;
+	font-size: 80px;
+	font-family: 'Times New Roman';
+	float: left;
+	margin: -5px 0 0 -35px;
+
+}
+
+.revolution-ch1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform:none !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: normal !important;
+}
+
+.revolution-ch2 {
+  color: #fff;
+  font-size: 20px;
+  max-width: 1200px;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.revolution-ch2:after {
+  left: 45%;
+  width: 120px;
+  height: 2px;
+  content: ' '; 
+  bottom: -20px;
+  background: #fff;
+  margin-left: -35px;
+  position: absolute;
+}
