@@ -1,5 +1,33 @@
 /* Add here all your css styles (customizations) */
 
+@font-face {
+	font-family: 'MuseoSlabW01-100';
+	src: url('fonts/MuseoSlabW01-100.eot');
+	src: url('fonts/MuseoSlabW01-100.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MuseoSlabW01-100.woff') format('woff'),
+		url('fonts/MuseoSlabW01-100.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+
+.home-banner {
+	padding: 0 2em;
+	
+}
+
+.home-banner h1 {
+	font-family:"MuseoSlabW01-100", Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	font-size: 1.8em;
+	line-height: 1.3em;
+	padding: 0px 10px;
+}
+
+.home-banner p {
+	text-align:center;
+}
+
 .solutions-carousel .item {
 	background-color: transparent;
 	background-position: center center;
@@ -59,6 +87,8 @@
 	height: auto;
 	margin-top: -10px;
 }
+
+
 @media screen and (min-width: 768px) {
 
 	.solutions-carousel .item .highlight {
@@ -67,6 +97,18 @@
 	.solutions-carousel .item .white-line {
 		width: 100px;
 	}
+	
+	.home-banner {
+	  padding: 0 4em;
+	}
+	
+    .home-banner h1 {
+	  font-size: 2.5em;
+	  line-height: 1.3em;
+	  padding: 0px 80px;
+    }	
+	
+	
 }
 
 .open-quote { 
@@ -118,4 +160,103 @@
   background: #fff;
   margin-left: -35px;
   position: absolute;
+}
+
+
+/* New Styles Feb 08, 2017*/
+.feature {
+	box-shadow: 5px 5px  10px 2px #999;
+	border-left: 15px solid #666;
+	margin-bottom: 30px;
+}
+.feature-description {
+	padding: 35px 20px 0 20px;
+	min-height: 200px;
+}
+.learn-more {
+	border-top: 1px solid #d8d8d8;
+	background-color: #e8e9e9;
+	text-align: right;
+	padding: 10px 15px;
+}
+.learn-more a {
+	color: #535353;
+}
+
+.feat1 { border-left-color: #1CB0F0; }
+.feat1 h2 { color: #1CB0F0; }
+
+.feat2 { border-left-color: #08648D; }
+.feat2 h2 { color: #08648D; }
+
+.feat3 { border-left-color: #1FB25A; }
+.feat3 h2 { color: #1FB25A; }
+
+.feat4 { border-left-color: #F7991E; }
+.feat4 h2 { color: #F7991E; }
+
+.feat5 { border-left-color: #6F6F72; }
+.feat5 h2 { color: #6F6F72; }
+
+.ready {
+	padding: 10px 22px 0 22px;
+	color: #6F6F72;
+}
+.ready h1 {
+	font-family: 'MuseoSlabW01-100';
+}
+
+.ready a {
+	display:block;
+	color: #fff;
+	background-color: #52CBE6;
+	float: right;
+	height: 75px;
+	width: 75px;
+	line-height: 75px;
+	font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+	border-radius: 50% !important;
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	text-decoration: none;
+	-webkit-shape-outside:circle();
+  shape-outside:circle();
+  margin: 96px 0 0 20px;
+}
+
+@media(min-width: 768px) {
+	.ready {
+		padding: 40px 30px 0 28px;
+	}
+	.ready a {
+		margin: 0px 0 0 10px;
+	}		
+}
+
+@media(min-width: 992px) {
+	.feature-description {
+		padding: 35px 15px 0 15px;
+		min-height: 240px;
+	}
+	.ready {
+		padding: 40px 5px 0 10px;
+	}	
+	.ready a {
+		margin: 84px 0 0 10px;
+	}	
+}
+
+@media(min-width: 1200) {
+	.feature-description {
+		padding: 35px 20px 0 20px;
+		min-height: 200px;
+	}	
+	.ready {
+		padding: 40px 30px 0 28px;
+	}		
+	.ready a {
+		margin: 96px 0 0 -22px;
+	}
 }
