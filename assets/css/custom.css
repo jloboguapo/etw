@@ -226,6 +226,15 @@
   margin: 96px 0 0 20px;
 }
 
+.header .open > .dropdown-menu {
+		display: block !important;
+	} 
+	
+.header .dropdown > a::after {
+  content:"" !important;	
+}
+	
+
 @media(min-width: 768px) {
 	.ready {
 		padding: 40px 30px 0 28px;

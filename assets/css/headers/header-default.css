@@ -370,6 +370,7 @@
     }
 
 	/*Dropdown Menu*/
+	
 	.header .dropdown-menu { 
 		padding: 0;
 		border: none;
@@ -407,10 +408,10 @@
 	.header .navbar-nav > li.dropdown:hover > .dropdown-menu {
 		display: block;
 	}	
-
-	.header .open > .dropdown-menu {
+    
+   .header .open > .dropdown-menu {
 		display: none;
-	}
+	} 
 
 	/*Search*/
 	.header .navbar .search-open {
