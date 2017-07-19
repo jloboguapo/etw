@@ -978,13 +978,13 @@ textarea.hs-input[disabled] {
 }
 
 .hs-form {
-    padding-left: 0px
+    padding-left: 0px;
+		margin-right:50px;
+		margin-top:20px;
 }
 
 .hs-form.stacked {
     padding-left: 0px;
-		margin-right:50px;
-		margin-top:20px;
 }
 
 .hs-form.stacked fieldset {
