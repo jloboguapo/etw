@@ -1,0 +1,47 @@
+<div class="quickview b-l" v-bind:class="{ 'is-active': isActiveMenu }">
+  <div class="quickview-body">
+    <div class="quickview-block p-t-1_5 p-x-3">
+
+      <router-link v-on:click.native="handleClick" :to="{ name: 'home' }" class="image is-32x32 m-b-3">
+        <img src="../../assets/images/brand.svg" alt="ETW : Execute To Win">
+      </router-link>
+
+      <router-link v-on:click.native="handleClick" :to="{ name: 'services' }" class="title is-4" tag="div">
+        <a class="has-text-dark">Professional Services</a>
+      </router-link>
+
+      <router-link v-on:click.native="handleClick" :to="{ name: 'software' }" class="title is-4" tag="div">
+        <a class="has-text-dark">Software</a>
+      </router-link>
+
+      <router-link v-on:click.native="handleClick" :to="{ name: 'testimonials' }" class="title is-4" tag="div">
+        <a class="has-text-dark">Testimonials</a>
+      </router-link>
+
+      <div class="is-divider"></div>
+
+      <router-link v-on:click.native="handleClick" :to="{ name: 'about' }" class="title is-5" tag="div">
+        <a class="has-text-grey">About Us</a>
+      </router-link>
+
+      <router-link v-on:click.native="handleClick" :to="{ name: 'resources' }" class="title is-5" tag="div">
+        <a class="has-text-grey">Resources</a>
+      </router-link>
+
+      <div class="title is-5">
+        <a href="http://blog.etw.com" class="has-text-grey">News</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="quickview-footer p-y-2 p-x-3">
+    <div>
+      <h1 class="title is-5">Contact Us</h1>
+      <p class="is-size-5 m-b-_5">25 S. Arizona Place, Ste. 510<br>
+        Chandler, AZ 85225</p>
+      <p>Phone: <strong>480.638.9300</strong></p>
+      <p>Email: <strong>info@etw.com</strong></p>
+    </div>
+  </footer>
+</div>

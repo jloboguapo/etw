@@ -1,0 +1,34 @@
+<div>
+
+  <section class="hero hero-senior-leadership">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <div class="has-text-centered">
+              <h1 class="title">
+              Senior Leadership
+            </h1>
+              <p class="is-size-4">Turning Strategy and Culture into Tangible Results</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENIOR LEADERSHIP CARDS -->
+  <div class="container">
+    <div class="columns is-multiline is-variable is-8">
+      <div class="column is-one-third m-b-3 sr-company-card" v-for="leader in seniorLeadership">
+        <figure class="image m-b-2">
+          <img v-bind:src="leader.image" v-bind:alt="leader.name">
+        </figure>
+        <h1 class="title is-4">{{ leader.name }}</h1>
+        <h2 class="subtitle is-6">{{ leader.title }}</h2>
+        <p>{{ leader.info }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

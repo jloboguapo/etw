@@ -1,0 +1,51 @@
+<nav class="navbar masthead" v-bind:class="{ 'is-scroll b-b': isScroll }">
+
+  <div class="container is-fluid">
+
+    <!-- WHITEOUT THE PAGE ON SIDE MENU OPEN -->
+    <div class="menu-overlay" v-bind:class="{ 'is-active': isActiveMenu }" @click="toggleMenu()"></div>
+
+    <!-- SLIDE-OUT MENU -->
+    <side-menu v-bind:is-active-menu="isActiveMenu"></side-menu>
+
+    <!-- BRANDING AND MOBILE MENU -->
+    <div class="navbar-brand">
+
+      <!-- logo -->
+      <router-link :to="{ name: 'home' }" class="navbar-item m-r-2">
+        <img src="../../assets/images/brand-horizontal.svg" alt="ETW : Execute To Win">
+      </router-link>
+
+      <!-- hamburger menu -->
+      <div class="navbar-item m-l-a is-hidden-desktop">
+        <div class="menu-icon" v-bind:class="{ 'is-active': isActiveMenu }" @click="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RESPONSIVE MENU -->
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <!-- placeholder -->
+      </div>
+      <div class="navbar-end">
+        <a href="https://app.prod.etw.com" class="navbar-item">Login</a>
+        <div class="navbar-item">
+          <div class="menu-icon" v-bind:class="{ 'is-active': isActiveMenu }" @click="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</nav>
