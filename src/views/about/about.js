@@ -7,16 +7,16 @@
 |
 */
 
-import SectionLeadership from '@/components/sections/leadership/leadership.vue'
-import SectionHistory from '@/components/sections/history/history.vue'
+import History from '@/views/about/history/history.vue'
+import Leadership from '@/views/about/leadership/leadership.vue'
 
 export default {
 
   name: 'about',
 
   components: {
-    SectionLeadership,
-    SectionHistory
+    Leadership,
+    History
   }
 
 }
