@@ -12,11 +12,11 @@ export default {
   name: 'slideAboutETW',
 
   data () {
+    return {
+      aboutETW: [{
 
-    aboutETW: [{
-
-    }]
-
+      }]
+    }
   },
 
   mounted () {
