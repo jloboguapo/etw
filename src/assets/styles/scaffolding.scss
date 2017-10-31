@@ -4,8 +4,8 @@
 }
 
 .modal-video {
-  z-index: map-get($z-indexes, 'l3');
   animation-duration: .5s;
+
   .modal-content {
     width: 80vw;
   }
