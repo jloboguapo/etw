@@ -11,7 +11,7 @@ import { videoPlayer } from 'vue-video-player'
 
 export default {
 
-  name: 'slideAlignment',
+  name: 'Alignment',
 
   components: {
     videoPlayer

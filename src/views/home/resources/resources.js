@@ -1,14 +1,14 @@
 /*
 |--------------------------------------------------------------------------
-| Professional Services Slide.
+| Resources Slide.
 |--------------------------------------------------------------------------
 |
-| A slide about services ETW provides outside of software.
+| A slide about the white papers and resources available.
 |
 */
 
 export default {
 
-  name: 'slideProfessionalServices'
+  name: 'Resources'
 
 }

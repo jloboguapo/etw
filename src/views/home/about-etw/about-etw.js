@@ -9,7 +9,7 @@
 
 export default {
 
-  name: 'slideAboutETW',
+  name: 'AboutETW',
 
   data () {
     return {

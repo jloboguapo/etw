@@ -1,14 +1,14 @@
 /*
 |--------------------------------------------------------------------------
-| Resources Slide.
+| Software Slide.
 |--------------------------------------------------------------------------
 |
-| A slide about the white papers and resources available.
+| A slide about ETW Alignment Software.
 |
 */
 
 export default {
 
-  name: 'slideResources'
+  name: 'Software'
 
 }

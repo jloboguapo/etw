@@ -1,14 +1,14 @@
 /*
 |--------------------------------------------------------------------------
-| Testimonials Slide.
+| Professional Services Slide.
 |--------------------------------------------------------------------------
 |
-| A slide about what people say about ETW.
+| A slide about services ETW provides outside of software.
 |
 */
 
 export default {
 
-  name: 'slideTestimonials'
+  name: 'ProfessionalServices'
 
 }

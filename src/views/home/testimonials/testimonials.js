@@ -1,14 +1,14 @@
 /*
 |--------------------------------------------------------------------------
-| Software Slide.
+| Testimonials Slide.
 |--------------------------------------------------------------------------
 |
-| A slide about ETW Alignment Software.
+| A slide about what people say about ETW.
 |
 */
 
 export default {
 
-  name: 'slideSoftware'
+  name: 'Testimonials'
 
 }
