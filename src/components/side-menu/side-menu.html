@@ -32,12 +32,19 @@
         <a href="http://blog.etw.com" class="has-text-grey">News</a>
       </div>
 
+      <router-link v-on:click.native="handleClick" :to="{ name: 'privacy' }" class="title is-5" tag="div">
+        <a class="has-text-grey">Privacy Policy</a>
+      </router-link>
+
+      <router-link v-on:click.native="handleClick" :to="{ name: 'contact' }" class="title is-5" tag="div">
+        <a class="has-text-grey">Contact Us</a>
+      </router-link>
+
     </div>
   </div>
 
   <footer class="quickview-footer p-y-2 p-x-3">
     <div>
-      <h1 class="title is-5">Contact Us</h1>
       <p class="is-size-5 m-b-_5">25 S. Arizona Place, Ste. 510<br>
         Chandler, AZ 85225</p>
       <p>Phone: <strong>480.638.9300</strong></p>
