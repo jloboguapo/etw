@@ -34,7 +34,7 @@ export default {
       videoPlayerOptions: {
         sources: [{
           type: 'video/mp4',
-          src: 'https://video-dft4-3.xx.fbcdn.net/v/t43.1792-2/22740431_508372512868956_6390087677684744192_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InN2ZV9oZCJ9&oh=7d99106d4682a542c8501fb48d624ec3&oe=59F3E036'
+          src: 'https://15-lvl3-pdl.vimeocdn.com/01/3784/1/43922574/152650124.mp4?expires=1509477622&token=04ec05e0d7b94a86b981b'
         }],
         fluid: true
       }

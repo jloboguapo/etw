@@ -9,7 +9,7 @@
 
 export default {
 
-  name: 'sectionHistory',
+  name: 'History',
 
   mounted(){
     this.scrollReveal.reveal('.sr-history-image', {

@@ -9,7 +9,7 @@
 
 export default {
 
-  name: 'sectionLeadership',
+  name: 'Leadership',
 
   data () {
     return {
