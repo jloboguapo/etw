@@ -1,12 +1,12 @@
 @include tablet {
   .hero-software-intro {
-    background-image: url("../../assets/images/bg_desktops.jpg");
+    background-image: url("../../../static/backgrounds/desktops.jpg");
     background-position: center top;
     background-repeat: no-repeat;
   }
 
   .hero-testimonials {
-    background-image: url("../../assets/images/bg-testimonials-banner-homeroom.jpg");
+    background-image: url("../../../static/backgrounds/testimonials-banner-homeroom.jpg");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
