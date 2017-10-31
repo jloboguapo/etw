@@ -9,7 +9,7 @@
 
 export default {
 
-  name: 'sectionPricing',
+  name: 'Pricing',
 
   mounted () {
     this.scrollReveal.reveal('.sr-pricing-title')

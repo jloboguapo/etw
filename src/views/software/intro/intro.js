@@ -9,7 +9,7 @@
 
 export default {
 
-  name: 'sectionSoftwareIntro',
+  name: 'Intro',
 
   mounted () {
     this.scrollReveal.reveal('.sr-software-intro-title', {
