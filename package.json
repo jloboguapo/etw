@@ -18,9 +18,7 @@
     "scrollreveal": "^3.3.6",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vue-video-player": "^4.0.4"
-  },
-  "devDependencies": {
+    "vue-video-player": "^4.0.4",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",

@@ -29,18 +29,7 @@
   .section-alignment {
     background-image: url(../../../static/backgrounds/section-alignment.svg);
     background-size: cover;
-    background-position: top center;
-
-    &:after {
-      background-image: url(../../../static/backgrounds/round-edge.svg);
-      background-size: cover;
-      content: "";
-      display: block;
-      margin-bottom: -.625rem !important;
-      margin-left: -5%;
-      padding-bottom: 3%;
-      width: 110%;
-    }
+    background-position: top left;
   }
 
   .section-about-etw {
@@ -49,29 +38,6 @@
   .section-bms {
     background: url("../../../static/backgrounds/section-bms.jpg");
     background-size: cover;
-
-    &:before {
-      background-image: url(../../../static/backgrounds/round-edge.svg);
-      background-size: cover;
-      content: "";
-      display: block;
-      margin-bottom: -.625rem !important;
-      margin-left: -5%;
-      padding-bottom: 3%;
-      width: 110%;
-      transform: rotate(180deg);
-    }
-
-    &:after {
-      background-image: url(../../../static/backgrounds/round-edge.svg);
-      background-size: cover;
-      content: "";
-      display: block;
-      margin-bottom: -.625rem !important;
-      margin-left: -5%;
-      padding-bottom: 3%;
-      width: 110%;
-    }
   }
 
   .section-professional-services {
@@ -85,6 +51,17 @@
   }
 
   .section-testimonials {
-    background: $white-ter;
+    // background: $white-ter;
   }
+}
+
+.after-swoosh {
+  background-image: url(../../../static/backgrounds/round-edge.svg);
+  background-size: cover;
+  content: "";
+  display: block;
+  margin-bottom: -.625rem !important;
+  margin-left: -5%;
+  padding-bottom: 3%;
+  width: 110%;
 }
