@@ -1,4 +1,4 @@
-@include mobile {  
+@include mobile {
   .section-about-etw {
     background: $white-bis;
   }
@@ -26,20 +26,52 @@
 }
 
 @include tablet {
-  .section-about-etw {
-    background: $white-bis;
+  .section-alignment {
+    background-image: url(../../../static/backgrounds/section-alignment.svg);
+    background-size: cover;
+    background-position: top center;
+
+    &:after {
+      background-image: url(../../../static/backgrounds/round-edge.svg);
+      background-size: cover;
+      content: "";
+      display: block;
+      margin-bottom: -.625rem !important;
+      margin-left: -5%;
+      padding-bottom: 3%;
+      width: 110%;
+    }
   }
 
-  .section-alignment {
-    // background: url("../../../static/backgrounds/alignment.jpg");
-    // background-size: cover;
-    background: $white-ter;
+  .section-about-etw {
   }
 
   .section-bms {
-    // background: url("../../../static/backgrounds/bms.jpg");
-    // background-size: cover;
-    background: $white-ter;
+    background: url("../../../static/backgrounds/section-bms.jpg");
+    background-size: cover;
+
+    &:before {
+      background-image: url(../../../static/backgrounds/round-edge.svg);
+      background-size: cover;
+      content: "";
+      display: block;
+      margin-bottom: -.625rem !important;
+      margin-left: -5%;
+      padding-bottom: 3%;
+      width: 110%;
+      transform: rotate(180deg);
+    }
+
+    &:after {
+      background-image: url(../../../static/backgrounds/round-edge.svg);
+      background-size: cover;
+      content: "";
+      display: block;
+      margin-bottom: -.625rem !important;
+      margin-left: -5%;
+      padding-bottom: 3%;
+      width: 110%;
+    }
   }
 
   .section-professional-services {
