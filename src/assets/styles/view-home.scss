@@ -1,0 +1,37 @@
+@include mobile {
+  .section-alignment {
+    padding-top: 3rem;
+  }
+}
+
+@include tablet {
+  .section-about-etw {
+    background: $white-bis;
+  }
+
+  .section-alignment {
+    // background: url("../../../static/backgrounds/alignment.jpg");
+    // background-size: cover;
+    background: $white-ter;
+  }
+
+  .section-bms {
+    // background: url("../../../static/backgrounds/bms.jpg");
+    // background-size: cover;
+    background: $white-ter;
+  }
+
+  .section-professional-services {
+    // background: url("../../../static/backgrounds/prof.serv.png");
+    // background-size: cover;
+    background: $white-bis;
+  }
+
+  .section-software-home {
+    background: $white-bis;
+  }
+
+  .section-testimonials {
+    background: $white-ter;
+  }
+}
