@@ -1,14 +1,8 @@
 @include tablet {
-  .hero-software-intro {
-    // background-image: url("../../../static/backgrounds/desktops.jpg");
-    // background-position: center top;
-    // background-repeat: no-repeat;
-  }
-
   .hero-testimonials {
-    // background-image: url("../../../static/backgrounds/testimonials-banner-homeroom.jpg");
-    // background-position: left center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background-image: url("../../../static/backgrounds/testimonials-banner-homeroom.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 };
