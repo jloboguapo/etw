@@ -1,6 +1,27 @@
-@include mobile {
+@include mobile {  
+  .section-about-etw {
+    background: $white-bis;
+  }
+
   .section-alignment {
     padding-top: 3rem;
+    background: $white-ter;
+  }
+
+  .section-bms {
+    background: $white-ter;
+  }
+
+  .section-professional-services {
+    background: $white-bis;
+  }
+
+  .section-software-home {
+    background: $white-bis;
+  }
+
+  .section-testimonials {
+    background: $white-ter;
   }
 }
 
