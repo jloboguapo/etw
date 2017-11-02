@@ -28,13 +28,12 @@
 @include tablet {
   .section-intro {
     background-image: url(../../../static/backgrounds/section-alignment-2.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: center center;
   }
 
   .section-about-etw {
-    // background: $white-bis;
+
   }
 
   .section-bms {
