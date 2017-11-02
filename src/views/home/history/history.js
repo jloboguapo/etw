@@ -1,6 +1,6 @@
 /*
 |--------------------------------------------------------------------------
-| Business Management Solutions.
+| History.
 |--------------------------------------------------------------------------
 |
 |
@@ -8,6 +8,6 @@
 
 export default {
 
-  name: 'BusinessManagementSolutions'
+  name: 'History'
 
 }

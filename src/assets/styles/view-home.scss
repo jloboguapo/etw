@@ -3,7 +3,7 @@
     background: $white-bis;
   }
 
-  .section-alignment {
+  .section-intro {
     padding-top: 3rem;
     background: $white-ter;
   }
@@ -26,42 +26,33 @@
 }
 
 @include tablet {
-  .section-alignment {
-    background-image: url(../../../static/backgrounds/section-alignment.svg);
+  .section-intro {
+    background-image: url(../../../static/backgrounds/section-alignment.jpg);
     background-size: cover;
-    background-position: top left;
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 
   .section-about-etw {
+    // background: $white-bis;
   }
 
   .section-bms {
-    background: url("../../../static/backgrounds/section-bms.jpg");
-    background-size: cover;
+    background: $white-ter;
   }
 
   .section-professional-services {
-    // background: url("../../../static/backgrounds/prof.serv.png");
-    // background-size: cover;
-    background: $white-bis;
+    background-image: url(../../../static/backgrounds/section-services.jpg);
+    background-size: cover;
   }
 
-  .section-software-home {
-    background: $white-bis;
+  .section-software {
+    background-image: url(../../../static/backgrounds/section-software.jpg);
+    background-size: cover;
+    background-position: center top;
   }
 
   .section-testimonials {
-    // background: $white-ter;
+    background: $white-ter;
   }
-}
-
-.after-swoosh {
-  background-image: url(../../../static/backgrounds/round-edge.svg);
-  background-size: cover;
-  content: "";
-  display: block;
-  margin-bottom: -.625rem !important;
-  margin-left: -5%;
-  padding-bottom: 3%;
-  width: 110%;
 }

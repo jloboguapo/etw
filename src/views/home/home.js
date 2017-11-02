@@ -8,8 +8,8 @@
 */
 
 import AboutEtw from '@/views/home/about-etw/about-etw.vue'
-import Alignment from '@/views/home/alignment/alignment.vue'
-import BusinessManagementSolutions from '@/views/home/bms/bms.vue'
+import Intro from '@/views/home/intro/intro.vue'
+import AboutUs from '@/views/home/about-us/about-us.vue'
 import ProfessionalServices from '@/views/home/professional-services/professional-services.vue'
 import Resources from '@/views/home/resources/resources.vue'
 import Software from '@/views/home/software/software.vue'
@@ -21,8 +21,8 @@ export default {
 
   components: {
     AboutEtw,
-    Alignment,
-    BusinessManagementSolutions,
+    Intro,
+    AboutUs,
     ProfessionalServices,
     Resources,
     Software,

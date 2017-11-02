@@ -1,21 +1,30 @@
-<section class="hero section-about-etw m-y-3">
-  <div class="hero-body">
-    <div class="columns">
-      <div class="column" v-for="about in aboutETW">
-        <div class="media sr-about-media-engagement">
-          <div class="media-left">
-            <figure class="image is-96x96">
-              <img v-bind:src="about.image" v-bind:alt="about.title">
-            </figure>
-          </div>
-          <div class="media-content m-l-1">
-            <div class="content">
-              <h3 class="title is-4">{{ about.title }}</h3>
-              <p>{{ about.body }}</p>
+<div>
+  <div class="hero is-small">
+    <div class="hero-body">
+      <h3 class="title is-3">We help companies improve performance</h3>
+      <h4 class="subtitle is-5">Through Business Services and Software</h4>
+    </div>
+  </div>
+
+  <section class="hero section-about-etw">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column" v-for="about in aboutETW">
+          <div class="media sr-about-media-engagement">
+            <div class="media-left">
+              <figure class="image is-96x96">
+                <img v-bind:src="about.image" v-bind:alt="about.title">
+              </figure>
+            </div>
+            <div class="media-content m-l-1">
+              <div class="content">
+                <h3 class="title is-4">{{ about.title }}</h3>
+                <p>{{ about.body }}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</div>

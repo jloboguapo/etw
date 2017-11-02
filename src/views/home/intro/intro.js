@@ -1,9 +1,8 @@
 /*
 |--------------------------------------------------------------------------
-| Alignment Slide.
+| Hero Introduction.
 |--------------------------------------------------------------------------
 |
-| A slide about aligning people to culture and strategy.
 |
 */
 
@@ -11,7 +10,7 @@ import { videoPlayer } from 'vue-video-player'
 
 export default {
 
-  name: 'Alignment',
+  name: 'Intro',
 
   components: {
     videoPlayer
@@ -34,7 +33,7 @@ export default {
       videoPlayerOptions: {
         sources: [{
           type: 'video/mp4',
-          src: 'https://15-lvl3-pdl.vimeocdn.com/01/3784/1/43922574/152650124.mp4?expires=1509477622&token=04ec05e0d7b94a86b981b'
+          src: 'https://02-lvl3-pdl.vimeocdn.com/01/180/4/100902001/271028419.mp4?expires=1509599136&token=04f1ac56311c05c57f23c'
         }],
         fluid: true
       }
@@ -42,7 +41,7 @@ export default {
   },
 
   mounted () {
-    this.scrollReveal.reveal('.sr-alignment-title', {
+    this.scrollReveal.reveal('.sr-intro-title', {
       duration: 1000,
       opacity: 1,
       scale: 1,

@@ -1,0 +1,45 @@
+<div>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero section-intro">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-6 is-offset-6">
+          <h1 class="title is-1 m-b-3 has-text-right sr-intro-title">
+            What if your employees were 100% aligned to your strategy and desired culture?
+          </h1>
+          <h2 class="subtitle is-4 m-b-2 has-text-right">
+            <span class="bullets">Consistent <strong>Alignment</strong></span><br>
+            <span class="bullets">Drives effective <strong>Conversations</strong></span><br>
+            <span class="bullets">Leading to precise <strong>Actions</strong></span><br>
+            <span class="bullets">Producing extraordinary <strong>Results</strong></span>
+          </h2>
+          <div class="has-text-right m-b-3">
+            <button class="button is-medium is-outlined is-success is-rounded m-r-1" v-on:click="toggleModal()">
+              Watch Video
+            </button>
+            <button class="button is-medium is-rounded is-primary">
+              How aligned are you?
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- INTRO VIDEO MODAL -->
+  <div class="modal modal-video animated fadeIn" v-bind:class="{ 'is-active': isShowModal }">
+    <div class="modal-background" v-on:click="toggleModal()"></div>
+    <div class="modal-content">
+      <div class="content">
+        <video-player class="vjs-custom-skin" ref="videoPlayer" :options="videoPlayerOptions">
+        </video-player>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close" v-on:click="toggleModal()"></button>
+  </div>
+
+
+</div>
