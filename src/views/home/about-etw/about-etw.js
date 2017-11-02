@@ -1,9 +1,8 @@
 /*
 |--------------------------------------------------------------------------
-| About ETW Slide.
+| About ETW.
 |--------------------------------------------------------------------------
 |
-| A slide about ETW.
 |
 */
 
@@ -13,6 +12,11 @@ export default {
 
   data () {
     return {
+
+      /**
+       * About ETW Sections
+       * @type {Array}
+       */
       aboutETW: [{
         title: 'Increased Employee Engagement',
         body: "Transparency increases accountability and promotes a complete understanding of how each and every employee's role a ects the success of the company. Give employees transparency into top company goals for a highly engaged workforce.",
@@ -32,28 +36,12 @@ export default {
   },
 
   mounted () {
-    this.scrollReveal.reveal('.sr-about-media-engagement', {
+    this.scrollReveal.reveal('.sr-about-etw-title')
+
+    this.scrollReveal.reveal('.sr-about-etw-subtitle')
+
+    this.scrollReveal.reveal('.sr-about-etw-sections', {
       duration: 1000,
-      origin: 'left'
-    })
-
-    this.scrollReveal.reveal('.sr-about-media-performance', {
-      duration: 1000,
-      origin: 'bottom'
-    })
-
-    this.scrollReveal.reveal('.sr-about-media-graph', {
-      duration: 1000,
-      origin: 'right'
-    })
-
-    this.scrollReveal.reveal('.sr-section-bms-title')
-
-    this.scrollReveal.reveal('.sr-section-bms-text-1')
-
-    this.scrollReveal.reveal('.sr-section-bms-text-2')
-
-    this.scrollReveal.reveal('.sr-section-bms-button', {
       delay: 200
     })
   }

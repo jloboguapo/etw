@@ -29,7 +29,8 @@
   .section-intro {
     background-image: url(../../../static/backgrounds/section-alignment-2.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
+    background-size: auto 100%;
 
     &:after {
       content: "";
