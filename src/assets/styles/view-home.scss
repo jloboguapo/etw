@@ -30,6 +30,19 @@
     background-image: url(../../../static/backgrounds/section-alignment-2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 3%;
+      background-image: url(../../../static/backgrounds/round-edge.svg);
+      width: 110%;
+      margin-left: -5%;
+      margin-bottom: -.625rem !important;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
   }
 
   .section-about-etw {
