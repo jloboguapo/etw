@@ -9,7 +9,7 @@
 
 import AboutEtw from '@/views/home/about-etw/about-etw.vue'
 import Intro from '@/views/home/intro/intro.vue'
-import AboutUs from '@/views/home/about-us/about-us.vue'
+import History from '@/views/home/history/history.vue'
 import ProfessionalServices from '@/views/home/professional-services/professional-services.vue'
 import Resources from '@/views/home/resources/resources.vue'
 import Software from '@/views/home/software/software.vue'
@@ -22,7 +22,7 @@ export default {
   components: {
     AboutEtw,
     Intro,
-    AboutUs,
+    History,
     ProfessionalServices,
     Resources,
     Software,
