@@ -4,4 +4,14 @@
     background-position: center top;
     background-repeat: no-repeat;
   }
+
+  .section-software-notes {
+    background-image: url("../../../static/backgrounds/software-notes.svg");
+    background-position: left center;
+  }
+
+  .sr-note-1 {
+    animation-delay: 2s;
+  }
+
 };

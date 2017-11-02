@@ -8,6 +8,7 @@
 */
 
 import Intro from '@/views/software/intro/intro.vue'
+import Notes from '@/views/software/notes/notes.vue'
 import Pricing from '@/views/software/pricing/pricing.vue'
 
 export default {
@@ -16,6 +17,7 @@ export default {
 
   components: {
     Intro,
+    Notes,
     Pricing
   }
 
