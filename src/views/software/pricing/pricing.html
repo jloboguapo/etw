@@ -1,21 +1,120 @@
-<div>
+<div class="m-t-5">
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="columns">
-        <div class="column is-8 is-offset-2">
-          <div class="has-text-centered">
-            <h1 class="title sr-pricing-title">
-                Monthly Pricing for Annual Contracts
-              </h1>
-            <p class="is-size-4 sr-pricing-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ipsa explicabo velit illum eligendi sapiente, neque soluta minima quisquam rerum omnis odio quidem assumenda voluptatem ad. Facilis ut incidunt explicabo!</p>
-          </div>
-        </div>
-      </div>
+  <section class="section has-text-centered">
+    <h1 class="title sr-pricing-title">Pricing Plans to Fit Your Organization</h1>
+  </section>
+
+  <section class="section m-b-3">
+    <div class="tabs is-centered is-boxed is-medium">
+      <ul>
+        <li v-bind:class="{'is-active': activePricingTab === 'annual'}">
+          <a v-on:click="setPricingTab('annual')">Annual Contract Pricing</a>
+        </li>
+        <li v-bind:class="{'is-active': activePricingTab === 'monthly'}">
+          <a v-on:click="setPricingTab('monthly')">Monthly Contract Pricing</a>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <div class="pricing-table container">
+  <div class="pricing-table animated" style="position: absolute; width: 100%;" v-bind:class="{'fadeInLeft': activePricingTab === 'annual', 'fadeOutLeft': activePricingTab === 'monthly'}">
+
+    <div class="pricing-plan">
+      <div class="plan-header">Basic</div>
+      <div class="columns is-gapless">
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Managers
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>10</span>/month
+          </div>
+        </div>
+        <div class="is-divider-vertical" data-content="AND"></div>
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Employees
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>5</span>/month
+          </div>
+        </div>
+      </div>
+      <div class="plan-items">
+        <div class="plan-item">Personal Goals</div>
+        <div class="plan-item">Manager Assigned Goals</div>
+        <div class="plan-item">Evaluations</div>
+        <div class="plan-item">Stream Communications</div>
+        <div class="plan-item">Standard Roles and Permissions</div>
+      </div>
+    </div>
+
+    <div class="pricing-plan is-active">
+      <div class="plan-header">Premium</div>
+      <div class="columns is-gapless">
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Managers
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>20</span>/month
+          </div>
+        </div>
+        <div class="is-divider-vertical" data-content="AND"></div>
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Employees
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>5</span>/month
+          </div>
+        </div>
+      </div>
+      <div class="plan-items">
+        <div class="plan-item"><strong>Everything in Basic, plus</strong></div>
+        <div class="plan-item">Plans</div>
+        <div class="plan-item">Plan Goals</div>
+        <div class="plan-item">KPIs</div>
+        <div class="plan-item">Team Organization</div>
+        <div class="plan-item">Role Goals</div>
+        <div class="plan-item">Real-time Communications</div>
+        <div class="plan-item">Canned Reports</div>
+        <div class="plan-item">Standard Permissions</div>
+        <div class="plan-item">Companion Mobile Application</div>
+      </div>
+    </div>
+
+    <div class="pricing-plan is-success">
+      <div class="plan-header">Ultimate / Enterprise</div>
+      <div class="columns is-gapless">
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Managers
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>25</span>/month
+          </div>
+        </div>
+        <div class="is-divider-vertical" data-content="AND"></div>
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Employees
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>5</span>/month
+          </div>
+        </div>
+      </div>
+      <div class="plan-items">
+        <div class="plan-item"><strong>Everything in Premium, plus</strong></div>
+        <div class="plan-item">API Access</div>
+        <div class="plan-item">Tone Analyzer</div>
+        <div class="plan-item">Custom Permissions</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing-table animated" v-bind:class="{'fadeInRight': activePricingTab === 'monthly', 'fadeOutRight': activePricingTab === 'annual'}">
 
     <div class="pricing-plan">
       <div class="plan-header">Basic</div>
