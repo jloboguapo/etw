@@ -27,6 +27,12 @@ export default {
           info: 'Ali’s role is to ensure that every ETW enabled customer, from startup to enterprise, achieves extraordinary results. His team consistently accomplishes this by utilizing the best-in-class technology, effective change management practices, and proven management methodologies during the implementation process. Ali leverages his 20+ years of successful leadership experience in manufacturing, retail and professional services to grow ETW to change the way the world does business.'
         },
         {
+          image: './static/headshots/da-1.jpg',
+          name: 'David Atrostic',
+          title: 'Chief Operating Officer',
+          info: 'David Atrostic serves as Senior Advisor to Execute to Win. In his role, David provides guidance in a multitude of initiatives to develop strategic partnerships, drive out inefficiencies and build a foundation to support massive growth. David has more than 20 years of technology architecture, management and consulting experience across a variety of industries.'
+        },
+        {
           image: './static/headshots/cm-1.jpg',
           name: 'Chris Moudy',
           title: 'VP Software Development',
@@ -37,12 +43,6 @@ export default {
           name: 'Blake Rayhons',
           title: 'Director of Client Services',
           info: 'Blake is responsible for the development and delivery of services ensuring that clients successfully implement and utilize ETW to get at least a 10x return on their investment. He works with clients to transform and improve how they do business by drawing on his successful track record of working with senior leadership in a broad range of roles and industries. With an intense focus on delivering a world-class customer support experience to every client, Blake has led numerous ETW client implementations resulting in sustained double-digit growth in profitability, as well as organizational turnarounds in both public and private companies.'
-        },
-        {
-          image: './static/headshots/da-1.jpg',
-          name: 'David Atrostic',
-          title: 'Sr. Advisor',
-          info: 'David Atrostic serves as Senior Advisor to Execute to Win. In his role, David provides guidance in a multitude of initiatives to develop strategic partnerships, drive out inefficiencies and build a foundation to support massive growth. David has more than 20 years of technology architecture, management and consulting experience across a variety of industries.'
         },
         {
           image: './static/headshots/jw-1.jpg',
