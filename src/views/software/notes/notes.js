@@ -22,7 +22,8 @@ export default {
 
     this.scrollReveal.reveal('.sr-note-2', {
       delay: 1000,
-      reset: false
+      reset: false,
+      origin: 'left'
     })
 
     this.scrollReveal.reveal('.sr-note-1', {
@@ -31,7 +32,8 @@ export default {
         domEl.classList.add('animated')
         domEl.classList.add('shake')
       },
-      reset: false
+      reset: false,
+      origin: 'right'
     })
   }
 
