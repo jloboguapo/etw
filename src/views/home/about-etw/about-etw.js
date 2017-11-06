@@ -30,7 +30,7 @@ export default {
       {
         title: 'Help Your Managers Become Coaches',
         body: 'Spend less time doing and more time developing talent to increase overall efficiency and productivity. As managers become coaches, employees become problem solvers.',
-        image: '../../../../static/thumb_graph.jpg'
+        image: '../../../../static/thumb_coach.jpg'
       }]
     }
   },
