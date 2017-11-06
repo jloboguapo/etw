@@ -11,6 +11,7 @@ import Intro from '@/views/software/intro/intro.vue'
 import Kpi from '@/views/software/kpi/kpi.vue'
 import Notes from '@/views/software/notes/notes.vue'
 import Pricing from '@/views/software/pricing/pricing.vue'
+import Plans from '@/views/software/plans/plans.vue'
 
 export default {
 
@@ -21,7 +22,8 @@ export default {
     Intro,
     Kpi,
     Notes,
-    Pricing
+    Pricing,
+    Plans
   }
 
 }
