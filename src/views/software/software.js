@@ -6,6 +6,7 @@
 |
 */
 
+import AboutAlign from '@/views/software/about-align/about-align.vue'
 import Evaluations from '@/views/software/evaluations/evaluations.vue'
 import Intro from '@/views/software/intro/intro.vue'
 import Kpi from '@/views/software/kpi/kpi.vue'
@@ -18,6 +19,7 @@ export default {
   name: 'software',
 
   components: {
+    AboutAlign,
     Evaluations,
     Intro,
     Kpi,
