@@ -5,6 +5,7 @@
 |
 |
 */
+
 @each $key, $value in $spacers {
    @each $foo, $bar in $sides{
     .p-#{$foo}-#{$key} {
@@ -38,5 +39,19 @@
     .b-#{$foo} {
       border#{$bar}: 1px solid $grey-lighter;
     }
+  }
+};
+
+/*
+|--------------------------------------------------------------------------
+| Background Colors
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+@each $key, $value in $bulma-colors {
+  .bg-#{$key} {
+    background: #{$value};
   }
 };

@@ -1,3 +1,76 @@
-<footer class="hero is-dark m-t-5 p-y-5">
-  <!-- placeholder -->
-</footer>
+<div>
+
+  <footer class="footer m-t-5 p-y-5">
+    <div class="container">
+      <div class="columns is-variable is-8">
+        <div class="column is-4">
+          <div class="media">
+            <figure class="media-left">
+              <router-link v-on:click.native="handleClick" :to="{ name: 'home' }" class="image is-48x48">
+                <img src="../../../static/brand/brand.svg" alt="ETW : Execute To Win">
+              </router-link>
+            </figure>
+            <div class="media-content">
+              <p class="has-text-grey"><small>The ETW® Business Management Solution brings together a proven management approach, cloud-based technology and results-oriented implementation and optimization services to help your organization quickly connect employees to strategy and culture to drive sustainable winning results.</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-offset-1">
+          <div class="title is-6 has-text-grey">Products</div>
+
+          <router-link v-on:click.native="handleClick" :to="{ name: 'services' }" class="m-b-_5" tag="div">
+            <a class="has-text-grey">Professional Services</a>
+          </router-link>
+
+          <router-link v-on:click.native="handleClick" :to="{ name: 'software' }" class="m-b-_5" tag="div">
+            <a class="has-text-grey">Align Software</a>
+          </router-link>
+
+        </div>
+
+        <div class="column">
+          <div class="title is-6 has-text-grey">Company</div>
+
+          <router-link v-on:click.native="handleClick" :to="{ name: 'about' }" class="m-b-_5" tag="div">
+            <a class="has-text-grey">About</a>
+          </router-link>
+
+          <router-link v-on:click.native="handleClick" :to="{ name: 'testimonials' }" class="m-b-_5" tag="div">
+            <a class="has-text-grey">Testimonials</a>
+          </router-link>
+
+          <div class="m-b-_5">
+            <a href="http://blog.etw.com" class="has-text-grey">News</a>
+          </div>
+
+          <router-link v-on:click.native="handleClick" :to="{ name: 'contact' }" class="m-b-_5" tag="div">
+            <a class="has-text-grey">Contact</a>
+          </router-link>
+
+        </div>
+
+        <div class="column">
+          <div class="title is-6 has-text-grey">Other</div>
+
+          <router-link v-on:click.native="handleClick" :to="{ name: 'resources' }" class="m-b-_5" tag="div">
+            <a class="has-text-grey">Resources</a>
+          </router-link>
+
+          <router-link v-on:click.native="handleClick" :to="{ name: 'privacy' }" class="m-b-_5" tag="div">
+            <a class="has-text-grey">Privacy Policy</a>
+          </router-link>
+
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <div class="columns p-y-1 bg-white-ter">
+    <div class="column has-text-centered has-text-grey">
+      <small>2017 ETW® | 25 S. Arizona Place, Ste. 510, Chandler, AZ 85225 | Phone: 480.638.9300 | Email: info@etw.com</small>
+    </div>
+  </div>
+
+</div>

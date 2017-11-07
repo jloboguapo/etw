@@ -3,15 +3,11 @@
 | Footer.
 |--------------------------------------------------------------------------
 |
-| Website footer.
 |
 */
 
 export default {
 
-  name: 'footer',
-
-  components: {
-  }
+  name: 'footer'
 
 }
