@@ -40,6 +40,10 @@ export default {
     }
   },
 
+  created () {
+    this.setupTypeform()
+  },
+
   mounted () {
     this.scrollReveal.reveal('.sr-intro-title', {
       duration: 1000,
@@ -69,6 +73,30 @@ export default {
         this.$refs.videoPlayer.player.pause()
       } else {
         this.$refs.videoPlayer.player.play()
+      }
+    },
+
+    /**
+     * Import the necessary scripts to run
+     * the typeform questionair
+     */
+    setupTypeform () {
+      var qs,
+        js,
+        q,
+        s,
+        d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = 'typef_orm_share',
+        b = 'https://embed.typeform.com/'
+
+      if (!gi.call(d, id)) {
+        js = ce.call(d, 'script')
+        js.id = id; js.src = b + 'embed.js'
+        q = gt.call(d, 'script')[0]
+        q.parentNode.insertBefore(js, q)
       }
     }
   }

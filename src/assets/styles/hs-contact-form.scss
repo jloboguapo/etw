@@ -1,0 +1,15 @@
+#contactHSForm {
+  label {
+    @extend .label;
+  }
+
+  .input {
+    input {
+      @extend .input;
+    }
+  }
+
+  .hs-button {
+    @extend .button;
+  }
+}
