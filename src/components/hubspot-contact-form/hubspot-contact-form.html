@@ -11,7 +11,20 @@
           css: '',
           portalId: '3379879',
           formId: 'd6a266a7-9192-4b1b-b9dd-8aadd78dff3f',
-          target: '#contactHSForm'
+          target: '#contactHSForm',
+          errorMessageClass: 'error-message',
+          submitButtonClass: 'button is-medium is-rounded is-primary',
+          onFormReady($form) {
+            // remove all .input classes
+            let inputs = $form.find('.input')
+            inputs.removeClass('input')
+
+            // select inputs
+            $('select').parent('div').addClass('select is-fullwidth')
+
+            // textareas
+            $('textarea').addClass('textarea')
+          }
         });
       </script2>
     </div>

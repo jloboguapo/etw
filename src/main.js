@@ -8,6 +8,7 @@
 |
 */
 
+import $ from 'jquery'
 import axios from 'axios'
 import lodash from 'lodash'
 import router from './router'
@@ -16,6 +17,12 @@ import Vue from 'vue'
 import vueScript2 from 'vue-script2'
 
 import Wrapper from './views/wrapper/wrapper.vue'
+
+/**
+ * We'll load jQuery and the Bootstrap jQuery plugin which provides support
+ * for JavaScript based Bootstrap features.
+ */
+window.$ = window.jQuery = $
 
 /**
  * Turn off for production.
