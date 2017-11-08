@@ -1,18 +1,12 @@
 /*
 |--------------------------------------------------------------------------
-| Services page.
+| Services Intro.
 |--------------------------------------------------------------------------
 |
-| The workshops and services of ETW.
+| Introductio to services.
 |
 */
 
-import Intro from '@/views/services/intro/intro.vue'
-
 export default {
-
-  components: {
-    Intro
-  }
 
 }

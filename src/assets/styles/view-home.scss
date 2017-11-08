@@ -27,7 +27,9 @@
 
 @include tablet {
   .section-intro {
-    background-image: url(../../../static/backgrounds/bg-blue-triangles.svg);
+    background: $primary;
+    background-image: url(../../../static/backgrounds/bg-triangles.svg);
+    background-image: url(../../../static/backgrounds/bg-triangles.svg), linear-gradient(135deg, darken($primary, 20%) 0%, $primary 100%);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;

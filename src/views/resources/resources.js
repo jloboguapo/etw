@@ -7,11 +7,12 @@
 |
 */
 
+import Intro from '@/views/resources/intro/intro.vue'
+
 export default {
 
-  name: 'resources',
-
   components: {
+    Intro
   }
 
 }
