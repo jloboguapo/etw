@@ -6,7 +6,7 @@
         <div class="column is-4">
           <div class="media">
             <figure class="media-left">
-              <router-link v-on:click.native="handleClick" :to="{ name: 'home' }" class="image is-48x48">
+              <router-link :to="{ name: 'home' }" class="image is-48x48">
                 <img src="../../../static/brand/brand.svg" alt="ETW : Execute To Win">
               </router-link>
             </figure>
@@ -19,12 +19,12 @@
         <div class="column is-offset-1">
           <div class="title is-6 has-text-grey">Products</div>
 
-          <router-link v-on:click.native="handleClick" :to="{ name: 'services' }" class="m-b-_5" tag="div">
+          <router-link :to="{ name: 'services' }" class="m-b-_5" tag="div">
             <a class="has-text-grey">Professional Services</a>
           </router-link>
 
-          <router-link v-on:click.native="handleClick" :to="{ name: 'software' }" class="m-b-_5" tag="div">
-            <a class="has-text-grey">Align Software</a>
+          <router-link :to="{ name: 'software' }" class="m-b-_5" tag="div">
+            <a class="has-text-grey">Software</a>
           </router-link>
 
         </div>
@@ -32,11 +32,11 @@
         <div class="column">
           <div class="title is-6 has-text-grey">Company</div>
 
-          <router-link v-on:click.native="handleClick" :to="{ name: 'about' }" class="m-b-_5" tag="div">
+          <router-link :to="{ name: 'about' }" class="m-b-_5" tag="div">
             <a class="has-text-grey">About</a>
           </router-link>
 
-          <router-link v-on:click.native="handleClick" :to="{ name: 'testimonials' }" class="m-b-_5" tag="div">
+          <router-link :to="{ name: 'testimonials' }" class="m-b-_5" tag="div">
             <a class="has-text-grey">Testimonials</a>
           </router-link>
 
@@ -44,32 +44,40 @@
             <a href="http://blog.etw.com" class="has-text-grey">News</a>
           </div>
 
-          <router-link v-on:click.native="handleClick" :to="{ name: 'contact' }" class="m-b-_5" tag="div">
-            <a class="has-text-grey">Contact</a>
-          </router-link>
+          <div class="m-b-_5">
+            <a class="has-text-grey" v-on:click="contactUs()">Contact</a>
+          </div>
 
         </div>
 
         <div class="column">
           <div class="title is-6 has-text-grey">Other</div>
 
-          <router-link v-on:click.native="handleClick" :to="{ name: 'resources' }" class="m-b-_5" tag="div">
+          <router-link :to="{ name: 'resources' }" class="m-b-_5" tag="div">
             <a class="has-text-grey">Resources</a>
           </router-link>
 
-          <router-link v-on:click.native="handleClick" :to="{ name: 'privacy' }" class="m-b-_5" tag="div">
+          <router-link :to="{ name: 'privacy' }" class="m-b-_5" tag="div">
             <a class="has-text-grey">Privacy Policy</a>
           </router-link>
 
         </div>
-        
+
       </div>
     </div>
   </footer>
 
   <div class="columns p-y-1 bg-white-ter">
     <div class="column has-text-centered has-text-grey">
-      <small>2017 ETW® | 25 S. Arizona Place, Ste. 510, Chandler, AZ 85225 | Phone: 480.638.9300 | Email: info@etw.com</small>
+      <small>
+        2017 ETW®
+        <span class="has-text-grey-light m-x-1">|</span>
+        25 S. Arizona Place, Ste. 510, Chandler, AZ 85225
+        <span class="has-text-grey-light m-x-1">|</span>
+        Phone: 480.638.9300
+        <span class="has-text-grey-light m-x-1">|</span>
+        Email: info@etw.com
+      </small>
     </div>
   </div>
 

@@ -1,9 +1,15 @@
+@include mobile {
+  .hero-software-intro {
+    background: $grey-darker;
+  }
+}
+
 @include tablet {
   .hero-software-intro {
     background-image: url("../../../static/backgrounds/software-header.png");
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 1600px 100%;
+    background-position: center top;
+    background-size: cover;
 
     &:after {
       content: "";

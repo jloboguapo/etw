@@ -33,7 +33,7 @@ export default {
       videoPlayerOptions: {
         sources: [{
           type: 'video/mp4',
-          src: 'https://02-lvl3-pdl.vimeocdn.com/01/180/4/100902001/271028419.mp4?expires=1509599136&token=04f1ac56311c05c57f23c'
+          src: 'https://02-lvl3-pdl.vimeocdn.com/01/180/4/100902001/271028419.mp4?expires=1510161850&token=028b77a9baf16bb477bce'
         }],
         fluid: true
       }

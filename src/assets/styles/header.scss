@@ -1,13 +1,14 @@
 // App bar
-.masthead {
-  background: rgba($white, .9);
+.navbar {
+  &.masthead {
+  background-color: rgba($grey-darker, 0);
   position: fixed;
   transition: background 0.5s ease;
   width: 100vw;
   z-index: map-get($z-indexes, 'l1');
 
   &.is-scroll {
-    background: rgba($white, 0.95);
+    background: rgba($grey-darker, 0.95);
   }
 
   .navbar-brand, .navbar-tabs, .navbar-burger {
@@ -17,6 +18,7 @@
   .navbar-item img {
     max-height: 3rem;
   }
+}
 }
 
 // Navbar Menu icon
@@ -31,7 +33,7 @@
   z-index: map-get($z-indexes, 'l2');
 
   span {
-    background: $grey-dark;
+    background: $white;
     display: block;
     height: 4px;
     left: 0;

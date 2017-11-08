@@ -11,7 +11,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const About = () => import('@/views/about/about.vue')
-const Contact = () => import('@/views/contact/contact.vue')
 const Home = () => import('@/views/home/home.vue')
 const NotFound = () => import('@/views/404/404.vue')
 const Privacy = () => import('@/views/privacy/privacy.vue')
@@ -67,12 +66,6 @@ let routes = [
     path: '/services',
     name: 'services',
     component: Services
-  },
-
-  {
-    path: '/contact',
-    name: 'contact',
-    component: Contact
   },
 
   {

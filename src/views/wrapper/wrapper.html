@@ -1,5 +1,9 @@
 <div>
-  <header-web></header-web>
+  <header-web @contactUs="toggleContactModal()"></header-web>
   <router-view></router-view>
-  <footer-web></footer-web>
+  <footer-web @contactUs="toggleContactModal()"></footer-web>
+  <modal-contact
+      v-bind:is-active="isContactModalActive"
+      @toggleContactModal="toggleContactModal()">
+  </modal-contact>
 </div>
