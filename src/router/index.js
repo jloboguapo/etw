@@ -17,7 +17,6 @@ const Privacy = () => import('@/views/privacy/privacy.vue')
 const Resources = () => import('@/views/resources/resources.vue')
 const Services = () => import('@/views/services/services.vue')
 const Software = () => import('@/views/software/software.vue')
-const Testimonials = () => import('@/views/testimonials/testimonials.vue')
 
 /**
 * Tell Vue to use the vue-router.
@@ -48,12 +47,6 @@ let routes = [
     path: '/resources',
     name: 'resources',
     component: Resources
-  },
-
-  {
-    path: '/testimonials',
-    name: 'testimonials',
-    component: Testimonials
   },
 
   {

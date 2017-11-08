@@ -1,0 +1,2 @@
+webpackJsonp([6],{"23Cv":function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t("wjSS"),u=t("Ye7E"),a=t("VU/8"),s=a(r.a,u.a,!1,null,null,null);n.default=s.exports},Ye7E:function(e,n,t){"use strict";var r=function(){var e=this,n=e.$createElement;return(e._self._c||n)("div",[e._v("\n  404 Not Found\n")])},u=[],a={render:r,staticRenderFns:u};n.a=a},wjSS:function(e,n,t){"use strict";n.a={name:"404"}}});
+//# sourceMappingURL=6.42157a48c9b1f9971a33.js.map

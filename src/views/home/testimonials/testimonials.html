@@ -1,29 +1,32 @@
-<section class="hero is-info is-bold section-testimonials m-y-2">
-  <div class="hero-body">
-    <div class="columns">
-      <div class="column is-two-thirds">
-        <div class="media sr-about-media-engagement">
-          <div class="media-left">
-            <figure class="image is-96x96">
-              <img src="../../../../static/quotes.png" alt="Quotes">
+<div>
+
+  <section class="section is-medium">
+    <div class="container has-text-centered">
+      <h3 class="title is-3">What customers are saying about ETW</h3>
+    </div>
+  </section>
+
+    <!-- PRIMARY TESTIMONIALS  -->
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-4 m-b-2" v-for="primaryTestimonial in primaryTestimonials">
+          <article class="media">
+            <figure class="media-left is-rounded">
+              <p class="image is-96x96">
+                <img v-bind:src="primaryTestimonial.headshot || 'https://bulma.io/images/placeholders/128x128.png'">
+              </p>
             </figure>
-          </div>
-          <div class="media-content m-l-1">
-            <div class="content">
-              <h3 class="title is-4">ETW has paid for itself many times over.</h3>
-              <p>If growth is the enemy of culture, ETW has allowed us to create a like culture in each of the oces we’ve opened. I can walk into our farthest oce and know what to expect culture-wise”</p>
-              <p class="title is-5 m-b-1_5">David Bosley</p>
-              <p class="subtitle is-7">Executive Vice President, OpenWorks</p>
+            <div class="media-content">
+              <div class="content">
+                <p><em>“{{ primaryTestimonial.quote }}“</em></p>
+                <p class="title is-5 m-b-1_5">{{ primaryTestimonial.author }}</p>
+                <p class="subtitle is-7 has-text-grey">{{ primaryTestimonial.role }}, {{ primaryTestimonial.company }}</p>
+                <a v-bind:href="primaryTestimonial.caseStudy" target="_blank">view success story</a>
+              </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
-      <div class="column has-text-centered">
-        <router-link :to="{ name: 'testimonials' }" tag="button" class="button is-medium is-rounded is-outlined">
-          Read more Testimonials
-        </router-link>
-      </div>
     </div>
-  </div>
-  </div>
-</section>
+
+</div>
