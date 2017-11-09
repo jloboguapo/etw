@@ -3,11 +3,44 @@
   <intro></intro>
 
   <div class="container">
-  Resources
-  ROI of an Intentional Culture
-  Whitepaper
-  10 minute read<br>
-              An intentional culture is a culture that is defined, communicated and integrated into the business management process to drive better results for the organization. Learn about the positive effects building an intentional culture has on your ROI.
+
+    <section class="section">
+      <h1 class="title">Resources</h1>
+      <h2 class="subtitle has-text-grey">ROI of an Intentional Culture</h2>
+      <div class="columns">
+        <div class="column is-half">
+          <p>An intentional culture is a culture that is defined, communicated and integrated into the business management process to drive better results for the organization. Learn about the positive effects building an intentional culture has on your
+            ROI.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <div class="section">
+      <div class="columns is-multiline">
+        <div class="column is-one-quarter" v-for="resource in resources">
+          <a v-bind:href="resource.file" target="_blank" v-bind:alt="resource.title">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img v-bind:src="resource.image" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <p class="title is-5 m-b-1">{{ resource.title }}</p>
+                  <p>{{ resource.description }}</p>
+                  <div class="tags">
+                    <span class="tag" v-for="tag in resource.tags">{{ tag }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
-  
+
 </div>
