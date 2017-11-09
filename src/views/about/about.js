@@ -8,6 +8,7 @@
 */
 
 import History from '@/views/about/history/history.vue'
+import Intro from '@/views/about/intro/intro.vue'
 import Leadership from '@/views/about/leadership/leadership.vue'
 
 export default {
@@ -15,8 +16,9 @@ export default {
   name: 'about',
 
   components: {
-    Leadership,
-    History
+    History,
+    Intro,
+    Leadership
   }
 
 }
