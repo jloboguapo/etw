@@ -1,6 +1,7 @@
 // App bar
 .navbar {
   &.masthead {
+  animation-duration: 0.3s;
   background-color: rgba($grey-darker, 0);
   position: fixed;
   transition: background 0.5s ease;

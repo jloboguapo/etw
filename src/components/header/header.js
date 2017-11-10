@@ -11,8 +11,6 @@ import SideMenu from '@/components/side-menu/side-menu.vue'
 
 export default {
 
-  name: 'header',
-
   components: {
     SideMenu
   },
@@ -36,7 +34,25 @@ export default {
        * For window scroll events
        * @type {debounce}
        */
-      lazyHandleScroll: _.debounce(this.handleScroll, 20)
+      lazyHandleScroll: _.debounce(this.handleScroll, 20),
+
+      /**
+       * Current scrollY position
+       * @type {number}
+       */
+      scrollY: 0,
+
+      /**
+       * For showing the menu
+       * @type {Boolean}
+       */
+      isScrollUp: false,
+
+      /**
+       * For hiding the menu
+       * @type {Boolean}
+       */
+      isScrollDown: false
 
     }
   },
@@ -52,6 +68,16 @@ export default {
     */
     handleScroll () {
       this.isScroll = window.scrollY != 0
+
+      if (window.scrollY > 0) {
+        this.isScrollDown = window.scrollY > this.scrollY
+        this.isScrollUp = window.scrollY < this.scrollY
+      } else {
+        this.isScrollDown = false
+        this.isScrollUp = false
+      }
+
+      this.scrollY = window.scrollY
     },
 
     /**
