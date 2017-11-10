@@ -26,13 +26,22 @@
 }
 
 @include tablet {
-  .section-intro {
-    background: $primary;
-    background-image: url(../../../static/backgrounds/bg-triangles.svg);
-    background-image: url(../../../static/backgrounds/bg-triangles.svg), linear-gradient(to right, darken($purple, 20%) 0%,$primary 100%);
+  .section-home-intro {
+    background-image: url(../../../static/backgrounds/laptop-on-wooden-desk-in-office-open-space-picjumbo-com.jpg);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: bottom center;
     background-size: cover;
+
+    h1.is-1 {
+      font-size: 4rem;
+      line-height: 5rem;
+      font-weight: 700;
+    }
+
+    .highlighted {
+      text-decoration: underline;
+      text-decoration-color: $warning;
+    }
 
     &:after {
       content: "";
@@ -45,10 +54,16 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center top;
+      margin-top: -3%;
     }
-  }
 
-  .section-about-etw {
+    .hero-body {
+      background: linear-gradient(135deg, rgba(darken($purple, 15%), .80) 0%, rgba(darken($primary, 15%), .80) 100%);
+    }
+
+    .button {
+      box-shadow: 0 1px 1px rgba($black, .2);
+    }
 
   }
 
