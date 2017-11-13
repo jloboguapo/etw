@@ -169,13 +169,43 @@ export default {
           ]
         }
 
-      ]
+      ],
+
+      /**
+       * All of the available tags for searching
+       * @type {Array}
+       */
+      tags: [],
+
+      /**
+       * For searching the resources by tag
+       * @type {String}
+       */
+      searchTag: ''
 
     }
   },
 
   components: {
     Intro
+  },
+
+  computed: {
+    filteredResources () {
+      return this.resources.filter(resource => {
+        return this.searchTag.length ? _.includes(resource.tags, this.searchTag) : true
+      })
+    }
+  },
+
+  created () {
+    this.tags = _.uniq(_.flatMap(this.resources, 'tags'))
+  },
+
+  methods: {
+    toggleSearchTag (tag) {
+      this.searchTag = this.searchTag === tag ? '' : tag
+    }
   }
 
 }

@@ -18,14 +18,14 @@ export default {
         author: 'David Bosley',
         role: 'Executive Vice President',
         caseStudy: './static/case-studies/Case%20Study-%20OpenWorks.pdf',
-        headshot: './static/case-studies/images/david_bosley_openworks.jpg'
+        headshot: './static/case-studies/images/david_bosley_openworks.png'
       }, {
         company: 'Able Aerospace Services',
         quote: 'In one fiscal year, Able set out to uncover an additional 25% capacity. The goal was implemented in ETW, and ended up uncovering an additional 40% capacity. This saved Able from hiring 100 unnecessary employees.',
         author: 'Lee Benson',
         role: 'CEO',
         caseStudy: './static/case-studies/Case_Study-Able_Aerospace.pdf',
-        headshot: './static/case-studies/images/lee_benson_etw.png'
+        headshot: './static/case-studies/images/lee_benson_etw.jpg'
       }, {
         company: 'US ChemCare',
         quote: 'ETW helped drive turnaround results in just 3 months. EBITDA improved by over 20% and NPS scores for both customers and employees improved from the worst performing to the best performing in the organization!',
@@ -67,7 +67,7 @@ export default {
         author: 'Kevin Humphrey',
         role: 'Executive Director',
         caseStudy: './static/case-studies/Case%20Study-Sunshine%20Acres.pdf',
-        headshot: './static/case-studies/images/kevin_humphrey_sunshine.jpg'
+        headshot: './static/case-studies/images/kevin_humphrey_sunshine.png'
       }, {
         company: 'Infusionsoft',
         quote: 'Leaders love looking at ETW to gain a sense of where their team stands and where they, as leaders, need to provide guidance. Since implementing ETW, we’ve increased the visibility to performance that was not tangible before on such a large scale. We love seeing how the leaders engage with their teams through the platform to create a high-performance culture.',
@@ -88,14 +88,14 @@ export default {
         author: 'Hagen Harker',
         role: 'President',
         caseStudy: './static/case-studies/Success_Story-Mid-States_Concrete.pdf',
-        headshot: './static/case-studies/images/hagen_harker_mid_states.jpg'
+        headshot: './static/case-studies/images/hagen_harker_mid_states.png'
       }, {
         company: 'Use Case',
         quote: 'ETW provides the operating system to help charter school leadership teams keep teacher best practices consistent. Whether that consistency is between classrooms or across campuses, ETW aides these leaders in developing their playbook for campus expansion and scholar success.',
         author: 'ETW in Charter Schools',
         role: 'Vista College Preparatory',
         caseStudy: './static/case-studies/Use%20Case-%20ETW%20in%20Charter%20Schools.pdf',
-        headshot: './static/case-studies/images/charter_schools_vista.jpg'
+        headshot: './static/case-studies/images/charter_schools_vista.png'
       }]
     }
   },
