@@ -1,6 +1,16 @@
+.section-home-intro {
+  position: relative;
+}
+
 @include mobile {
   .section-about-etw {
     background: $white-bis;
+  }
+
+  .section-home-intro {
+    .scroll-down {
+      display: none;
+    }
   }
 
   .section-intro {
