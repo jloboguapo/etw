@@ -1,0 +1,35 @@
+.hero-history-intro {
+  background-image: url(../../../static/backgrounds/boardroom.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 3%;
+    background-image: url(../../../static/backgrounds/round-edge.svg);
+    width: 110%;
+    margin-left: -5%;
+    margin-bottom: -.625rem !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: -3%;
+  }
+
+  .hero-body {
+    background: linear-gradient(135deg, rgba(darken($primary, 40%), .80) 0%, rgba(darken($primary, 0%), .80) 100%);
+  }
+
+  h1.is-1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 700;
+  }
+
+  .highlighted {
+    text-decoration: underline;
+    text-decoration-color: $warning;
+  }
+}
