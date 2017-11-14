@@ -40,9 +40,9 @@
             <a href="http://blog.etw.com" class="has-text-grey">News</a>
           </div>
 
-          <div class="m-b-_5">
-            <a class="has-text-grey" v-on:click="contactUs()">Contact</a>
-          </div>
+          <router-link :to="{ name: 'contact' }" class="m-b-_5" tag="div">
+            <a class="has-text-grey">Contact</a>
+          </router-link>
 
         </div>
 

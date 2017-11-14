@@ -3,36 +3,40 @@
   <div class="modal-card animated fadeIn">
 
     <header class="modal-card-head">
-      <p class="modal-card-title">Contact Us</p>
+      <p class="modal-card-title">Contact Sales</p>
       <button class="delete" aria-label="close" @click="toggleModal()"></button>
     </header>
 
-    <section class="modal-card-body p-x-3 bg-white-ter"  id="contactHSForm">
-      <!--[if lte IE 8]>
-      <script2 charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script2>
-      <![endif]-->
-      <script2 charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script2>
-      <script2>
-        hbspt.forms.create({
-          css: '',
-          portalId: '3379879',
-          formId: 'd6a266a7-9192-4b1b-b9dd-8aadd78dff3f',
-          target: '#contactHSForm',
-          errorMessageClass: 'error-message',
-          submitButtonClass: 'button is-medium is-rounded is-primary',
-          onFormReady($form) {
-            // remove all .input classes
-            let inputs = $form.find('.input')
-            inputs.removeClass('input')
+    <section class="modal-card-body p-x-3 bg-white-ter">
+      <p class="m-b-1">Please complete the form below and we will contact you shortly.</p>
 
-            // select inputs
-            $('select').parent('div').addClass('select is-fullwidth')
+      <div id="contactHSForm">
+        <!--[if lte IE 8]>
+        <script2 charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script2>
+        <![endif]-->
+        <script2 charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script2>
+        <script2>
+          hbspt.forms.create({
+            css: '',
+            portalId: '3379879',
+            formId: 'd6a266a7-9192-4b1b-b9dd-8aadd78dff3f',
+            target: '#contactHSForm',
+            errorMessageClass: 'error-message',
+            submitButtonClass: 'button is-medium is-rounded is-primary',
+            onFormReady($form) {
+              // remove all .input classes
+              let inputs = $form.find('.input')
+              inputs.removeClass('input')
 
-            // textareas
-            $('textarea').addClass('textarea')
-          }
-        });
-      </script2>
+              // select inputs
+              $('select').parent('div').addClass('select is-fullwidth')
+
+              // textareas
+              $('textarea').addClass('textarea')
+            }
+          });
+        </script2>
+      </div>
     </section>
 
     <footer class="modal-card-foot">

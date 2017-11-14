@@ -7,13 +7,7 @@
 |
 */
 
-import SideMenu from '@/components/side-menu/side-menu.vue'
-
 export default {
-
-  components: {
-    SideMenu
-  },
 
   data () {
     return {
@@ -85,6 +79,14 @@ export default {
      */
     toggleMenu () {
       this.isActiveMenu = !this.isActiveMenu
+    },
+
+    /**
+     * Hide the menu on mobile when link selected
+     */
+    hideMenu () {
+      console.log('hideMenu')
+      this.isActiveMenu = false
     }
 
   }

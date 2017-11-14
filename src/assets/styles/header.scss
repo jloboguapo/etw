@@ -19,6 +19,10 @@
   .navbar-item img {
     max-height: 3rem;
   }
+
+  .navbar-menu {
+    animation-duration: .3s;
+  }
 }
 }
 
@@ -59,14 +63,14 @@
 
   &:hover {
     span {
-      background: $primary;
+      background: $white;
     }
   }
 
   &.is-active {
 
     span {
-      background: $primary;
+      background: $white;
     }
 
     span:nth-child(1) {
@@ -94,36 +98,5 @@
       width: 0%;
       left: 50%;
     }
-  }
-}
-
-// Screen overlay
-.menu-overlay {
-  background: $black;
-  cursor: pointer;
-  display: none;
-  height: 100vh;
-  left: 0;
-  opacity: 0.6;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: map-get($z-indexes, 'l1');
-
-  &.is-active {
-    display: block;
-  }
-}
-
-.quickview {
-  z-index: map-get($z-indexes, 'l1');
-  overflow-y: scroll;
-
-  a:hover {
-    color: $primary !important;
-  }
-
-  .quickview-footer {
-    background: $grey-darker;
   }
 }

@@ -17,6 +17,7 @@ const Privacy = () => import('@/views/privacy/privacy.vue')
 const Resources = () => import('@/views/resources/resources.vue')
 const Services = () => import('@/views/services/services.vue')
 const Software = () => import('@/views/software/software.vue')
+const Contact = () => import('@/views/contact/contact.vue')
 
 /**
 * Tell Vue to use the vue-router.
@@ -32,7 +33,7 @@ Vue.use(Router)
 let routes = [
 
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: Home
   },
@@ -65,6 +66,18 @@ let routes = [
     path: '/privacy',
     name: 'privacy',
     component: Privacy
+  },
+
+  {
+    path: '/contact',
+    name: 'contact',
+    component: Contact
+  },
+
+  // For the home page
+  {
+    path: '/',
+    redirect: { name: 'home' }
   },
 
   // Catch All, 404

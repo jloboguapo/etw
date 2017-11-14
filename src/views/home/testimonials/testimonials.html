@@ -3,14 +3,14 @@
   <section class="section is-medium">
     <div class="container has-text-centered">
       <h3 class="title is-3">What customers are saying about ETW</h3>
-      <h4 class="subtitle has-text-grey">Testimonials and Case Studies</h4>
+      <h4 class="subtitle has-text-grey">Testimonials and Success Stories</h4>
     </div>
   </section>
 
     <!-- PRIMARY TESTIMONIALS  -->
     <div class="container">
       <div class="columns is-multiline">
-        <div class="column is-4 m-b-2" v-for="primaryTestimonial in primaryTestimonials">
+        <div class="column is-4 m-b-2 animated fadeIn" v-for="primaryTestimonial in filteredTestimonials">
           <article class="media">
             <figure class="media-left is-rounded">
               <p class="image is-96x96">
@@ -29,6 +29,10 @@
           </article>
         </div>
       </div>
+    </div>
+
+    <div class="has-text-centered m-y-1">
+      <button class="button is-medium is-rounded is-outlined is-primary" v-if="isShowMoreTestimonials" @click="showMoreTestimonials()">Show more testimonials</button>
     </div>
 
 </div>

@@ -1,12 +1,8 @@
-<nav class="navbar is-dark is-transparent masthead animated" v-bind:class="{ 'is-scroll': isScroll, 'fadeInDown': isScrollUp, 'fadeOutUp': isScrollDown }">
+<nav
+    class="navbar is-dark is-transparent masthead animated"
+    v-bind:class="{ 'is-scroll': isScroll, 'fadeInDown': isScrollUp, 'fadeOutUp': isScrollDown }">
 
   <div class="container">
-
-    <!-- WHITEOUT THE PAGE ON SIDE MENU OPEN -->
-    <div class="menu-overlay" v-bind:class="{ 'is-active': isActiveMenu }" @click="toggleMenu()"></div>
-
-    <!-- SLIDE-OUT MENU -->
-    <side-menu v-bind:is-active-menu="isActiveMenu"></side-menu>
 
     <!-- BRANDING AND MOBILE MENU -->
     <div class="navbar-brand">
@@ -29,31 +25,33 @@
     </div>
 
     <!-- RESPONSIVE MENU -->
-    <div class="navbar-menu">
-      <div class="navbar-start">
-        <!-- placeholder -->
-      </div>
+    <div class="navbar-menu" v-bind:class="{ 'is-active animated fadeInRight': isActiveMenu }">
       <div class="navbar-end">
 
         <router-link :to="{ name: 'home' }" class="navbar-item">
-          <strong>Home</strong>
+          <div @click="hideMenu()"><strong>Home</strong></div>
         </router-link>
 
         <router-link :to="{ name: 'services' }" class="navbar-item">
-          <strong>Professional Services</strong>
+          <div @click="hideMenu()"><strong>Professional Services</strong></div>
         </router-link>
 
         <router-link :to="{ name: 'software' }" class="navbar-item">
-          <strong>Software</strong>
+          <div @click="hideMenu()"><strong>Software</strong></div>
         </router-link>
 
         <router-link :to="{ name: 'resources' }" class="navbar-item">
-          <strong>Resources</strong>
+          <div @click="hideMenu()"><strong>Resources</strong></div>
         </router-link>
 
-        <a href="https://app.prod.etw.com" class="navbar-item m-l-3">
-          <strong>Login</strong>
+        <router-link :to="{ name: 'contact' }" class="navbar-item p-r-3">
+          <div @click="hideMenu()"><strong>Contact</strong></div>
+        </router-link>
+
+        <a href="https://app.prod.etw.com" class="navbar-item">
+          <div @click="hideMenu()"><strong>Login</strong></div>
         </a>
+
       </div>
     </div>
 

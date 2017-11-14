@@ -8,12 +8,4 @@
 
 export default {
 
-  name: 'footer',
-
-  methods: {
-    contactUs () {
-      this.$emit('contactUs')
-    }
-  }
-
 }

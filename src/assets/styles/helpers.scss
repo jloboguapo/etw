@@ -42,6 +42,18 @@
   }
 };
 
+// borders x axis
+.b-x {
+  @extend .b-l;
+  @extend .b-r;
+}
+
+// borders y axis
+.b-y {
+  @extend .b-t;
+  @extend .b-b;
+}
+
 /*
 |--------------------------------------------------------------------------
 | Background Colors

@@ -12,7 +12,11 @@ export default {
   data () {
     return {
 
-      primaryTestimonials: [{
+      /**
+       * All testimonials
+       * @type {Array}
+       */
+      testimonials: [{
         company: 'OpenWorks',
         quote: 'If growth is the enemy of culture, ETW has allowed us to create a like culture in each of the offices we’ve opened. I can walk into our farthest office and know what to expect culture-wise.',
         author: 'David Bosley',
@@ -96,15 +100,33 @@ export default {
         role: 'Vista College Preparatory',
         caseStudy: './static/case-studies/Use%20Case-%20ETW%20in%20Charter%20Schools.pdf',
         headshot: './static/case-studies/images/charter_schools_vista.png'
-      }]
+      }],
+
+      /**
+       * Only display so many on page laod
+       * @type {[type]}
+       */
+      limitTestimonials: 3,
+
+      /**
+       * To show/hide the show more button
+       * @type {Boolean}
+       */
+      isShowMoreTestimonials: true
     }
   },
 
-  mounted () {
-    this.scrollReveal.reveal('.sr-testimonials-title')
-    this.scrollReveal.reveal('.sr-testimonials-button-play', {
-      delay: 100
-    })
+  computed: {
+    filteredTestimonials () {
+      return _.slice(_.shuffle(this.testimonials), 0, this.limitTestimonials)
+    }
+  },
+
+  methods: {
+    showMoreTestimonials () {
+      this.isShowMoreTestimonials = false
+      this.limitTestimonials = this.testimonials.length
+    }
   }
 
 }
