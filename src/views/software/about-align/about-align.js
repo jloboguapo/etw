@@ -18,12 +18,12 @@ export default {
        * @type {Array}
        */
       aboutETW: [{
-        title: 'Increased Employee Engagement',
+        title: 'Increased Employee Alignment',
         body: "Transparency increases accountability and promotes a complete understanding of how each and every employee's role a ects the success of the company. Give employees transparency into top company goals for a highly engaged workforce.",
         image: '../../../../static/thumb_engagement.jpg'
       },
       {
-        title: 'Ongoing Performance Development',
+        title: 'Ongoing Employee Development',
         body: 'Create development plans aligned with an employee’s goals. Emphasize career development and progression to create a culture of high performers throughout your entire organization.',
         image: '../../../../static/thumb_performance.jpg'
       }]
