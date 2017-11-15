@@ -1,9 +1,8 @@
 .hero-contact-intro {
   background: $success;
-  background-image: url(../../../static/backgrounds/bg-triangles.svg);
-  background-image: url(../../../static/backgrounds/bg-triangles.svg), linear-gradient(135deg, darken($success, 15%) 0%, $primary 100%);
+  background-image: linear-gradient(135deg, darken($success, 15%) 0%, $primary 100%);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top right;
   background-size: cover;
 
   &:after {

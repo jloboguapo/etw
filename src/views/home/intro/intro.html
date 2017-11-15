@@ -7,29 +7,32 @@
         <div class="columns m-y-2">
           <div class="column">
             <h1 class="title is-1 sr-intro-title has-text-white">
-              What if your employees were <span class="highlighted">100% aligned</span> to leadership, strategy, and culture?
+              What if your employees were 100% aligned to leadership, strategy and culture?
             </h1>
           </div>
           <div class="column is-desktop-only">
             <div class="columns is-centered">
-              <div class="column is-narrow">
+              <div class="column is-narrow has-text-right">
                 <h2 class="subtitle is-3 has-text-right has-text-white">
-                  <span class="bullets">Consistent <strong class="has-text-light">Alignment</strong></span><br>
-                  <span class="bullets">Drives effective <strong class="has-text-light">Conversations</strong></span><br>
-                  <span class="bullets">Leading to precise <strong class="has-text-light">Actions</strong></span><br>
-                  <span class="bullets">Producing extraordinary <strong class="has-text-light">Results</strong></span>
+                  <span class="bullets"><span class="has-text-grey-light">Better</span> <strong class="has-text-light">Alignment</strong></span><br>
+                  <span class="bullets"><span class="has-text-grey-light">Drives better</span> <strong class="has-text-light">Conversations</strong></span><br>
+                  <span class="bullets"><span class="has-text-grey-light">Leading to better</span> <strong class="has-text-light">Actions</strong></span><br>
+                  <span class="bullets"><span class="has-text-grey-light">Producing extraordinary</span> <strong class="has-text-light">Results</strong></span>
                 </h2>
+                <router-link :to="{ name: 'contact' }" class="typeform-share button is-large is-rounded is-primary m-t-2">
+                  <div @click="hideMenu()"><strong>Contact us to get started</strong></div>
+                </router-link>
               </div>
             </div>
             <div class="has-text-centered m-t-2">
               <!-- VIDEO MODAL -->
-              <button class="button is-large is-success is-rounded m-r-1 m-b-1" v-on:click="toggleModal()">
+              <!-- <button class="button is-large is-success is-rounded m-r-1 m-b-1" v-on:click="toggleModal()">
                 Watch Video
-              </button>
+              </button> -->
               <!-- TYPEFORM MODAL -->
-              <a class="typeform-share button is-large is-rounded is-primary" href="https://etwadmin.typeform.com/to/pazal8" data-mode="popup" target="_blank">
+              <!-- <a class="typeform-share button is-large is-rounded is-primary" href="https://etwadmin.typeform.com/to/pazal8" data-mode="popup" target="_blank">
                 How aligned are you?
-              </a>
+              </a> -->
             </div>
           </div>
         </div>

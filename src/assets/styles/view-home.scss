@@ -3,6 +3,12 @@
 }
 
 @include mobile {
+
+  .section-home-about {
+    background: $white-bis;
+    background-image: none;
+  }
+
   .section-about-etw {
     background: $white-bis;
   }
@@ -86,6 +92,12 @@
 
   .section-bms {
     background: $white-ter;
+  }
+
+  .section-home-about {
+    background-image: url(../../../static/backgrounds/section-about.jpg);
+    background-size: cover;
+    background-position: right top;
   }
 
   .section-professional-services {

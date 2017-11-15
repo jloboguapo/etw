@@ -1,36 +1,16 @@
-<div class="m-t-3 m-b-5">
-
-  <div class="hero">
-    <div class="hero-body has-text-centered">
-      <h3 class="title is-3 sr-about-etw-title">We help companies improve performance</h3>
-      <h4 class="subtitle is-5 sr-about-etw-subtitle has-text-grey-light">Business Services and Software</h4>
-    </div>
-  </div>
-
-  <section class="hero is-small section-about-etw">
-    <div class="hero-body">
-      <div class="columns">
-        <div class="column" v-for="about in aboutETW">
-          <div class="media sr-about-etw-sections">
-            <div class="media-left">
-              <figure class="image is-96x96">
-                <img v-bind:src="about.image" v-bind:alt="about.title">
-              </figure>
-            </div>
-            <div class="media-content m-l-1">
-              <div class="content">
-                <h3 class="title is-4">{{ about.title }}</h3>
-                <p>{{ about.body }}</p>
-              </div>
-            </div>
-          </div>
+<section class="hero is-medium section-home-about m-y-2">
+  <div class="hero-body">
+    <div class="columns">
+      <div class="column is-6 p-l-3">
+        <div class="m-b-2 m-t-3">
+          <h5 class="has-text-grey">EXECUTE TO WIN</h5>
+          <h1 class="title is-1">Improving Alignment to get Better Results</h1>
         </div>
+        <p class="m-b-2 is-size-5">Execute to Win (ETW) is a consulting company that helps organizations improve alignment to get better results; alignment to intentional leadership, strategy, execution and culture. Only when organizations are aligned can they have the better conversations
+          leading to better actions to yield better results. Most organizations find alignment to be both their biggest challenge and opportunity. What would be different if your organization was 20, 30, 40, 50% more aligned? Our customers find that small
+          improvements in alignment yield large improvements in employee morale, engagement and bottom-line results.</p>
+        <router-link :to="{ name: 'about' }" tag="button" class="button is-medium is-rounded is-outlined is-primary">Learn more about ETW</router-link>
       </div>
     </div>
-  </section>
-
-  <div class="has-text-centered">
-    <router-link :to="{ name: 'about' }" tag="button" class="button is-medium is-rounded is-outlined is-primary">Learn More About ETW</router-link>
   </div>
-
-</div>
+</section>
