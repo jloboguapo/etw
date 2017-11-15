@@ -33,3 +33,33 @@
     text-decoration-color: $warning;
   }
 }
+
+@include tablet {
+  .section-about-about {
+    background-image: url(../../../static/backgrounds/bg-office-one.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+  }
+
+  .section-about-how-we-do-this {
+    background-image: url(../../../static/backgrounds/about-how-we-do-this.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+  }
+
+  .section-about-different {
+    background-image: url(../../../static/backgrounds/about-etw-2.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+  }
+
+  .section-about-best-time-to-implement {
+    background-image: url(../../../static/backgrounds/section-about-best-time-to-implement.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+  }
+}

@@ -8,7 +8,6 @@
             <h1 class="title">
               Senior Leadership
             </h1>
-            <p class="subtitle">Turning Strategy and Culture into Tangible Results</p>
           </div>
         </div>
       </div>
@@ -22,8 +21,17 @@
         <figure class="image m-b-2">
           <img v-bind:src="leader.image" v-bind:alt="leader.name">
         </figure>
-        <h1 class="title is-4">{{ leader.name }}</h1>
-        <h2 class="subtitle is-6">{{ leader.title }}</h2>
+        <div class="columns">
+          <div class="column">
+            <h1 class="title is-4">{{ leader.name }}</h1>
+            <h2 class="subtitle is-6">{{ leader.title }}</h2>
+          </div>
+          <div class="column is-narrow">
+            <a v-bind:href="leader.linkedin" class="image is-32x32" target="_blank">
+              <img src="../../../../static/linkedin_icon.svg" alt="View LinkedIn Profile">
+            </a>
+          </div>
+        </div>
         <p>{{ leader.info }}</p>
       </div>
     </div>
