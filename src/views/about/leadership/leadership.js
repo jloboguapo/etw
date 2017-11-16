@@ -32,14 +32,14 @@ export default {
           image: './static/headshots/da-1.jpg',
           name: 'David Atrostic',
           title: 'COO',
-          info: 'David Atrostic serves as Chief Opperations Officer at Execute to Win. In his role, David provides guidance in a multitude of initiatives to develop strategic partnerships, drive out inefficiencies and build a foundation to support massive growth. David has more than 20 years of technology architecture, management and consulting experience across a variety of industries.',
+          info: 'At ETW, David is focused on helping our clients align all of their talents and resources to get better results. David has led the development and execution of strategic business initiatives for organizations from start-ups to Fortune 100 companies.  With a focus on deploying innovative technology solutions, he has managed consulting engagements across the financial services, engineering, manufacturing and technology industries. David holds a bachelor’s of science degree in Engineering from Carnegie Mellon University and is a Certified Information Systems Security Professional (CISSP).',
           linkedin: 'https://www.linkedin.com/in/david-m-atrostic-3a42005/'
         },
         {
           image: './static/headshots/cm-1.jpg',
           name: 'Chris Moudy',
           title: 'VP Software Development',
-          info: "As vice president of software development, Chris provides technical direction across the company in areas of architectures, software, and information security. In working with ETW business stakeholders and customers, Chris helps define the vision for ETW's technology offerings and shapes ETW's platform and api strategy accordingly to meet the growing demands of technology. Chris holds a B.S. in Computer Science from the University of Iowa and an M.S. in Software Engineering from Southern Methodist University.",
+          info: "Chris provides technical direction across the company in areas of architectures, software, and information security defining the vision for ETW's technology offerings. In working with ETW business stakeholders and customers shapes ETW's platform and api strategy accordingly to meet the growing demands of technology. Holding patents in high performant computer architectures, his passion is to leverage innovative technologies that disrupt the current market, in order to provide an exceptional user experience. Chris holds a B.S. in C.S. from the University of Iowa and an M.S. in S.E. from Southern Methodist University.",
           linkedin: 'https://www.linkedin.com/in/christopher-moudy-750118/'
         },
         {
