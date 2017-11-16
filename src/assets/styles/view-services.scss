@@ -21,5 +21,29 @@
 }
 
 @include tablet {
+  .services-proposals {
+    background-image: url(../../../static/backgrounds/services-workshops.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+  }
 
+  .services-retreats {
+    position: relative;
+
+    :before {
+      content: '';
+      background-image: url(../../../static/backgrounds/Triangles.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: cover;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: .05;
+    }
+  }
 }

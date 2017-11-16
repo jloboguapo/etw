@@ -13,6 +13,18 @@
     background-position: top center;
     background-size: cover;
     margin-bottom: 40px;
+    position: relative;
+
+    :before {
+      content: '';
+      background-image: url(../../../static/backgrounds/code.png);
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+    }
 
     .hero-body {
       background-image: url(../../../static/backgrounds/bg-software-intro.png);

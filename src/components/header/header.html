@@ -32,6 +32,10 @@
           <div @click="hideMenu()"><strong>Home</strong></div>
         </router-link>
 
+        <router-link :to="{ name: 'about' }" class="navbar-item">
+          <div @click="hideMenu()"><strong>About</strong></div>
+        </router-link>
+
         <router-link :to="{ name: 'services' }" class="navbar-item">
           <div @click="hideMenu()"><strong>Professional Services</strong></div>
         </router-link>

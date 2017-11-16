@@ -17,7 +17,7 @@ export default {
         {
           image: './static/headshots/lb-1.jpg',
           name: 'Lee Benson',
-          title: 'CEO',
+          title: 'CEO and Founder',
           info: 'Lee Benson is the founder and CEO of Execute to Win, a Phoenix-based company that helps organizations drive alignment to winning behaviors and performance through business management systems. Benson specializes in helping CEOs grow their organizations faster and more profitably by holding all employees accountable to behaving like their top-performing employees, creating an intentional culture and cascading strategic performance requirements to every corner of the organization.',
           linkedin: 'https://www.linkedin.com/in/lee-benson-5b6101/'
         },

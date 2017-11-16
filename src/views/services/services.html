@@ -1,9 +1,80 @@
 <div>
 
-  <intro></intro>
+  <!-- INTRO -->
+  <section class="hero is-medium hero-services-intro">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-6">
+            <h1 class="title is-1 m-b-2 has-text-centered sr-intro-title has-text-white">
+              ETW offers a wide range of professional services to better align your organization
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- MAIN PAGE CONTENT -->
   <div class="container">
-    Professional Services
+
+    <section class="hero is-medium services-proposals is-light m-y-2">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-5 is-offset-1">
+            <div class="m-b-2">
+              <h5 class="has-text-grey">PROFESSIONAL SERVICES</h5>
+              <h1 class="title is-1">Workshops and Facilitations</h1>
+            </div>
+            <p class="m-b-2 is-size-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempore nostrum dolor sit! Deserunt voluptate sed quisquam sapiente officia eaque ut odio consectetur nisi, facilis eos aliquam magnam quibusdam necessitatibus.</p>
+            <router-link :to="{ name: 'contact' }" tag="button" class="button is-medium is-rounded is-outlined is-primary">Contact us to request a proposal</router-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <div class="section">
+      <div class="columns is-multiline">
+        <div class="column is-one-third" v-for="service in services">
+          <div class="card is-fullheight">
+            <div class="card-header p-y-1 p-x-1" v-bind:style="`background: ${service.color};`">
+              <p class="card-header-title title is-4 has-text-white">
+                {{ service.title }}
+              </p>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <p class="has-text-grey">{{ service.description }}</p>
+                <div class="tags">
+                  <span class="tag" v-for="tag in service.tags">{{ tag }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CUSTOM PROPOSAL -->
+    <section class="hero is-medium is-dark is-bold services-retreats m-y-2">
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <div class="column is-6">
+            <div class="m-b-2">
+              <h5 class="has-text-grey">CUSTOM PROPOSAL</h5>
+              <h1 class="title is-1">Customized Corporate and Leadership Retreats</h1>
+            </div>
+            <p class="m-b-2 is-size-5">What are you trying to accomplish with your next corporate retreat? We can work with you to put together a custom program that helps you accomplish your goals and address your biggest challenges. Services are customizable and can range from
+              two hour workshops to multi-day strategy, leadership or culture themed programs.</p>
+            <router-link :to="{ name: 'contact' }" tag="button" class="button is-medium is-rounded is-primary">
+              Contact us to request a proposal
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 
 </div>
