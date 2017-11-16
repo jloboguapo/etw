@@ -1,7 +1,7 @@
 .hero-history-intro {
   background-image: url(../../../static/backgrounds/boardroom.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
 
   &:after {
@@ -14,7 +14,7 @@
     margin-bottom: -.625rem !important;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center mid;
     margin-top: -3%;
   }
 

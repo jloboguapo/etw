@@ -1,10 +1,12 @@
 .hero-resources-intro {
-  background: $grey-dark;
-  background-image: url(../../../static/backgrounds/bg-triangles.svg);
-  background-image: url(../../../static/backgrounds/bg-triangles.svg), linear-gradient(to right, $grey-dark 0%,$grey-darker 100%);
+  background-image: url(../../../static/backgrounds/wing.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  .hero-body {
+    background: linear-gradient(180deg, rgba(darken($primary, 30%), .85) 0%, rgba(darken($primary, 15%), .6) 100%);
+  }
 
   &:after {
     content: "";
@@ -17,6 +19,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    margin-top: -3%;
   }
 }
 
