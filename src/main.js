@@ -14,6 +14,8 @@ import lodash from 'lodash'
 import router from './router'
 import ScrollReveal from 'scrollreveal'
 import Vue from 'vue'
+import VueAnalytics from 'vue-analytics'
+import VueGtm from 'vue-gtm'
 import vueScript2 from 'vue-script2'
 
 import Wrapper from './views/wrapper/wrapper.vue'
@@ -58,6 +60,25 @@ Vue.prototype.scrollReveal = ScrollReveal({ reset: true })
  * For loading script tags in the templates
  */
 Vue.use(vueScript2)
+
+/**
+ * Google analytics
+ *
+ * https://github.com/MatteoGabriele/vue-analytics
+ */
+Vue.use(VueAnalytics, {
+  id: 'UA-76992300-1',
+  router
+})
+
+/**
+ * Google Tag Manager
+ *
+ * https://github.com/mib200/vue-gtm
+ */
+Vue.use(VueGtm, {
+  vueRouter: router
+})
 
 /**
  * Vue instance.

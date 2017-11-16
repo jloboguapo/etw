@@ -21,6 +21,8 @@
     "sass-loader": "^6.0.6",
     "scrollreveal": "^3.3.6",
     "vue": "^2.5.2",
+    "vue-analytics": "^5.3.2",
+    "vue-gtm": "^1.0.2",
     "vue-router": "^3.0.1",
     "vue-script2": "^2.0.1",
     "vue-video-player": "^4.0.4"

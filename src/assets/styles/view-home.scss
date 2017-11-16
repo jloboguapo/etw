@@ -50,9 +50,9 @@
 
 @include tablet {
   .section-home-intro {
-    background-image: url(../../../static/backgrounds/laptop-on-wooden-desk-in-office-open-space-picjumbo-com.jpg);
+    background-image: url(../../../static/backgrounds/pan-office.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: top center;
     background-size: cover;
 
     h1.is-1 {
@@ -81,7 +81,7 @@
     }
 
     .hero-body {
-      background: linear-gradient(135deg, rgba(darken($primary, 15%), .80) 0%, rgba(darken($purple, 45%), .80) 100%);
+      background: linear-gradient(135deg, rgba(darken($primary, 15%), .85) 0%, rgba(darken($purple, 45%), .85) 100%);
     }
 
     .button {
