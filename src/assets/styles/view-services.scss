@@ -1,27 +1,27 @@
-.hero-services-intro {
-  background: $grey-dark;
-  background-image: url(../../../static/backgrounds/section-alignment.jpg);
-  background-image: url(../../../static/backgrounds/section-alignment.jpg), linear-gradient(to right, $grey-dark 0%,$black-ter 100%);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+@include mobile {
+  .services-intro {
+    @include header-spacing;
 
-  &:after {
-    content: "";
-    display: block;
-    padding-bottom: 3%;
-    background-image: url(../../../static/backgrounds/round-edge.svg);
-    width: 110%;
-    margin-left: -5%;
-    margin-bottom: -.625rem !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
+    .title.is-1 {
+      font-size: 2rem;
+    }
   }
-}
+};
 
 @include tablet {
-  .services-proposals {
+
+  .services-intro {
+    background-image: url(../../../static/backgrounds/section-alignment.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    &:after {
+      @include swoosh;
+    }
+  }
+
+  .services-professional-services {
     background-image: url(../../../static/backgrounds/services-workshops.jpg);
     background-repeat: no-repeat;
     background-position: right center;
@@ -46,4 +46,5 @@
       opacity: .05;
     }
   }
+
 }

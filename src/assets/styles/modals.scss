@@ -1,0 +1,9 @@
+.modal {
+  animation-duration: 0.5s;
+
+  &.is-wide {
+    .modal-content {
+      width: 80vw;
+    }
+  }
+}
