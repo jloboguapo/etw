@@ -39,7 +39,9 @@
               <h1 class="title is-1 sr-up">Workshops and Facilitations</h1>
             </div>
             <p class="m-b-2 is-size-5 sr-up">The ETW Professional Services team ​brings a practical approach to executive workshops that engages your team to produce actionable results you can apply the very next day.  We specialize in facilitating strategic planning sessions, executive retreats and leadership development workshops.  Have a unique need? Allow us to pull from decades of experience to create ​a custom solution to align your team and produce exceptional results.</p>
-            <router-link :to="{ name: 'contact' }" tag="button" class="button is-medium is-rounded is-outlined is-primary sr-up">Contact us to request a proposal</router-link>
+            <button class="button is-medium is-rounded is-outlined is-primary sr-up" v-on:click="toggleContactModal()">
+              Contact us to request a proposal
+            </button>
           </div>
         </div>
       </div>
@@ -89,9 +91,9 @@
             </div>
             <p class="m-b-2 is-size-5 sr-up">What are you trying to accomplish with your next corporate retreat? We can work with you to put together a custom program that helps you accomplish your goals and address your biggest challenges. Services are customizable and can range from
               two hour workshops to multi-day strategy, leadership or culture themed programs.</p>
-            <router-link :to="{ name: 'contact' }" tag="button" class="button is-medium is-rounded is-primary sr-up">
+            <button class="button is-medium is-rounded is-primary sr-up" v-on:click="toggleContactModal()">
               Contact us to request a proposal
-            </router-link>
+            </button>
           </div>
         </div>
       </div>
@@ -100,5 +102,8 @@
 
   </div>
   <!-- end of container -->
+
+  <!-- CONTACT MODAL -->
+  <modal-contact v-bind:is-active="isContactModalActive" @toggleContactModal="toggleContactModal()"></modal-contact>
 
 </div>

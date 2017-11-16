@@ -1,6 +1,6 @@
 .hero-contact-intro {
   background: $success;
-  background-image: linear-gradient(135deg, darken($success, 15%) 0%, $primary 100%);
+  background-image: linear-gradient(135deg, rgba(darken($success, 15%), .7) 0%, rgba($primary, .7) 100%), url(../../../static/backgrounds/Triangles.png);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;

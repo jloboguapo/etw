@@ -85,7 +85,6 @@ export default {
      * Hide the menu on mobile when link selected
      */
     hideMenu () {
-      console.log('hideMenu')
       this.isActiveMenu = false
     }
 

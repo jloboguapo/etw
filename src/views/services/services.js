@@ -1,4 +1,10 @@
+import ModalContact from '@/components/modal-contact/modal-contact.vue'
+
 export default {
+
+  components: {
+    ModalContact
+  },
 
   data () {
     return {
@@ -51,7 +57,13 @@ export default {
           ],
           color: '#00b7c6'
         }
-      ]
+      ],
+
+      /**
+       * For showing the contact modal
+       * @type {Boolean}
+       */
+      isContactModalActive: false
 
     }
   },
@@ -59,6 +71,16 @@ export default {
   mounted () {
     // animations
     this.scrollReveal.reveal('.sr-up')
+  },
+
+  methods: {
+    /**
+     * Toggle the contact Modal
+     * @return {none}
+     */
+    toggleContactModal () {
+      this.isContactModalActive = !this.isContactModalActive
+    }
   }
 
 }

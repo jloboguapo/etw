@@ -1,19 +1,25 @@
-/*
-|--------------------------------------------------------------------------
-| Pricing Table.
-|--------------------------------------------------------------------------
-|
-|
-*/
+import ModalContact from '@/components/modal-contact/modal-contact.vue'
 
 export default {
 
-  name: 'Pricing',
+  components: {
+    ModalContact
+  },
 
   data () {
     return {
 
-      activePricingTab: 'annual'
+      /**
+       * Active pricing tab
+       * @type {String}
+       */
+      activePricingTab: 'annual',
+
+      /**
+       * For showing the contact modal
+       * @type {Boolean}
+       */
+      isContactModalActive: false
 
     }
   },
@@ -30,6 +36,14 @@ export default {
 
     setPricingTab (activePricingTab) {
       this.activePricingTab = activePricingTab
+    },
+
+    /**
+     * Toggle the contact Modal
+     * @return {none}
+     */
+    toggleContactModal () {
+      this.isContactModalActive = !this.isContactModalActive
     }
 
   }

@@ -1,9 +1,14 @@
 <div class="m-t-5">
 
+  <!-- CONTACT MODAL -->
+  <modal-contact v-bind:is-active="isContactModalActive" @toggleContactModal="toggleContactModal()"></modal-contact>
+
   <section class="section has-text-centered p-b-1">
     <h1 class="title sr-pricing-title">Pricing Plans to Fit Your Organization</h1>
     <h2 class="subtitle is-6 has-text-grey-light m-t-_5">* minimum subscription and implementation fees may apply</h2>
-    <router-link :to="{ name: 'contact' }" tag="button" class="button is-medium is-rounded is-outlined is-primary">Contact us to request a demo</router-link>
+    <button class="button is-medium is-rounded is-outlined is-primary" v-on:click="toggleContactModal()">
+      Contact us to request a demo
+    </button>
   </section>
 
   <section class="section m-b-3">

@@ -7,27 +7,12 @@
 @include tablet {
   .hero-software-intro {
     background: $primary;
-    background-image: linear-gradient(180deg, rgba(darken($primary, 30%), 1) 0%, rgba(darken($primary, 30%), 1) 10%, rgba(darken($primary, 20%), .6) 100%), url(../../../static/backgrounds/code4.png);
+    background-image: linear-gradient(180deg, rgba(darken($primary, 30%), 1) 0%, rgba(darken($primary, 30%), 1) 10%, rgba(darken($primary, 20%), .6) 100%), url(../../../static/backgrounds/code.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     margin-bottom: 40px;
     position: relative;
-
-    :after {
-      content: '';
-      background-image: url(../../../static/backgrounds/bg-triangles.svg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center 200px;
-      display: block;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      opacity: .2;
-    }
 
     .hero-body {
       background-image: url(../../../static/backgrounds/bg-software-intro.png);

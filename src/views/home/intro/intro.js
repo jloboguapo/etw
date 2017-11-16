@@ -6,42 +6,26 @@
 |
 */
 
-import { videoPlayer } from 'vue-video-player'
+import ModalContact from '@/components/modal-contact/modal-contact.vue'
 
 export default {
 
   name: 'Intro',
 
   components: {
-    videoPlayer
+    ModalContact
   },
 
   data () {
     return {
 
       /**
-       * Is the modal for the video player
-       * visible/hidden
+       * For showing the contact modal
        * @type {Boolean}
        */
-      isShowModal: false,
+      isContactModalActive: false
 
-      /**
-       * For Alignment video playback
-       * @type {Object}
-       */
-      videoPlayerOptions: {
-        sources: [{
-          type: 'video/mp4',
-          src: 'https://02-lvl3-pdl.vimeocdn.com/01/180/4/100902001/271028419.mp4?expires=1510681822&token=0c891f27921d1f6595293'
-        }],
-        fluid: true
-      }
     }
-  },
-
-  created () {
-    this.setupTypeform()
   },
 
   mounted () {
@@ -63,41 +47,11 @@ export default {
   methods: {
 
     /**
-     * Show/Hide the intro video modal
+     * Toggle the contact Modal
      * @return {none}
      */
-    toggleModal () {
-      this.isShowModal = !this.isShowModal
-
-      if (!this.isShowModal) {
-        this.$refs.videoPlayer.player.pause()
-      } else {
-        this.$refs.videoPlayer.player.play()
-      }
-    },
-
-    /**
-     * Import the necessary scripts to run
-     * the typeform questionair
-     */
-    setupTypeform () {
-      var qs,
-        js,
-        q,
-        s,
-        d = document,
-        gi = d.getElementById,
-        ce = d.createElement,
-        gt = d.getElementsByTagName,
-        id = 'typef_orm_share',
-        b = 'https://embed.typeform.com/'
-
-      if (!gi.call(d, id)) {
-        js = ce.call(d, 'script')
-        js.id = id; js.src = b + 'embed.js'
-        q = gt.call(d, 'script')[0]
-        q.parentNode.insertBefore(js, q)
-      }
+    toggleContactModal () {
+      this.isContactModalActive = !this.isContactModalActive
     }
   }
 
