@@ -36,14 +36,7 @@ export default {
   },
 
   mounted () {
-    this.scrollReveal.reveal('.sr-about-etw-title')
-
-    this.scrollReveal.reveal('.sr-about-etw-subtitle')
-
-    this.scrollReveal.reveal('.sr-about-etw-sections', {
-      duration: 1000,
-      delay: 200
-    })
+    
   }
 
 }
