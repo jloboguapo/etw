@@ -1,14 +1,3 @@
-/*
-|--------------------------------------------------------------------------
-| Resources page.
-|--------------------------------------------------------------------------
-|
-| The resources and white papers available by ETW.
-|
-*/
-
-import Intro from '@/views/resources/intro/intro.vue'
-
 export default {
 
   data () {
@@ -156,10 +145,6 @@ export default {
     }
   },
 
-  components: {
-    Intro
-  },
-
   computed: {
     filteredResources () {
       return this.resources.filter(resource => {
@@ -170,6 +155,11 @@ export default {
 
   created () {
     this.tags = _.uniq(_.flatMap(this.resources, 'tags'))
+  },
+
+  mounted () {
+    // animations
+    this.scrollReveal.reveal('.sr-up')
   },
 
   methods: {

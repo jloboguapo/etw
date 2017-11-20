@@ -1,31 +1,54 @@
 <div>
 
-  <intro></intro>
 
-  <div class="container">
+  <!--
 
-    <section class="section section-small">
-      <div class="columns">
-        <div class="column is-narrow">
-          <button class="button is-light is-small m-l-_5 m-b-_5" v-bind:class="{'is-primary': searchTag === ''}" @click="toggleSearchTag('')">All</button>
-          <button
-              class="button is-light is-small m-l-_5 m-b-_5"
-              v-for="tag in tags"
-              @click="toggleSearchTag(tag)"
-              v-bind:class="{'is-primary': tag === searchTag}">
-            {{ tag }}
-            <span class="delete is-small m-l-_5" v-if="tag === searchTag"></span>
-        </button>
+  INTRO
+
+  -->
+  <section class="hero is-large is-dark resources-intro">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1 class="title is-1 sr-up">Resources</h1>
+            <h2 class="subtitle sr-up">Insights, Workshops & Implementation</h2>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
+
+
+  <!-- MAIN PAGE CONTENT -->
+  <div class="container">
+
+
+    <!--
+
+    TAG MENU
+
+    -->
+    <section class="section section-small has-text-right">
+      <button class="button is-light is-small m-l-_5 m-b-_5" v-bind:class="{'is-primary': searchTag === ''}" @click="toggleSearchTag('')">All</button>
+      <button class="button is-light is-small m-l-_5 m-b-_5" v-for="tag in tags" @click="toggleSearchTag(tag)" v-bind:class="{'is-primary': tag === searchTag}">
+        {{ tag }}
+        <span class="delete is-small m-l-_5" v-if="tag === searchTag"></span>
+      </button>
     </section>
 
-    <!-- RESOURCES -->
+
+
+    <!--
+
+    RESOURCE CARDS
+
+    -->
     <div class="section">
       <div class="columns is-multiline">
         <div class="column is-one-quarter" v-for="resource in filteredResources">
           <a v-bind:href="resource.file" target="_blank" v-bind:alt="resource.title">
-            <div class="card is-fullheight">
+            <div class="card is-fullheight sr-up">
               <div class="card-image">
                 <figure class="image is-16by9">
                   <img v-bind:src="resource.image" alt="Placeholder image">
@@ -46,6 +69,8 @@
       </div>
     </div>
 
+
   </div>
+  <!-- end of container -->
 
 </div>

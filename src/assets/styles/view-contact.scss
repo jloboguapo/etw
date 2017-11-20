@@ -1,4 +1,14 @@
-.hero-contact-intro {
+@include mobile {
+  .contact-intro {
+    @include header-spacing;
+
+    .title.is-1 {
+      font-size: 2rem;
+    }
+  }
+};
+
+.contact-intro {
   background: $success;
   background-image: linear-gradient(135deg, rgba(darken($success, 15%), .7) 0%, rgba($primary, .7) 100%), url(../../../static/backgrounds/Triangles.png);
   background-repeat: no-repeat;

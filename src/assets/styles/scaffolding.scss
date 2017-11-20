@@ -16,3 +16,10 @@
   background-repeat: no-repeat;
   background-position: center top;
 }
+
+// for the resource cards
+.card {
+  &.is-fullheight {
+    height: 100%;
+  }
+}

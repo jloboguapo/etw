@@ -1,11 +1,3 @@
-/*
-|--------------------------------------------------------------------------
-| Support Page.
-|--------------------------------------------------------------------------
-|
-|
-*/
-
 import ModalContact from '@/components/modal-contact/modal-contact.vue'
 
 export default {
@@ -24,6 +16,20 @@ export default {
       isContactModalActive: false
 
     }
+  },
+
+  mounted () {
+    // animations
+    this.scrollReveal.reveal('.sr-up')
+
+    this.scrollReveal.reveal('.sr-left', {
+      origin: 'left'
+    })
+
+    this.scrollReveal.reveal('.sr-right', {
+      origin: 'right',
+      delay: 100
+    })
   },
 
   methods: {

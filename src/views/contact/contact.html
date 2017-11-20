@@ -1,22 +1,31 @@
 <div>
 
-  <!-- SALES CONTACT MODAL -->
+  <!--
+
+  SALES CONTACT MODAL
+
+  -->
   <modal-contact
       v-bind:is-active="isContactModalActive"
       @toggleContactModal="toggleContactModal()">
   </modal-contact>
 
 
-  <section class="hero is-medium hero-contact-intro p-t-5">
-
-    <!-- CONTACT TITLE AND ADDRESS -->
-    <div class="hero-head p-t-4">
+  <section class="hero is-medium contact-intro">
+    <div class="hero-body">
       <div class="container">
-        <div class="columns">
+
+
+        <!--
+
+        CONTACT TITLE AND ADDRESS
+
+        -->
+        <div class="columns m-b-3">
           <div class="column is-8 is-offset-2 has-text-centered">
-            <h1 class="title is-1 has-text-white">Contact Us</h1>
-            <h2 class="subtitle is-4 has-text-white">Get in touch and let us know how we can help.</h2>
-            <p class="is-5 has-text-white">
+            <h1 class="title is-1 has-text-white sr-up">Contact Us</h1>
+            <h2 class="subtitle is-4 has-text-white sr-up">Get in touch and let us know how we can help.</h2>
+            <p class="is-5 has-text-white sr-up">
               25 S. Arizona Place, Ste. 510, Chandler, AZ 85225
               <span class="has-text-grey-light m-x-1">|</span>
               Phone: 480.638.9300
@@ -25,17 +34,18 @@
             </p>
           </div>
         </div>
-      </div>
-    </div>
 
 
-    <div class="hero-body">
-      <div class="container">
+        <!-- CARDS -->
         <div class="columns is-centered">
 
-          <!-- SALES CARD -->
+          <!--
+
+          SALES CARD
+
+          -->
           <div class="column is-4">
-            <div class="card">
+            <div class="card sr-left">
               <div class="card-content p-a-5">
                 <p class="title is-3 has-text-centered m-b-3">
                   Sales
@@ -50,9 +60,13 @@
             </div>
           </div>
 
-          <!-- SUPPORT CARD -->
+          <!--
+
+          SUPPORT CARD
+
+          -->
           <div class="column is-4">
-            <div class="card">
+            <div class="card sr-right">
               <div class="card-content p-a-5">
                 <p class="title is-3 has-text-centered m-b-3">
                   Help &amp; Support
@@ -68,6 +82,7 @@
           </div>
 
         </div>
+
       </div>
     </div>
   </section>
