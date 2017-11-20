@@ -25,9 +25,9 @@ export default {
   },
 
   mounted () {
-    this.scrollReveal.reveal('.sr-pricing-title')
+    this.scrollReveal.reveal('.sr-up')
 
-    this.scrollReveal.reveal('.sr-pricing-subtitle', {
+    this.scrollReveal.reveal('.sr-up-delay', {
       delay: 100
     })
   },

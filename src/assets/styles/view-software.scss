@@ -1,11 +1,36 @@
 @include mobile {
-  .hero-software-intro {
-    background: $grey-darker;
+  .software-intro {
+    @include header-spacing;
+
+    .title.is-1 {
+      font-size: 2rem;
+    }
+
+    .store-button {
+      height: 45px;
+    }
+  }
+
+  .software-focus {
+    .media-left {
+      display: none;
+    }
+  }
+
+  .pricing-table {
+    display: block;
+
+    .pricing-plan {
+      &.is-active {
+        transform: scale(1);
+        box-shadow: none;
+      }
+    }
   }
 }
 
 @include tablet {
-  .hero-software-intro {
+  .software-intro {
     background: $primary;
     background-image: linear-gradient(180deg, rgba(darken($primary, 30%), 1) 0%, rgba(darken($primary, 30%), 1) 10%, rgba(darken($primary, 20%), .6) 100%), url(../../../static/backgrounds/code.jpg);
     background-repeat: no-repeat;
@@ -41,7 +66,7 @@
     }
   }
 
-  .section-software-notes {
+  .software-notes {
     background-image: url("../../../static/backgrounds/software-notes.svg");
     background-position: left center;
   }
@@ -50,17 +75,17 @@
     animation-delay: 2s;
   }
 
-  .section-software-kpi {
+  .software-kpi {
     background-image: url("../../../static/backgrounds/software-kpi.jpg");
     background-position: left top;
   }
 
-  .section-software-evaluations {
+  .software-evaluations {
     background-image: url("../../../static/backgrounds/software-evaluations.jpg");
     background-position: left top;
   }
 
-  .section-software-plans {
+  .software-plans {
     background-image: url("../../../static/backgrounds/software-plans.jpg");
     background-position: left center;
   }

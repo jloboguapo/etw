@@ -3,32 +3,64 @@
   <!-- CONTACT MODAL -->
   <modal-contact v-bind:is-active="isContactModalActive" @toggleContactModal="toggleContactModal()"></modal-contact>
 
+
+  <!--
+
+  INTRODUCTION AND DEMO BUTTON
+
+  -->
   <section class="section has-text-centered p-b-1">
-    <h1 class="title sr-pricing-title">Pricing Plans to Fit Your Organization</h1>
+    <h1 class="title sr-up">Pricing Plans to Fit Your Organization</h1>
     <h2 class="subtitle is-6 has-text-grey-light m-t-_5">* minimum subscription and implementation fees may apply</h2>
-    <button class="button is-medium is-rounded is-outlined is-primary" v-on:click="toggleContactModal()">
-      Contact us to request a demo
+    <button class="button is-medium is-rounded is-outlined is-primary sr-up-delay" v-on:click="toggleContactModal()">
+      <span class="is-hidden-mobile">Contact us to request a demo</span>
+      <span class="is-hidden-tablet">Request demo</span>
     </button>
   </section>
 
+
+  <!--
+
+  TAB NAVIGATION FOR PRICING SWITCH
+
+  -->
   <section class="section m-b-3">
     <div class="tabs is-centered is-boxed is-medium">
       <ul>
-        <li v-bind:class="{'is-active': activePricingTab === 'annual'}">
+        <!-- TABLET SIZE MENU -->
+        <li v-bind:class="{'is-active': activePricingTab === 'annual'}" class="is-hidden-mobile">
           <a v-on:click="setPricingTab('annual')">Annual Contract Pricing</a>
         </li>
-        <li v-bind:class="{'is-active': activePricingTab === 'monthly'}">
+        <li v-bind:class="{'is-active': activePricingTab === 'monthly'}" class="is-hidden-mobile">
           <a v-on:click="setPricingTab('monthly')">Monthly Contract Pricing</a>
+        </li>
+
+        <!-- MOBILE SIZE MENU -->
+        <li v-bind:class="{'is-active': activePricingTab === 'annual'}" class="is-hidden-tablet">
+          <a v-on:click="setPricingTab('annual')">Annual</a>
+        </li>
+        <li v-bind:class="{'is-active': activePricingTab === 'monthly'}" class="is-hidden-tablet">
+          <a v-on:click="setPricingTab('monthly')">Monthly</a>
         </li>
       </ul>
     </div>
   </section>
 
-  <div class="pricing-table animated" style="position: absolute; width: 100%;" v-bind:class="{'fadeInLeft': activePricingTab === 'annual', 'fadeOutLeft': activePricingTab === 'monthly'}">
 
+  <!--
+
+  ANNUAL PRICING TABLE
+
+  -->
+  <div
+      class="pricing-table animated"
+      style="position: absolute; width: 100%;"
+      v-bind:class="{'fadeInLeft': activePricingTab === 'annual', 'fadeOutLeft': activePricingTab === 'monthly'}">
+
+    <!-- annual basic plan -->
     <div class="pricing-plan">
       <div class="plan-header">Basic</div>
-      <div class="columns is-gapless">
+      <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
@@ -37,11 +69,12 @@
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>10</span>/month
           </div>
         </div>
-        <div class="is-divider-vertical" data-content="AND"></div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
-              Individual Contributors
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
             </h1>
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>5</span>/month
           </div>
@@ -56,9 +89,10 @@
       </div>
     </div>
 
+    <!-- annual premium plan -->
     <div class="pricing-plan is-active">
       <div class="plan-header">Premium</div>
-      <div class="columns is-gapless">
+      <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
@@ -67,11 +101,12 @@
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>20</span>/month
           </div>
         </div>
-        <div class="is-divider-vertical" data-content="AND"></div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
-              Individual Contributors
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
             </h1>
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>5</span>/month
           </div>
@@ -91,9 +126,10 @@
       </div>
     </div>
 
+    <!-- annual ultimate plan -->
     <div class="pricing-plan is-success">
       <div class="plan-header">Ultimate</div>
-      <div class="columns is-gapless">
+      <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
@@ -102,11 +138,12 @@
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>25</span>/month
           </div>
         </div>
-        <div class="is-divider-vertical" data-content="AND"></div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
-              Individual Contributors
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
             </h1>
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>5</span>/month
           </div>
@@ -120,13 +157,24 @@
         <div class="plan-item">Single Sign On (SSO)</div>
       </div>
     </div>
+
   </div>
+  <!-- end annual plans -->
 
-  <div class="pricing-table animated" v-bind:class="{'fadeInRight': activePricingTab === 'monthly', 'fadeOutRight': activePricingTab === 'annual'}">
 
+  <!--
+
+  MONTHLY PRICING TABLE
+
+  -->
+  <div
+      class="pricing-table animated"
+      v-bind:class="{'fadeInRight': activePricingTab === 'monthly', 'fadeOutRight': activePricingTab === 'annual'}">
+
+    <!-- monthly basic plan -->
     <div class="pricing-plan">
       <div class="plan-header">Basic</div>
-      <div class="columns is-gapless">
+      <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
@@ -135,11 +183,12 @@
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>12</span>/month
           </div>
         </div>
-        <div class="is-divider-vertical" data-content="AND"></div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
-              Individual Contributors
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
             </h1>
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>7</span>/month
           </div>
@@ -154,9 +203,10 @@
       </div>
     </div>
 
+    <!-- monthly premium plan -->
     <div class="pricing-plan is-active">
       <div class="plan-header">Premium</div>
-      <div class="columns is-gapless">
+      <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
@@ -165,11 +215,12 @@
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>25</span>/month
           </div>
         </div>
-        <div class="is-divider-vertical" data-content="AND"></div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
-              Individual Contributors
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
             </h1>
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>7</span>/month
           </div>
@@ -189,9 +240,10 @@
       </div>
     </div>
 
+    <!-- monthly ultimate plan -->
     <div class="pricing-plan is-success">
       <div class="plan-header">Ultimate</div>
-      <div class="columns is-gapless">
+      <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
@@ -200,11 +252,12 @@
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>30</span>/month
           </div>
         </div>
-        <div class="is-divider-vertical" data-content="AND"></div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
         <div class="column">
           <div class="plan-price">
             <h1 class="title is-6">
-              Individual Contributors
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
             </h1>
             <span class="plan-price-amount"><span class="plan-price-currency">$</span>7</span>/month
           </div>
@@ -218,6 +271,9 @@
         <div class="plan-item">Single Sign On (SSO)</div>
       </div>
     </div>
+
   </div>
+  <!-- end montly plans -->
+
 
 </div>
