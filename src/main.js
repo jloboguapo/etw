@@ -9,7 +9,6 @@
 */
 
 import $ from 'jquery'
-import axios from 'axios'
 import lodash from 'lodash'
 import router from './router'
 import ScrollReveal from 'scrollreveal'
@@ -33,13 +32,6 @@ window.$ = window.jQuery = $
  * mode. Turn off in production.
  */
 Vue.config.productionTip = false
-
-/**
- * Mount Axios globally.
- *
- * For http request.
- */
-Vue.prototype.axios = axios
 
 /**
  * Mount lodash globally.

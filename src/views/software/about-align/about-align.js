@@ -8,8 +8,6 @@
 
 export default {
 
-  name: 'AboutAlign',
-
   data () {
     return {
 
@@ -19,7 +17,7 @@ export default {
        */
       aboutETW: [{
         title: 'Increased Employee Alignment',
-        body: "Transparency increases accountability and promotes a complete understanding of how each and every employee's role a ects the success of the company. Give employees transparency into top company goals for a highly engaged workforce.",
+        body: "Transparency increases accountability and promotes a complete understanding of how each and every employee's role affects the success of the company. Give employees transparency into top company goals for a highly engaged workforce.",
         image: '../../../../static/thumb_engagement.jpg'
       },
       {

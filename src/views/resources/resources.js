@@ -20,36 +20,6 @@ export default {
        */
       resources: [
         {
-          title: 'Create a Winning Culture',
-          description: 'At the end of the workshop Senior Leadership Teams will understand the Ideology of Intentional Culture and how to create a winning culture in their organization.',
-          file: '../../../static/resources/Workshop-Create_a_Winning_Culture.pdf',
-          image: '../../../static/resources/images/winning-culture.jpg',
-          tags: [
-            'interactive workshops'
-          ]
-        },
-
-        {
-          title: 'Effective Manager Conversations',
-          description: 'At the end of the workshop Senior Leadership Teams will understand the three most important conversations managers should be having and when to have them.',
-          file: '../../../static/resources/Workshop-Effective_Manager_Conversations.pdf',
-          image: '../../../static/resources/images/manager-coversations.jpg',
-          tags: [
-            'interactive workshops'
-          ]
-        },
-
-        {
-          title: 'Connecting Employees to Strategy',
-          description: 'At the end of the workshop Senior Leaders and their Management Teams will understand the processes and practices necessary to create and execute a winning strategy in their organization.',
-          file: '../../../static/resources/Workshop-ConnectingEmployeestoStrategy.pdf',
-          image: '../../../static/resources/images/connecting-employees.jpg',
-          tags: [
-            'interactive workshops'
-          ]
-        },
-
-        {
           title: 'Implementation Overview',
           description: 'Information Sheet.',
           file: '../../../static/resources/Implementation_Overview-1.27.17.pdf',
