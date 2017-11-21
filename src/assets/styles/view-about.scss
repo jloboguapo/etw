@@ -1,65 +1,72 @@
-.hero-history-intro {
-  background-image: url(../../../static/backgrounds/boardroom.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+@include mobile {
+  .about-intro {
+    @include header-spacing;
 
-  &:after {
-    content: "";
-    display: block;
-    padding-bottom: 3%;
-    background-image: url(../../../static/backgrounds/round-edge.svg);
-    width: 110%;
-    margin-left: -5%;
-    margin-bottom: -.625rem !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center mid;
-    margin-top: -3%;
+    .title.is-1 {
+      font-size: 2rem;
+    }
   }
-
-  .hero-body {
-    background: linear-gradient(135deg, rgba(darken($primary, 40%), .80) 0%, rgba(darken($primary, 0%), .80) 100%);
-  }
-
-  h1.is-1 {
-    font-size: 4rem;
-    line-height: 5rem;
-    font-weight: 700;
-  }
-
-  .highlighted {
-    text-decoration: underline;
-    text-decoration-color: $warning;
-  }
-}
+};
 
 @include tablet {
-  .section-about-about {
+
+  .about-intro {
+    background-image: url(../../../static/backgrounds/boardroom.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 3%;
+      background-image: url(../../../static/backgrounds/round-edge.svg);
+      width: 110%;
+      margin-left: -5%;
+      margin-bottom: -.625rem !important;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center mid;
+      margin-top: -3%;
+    }
+
+    .hero-body {
+      background: linear-gradient(135deg, rgba(darken($primary, 40%), .80) 0%, rgba(darken($primary, 0%), .80) 100%);
+    }
+
+    h1.is-1 {
+      font-size: 4rem;
+      line-height: 5rem;
+      font-weight: 700;
+    }
+  }
+
+  .about-improve-alignment {
     background-image: url(../../../static/backgrounds/bg-office-one.jpg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
   }
 
-  .section-about-how-we-do-this {
+  .about-our-approach {
     background-image: url(../../../static/backgrounds/about-how-we-do-this.jpg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: cover;
   }
 
-  .section-about-different {
+  .about-application {
     background-image: url(../../../static/backgrounds/about-etw-2.jpg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
   }
 
-  .section-about-best-time-to-implement {
+  .about-mos {
     background-image: url(../../../static/backgrounds/section-about-best-time-to-implement.jpg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: cover;
   }
+
 }

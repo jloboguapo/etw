@@ -48,19 +48,16 @@ export default {
       delay: 100
     })
 
-    // app store button
     this.scrollReveal.reveal('.sr-app-store', {
       origin: 'left',
       delay: 100
     })
 
-    // google play button
     this.scrollReveal.reveal('.sr-google-play', {
       origin: 'right',
       delay: 150
     })
 
-    // screenshot of the desktop and mobile app
     this.scrollReveal.reveal('.sr-screenshots', {
       delay: 300
     })
