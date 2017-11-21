@@ -1,13 +1,22 @@
 <div>
 
-  <section class="section is-medium p-b-5">
-    <div class="container has-text-centered">
-      <h3 class="title is-3">What customers are saying about ETW</h3>
-      <h4 class="subtitle has-text-grey">Testimonials and Success Stories</h4>
-    </div>
+
+  <!--
+
+  TESTIMONIALS SECTION HEADING
+
+  -->
+  <section class="section is-medium has-text-centered p-b-5">
+    <h3 class="title is-3 sr-up">What customers are saying about ETW</h3>
+    <h4 class="subtitle has-text-grey sr-up-delay">Testimonials and Success Stories</h4>
   </section>
 
-    <!-- PRIMARY TESTIMONIALS  -->
+
+    <!--
+
+    TESTIMONIAL CARDS
+
+    -->
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-4 m-b-2 animated fadeIn" v-for="primaryTestimonial in filteredTestimonials">
@@ -31,8 +40,15 @@
       </div>
     </div>
 
-    <div class="has-text-centered m-y-1">
+
+    <!--
+
+    SHOW MORE TESTIMONIALS
+
+    -->
+    <div class="has-text-centered m-y-1 sr-up">
       <button class="button is-medium is-rounded is-outlined is-primary" v-if="isShowMoreTestimonials" @click="showMoreTestimonials()">Show more testimonials</button>
     </div>
+
 
 </div>

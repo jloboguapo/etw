@@ -1,10 +1,10 @@
 <div>
 
   <!-- HERO SECTION -->
-  <section class="hero is-dark is-medium section-home-intro">
+  <section class="hero is-dark is-medium home-intro">
     <div class="hero-body">
       <div class="container">
-        <div class="columns m-y-2">
+        <div class="columns">
           <div class="column is-offset-1">
             <h1 class="title is-1 sr-intro-title has-text-white">
               What if your employees were 100% aligned to leadership, strategy and culture?
@@ -14,10 +14,10 @@
             <div class="columns is-centered">
               <div class="column is-narrow has-text-right">
                 <h2 class="subtitle is-3 has-text-right has-text-white">
-                  <span class="bullets"><span class="has-text-grey-light">Better</span> <strong class="has-text-light">Alignment</strong></span><br>
-                  <span class="bullets"><span class="has-text-grey-light">Drives better</span> <strong class="has-text-light">Conversations</strong></span><br>
-                  <span class="bullets"><span class="has-text-grey-light">Leading to better</span> <strong class="has-text-light">Actions</strong></span><br>
-                  <span class="bullets"><span class="has-text-grey-light">Producing extraordinary</span> <strong class="has-text-light">Results</strong></span>
+                  <span class="bullets sr-bullets"><span class="has-text-grey-light">Better</span> <strong class="has-text-light">Alignment</strong></span><br>
+                  <span class="bullets sr-bullets"><span class="has-text-grey-light">Drives better</span> <strong class="has-text-light">Conversations</strong></span><br>
+                  <span class="bullets sr-bullets"><span class="has-text-grey-light">Leading to better</span> <strong class="has-text-light">Actions</strong></span><br>
+                  <span class="bullets sr-bullets"><span class="has-text-grey-light">Producing extraordinary</span> <strong class="has-text-light">Results</strong></span>
                 </h2>
                 <button class="button is-large is-rounded is-primary m-t-2" v-on:click="toggleContactModal()">
                   Contact us to get started
@@ -48,7 +48,9 @@
     </div>
   </section>
 
+
   <!-- CONTACT MODAL -->
   <modal-contact v-bind:is-active="isContactModalActive" @toggleContactModal="toggleContactModal()"></modal-contact>
+
 
 </div>

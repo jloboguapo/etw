@@ -122,6 +122,14 @@ export default {
     }
   },
 
+  mounted () {
+    this.scrollReveal.reveal('.sr-up')
+
+    this.scrollReveal.reveal('.sr-up-delay', {
+      delay: 100
+    })
+  },
+
   methods: {
     showMoreTestimonials () {
       this.isShowMoreTestimonials = false

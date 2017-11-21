@@ -36,7 +36,7 @@ export default {
       origin: 'top'
     })
 
-    this.scrollReveal.reveal('.bullets', {
+    this.scrollReveal.reveal('.sr-bullets', {
       duration: 400,
       delay: 100,
       scale: 1,

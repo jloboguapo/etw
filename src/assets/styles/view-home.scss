@@ -1,55 +1,21 @@
-.section-home-intro {
-  position: relative;
-}
-
 @include mobile {
+  .home-intro {
+    @include header-spacing;
+    padding-bottom: 5rem;
 
-  .section-home-about {
-    background: $white-bis;
-    background-image: none;
-  }
-
-  .section-about-etw {
-    background: $white-bis;
-  }
-
-  .section-home-intro {
-    .scroll-down {
-      display: none;
-    }
-
-    h1.is-1 {
+    .title.is-1 {
       font-size: 2rem;
-      line-height: 2rem;
-      font-weight: 700;
-      text-align: center;
     }
-  }
 
-  .section-intro {
-    padding-top: 3rem;
-    background: $dark;
-  }
-
-  .section-bms {
-    background: $white-ter;
-  }
-
-  .section-professional-services {
-    background: $white-bis;
-  }
-
-  .section-software-home {
-    background: $white-bis;
-  }
-
-  .section-testimonials {
-    background: $white-ter;
+    .subtitle.is-3 {
+      font-size: 1.5rem;
+    }
   }
 }
 
 @include tablet {
-  .section-home-intro {
+
+  .home-intro {
     background-image: url(../../../static/backgrounds/boardroom.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -59,11 +25,6 @@
       font-size: 4rem;
       line-height: 5rem;
       font-weight: 700;
-    }
-
-    .highlighted {
-      text-decoration: underline;
-      text-decoration-color: $warning;
     }
 
     &:after {
@@ -90,28 +51,26 @@
 
   }
 
-  .section-bms {
-    background: $white-ter;
-  }
-
-  .section-home-about {
+  .home-improving-alignment {
     background-image: url(../../../static/backgrounds/section-about.jpg);
     background-size: cover;
     background-position: right top;
   }
 
-  .section-professional-services {
+  .home-professional-services {
     background-image: url(../../../static/backgrounds/section-services.jpg);
     background-size: cover;
   }
 
-  .section-software {
+  .home-software {
     background-image: url(../../../static/backgrounds/section-software.jpg);
     background-size: cover;
     background-position: center top;
   }
 
-  .section-testimonials {
-    background: $white-ter;
-  }
+}
+
+// for the scorll down
+.home-intro {
+  position: relative;
 }
