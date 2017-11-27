@@ -2,13 +2,14 @@
 
   <!--
 
-  SALES CONTACT MODAL
+  HUBSPOT MODAL
 
   -->
-  <modal-contact
-      v-bind:is-active="isContactModalActive"
-      @toggleContactModal="toggleContactModal()">
-  </modal-contact>
+  <modal-hubspot
+      v-bind:is-active="isModalActive"
+      modal-title="Contact ETW Sales"
+      @toggleModal="toggleModal()">
+  </modal-hubspot>
 
 
   <section class="hero is-medium contact-intro">
@@ -55,7 +56,7 @@
                 </p>
               </div>
               <footer class="card-footer bg-white-ter">
-                <a class="card-footer-item" v-on:click="toggleContactModal()">Contact Sales</a>
+                <a class="card-footer-item" v-on:click="toggleModal()">Contact Sales</a>
               </footer>
             </div>
           </div>

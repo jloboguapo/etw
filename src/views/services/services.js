@@ -1,9 +1,9 @@
-import ModalContact from '@/components/modal-contact/modal-contact.vue'
+import ModalHubspot from '@/components/modal-hubspot/modal-hubspot.vue'
 
 export default {
 
   components: {
-    ModalContact
+    ModalHubspot
   },
 
   data () {
@@ -63,7 +63,13 @@ export default {
        * For showing the contact modal
        * @type {Boolean}
        */
-      isContactModalActive: false
+      isContactModalActive: false,
+
+      /**
+       * For showing the custom services contact modal
+       * @type {Boolean}
+       */
+      isCustomServicesModalActive: false
 
     }
   },
@@ -80,6 +86,14 @@ export default {
      */
     toggleContactModal () {
       this.isContactModalActive = !this.isContactModalActive
+    },
+
+    /**
+     * Toggle the custom services contact Modal
+     * @return {none}
+     */
+    toggleCustomServicesModal () {
+      this.isCustomServicesModalActive = !this.isCustomServicesModalActive
     }
   }
 

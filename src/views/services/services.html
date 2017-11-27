@@ -92,7 +92,7 @@
             </div>
             <p class="m-b-2 is-size-5 sr-up">What are you trying to accomplish with your next corporate retreat? We can work with you to put together a custom program that helps you accomplish your goals and address your biggest challenges. Services are customizable and can range from
               two hour workshops to multi-day strategy, leadership or culture themed programs.</p>
-            <button class="button is-medium is-rounded is-primary sr-up" v-on:click="toggleContactModal()">
+            <button class="button is-medium is-rounded is-primary sr-up" v-on:click="toggleCustomServicesModal()">
               <span class="is-hidden-mobile">Contact us to request a proposal</span>
               <span class="is-hidden-tablet">Request proposal</span>
             </button>
@@ -105,7 +105,32 @@
   </div>
   <!-- end of container -->
 
-  <!-- CONTACT MODAL -->
-  <modal-contact v-bind:is-active="isContactModalActive" @toggleContactModal="toggleContactModal()"></modal-contact>
+
+  <!--
+
+  PROFESSIONAL SERVICES CONTACT MODAL
+
+  -->
+  <modal-hubspot
+      v-bind:is-active="isContactModalActive"
+      modal-id="contact"
+      modal-title="Contact Professional Services"
+      form-id="cd84c977-d3a4-46d1-915e-59c7a9cc6deb"
+      @toggleModal="toggleContactModal()">
+  </modal-hubspot>
+
+
+  <!--
+
+  CUSTOM PROFESSIONAL SERVICES CONTACT MODAL
+
+  -->
+  <modal-hubspot
+      v-bind:is-active="isCustomServicesModalActive"
+      modal-id="services"
+      modal-title="Custom Professional Services"
+      form-id="fe155ab5-8a6a-49a3-8a5f-71a34ba6dfdc"
+      @toggleModal="toggleCustomServicesModal()">
+  </modal-hubspot>
 
 </div>

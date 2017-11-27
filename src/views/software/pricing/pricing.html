@@ -1,7 +1,16 @@
 <div class="m-t-5">
 
-  <!-- CONTACT MODAL -->
-  <modal-contact v-bind:is-active="isContactModalActive" @toggleContactModal="toggleContactModal()"></modal-contact>
+  <!--
+
+  HUBSPOT MODAL
+
+  -->
+  <modal-hubspot
+      v-bind:is-active="isModalActive"
+      modal-title="Request a Demo"
+      form-id="6131a846-42ec-448b-8da8-278458485672"
+      @toggleModal="toggleModal()">
+  </modal-hubspot>
 
 
   <!--
@@ -12,7 +21,7 @@
   <section class="section has-text-centered p-b-1">
     <h1 class="title sr-up">Pricing Plans to Fit Your Organization</h1>
     <h2 class="subtitle is-6 has-text-grey-light m-t-_5">* minimum subscription and implementation fees may apply</h2>
-    <button class="button is-medium is-rounded is-outlined is-primary sr-up-delay" v-on:click="toggleContactModal()">
+    <button class="button is-medium is-rounded is-outlined is-primary sr-up-delay" v-on:click="toggleModal()">
       <span class="is-hidden-mobile">Contact us to request a demo</span>
       <span class="is-hidden-tablet">Request demo</span>
     </button>

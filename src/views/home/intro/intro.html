@@ -19,7 +19,7 @@
                   <span class="bullets sr-bullets"><span class="has-text-grey-light">Leading to better</span> <strong class="has-text-light">Actions</strong></span><br>
                   <span class="bullets sr-bullets"><span class="has-text-grey-light">Producing extraordinary</span> <strong class="has-text-light">Results</strong></span>
                 </h2>
-                <button class="button is-large is-rounded is-primary m-t-2" v-on:click="toggleContactModal()">
+                <button class="button is-large is-rounded is-primary m-t-2" v-on:click="toggleModal()">
                   Contact us to get started
                 </button>
               </div>
@@ -49,8 +49,17 @@
   </section>
 
 
-  <!-- CONTACT MODAL -->
-  <modal-contact v-bind:is-active="isContactModalActive" @toggleContactModal="toggleContactModal()"></modal-contact>
+  <!--
+
+  CONTACT MODAL
+
+  -->
+  <modal-hubspot
+      modal-id="contact"
+      modal-title="Contact ETW Sales"
+      v-bind:is-active="isModalActive"
+      @toggleModal="toggleModal()">
+  </modal-hubspot>
 
 
 </div>

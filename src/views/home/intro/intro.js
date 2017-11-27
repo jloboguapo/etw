@@ -6,14 +6,14 @@
 |
 */
 
-import ModalContact from '@/components/modal-contact/modal-contact.vue'
+import ModalHubspot from '@/components/modal-hubspot/modal-hubspot.vue'
 
 export default {
 
   name: 'Intro',
 
   components: {
-    ModalContact
+    ModalHubspot
   },
 
   data () {
@@ -23,7 +23,7 @@ export default {
        * For showing the contact modal
        * @type {Boolean}
        */
-      isContactModalActive: false
+      isModalActive: false
 
     }
   },
@@ -50,8 +50,8 @@ export default {
      * Toggle the contact Modal
      * @return {none}
      */
-    toggleContactModal () {
-      this.isContactModalActive = !this.isContactModalActive
+    toggleModal () {
+      this.isModalActive = !this.isModalActive
     }
   }
 
