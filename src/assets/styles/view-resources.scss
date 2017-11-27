@@ -11,7 +11,7 @@
 
 @include tablet {
   .resources-intro {
-    background-image: url(../../../static/backgrounds/wing.jpg);
+    background-image: url(../../../static/images/backgrounds/wing.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -24,7 +24,7 @@
       content: "";
       display: block;
       padding-bottom: 3%;
-      background-image: url(../../../static/backgrounds/round-edge.svg);
+      background-image: url(../../../static/images/backgrounds/round-edge.svg);
       width: 110%;
       margin-left: -5%;
       margin-bottom: -.625rem !important;

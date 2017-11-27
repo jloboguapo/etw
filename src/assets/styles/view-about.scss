@@ -11,7 +11,7 @@
 @include tablet {
 
   .about-intro {
-    background-image: url(../../../static/backgrounds/boardroom.jpg);
+    background-image: url(../../../static/images/backgrounds/boardroom.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -20,7 +20,7 @@
       content: "";
       display: block;
       padding-bottom: 3%;
-      background-image: url(../../../static/backgrounds/round-edge.svg);
+      background-image: url(../../../static/images/backgrounds/round-edge.svg);
       width: 110%;
       margin-left: -5%;
       margin-bottom: -.625rem !important;
@@ -42,28 +42,28 @@
   }
 
   .about-improve-alignment {
-    background-image: url(../../../static/backgrounds/bg-office-one.jpg);
+    background-image: url(../../../static/images/backgrounds/bg-office-one.jpg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
   }
 
   .about-our-approach {
-    background-image: url(../../../static/backgrounds/about-how-we-do-this.jpg);
+    background-image: url(../../../static/images/backgrounds/about-how-we-do-this.jpg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: cover;
   }
 
   .about-application {
-    background-image: url(../../../static/backgrounds/about-etw-2.jpg);
+    background-image: url(../../../static/images/backgrounds/about-etw-2.jpg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
   }
 
   .about-mos {
-    background-image: url(../../../static/backgrounds/section-about-best-time-to-implement.jpg);
+    background-image: url(../../../static/images/backgrounds/section-about-best-time-to-implement.jpg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: cover;

@@ -32,7 +32,7 @@
 @include tablet {
   .software-intro {
     background: $primary;
-    background-image: linear-gradient(180deg, rgba(darken($primary, 30%), 1) 0%, rgba(darken($primary, 30%), 1) 10%, rgba(darken($primary, 20%), .6) 100%), url(../../../static/backgrounds/code.jpg);
+    background-image: linear-gradient(180deg, rgba(darken($primary, 30%), 1) 0%, rgba(darken($primary, 30%), 1) 10%, rgba(darken($primary, 20%), .6) 100%), url(../../../static/images/backgrounds/code.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -40,7 +40,7 @@
     position: relative;
 
     .hero-body {
-      background-image: url(../../../static/backgrounds/bg-software-intro.png);
+      background-image: url(../../../static/images/backgrounds/bg-software-intro.png);
       background-position: top center;
       background-repeat: no-repeat;
       background-size: 600px auto;
@@ -51,7 +51,7 @@
       content: "";
       display: block;
       padding-bottom: 3%;
-      background-image: url(../../../static/backgrounds/round-edge.svg);
+      background-image: url(../../../static/images/backgrounds/round-edge.svg);
       width: 110%;
       margin-left: -5%;
       margin-bottom: -.625rem !important;
@@ -67,7 +67,7 @@
   }
 
   .software-notes {
-    background-image: url("../../../static/backgrounds/software-notes.svg");
+    background-image: url("../../../static/images/backgrounds/software-notes.svg");
     background-position: left center;
   }
 
@@ -76,17 +76,17 @@
   }
 
   .software-kpi {
-    background-image: url("../../../static/backgrounds/software-kpi.jpg");
+    background-image: url("../../../static/images/backgrounds/software-kpi.jpg");
     background-position: left top;
   }
 
   .software-evaluations {
-    background-image: url("../../../static/backgrounds/software-evaluations.jpg");
+    background-image: url("../../../static/images/backgrounds/software-evaluations.jpg");
     background-position: left top;
   }
 
   .software-plans {
-    background-image: url("../../../static/backgrounds/software-plans.jpg");
+    background-image: url("../../../static/images/backgrounds/software-plans.jpg");
     background-position: left center;
   }
 
