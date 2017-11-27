@@ -16,23 +16,23 @@ export default {
       services: [
         {
           title: 'Strategic Planning',
-          description: 'How much of your strategy did you accomplish last year? Was the process overly complex and academic? Was your strategy executable? This facilitation is customized to address your organization’s unique challenges, engage your leadership team and deliver an executable strategy.',
+          description: 'How much of your strategy did you accomplish last year?  How effective is your strategic planning process?  Is your planning process too focused on “the process” and not enough on the results it is supposed to produce?  This facilitation and all of its pre-work takes a practical and actionable approach to assessing your industry, addressable markets, competition and your ability to execute.  ETW will provide a framework to keep all leaders on the leading edge of where they need to create more value next in order to achieve or beat your strategic objectives.',
           tags: [
             'facilitation'
           ],
           color: '#276681'
         }, {
           title: 'Intentional Leadership',
-          description: 'What would be different for your organization if you could clearly and objectively define the kind of leadership you need to accomplish the results you want and hold every leader in the organization accountable to them? This facilitation will help you define the ideal leadership, management and foundational capabilities for your organization and provides a framework to continually align your leadership team.',
+          description: 'What would be different for your organization if you could objectively define what capable leadership looks like and then develop and hold all of your leaders accountable to this standard? This facilitation will help you define practical and objective actions leaders take to achieve extraordinary results in the categories of leadership, management and foundation building capability. We will then provide a framework to develop leaders significantly faster. This facilitation will weave in the challenges and opportunities your organization is facing today to make it real and to have a lasting positive effect on your organization’s results.',
           tags: [
-            'workshop'
+            'facilitation'
           ],
           color: '#00afef'
         }, {
           title: 'Intentional Culture',
-          description: 'What would happen if more than 50% of your employees were living your culture and behaving like the top 10% of your most admired competitors? This facilitation provides a proven process to objectively define cultural elements such as Mission, Vision and Behaviors so that everyone in the organization knows exactly how they are expected to behave.',
+          description: 'What would be different if you had an intentional high-performance culture that caused team members at all levels in your organization to behave, lead and perform as good or better than the top 10% at your strongest, most admired competitors?  Alignment tools like mission, vision, behaviors and leadership traits should be designed to intentionally and continually improve both your work environment and bottom-line results.  This facilitation will distill out alignment tools that are right for your organization and continually improve employee buy-in, engagement and the results in every corner of your organization.  ETW will provide a framework that makes it easier for all employees to fully live your culture in significantly less time than your competitors.',
           tags: [
-            'workshop'
+            'facilitation'
           ],
           color: '#004438'
         }, {
@@ -43,10 +43,10 @@ export default {
           ],
           color: '#00a85d'
         }, {
-          title: 'Developmental Conversations',
-          description: 'Does your organization conduct performance evaluations or one-to-one meetings that employees love? Are employees and managers having supportive and developmental conversations? This workshop provides a framework that will enhance your evaluations, one-to-ones and other communications that are intended to develop employees and drive accountability.',
+          title: 'Executing On Your Strategy',
+          description: 'How effective is your organization at executing on strategy?  Do you spend at least as much time thinking about how you will execute on strategy as you do coming up with your strategy?  Most leaders say they aren’t fully implementing 20 percent of what they know they should be implementing.  This facilitation provides a framework to more fully sustain and scale executing on your strategic objectives.  ETW’s execution and  alignment process allows your organization to iterate faster and smarter than your competitors.',
           tags: [
-            'workshop'
+            'facilitation'
           ],
           color: '#30383a'
         }, {
