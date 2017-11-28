@@ -28,7 +28,7 @@ export default {
         quote: 'In one fiscal year, Able set out to uncover an additional 25% capacity. The goal was implemented in ETW, and ended up uncovering an additional 40% capacity. This saved Able from hiring 100 unnecessary employees.',
         author: 'Lee Benson',
         role: 'CEO',
-        caseStudy: './static/case-studies/Case_Study-Able_Aerospace.pdf',
+        caseStudy: 'https://offers.etw.com/hubfs/Content%20Offers/Case%20Studies/Able%20Case%20Study.pdf',
         headshot: './static/case-studies/images/lee_benson_etw.jpg'
       }, {
         company: 'US ChemCare',
