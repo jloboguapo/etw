@@ -11,13 +11,14 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const About = () => import('@/views/about/about.vue')
+const Contact = () => import('@/views/contact/contact.vue')
+const CustomerAgreement = () => import('@/views/customer-agreement/customer-agreement.vue')
 const Home = () => import('@/views/home/home.vue')
 const NotFound = () => import('@/views/404/404.vue')
 const Privacy = () => import('@/views/privacy/privacy.vue')
 const Resources = () => import('@/views/resources/resources.vue')
 const Services = () => import('@/views/services/services.vue')
 const Software = () => import('@/views/software/software.vue')
-const Contact = () => import('@/views/contact/contact.vue')
 
 /**
 * Tell Vue to use the vue-router.
@@ -72,6 +73,12 @@ let routes = [
     path: '/contact',
     name: 'contact',
     component: Contact
+  },
+
+  {
+    path: '/customer-agreement',
+    name: 'customer-agreement',
+    component: CustomerAgreement
   },
 
   // For the home page
