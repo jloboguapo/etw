@@ -1,0 +1,36 @@
+// CSS styles for hubspot forms
+
+.hs-form {
+
+  label {
+    @extend .label;
+  }
+
+  .error-message {
+    label {
+      @extend .help;
+      @extend .help.is-danger;
+
+    }
+  }
+
+  input[type='text'], input[type='email'], input[type='tel'] {
+    @extend .input;
+  }
+
+  div.input {
+    border: none;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  .hs-form-checkbox-display {
+    font-weight: normal;
+    padding-bottom: .25rem;
+
+    span {
+      margin-left: .5rem;
+    }
+  }
+}

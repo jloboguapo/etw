@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="159px" height="56px" viewBox="0 0 159 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>brand/horizontal light</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="66.3525772 28.5210667 66.3525772 0.322133333 0.216322148 0.322133333 0.216322148 28.5210667"></polygon>
+        <polygon id="path-3" points="66.3525772 0.322133333 0.216322148 0.322133333 0.216322148 28.5210667 66.3525772 28.5210667"></polygon>
+        <polygon id="path-5" points="0.0318120805 0.297066667 0.0318120805 42.0741333 55.3503691 42.0741333 55.3503691 0.297066667"></polygon>
+        <polygon id="path-7" points="0.0318120805 0.297066667 0.0318120805 42.0741333 55.3503691 42.0741333 55.3503691 0.297066667"></polygon>
+        <polygon id="path-9" points="0.0318120805 0.297066667 0.0318120805 42.0741333 55.3503691 42.0741333 55.3503691 0.297066667"></polygon>
+        <polygon id="path-11" points="0.0318120805 0.297066667 0.0318120805 42.0741333 55.3503691 42.0741333 55.3503691 0.297066667"></polygon>
+        <polygon id="path-13" points="0.0318120805 56 0.0318120805 0.297066667 55.3503691 0.297066667 55.3503691 56"></polygon>
+        <polygon id="path-15" points="0.0318120805 56 0.0318120805 0.297066667 55.3503691 0.297066667 55.3503691 56"></polygon>
+        <polygon id="path-17" points="0.0318120805 56 0.0318120805 0.297066667 55.3503691 0.297066667 55.3503691 56"></polygon>
+        <polygon id="path-19" points="0.0318120805 56 0.0318120805 0.297066667 55.3503691 0.297066667 55.3503691 56"></polygon>
+        <polygon id="path-21" points="0.0318120805 56 0.0318120805 0.297066667 55.3503691 0.297066667 55.3503691 56"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="brand/horizontal-light">
+            <g id="brand-horizontal">
+                <polyline id="Fill-1" fill="#FFFFFF" fill-rule="nonzero" points="67.6229396 14.2693333 88.2011141 14.2693333 88.2011141 18.656 72.4997315 18.656 72.4997315 25.9152 86.4164564 25.9152 86.4164564 30.3024 72.4997315 30.3024 72.4997315 37.8005333 88.3999396 37.8005333 88.3999396 42.1882667 67.6229396 42.1882667 67.6229396 14.2693333"></polyline>
+                <g id="Group-5" transform="translate(91.194631, 13.866667)">
+                    <g id="Fill-2-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <polyline id="Fill-2" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)" points="9.01925503 4.94826667 0.216322148 4.94826667 0.216322148 0.402666667 22.7382148 0.402666667 22.7382148 4.94826667 13.9352819 4.94826667 13.9352819 28.3216 9.01925503 28.3216 9.01925503 4.94826667"></polyline>
+                    </g>
+                    <g id="Fill-4-Clipped">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <polyline id="Fill-4" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-4)" points="24.9565772 0.402666667 30.2310201 0.402666667 36.8527047 21.1018667 43.6726846 0.322133333 47.7960604 0.322133333 54.6160403 21.1018667 61.2377248 0.402666667 66.3531074 0.402666667 56.6785235 28.5210667 52.4750872 28.5210667 45.6551074 8.4592 38.8351275 28.5210667 34.6322215 28.5210667 24.9565772 0.402666667"></polyline>
+                    </g>
+                </g>
+                <polyline id="Fill-6" fill="#00A3DA" fill-rule="nonzero" points="13.8446174 56 13.7173691 42.0741333 27.6855235 42.0741333 13.8446174 56"></polyline>
+                <g id="Group-12">
+                    <g id="Fill-7-Clipped">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="path-3"></g>
+                        <polyline id="Fill-7" fill="#065828" fill-rule="nonzero" mask="url(#mask-6)" points="55.3503691 14.2229333 41.5025705 0.297066667 41.5025705 14.2229333 55.3503691 14.2229333"></polyline>
+                    </g>
+                    <g id="Fill-9-Clipped">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="path-3"></g>
+                        <polyline id="Fill-9" fill="#CBCCCB" fill-rule="nonzero" mask="url(#mask-8)" points="0.000530201342 42.0741333 13.8446174 28.1477333 13.8446174 42.0741333 0.000530201342 42.0741333"></polyline>
+                    </g>
+                    <g id="Fill-10-Clipped">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <g id="path-3"></g>
+                        <polyline id="Fill-10" fill="#CBCCCB" fill-rule="nonzero" mask="url(#mask-10)" points="27.6855235 14.2229333 13.8446174 0.297066667 13.8446174 14.2229333 27.6855235 14.2229333"></polyline>
+                    </g>
+                    <g id="Fill-11-Clipped">
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <g id="path-3"></g>
+                        <polyline id="Fill-11" fill="#4D4E4C" fill-rule="nonzero" mask="url(#mask-12)" points="13.8446174 14.2229333 0.000530201342 14.2229333 13.8446174 28.1477333 13.8446174 14.2229333"></polyline>
+                    </g>
+                </g>
+                <polyline id="Fill-13" fill="#4F433B" fill-rule="nonzero" points="55.3535503 42.0741333 41.5057517 28.1477333 41.5057517 42.0741333 55.3535503 42.0741333"></polyline>
+                <polyline id="Fill-14" fill="#3AAB47" fill-rule="nonzero" points="41.5025705 14.2229333 27.6616644 14.2229333 27.6855235 14.2229333 27.6738591 14.2106667 41.5025705 0.297066667 41.5025705 14.2229333"></polyline>
+                <g id="Group-21">
+                    <g id="Fill-15-Clipped">
+                        <mask id="mask-14" fill="white">
+                            <use xlink:href="#path-13"></use>
+                        </mask>
+                        <g id="path-5"></g>
+                        <polyline id="Fill-15" fill="#358E3C" fill-rule="nonzero" mask="url(#mask-14)" points="27.6855235 14.2229333 27.6616644 14.2229333 27.6738591 14.2106667 27.6855235 14.2229333"></polyline>
+                    </g>
+                    <g id="Fill-17-Clipped">
+                        <mask id="mask-16" fill="white">
+                            <use xlink:href="#path-15"></use>
+                        </mask>
+                        <g id="path-5"></g>
+                        <polyline id="Fill-17" fill="#CBCCCB" fill-rule="nonzero" mask="url(#mask-16)" points="41.5025705 56.0005333 27.6616644 42.0741333 41.5025705 42.0741333 41.5025705 56.0005333"></polyline>
+                    </g>
+                    <g id="Fill-18-Clipped">
+                        <mask id="mask-18" fill="white">
+                            <use xlink:href="#path-17"></use>
+                        </mask>
+                        <g id="path-5"></g>
+                        <polyline id="Fill-18" fill="#CBCCCB" fill-rule="nonzero" mask="url(#mask-18)" points="41.5025705 28.1477333 55.3503691 14.2229333 41.5025705 14.2229333 41.5025705 28.1477333"></polyline>
+                    </g>
+                    <g id="Fill-19-Clipped">
+                        <mask id="mask-20" fill="white">
+                            <use xlink:href="#path-19"></use>
+                        </mask>
+                        <g id="path-5"></g>
+                        <polyline id="Fill-19" fill="#777776" fill-rule="nonzero" mask="url(#mask-20)" points="13.8446174 0.297066667 0.000530201342 14.2229333 13.8446174 14.2229333 13.8446174 0.297066667"></polyline>
+                    </g>
+                    <g id="Fill-20-Clipped">
+                        <mask id="mask-22" fill="white">
+                            <use xlink:href="#path-21"></use>
+                        </mask>
+                        <g id="path-5"></g>
+                        <polyline id="Fill-20" fill="#005070" fill-rule="nonzero" mask="url(#mask-22)" points="13.8446174 42.0741333 13.8446174 56 0.000530201342 42.0741333 13.8446174 42.0741333"></polyline>
+                    </g>
+                </g>
+                <polyline id="Fill-22" fill="#3B332D" fill-rule="nonzero" points="41.5057517 42.0741333 41.5057517 56 55.3535503 42.0741333 41.5057517 42.0741333"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

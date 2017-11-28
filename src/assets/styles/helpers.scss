@@ -1,0 +1,69 @@
+/*
+|--------------------------------------------------------------------------
+| Spacings, Margins and Paddings and Borders
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+@each $key, $value in $spacers {
+   @each $foo, $bar in $sides{
+    .p-#{$foo}-#{$key} {
+      padding#{$bar}: #{$value} !important;
+    };
+
+    .p-x-#{$key} {
+      padding-left: #{$value} !important;
+      padding-right: #{$value} !important;
+    }
+
+    .p-y-#{$key} {
+      padding-top: #{$value} !important;
+      padding-bottom: #{$value} !important;
+    }
+
+    .m-#{$foo}-#{$key} {
+      margin#{$bar}: #{$value} !important;
+    };
+
+    .m-x-#{$key} {
+      margin-left: #{$value} !important;
+      margin-right: #{$value} !important;
+    }
+
+    .m-y-#{$key} {
+      margin-top: #{$value} !important;
+      margin-bottom: #{$value} !important;
+    }
+
+    .b-#{$foo} {
+      border#{$bar}: 1px solid $grey-lighter;
+    }
+  }
+};
+
+// borders x axis
+.b-x {
+  @extend .b-l;
+  @extend .b-r;
+}
+
+// borders y axis
+.b-y {
+  @extend .b-t;
+  @extend .b-b;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Background Colors
+|--------------------------------------------------------------------------
+|
+|
+*/
+
+@each $key, $value in $bulma-colors {
+  .bg-#{$key} {
+    background: #{$value};
+  }
+};

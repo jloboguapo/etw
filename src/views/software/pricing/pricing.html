@@ -1,0 +1,288 @@
+<div class="m-t-5">
+
+  <!--
+
+  HUBSPOT MODAL
+
+  -->
+  <modal-hubspot
+      v-bind:is-active="isModalActive"
+      modal-title="Request a Demo"
+      form-id="6131a846-42ec-448b-8da8-278458485672"
+      @toggleModal="toggleModal()">
+  </modal-hubspot>
+
+
+  <!--
+
+  INTRODUCTION AND DEMO BUTTON
+
+  -->
+  <section class="section has-text-centered p-b-1">
+    <h1 class="title sr-up">Pricing Plans to Fit Your Organization</h1>
+    <h2 class="subtitle is-6 has-text-grey-light m-t-_5">* minimum subscription and implementation fees may apply</h2>
+    <button class="button is-medium is-rounded is-outlined is-primary sr-up-delay" v-on:click="toggleModal()">
+      <span class="is-hidden-mobile">Contact us to request a demo</span>
+      <span class="is-hidden-tablet">Request demo</span>
+    </button>
+  </section>
+
+
+  <!--
+
+  TAB NAVIGATION FOR PRICING SWITCH
+
+  -->
+  <section class="section m-b-3">
+    <div class="tabs is-centered is-boxed is-medium">
+      <ul>
+        <!-- TABLET SIZE MENU -->
+        <li v-bind:class="{'is-active': activePricingTab === 'annual'}" class="is-hidden-mobile">
+          <a v-on:click="setPricingTab('annual')">Annual Contract Pricing</a>
+        </li>
+        <li v-bind:class="{'is-active': activePricingTab === 'monthly'}" class="is-hidden-mobile">
+          <a v-on:click="setPricingTab('monthly')">Monthly Contract Pricing</a>
+        </li>
+
+        <!-- MOBILE SIZE MENU -->
+        <li v-bind:class="{'is-active': activePricingTab === 'annual'}" class="is-hidden-tablet">
+          <a v-on:click="setPricingTab('annual')">Annual</a>
+        </li>
+        <li v-bind:class="{'is-active': activePricingTab === 'monthly'}" class="is-hidden-tablet">
+          <a v-on:click="setPricingTab('monthly')">Monthly</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!--
+
+  ANNUAL PRICING TABLE
+
+  -->
+  <div
+      class="pricing-table animated"
+      style="position: absolute; width: 100%;"
+      v-bind:class="{'fadeInLeft': activePricingTab === 'annual', 'fadeOutLeft': activePricingTab === 'monthly'}">
+
+    <!-- annual basic plan -->
+    <div class="pricing-plan">
+      <div class="plan-header">Basic</div>
+      <div class="columns is-mobile is-gapless">
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Leaders
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>10</span>/month
+          </div>
+        </div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>5</span>/month
+          </div>
+        </div>
+      </div>
+      <div class="plan-items">
+        <div class="plan-item">Personal Goals</div>
+        <div class="plan-item">Manager Assigned Goals</div>
+        <div class="plan-item">Evaluations</div>
+        <div class="plan-item">Stream Communications</div>
+        <div class="plan-item">Standard Roles and Permissions</div>
+      </div>
+    </div>
+
+    <!-- annual premium plan -->
+    <div class="pricing-plan is-active">
+      <div class="plan-header">Premium</div>
+      <div class="columns is-mobile is-gapless">
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Leaders
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>20</span>/month
+          </div>
+        </div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>5</span>/month
+          </div>
+        </div>
+      </div>
+      <div class="plan-items">
+        <div class="plan-item"><strong>Everything in Basic, plus</strong></div>
+        <div class="plan-item">Plans</div>
+        <div class="plan-item">Plan Goals</div>
+        <div class="plan-item">KPIs</div>
+        <div class="plan-item">Team Organization</div>
+        <div class="plan-item">Role Goals</div>
+        <div class="plan-item">Real-time Communications</div>
+        <div class="plan-item">Canned Reports</div>
+        <div class="plan-item">Standard Permissions</div>
+        <div class="plan-item">Companion Mobile Application</div>
+      </div>
+    </div>
+
+    <!-- annual ultimate plan -->
+    <div class="pricing-plan is-success">
+      <div class="plan-header">Ultimate</div>
+      <div class="columns is-mobile is-gapless">
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Leaders
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>25</span>/month
+          </div>
+        </div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>5</span>/month
+          </div>
+        </div>
+      </div>
+      <div class="plan-items">
+        <div class="plan-item"><strong>Everything in Premium, plus</strong></div>
+        <div class="plan-item">API Access</div>
+        <div class="plan-item">Tone Analyzer</div>
+        <div class="plan-item">Custom Permissions</div>
+        <div class="plan-item">Single Sign On (SSO)</div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end annual plans -->
+
+
+  <!--
+
+  MONTHLY PRICING TABLE
+
+  -->
+  <div
+      class="pricing-table animated"
+      v-bind:class="{'fadeInRight': activePricingTab === 'monthly', 'fadeOutRight': activePricingTab === 'annual'}">
+
+    <!-- monthly basic plan -->
+    <div class="pricing-plan">
+      <div class="plan-header">Basic</div>
+      <div class="columns is-mobile is-gapless">
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Leaders
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>12</span>/month
+          </div>
+        </div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>7</span>/month
+          </div>
+        </div>
+      </div>
+      <div class="plan-items">
+        <div class="plan-item">Personal Goals</div>
+        <div class="plan-item">Manager Assigned Goals</div>
+        <div class="plan-item">Evaluations</div>
+        <div class="plan-item">Stream Communications</div>
+        <div class="plan-item">Standard Roles and Permissions</div>
+      </div>
+    </div>
+
+    <!-- monthly premium plan -->
+    <div class="pricing-plan is-active">
+      <div class="plan-header">Premium</div>
+      <div class="columns is-mobile is-gapless">
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Leaders
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>25</span>/month
+          </div>
+        </div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>7</span>/month
+          </div>
+        </div>
+      </div>
+      <div class="plan-items">
+        <div class="plan-item"><strong>Everything in Basic, plus</strong></div>
+        <div class="plan-item">Plans</div>
+        <div class="plan-item">Plan Goals</div>
+        <div class="plan-item">KPIs</div>
+        <div class="plan-item">Team Organization</div>
+        <div class="plan-item">Role Goals</div>
+        <div class="plan-item">Real-time Communications</div>
+        <div class="plan-item">Canned Reports</div>
+        <div class="plan-item">Standard Permissions</div>
+        <div class="plan-item">Companion Mobile Application</div>
+      </div>
+    </div>
+
+    <!-- monthly ultimate plan -->
+    <div class="pricing-plan is-success">
+      <div class="plan-header">Ultimate</div>
+      <div class="columns is-mobile is-gapless">
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              Leaders
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>30</span>/month
+          </div>
+        </div>
+        <div class="is-divider-vertical is-hidden-mobile" data-content="AND"></div>
+        <div class="column">
+          <div class="plan-price">
+            <h1 class="title is-6">
+              <span class="is-hidden-mobile">Individual Contributors</span>
+              <span class="is-hidden-tablet">Individuals</span>
+            </h1>
+            <span class="plan-price-amount"><span class="plan-price-currency">$</span>7</span>/month
+          </div>
+        </div>
+      </div>
+      <div class="plan-items">
+        <div class="plan-item"><strong>Everything in Premium, plus</strong></div>
+        <div class="plan-item">API Access</div>
+        <div class="plan-item">Tone Analyzer</div>
+        <div class="plan-item">Custom Permissions</div>
+        <div class="plan-item">Single Sign On (SSO)</div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end montly plans -->
+
+
+</div>

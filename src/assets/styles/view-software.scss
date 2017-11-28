@@ -1,0 +1,93 @@
+@include mobile {
+  .software-intro {
+    @include header-spacing;
+
+    .title.is-1 {
+      font-size: 2rem;
+    }
+
+    .store-button {
+      height: 45px;
+    }
+  }
+
+  .software-focus {
+    .media-left {
+      display: none;
+    }
+  }
+
+  .pricing-table {
+    display: block;
+
+    .pricing-plan {
+      &.is-active {
+        transform: scale(1);
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .software-intro {
+    background: $primary;
+    background-image: linear-gradient(180deg, rgba(darken($primary, 30%), 1) 0%, rgba(darken($primary, 30%), 1) 10%, rgba(darken($primary, 20%), .6) 100%), url(../../../static/images/backgrounds/code.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    margin-bottom: 40px;
+    position: relative;
+
+    .hero-body {
+      background-image: url(../../../static/images/backgrounds/bg-software-intro.png);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: 600px auto;
+      z-index: map-get($z-indexes, l1);
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 3%;
+      background-image: url(../../../static/images/backgrounds/round-edge.svg);
+      width: 110%;
+      margin-left: -5%;
+      margin-bottom: -.625rem !important;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      margin-top: -3%;
+    }
+
+    .store-button {
+      height: 50px;
+    }
+  }
+
+  .software-notes {
+    background-image: url("../../../static/images/backgrounds/software-notes.svg");
+    background-position: left center;
+  }
+
+  .sr-note-1 {
+    animation-delay: 2s;
+  }
+
+  .software-kpi {
+    background-image: url("../../../static/images/backgrounds/software-kpi.jpg");
+    background-position: left top;
+  }
+
+  .software-evaluations {
+    background-image: url("../../../static/images/backgrounds/software-evaluations.jpg");
+    background-position: left top;
+  }
+
+  .software-plans {
+    background-image: url("../../../static/images/backgrounds/software-plans.jpg");
+    background-position: left center;
+  }
+
+};

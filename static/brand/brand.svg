@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="56px" viewBox="0 0 55 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Brand logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0316120046 0.297066667 0.0316120046 42.0741333 55.0022536 42.0741333 55.0022536 0.297066667 0.0316120046 0.297066667"></polygon>
+        <polygon id="path-3" points="55.0022536 56 0.0316120046 56 0.0316120046 0.297066667 55.0022536 0.297066667 55.0022536 56"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy" transform="translate(-40.000000, -40.000000)">
+            <g id="Header" transform="translate(40.000000, 40.000000)">
+                <g id="Brand-logo">
+                    <polyline id="Fill-6" fill="#00A3DA" points="13.7575444 56 13.6310964 42.0741333 27.5114007 42.0741333 13.7575444 56"></polyline>
+                    <g id="Group-12">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-8"></g>
+                        <polyline id="Fill-7" fill="#065828" mask="url(#mask-2)" points="55.0022536 14.2229333 41.241548 0.297066667 41.241548 14.2229333 55.0022536 14.2229333"></polyline>
+                        <polyline id="Fill-9" fill="#CBCCCB" mask="url(#mask-2)" points="0.000526866743 42.0741333 13.7575444 28.1477333 13.7575444 42.0741333 0.000526866743 42.0741333"></polyline>
+                        <polyline id="Fill-10" fill="#CBCCCB" mask="url(#mask-2)" points="27.5114007 14.2229333 13.7575444 0.297066667 13.7575444 14.2229333 27.5114007 14.2229333"></polyline>
+                        <polyline id="Fill-11" fill="#4D4E4C" mask="url(#mask-2)" points="13.7575444 14.2229333 0.000526866743 14.2229333 13.7575444 28.1477333 13.7575444 14.2229333"></polyline>
+                    </g>
+                    <polyline id="Fill-13" fill="#4F433B" points="55.0054148 42.0741333 41.2447092 28.1477333 41.2447092 42.0741333 55.0054148 42.0741333"></polyline>
+                    <polyline id="Fill-14" fill="#3AAB47" points="41.241548 14.2229333 27.4876917 14.2229333 27.5114007 14.2229333 27.4998096 14.2106667 41.241548 0.297066667 41.241548 14.2229333"></polyline>
+                    <g id="Group-21">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-16"></g>
+                        <polyline id="Fill-15" fill="#358E3C" mask="url(#mask-4)" points="27.5114007 14.2229333 27.4876917 14.2229333 27.4998096 14.2106667 27.5114007 14.2229333"></polyline>
+                        <polyline id="Fill-17" fill="#CBCCCB" mask="url(#mask-4)" points="41.241548 56.0005333 27.4876917 42.0741333 41.241548 42.0741333 41.241548 56.0005333"></polyline>
+                        <polyline id="Fill-18" fill="#CBCCCB" mask="url(#mask-4)" points="41.241548 28.1477333 55.0022536 14.2229333 41.241548 14.2229333 41.241548 28.1477333"></polyline>
+                        <polyline id="Fill-19" fill="#777776" mask="url(#mask-4)" points="13.7575444 0.297066667 0.000526866743 14.2229333 13.7575444 14.2229333 13.7575444 0.297066667"></polyline>
+                        <polyline id="Fill-20" fill="#005070" mask="url(#mask-4)" points="13.7575444 42.0741333 13.7575444 56 0.000526866743 42.0741333 13.7575444 42.0741333"></polyline>
+                    </g>
+                    <polyline id="Fill-22" fill="#3B332D" points="41.2447092 42.0741333 41.2447092 56 55.0054148 42.0741333 41.2447092 42.0741333"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
