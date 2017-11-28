@@ -1,0 +1,54 @@
+<div>
+
+
+  <!--
+
+  TESTIMONIALS SECTION HEADING
+
+  -->
+  <section class="section is-medium has-text-centered p-b-5">
+    <h3 class="title is-3 sr-up">What customers are saying about ETW</h3>
+    <h4 class="subtitle has-text-grey sr-up-delay">Testimonials and Success Stories</h4>
+  </section>
+
+
+    <!--
+
+    TESTIMONIAL CARDS
+
+    -->
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-4 m-b-2 animated fadeIn" v-for="primaryTestimonial in filteredTestimonials">
+          <article class="media">
+            <figure class="media-left is-rounded">
+              <p class="image is-96x96">
+                <img v-bind:src="primaryTestimonial.headshot || 'https://bulma.io/images/placeholders/128x128.png'">
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p class="title is-5 m-b-1_5">{{ primaryTestimonial.role }}</p>
+                <p class="subtitle is-6 has-text-grey">{{ primaryTestimonial.company }}</p>
+                <p><em>“{{ primaryTestimonial.quote }}“</em></p>
+
+                <a v-bind:href="primaryTestimonial.caseStudy" target="_blank">view success story</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+
+    <!--
+
+    SHOW MORE TESTIMONIALS
+
+    -->
+    <div class="has-text-centered m-y-1 sr-up">
+      <button class="button is-medium is-rounded is-outlined is-primary" v-if="isShowMoreTestimonials" @click="showMoreTestimonials()">Show more testimonials</button>
+    </div>
+
+
+</div>

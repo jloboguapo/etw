@@ -1,0 +1,65 @@
+<div>
+
+  <!-- HERO SECTION -->
+  <section class="hero is-dark is-medium home-intro">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-offset-1">
+            <h1 class="title is-1 sr-intro-title has-text-white">
+              What if your employees were 100% aligned to leadership, strategy and culture?
+            </h1>
+          </div>
+          <div class="column is-desktop-only">
+            <div class="columns is-centered">
+              <div class="column is-narrow has-text-right">
+                <h2 class="subtitle is-3 has-text-right has-text-white">
+                  <span class="bullets sr-bullets"><span class="has-text-grey-light">Better</span> <strong class="has-text-light">Alignment</strong></span><br>
+                  <span class="bullets sr-bullets"><span class="has-text-grey-light">Drives better</span> <strong class="has-text-light">Conversations</strong></span><br>
+                  <span class="bullets sr-bullets"><span class="has-text-grey-light">Leading to better</span> <strong class="has-text-light">Actions</strong></span><br>
+                  <span class="bullets sr-bullets"><span class="has-text-grey-light">Producing extraordinary</span> <strong class="has-text-light">Results</strong></span>
+                </h2>
+                <button class="button is-large is-rounded is-primary m-t-2" v-on:click="toggleModal()">
+                  Contact us to get started
+                </button>
+              </div>
+            </div>
+            <div class="has-text-centered m-t-2">
+              <!-- VIDEO MODAL -->
+              <!-- <button class="button is-large is-success is-rounded m-r-1 m-b-1" v-on:click="toggleModal()">
+                Watch Video
+              </button> -->
+              <!-- TYPEFORM MODAL -->
+              <!-- <a class="typeform-share button is-large is-rounded is-primary" href="https://etwadmin.typeform.com/to/pazal8" data-mode="popup" target="_blank">
+                How aligned are you?
+              </a> -->
+            </div>
+          </div>
+        </div>
+        <div class="has-text-centered">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <span class="text">Scroll down</span>
+    </div>
+  </section>
+
+
+  <!--
+
+  CONTACT MODAL
+
+  -->
+  <modal-hubspot
+      modal-id="contact"
+      modal-title="Contact ETW Sales"
+      v-bind:is-active="isModalActive"
+      @toggleModal="toggleModal()">
+  </modal-hubspot>
+
+
+</div>

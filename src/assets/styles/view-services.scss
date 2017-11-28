@@ -1,0 +1,50 @@
+@include mobile {
+  .services-intro {
+    @include header-spacing;
+
+    .title.is-1 {
+      font-size: 2rem;
+    }
+  }
+};
+
+@include tablet {
+
+  .services-intro {
+    background-image: url(../../../static/images/backgrounds/section-alignment.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    &:after {
+      @include swoosh;
+    }
+  }
+
+  .services-professional-services {
+    background-image: url(../../../static/images/backgrounds/services-workshops.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+  }
+
+  .services-retreats {
+    position: relative;
+
+    :before {
+      content: '';
+      background-image: url(../../../static/images/backgrounds/Triangles.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: cover;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: .05;
+    }
+  }
+
+}
