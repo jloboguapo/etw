@@ -50,8 +50,8 @@ export default {
           ],
           color: '#30383a'
         }, {
-          title: 'Strategic Planning Tune-Up',
-          description: 'Does everyone on the leadership team know what is expected of them, how their goals drive the strategy, what they are accountable to, what the most important outcomes are for their area of responsibility, what it means to be on-track at any given time throughout the year? This facilitation will help you do all of this while providing a process and software to keep your leadership team engaged, aligned to the strategy and focusing on outcomes and solutions throughout the year.',
+          title: 'Developmental Conversations',
+          description: 'Does your organization conduct performance evaluations or one-to-one meetings that employees love? Are employees and managers having supportive and developmental conversations? This workshop provides a framework that will enhance your evaluations, one-to-ones and other communications that are intended to develop employees and drive accountability.',
           tags: [
             'facilitation'
           ],
