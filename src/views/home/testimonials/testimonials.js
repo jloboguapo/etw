@@ -60,7 +60,7 @@ export default {
         headshot: './static/case-studies/images/nate_lowrie_maricopa_health_foundation.png'
       }, {
         company: ' Eagle Copters Ltd.',
-        quote: 'The ETW team helped us to get from Point A to Point B when we weren’t even sure what Point B needed to be. The professional services provided by the ETW implementation team really made all the dierence for us. Now the whole organization likes to see that there is a clear strategy to execution, and consistent communication around goals and accountability.',
+        quote: 'The ETW team helped us to get from Point A to Point B when we weren’t even sure what Point B needed to be. The professional services provided by the ETW implementation team really made all the difference for us. Now the whole organization likes to see that there is a clear strategy to execution, and consistent communication around goals and accountability.',
         author: 'Barry Kohler',
         role: 'President & CEO',
         caseStudy: './static/case-studies/Success_Story-Eagle_Copters.pdf',
@@ -103,7 +103,7 @@ export default {
       }],
 
       /**
-       * Only display so many on page laod
+       * Only display so many on page load
        * @type {[type]}
        */
       limitTestimonials: 3,
