@@ -50,7 +50,7 @@
     &:after {
       content: "";
       display: block;
-      padding-bottom: 3%;
+      padding-bottom: 4%;
       background-image: url(../../../static/images/backgrounds/round-edge.svg);
       width: 110%;
       margin-left: -5%;
@@ -68,7 +68,9 @@
 
   .software-notes {
     background-image: url("../../../static/images/backgrounds/software-notes.svg");
-    background-position: left center;
+    background-position: 50% 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
   }
 
   .sr-note-1 {
@@ -77,17 +79,23 @@
 
   .software-kpi {
     background-image: url("../../../static/images/backgrounds/software-kpi.jpg");
-    background-position: left top;
+    background-position: 20% 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
   }
 
   .software-evaluations {
     background-image: url("../../../static/images/backgrounds/software-evaluations.jpg");
-    background-position: left top;
+    background-position: right 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
   }
 
   .software-plans {
     background-image: url("../../../static/images/backgrounds/software-plans.jpg");
-    background-position: left center;
+    background-position: 20% 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
   }
 
 };
