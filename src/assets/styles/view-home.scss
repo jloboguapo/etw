@@ -74,6 +74,13 @@
 
 }
 
+@include desktop {
+  .home-improving-alignment {
+    background-position: 90% 0;
+    background-size: auto 100%;
+  }
+}
+
 // for the scorll down
 .home-intro {
   position: relative;
