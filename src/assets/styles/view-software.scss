@@ -99,3 +99,20 @@
   }
 
 };
+
+@include desktop {
+  .software-kpi {
+    background-position: left center;
+    background-size: cover;
+  }
+
+  .software-evaluations {
+    background-position: right center;
+    background-size: cover;
+  }
+
+  .software-plans {
+    background-position: left center;
+    background-size: cover;
+  }
+}

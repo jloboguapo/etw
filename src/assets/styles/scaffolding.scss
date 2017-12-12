@@ -29,3 +29,10 @@
     }
   }
 }
+
+// for lighter backgrounds on hero is-light
+.hero {
+  &.is-light {
+    background-color: $white-bis;
+  }
+}
