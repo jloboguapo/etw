@@ -81,6 +81,12 @@ let routes = [
     component: CustomerAgreement
   },
 
+  {
+    path: '/user-agreement',
+    name: 'user-agreement',
+    component: CustomerAgreement
+  },
+
   // For the home page
   {
     path: '/',
