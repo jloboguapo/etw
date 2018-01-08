@@ -19,6 +19,7 @@ const Privacy = () => import('@/views/privacy/privacy.vue')
 const Resources = () => import('@/views/resources/resources.vue')
 const Services = () => import('@/views/services/services.vue')
 const Software = () => import('@/views/software/software.vue')
+const UserAgreement = () => import('@/views/user-agreement/user-agreement.vue')
 
 /**
 * Tell Vue to use the vue-router.
@@ -79,6 +80,12 @@ let routes = [
     path: '/customer-agreement',
     name: 'customer-agreement',
     component: CustomerAgreement
+  },
+
+  {
+    path: '/user-agreement',
+    name: 'user-agreement',
+    component: UserAgreement
   },
 
   // For the home page
