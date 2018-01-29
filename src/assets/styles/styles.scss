@@ -12,8 +12,8 @@
 @import "~bulma-extensions/bulma-pricingtable/pricing-table";
 
 // Vue Video Player
-// @import "~video.js/dist/video-js.css";
-// @import "~vue-video-player/src/custom-theme.css";
+@import "~video.js/dist/video-js.css";
+@import "~vue-video-player/src/custom-theme.css";
 
 // Animate.css
 @import "~animate.css/animate.css";
@@ -23,6 +23,7 @@
 @import "header";
 @import "helpers";
 @import "hubspot";
+@import "modals";
 @import "scaffolding";
 @import "scroll-animation";
 @import "view-about";
