@@ -5,10 +5,17 @@
     <div class="hero-body">
       <div class="container">
         <div class="columns is-multiline">
-          <div class="column is-6-desktop is-12-tablet">
+          <div class="column is-7-desktop is-12-tablet">
             <h1 class="title is-1 sr-intro-title has-text-white">
               What if your employees were 100% aligned to leadership, strategy and culture?
             </h1>
+            <!-- VIDEO MODAL -->
+            <button class="button is-large is-success is-rounded m-t-1" v-on:click="toggleVideoModal()">
+              <span>Learn more</span>
+              <span class="icon">
+                <i class="icon-play is-32 m-t-_5"></i>
+              </span>
+            </button>
           </div>
           <div class="column">
             <div class="columns is-centered">
@@ -20,10 +27,6 @@
                   <span class="bullets sr-bullets"><span class="has-text-grey-light">Producing extraordinary</span> <strong class="has-text-light">Results</strong></span>
                 </h2>
                 <div class="m-t-2">
-                  <!-- VIDEO MODAL -->
-                  <button class="button is-large is-success is-rounded m-r-1 m-b-1" v-on:click="toggleVideoModal()">
-                    Watch Video
-                  </button>
                   <button class="button is-large is-rounded is-primary" v-on:click="toggleHubspotModal()">
                     Contact us to get started
                   </button>
