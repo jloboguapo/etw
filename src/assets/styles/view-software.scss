@@ -77,6 +77,13 @@
     animation-delay: 2s;
   }
 
+  .software-ai {
+    background-image: url("../../../static/images/backgrounds/software-ai.jpg");
+    background-position: 50% 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
   .software-kpi {
     background-image: url("../../../static/images/backgrounds/software-kpi.jpg");
     background-position: 20% 0;
@@ -101,6 +108,11 @@
 };
 
 @include desktop {
+  .software-ai {
+    background-position: 40% center;
+    background-size: cover;
+  }
+
   .software-kpi {
     background-position: left center;
     background-size: cover;

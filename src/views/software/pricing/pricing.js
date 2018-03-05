@@ -19,7 +19,47 @@ export default {
        * For showing the contact modal
        * @type {Boolean}
        */
-      isModalActive: false
+      isModalActive: false,
+
+      /**
+       * Plan details
+       * @type {Array}
+       */
+      plans: [
+        {
+          title: 'Basic',
+          features: [
+            'Goals - Manager Assigned and Personal',
+            'Evaluations',
+            'Stream Communications',
+            'Standard Roles and Permissions'
+          ]
+        },
+        {
+          title: 'Premium',
+          features: [
+            'Everything in Basic, plus',
+            'Companion Mobile Application',
+            'Plans with KPIs',
+            'Goals - Plan, Alignment, and Leadership',
+            'Action Items',
+            'Team Organization',
+            'Real-time Communications',
+            'Custom Roles',
+            'Canned Reports'
+          ]
+        }, {
+          title: 'Ultimate',
+          features: [
+            'Everything in Premium, plus',
+            'API Access',
+            'Single Sign On (SSO)',
+            'Goal Categorization with Automatic Alignment',
+            'Tone Analyzer',
+            'Custom Permissions'
+          ]
+        }
+      ]
 
     }
   },
@@ -34,6 +74,10 @@ export default {
 
   methods: {
 
+    /**
+     * Set what tab is showing
+     * @param {String} activePricingTab
+     */
     setPricingTab (activePricingTab) {
       this.activePricingTab = activePricingTab
     },

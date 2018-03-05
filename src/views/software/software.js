@@ -15,13 +15,13 @@ export default {
        */
       results: [
         {
-          title: 'Increased Employee Alignment',
+          title: 'Increased Alignment',
           body: "Transparency increases accountability and promotes a complete understanding of how each and every employee's role affects the success of the company. Give employees transparency into top company goals for a highly engaged workforce.",
           image: '../../../../static/images/thumbnails/engagement.jpg'
         },
         {
-          title: 'Ongoing Employee Development',
-          body: 'Create development plans aligned with an employee’s goals. Emphasize career development and progression to create a culture of high performers throughout your entire organization.',
+          title: 'Contextual Feedback & Development',
+          body: `Provide continuous feedback through conversations aligned to your employee's assigned goals. Emphasize career development and progression to create a culture of high performers throughout your entire organization.`,
           image: '../../../../static/images/thumbnails/performance.jpg'
         }
       ]
