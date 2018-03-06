@@ -68,7 +68,7 @@
 
     <!-- annual basic plan -->
     <div class="pricing-plan">
-      <div class="plan-header">Basic</div>
+      <div class="plan-header">{{ plans[0].title }}</div>
       <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
@@ -89,17 +89,15 @@
         </div>
       </div>
       <div class="plan-items">
-        <div class="plan-item">Personal Goals</div>
-        <div class="plan-item">Manager Assigned Goals</div>
-        <div class="plan-item">Evaluations</div>
-        <div class="plan-item">Stream Communications</div>
-        <div class="plan-item">Standard Roles and Permissions</div>
+        <div class="plan-item" v-for="(feature, index) in plans[0].features">
+          <span>{{ feature }}</span>
+        </div>
       </div>
     </div>
 
     <!-- annual premium plan -->
     <div class="pricing-plan is-active">
-      <div class="plan-header">Premium</div>
+      <div class="plan-header">{{ plans[1].title }}</div>
       <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
@@ -120,22 +118,16 @@
         </div>
       </div>
       <div class="plan-items">
-        <div class="plan-item"><strong>Everything in Basic, plus</strong></div>
-        <div class="plan-item">Plans</div>
-        <div class="plan-item">Plan Goals</div>
-        <div class="plan-item">KPIs</div>
-        <div class="plan-item">Team Organization</div>
-        <div class="plan-item">Role Goals</div>
-        <div class="plan-item">Real-time Communications</div>
-        <div class="plan-item">Canned Reports</div>
-        <div class="plan-item">Custom Roles</div>
-        <div class="plan-item">Companion Mobile Application</div>
+        <div class="plan-item" v-for="(feature, index) in plans[1].features">
+          <strong v-if="index === 0">{{ feature }}</strong>
+          <span v-else>{{ feature }}</span>
+        </div>
       </div>
     </div>
 
     <!-- annual ultimate plan -->
     <div class="pricing-plan is-success">
-      <div class="plan-header">Ultimate</div>
+      <div class="plan-header">{{ plans[2].title }}</div>
       <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
@@ -156,13 +148,10 @@
         </div>
       </div>
       <div class="plan-items">
-        <div class="plan-item"><strong>Everything in Premium, plus</strong></div>
-        <div class="plan-item">API Access</div>
-        <div class="plan-item">Tone Analyzer</div>
-        <div class="plan-item">Custom Permissions</div>
-        <div class="plan-item">Single Sign On (SSO)</div>
-        <div class="plan-item">Goal Categorization</div>
-        <div class="plan-item">Automatic Goal Alignment</div>
+        <div class="plan-item" v-for="(feature, index) in plans[2].features">
+          <strong v-if="index === 0">{{ feature }}</strong>
+          <span v-else>{{ feature }}</span>
+        </div>
       </div>
     </div>
 
@@ -181,7 +170,7 @@
 
     <!-- monthly basic plan -->
     <div class="pricing-plan">
-      <div class="plan-header">Basic</div>
+      <div class="plan-header">{{ plans[0].title }}</div>
       <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
@@ -202,17 +191,15 @@
         </div>
       </div>
       <div class="plan-items">
-        <div class="plan-item">Personal Goals</div>
-        <div class="plan-item">Manager Assigned Goals</div>
-        <div class="plan-item">Evaluations</div>
-        <div class="plan-item">Stream Communications</div>
-        <div class="plan-item">Standard Roles and Permissions</div>
+        <div class="plan-item" v-for="(feature, index) in plans[0].features">
+          <span>{{ feature }}</span>
+        </div>
       </div>
     </div>
 
     <!-- monthly premium plan -->
     <div class="pricing-plan is-active">
-      <div class="plan-header">Premium</div>
+      <div class="plan-header">{{ plans[1].title }}</div>
       <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
@@ -233,22 +220,16 @@
         </div>
       </div>
       <div class="plan-items">
-        <div class="plan-item"><strong>Everything in Basic, plus</strong></div>
-        <div class="plan-item">Plans</div>
-        <div class="plan-item">Plan Goals</div>
-        <div class="plan-item">KPIs</div>
-        <div class="plan-item">Team Organization</div>
-        <div class="plan-item">Role Goals</div>
-        <div class="plan-item">Real-time Communications</div>
-        <div class="plan-item">Canned Reports</div>
-        <div class="plan-item">Custom Roles</div>
-        <div class="plan-item">Companion Mobile Application</div>
+        <div class="plan-item" v-for="(feature, index) in plans[1].features">
+          <strong v-if="index === 0">{{ feature }}</strong>
+          <span v-else>{{ feature }}</span>
+        </div>
       </div>
     </div>
 
     <!-- monthly ultimate plan -->
     <div class="pricing-plan is-success">
-      <div class="plan-header">Ultimate</div>
+      <div class="plan-header">{{ plans[2].title }}</div>
       <div class="columns is-mobile is-gapless">
         <div class="column">
           <div class="plan-price">
@@ -269,13 +250,10 @@
         </div>
       </div>
       <div class="plan-items">
-        <div class="plan-item"><strong>Everything in Premium, plus</strong></div>
-        <div class="plan-item">API Access</div>
-        <div class="plan-item">Tone Analyzer</div>
-        <div class="plan-item">Custom Permissions</div>
-        <div class="plan-item">Single Sign On (SSO)</div>
-        <div class="plan-item">Goal Categorization</div>
-        <div class="plan-item">Automatic Goal Alignment</div>
+        <div class="plan-item" v-for="(feature, index) in plans[2].features">
+          <strong v-if="index === 0">{{ feature }}</strong>
+          <span v-else>{{ feature }}</span>
+        </div>
       </div>
     </div>
 
