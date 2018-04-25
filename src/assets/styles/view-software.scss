@@ -91,6 +91,13 @@
     background-repeat: no-repeat;
   }
 
+  .software-meetings {
+    background-image: url("../../../static/images/backgrounds/software-meetings.jpg");
+    background-position: 50% 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
   .software-evaluations {
     background-image: url("../../../static/images/backgrounds/software-evaluations.jpg");
     background-position: right 0;
@@ -115,6 +122,11 @@
 
   .software-kpi {
     background-position: left center;
+    background-size: cover;
+  }
+
+  .software-meetings {
+    background-position: 40% 10%;
     background-size: cover;
   }
 

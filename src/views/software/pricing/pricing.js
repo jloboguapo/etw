@@ -43,6 +43,7 @@ export default {
             'Plans with KPIs',
             'Goals - Plan, Alignment, and Leadership',
             'Action Items',
+            'Meetings',
             'Team Organization',
             'Real-time Communications',
             'Custom Roles',
