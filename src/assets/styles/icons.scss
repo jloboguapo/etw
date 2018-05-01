@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "www-icons";
-  src:url("../../assets/fonts/www-icons.eot");
-  src:url("../../assets/fonts/www-icons.eot?#iefix") format("embedded-opentype"),
-    url("../../assets/fonts/www-icons.woff") format("woff"),
-    url("../../assets/fonts/www-icons.ttf") format("truetype"),
-    url("../../assets/fonts/www-icons.svg#www-icons") format("svg");
+  font-family: "etw-www";
+  src:url("../../assets/fonts/etw-www.eot");
+  src:url("../../assets/fonts/etw-www.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/etw-www.woff") format("woff"),
+    url("../../assets/fonts/etw-www.ttf") format("truetype"),
+    url("../../assets/fonts/etw-www.svg#etw-www") format("svg");
   font-weight: normal;
   font-style: normal;
 
 }
 
 [data-icon]:before {
-  font-family: "www-icons" !important;
+  font-family: "etw-www" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -27,7 +27,7 @@
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "www-icons" !important;
+  font-family: "etw-www" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -64,4 +64,10 @@
 
 .icon-play:before {
   content: "\61";
+}
+.icon-exclamation-triangle:before {
+  content: "\62";
+}
+.icon-chevron-right:before {
+  content: "\63";
 }

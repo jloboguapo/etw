@@ -36,3 +36,14 @@
     background-color: $white-bis;
   }
 }
+
+// for items that need the shadow
+.has-shadow {
+  box-shadow: $box-shadow;
+}
+
+// for interactive items
+.is-clickable {
+  cursor: pointer;
+  pointer-events: auto !important;
+}
