@@ -79,7 +79,7 @@
 
   .software-tray {
     background-image: url("../../../static/images/backgrounds/software-tray.jpg");
-    background-position: right top;
+    background-position: 70% top;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
@@ -93,7 +93,7 @@
 
   .software-evaluations {
     background-image: url("../../../static/images/backgrounds/software-evaluations.jpg");
-    background-position: right 0;
+    background-position: 65% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
@@ -112,10 +112,6 @@
   .software-kpi {
     background-position: left center;
     background-size: cover;
-  }
-
-  .software-evaluations {
-    background-position: right center;
   }
 
   .software-plans {
