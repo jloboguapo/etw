@@ -86,6 +86,13 @@ export default {
       reset: false,
       origin: 'right'
     })
+  },
+
+  methods: {
+
+    smoothScrollTo (target) {
+      this.$SmoothScroll(this.$refs[target], 1000)
+    }
   }
 
 }

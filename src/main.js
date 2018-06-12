@@ -16,6 +16,7 @@ import Vue from 'vue'
 import VueAnalytics from 'vue-analytics'
 import VueGtm from 'vue-gtm'
 import vueScript2 from 'vue-script2'
+import vueSmoothScroll from 'vue-smoothscroll'
 
 import Wrapper from './views/wrapper/wrapper.vue'
 
@@ -52,6 +53,11 @@ Vue.prototype.scrollReveal = ScrollReveal({ reset: true })
  * For loading script tags in the templates
  */
 Vue.use(vueScript2)
+
+/**
+ * This is to slow down scrolling of name anchors
+ */
+Vue.use(vueSmoothScroll)
 
 /**
  * Google analytics
