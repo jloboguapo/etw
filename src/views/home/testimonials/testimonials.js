@@ -35,7 +35,7 @@ export default {
         quote: 'ETW helped drive turnaround results in just 3 months. EBITDA improved by over 20% and NPS scores for both customers and employees improved from the worst performing to the best performing in the organization!',
         author: 'Ray Cook',
         role: 'CHMM, Operations Manager',
-        caseStudy: 'https://offers.etw.com/hubfs/Content%20Offers/Case%20Studies/Case%20Study-%20Chemical%20Distribution%20Turnaround.pdf',
+        caseStudy: 'https://offers.etw.com/hubfs/Content%20Offers/Case%20Studies/Chemical%20Distribution%20Turnaround%20Case%20Study.pdf',
         headshot: './static/case-studies/images/univar.jpg'
       }, {
         company: 'Air Evac Lifeteam',
