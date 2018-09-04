@@ -1,10 +1,4 @@
-import Pricing from '@/views/software/pricing/pricing.vue'
-
 export default {
-
-  components: {
-    Pricing
-  },
 
   data () {
     return {
