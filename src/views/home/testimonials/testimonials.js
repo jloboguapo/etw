@@ -73,13 +73,6 @@ export default {
         caseStudy: 'https://offers.etw.com/hubfs/Content%20Offers/Case%20Studies/Sunshine%20Acres%20Case%20Study.pdf',
         headshot: './static/case-studies/images/kevin_humphrey_sunshine.png'
       }, {
-        company: 'Infusionsoft',
-        quote: 'Leaders love looking at ETW to gain a sense of where their team stands and where they, as leaders, need to provide guidance. Since implementing ETW, we’ve increased the visibility to performance that was not tangible before on such a large scale. We love seeing how the leaders engage with their teams through the platform to create a high-performance culture.',
-        author: 'Allison Burke',
-        role: 'HR Business Partner Specialist',
-        caseStudy: 'https://offers.etw.com/hubfs/Content%20Offers/Success%20Stories/Infusionsoft%20Success%20Story.pdf',
-        headshot: './static/case-studies/images/allison_burke_infusionsoft.png'
-      }, {
         company: 'NCI Building Systems, Inc.',
         quote: 'The execution by the ETW Team was really quite masterful as they demonstrated how creating your mission, vision and purpose should not just be a marketing activity. It should really be about aligning your people. Our leadership team is now much more cohesive as a result of the ETW workshops.',
         author: 'Katy Theroux',
