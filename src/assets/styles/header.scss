@@ -103,8 +103,35 @@
 
 
 .site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  .brand {
+    img {
+      max-height: 45px;
+    }
+  }
+
+  .store-button {
+    height: 40px;
+  }
+
   .brand-image {
     display: inline;
     vertical-align: middle;
+  }
+
+  p {
+    @extend .m-t-_5;
+
+    a {
+      @extend .has-text-grey;
+
+      &:hover {
+        @extend .has-text-link;
+      }
+    }
   }
 }
