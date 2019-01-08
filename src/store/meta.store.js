@@ -57,7 +57,7 @@ export default {
           {
             'vmid': 'google+image',
             'itemprop': 'description',
-            'content': state.all[property].image
+            'content': state.all[property]['google+Image']
           },
 
           /**
@@ -122,7 +122,7 @@ export default {
           {
             'vmid': 'og:image',
             'property': 'og:image',
-            'content': state.all[property].image
+            'content': state.all[property].facebookImage
           },
 
           {
@@ -156,84 +156,120 @@ export default {
         title: 'About - ETW.com',
         description: 'Execute to Win (ETW) is a consulting company that helps organizations improve alignment to get better results.',
         url: 'https://www.etw.com/#/about',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - About2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - About2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - About.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - About2.jpg'
       },
 
       contact: {
         title: 'Contact Us - ETW.com',
         description: 'Contact us to find out how we can help you.',
         url: 'https://www.etw.com/#/contact',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - Contact.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - Contact.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Contact.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Contact2.jpg'
       },
 
       customerAgreement: {
         title: 'Customer Agreement - ETW.com',
         description: 'Customer Agreement for ETW.com.',
         url: 'https://www.etw.com/#/customer-agreement',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Resources.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Resources2.jpg'
       },
 
       customerSuccess: {
         title: 'Customer Success - ETW.com',
         description: 'Success stories from ETW customers.',
         url: 'https://www.etw.com/#/customer-success',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Resources.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Resources2.jpg'
       },
 
       events: {
         title: 'Events - ETW.com',
         description: 'Upcoming events for ETW.',
         url: 'https://www.etw.com/#/events',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Resources.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Resources2.jpg'
       },
 
       home: {
         title: 'ETW.com: Improving Alignment to get Better Results',
         description: 'Want to get results quickly? Execute to Win (ETW) is a company that helps organizations improve alignment to get results faster, communicate better and develop more effective leaders. ETW’s proven approach to leadership, strategy and culture can quickly align your organization and drive success for your business.',
         url: 'https://www.etw.com/#/home',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - HOME 2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - HOME 2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - HOME.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Home2.jpg'
       },
 
       knowledgeCenter: {
         title: 'Knowledge Center - ETW.com',
         description: 'Insights, Workshops and Implementation resources to help you improve alignment.',
         url: 'https://www.etw.com/#/knowledge-center',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Resources.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Resources2.jpg'
       },
 
       privacy: {
         title: 'Privacy Policy - ETW.com',
         description: 'Privacy Policy for ETW.com.',
         url: 'https://www.etw.com/#/privacy',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Resources.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Resources2.jpg'
       },
 
       services: {
         title: 'Professional Services - ETW.com',
         description: 'ETW offers a wide range of consulting and professional services to better align your organization.',
         url: 'https://www.etw.com/#/services',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - Professional Services2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - Professional Services2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Professional Services.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Professional Services2.jpg'
       },
 
       software: {
         title: 'Software Products - ETW.com',
         description: 'ETW Software helps align your employees with your strategy and intentional culture.',
         url: 'https://www.etw.com/#/software',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - Software2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - Software2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Software.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Software.jpg'
       },
 
       userAgreement: {
         title: 'User Agreement - ETW.com',
         description: 'User Agreement for ETW.com.',
         url: 'https://www.etw.com/#/user-agreement',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Resources.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Resources2.jpg'
       },
 
       notFound: {
         title: '404 - ETW.com',
         description: 'The page that you are looking for could not be found.',
         url: 'https://www.etw.com/#/404',
-        image: ''
+        'google+Image': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - resources2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - Resources.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Resources2.jpg'
       }
 
     }

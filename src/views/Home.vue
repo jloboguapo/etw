@@ -68,18 +68,12 @@
         INTRO VIDEO MODAL
 
       -->
-      <div class="modal modal-video is-wide animated fadeIn" v-bind:class="{ 'is-active': isShowVideoModal }">
-        <div class="modal-background" v-on:click="toggleVideoModal()"></div>
-        <div class="modal-content">
-          <div class="content">
-            <youtube
-                :video-id="videoPlayerOptions.videoId"
-                :player-vars="videoPlayerOptions"
-                ref="youtube" />
-          </div>
-        </div>
-        <button class="modal-close is-large" aria-label="close" v-on:click="toggleVideoModal()"></button>
-      </div>
+      <modal-youtube
+          ref="introVideo"
+          video-id="EakfI3qrPOA"
+          :is-active="isShowYoutubeModal"
+          v-on:close="isShowYoutubeModal = false">
+      </modal-youtube>
 
     </div>
 
@@ -165,11 +159,13 @@
 
 <script>
 import ModalHubspot from '@/components/ModalHubspot.vue'
+import ModalYoutube from '@/components/ModalYoutube.vue'
 
 export default {
 
   components: {
-    ModalHubspot
+    ModalHubspot,
+    ModalYoutube
   },
 
   computed: {
@@ -191,16 +187,7 @@ export default {
        * Show/hide video modal
        * @type {Boolean}
        */
-      isShowVideoModal: false,
-
-      /**
-       * For Alignment video playback
-       * @type {Object}
-       */
-      videoPlayerOptions: {
-        videoId: 'EakfI3qrPOA',
-        autoplay: 0
-      }
+      isShowYoutubeModal: false
 
     }
   },
@@ -233,13 +220,7 @@ export default {
     },
 
     toggleVideoModal () {
-      this.isShowVideoModal = !this.isShowVideoModal
-
-      if (!this.isShowVideoModal) {
-        this.player.pauseVideo()
-      } else {
-        this.player.playVideo()
-      }
+      this.isShowYoutubeModal = true
     }
 
   }
