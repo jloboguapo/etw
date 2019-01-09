@@ -13,8 +13,8 @@
             <div class="column is-8-desktop is-10-tablet">
               <h1 class="title is-1 has-text-centered has-text-white sr-up">Software to Align Your Employees with Your Strategy and Intentional Culture</h1>
               <div class="has-text-centered m-y-2">
-                <a href="https://itunes.apple.com/us/app/etw-mobile/id1252717437?mt=8" target="_blank"><img src="/images/mobile/app-store.png" alt="App Store" class="store-button sr-app-store"></a>
-                <a href="https://play.google.com/store/apps/details?id=com.etw.android&hl=en" target="_blank"><img src="/images/mobile/google-play.png" alt="Google Play" class="store-button sr-google-play"></a>
+                <a href="https://itunes.apple.com/us/app/etw-mobile/id1252717437?mt=8" target="_blank"><img src="@/assets/images/mobile/app-store.png" alt="App Store" class="store-button sr-app-store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.etw.android&hl=en" target="_blank"><img src="@/assets/images/mobile/google-play.png" alt="Google Play" class="store-button sr-google-play"></a>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@
           <div class="columns">
             <div class="column is-5 is-offset-6">
               <figure class="image is-96x96 sr-down">
-                <img src="/images/thumbnails/plans.png" alt="Plans">
+                <img src="@/assets/images/thumbnails/plans.png" alt="Plans">
               </figure>
               <h1 class="title sr-up">Visualize Your Strategy with Plans</h1>
               <p class="is-size-5 sr-up">Creating a living, breathing execution plan that mirrors your strategy is a challenge for most organizations.  The plan feature in ETW allows you to create and cascade top-level plans and supporting plans throughout your organization.  ETW's plan functionality easily accommodates hierarchical, cross-functional and special projects team structures. Users have the ability to create an unlimited number of plans and related supporting plans to properly align their objectives.</p>
@@ -84,15 +84,15 @@
           <div class="columns is-vcentered">
             <div class="column is-4">
               <figure class="image is-96x96 sr-left">
-                <img src="/images/thumbnails/goals.png" alt="Goals">
+                <img src="@/assets/images/thumbnails/goals.png" alt="Goals">
               </figure>
               <h3 class="title is-3 sr-left">Better Conversations through Aligned Goals</h3>
               <p class="is-size-5 sr-left-delay">Your strategy defines the value your organization intentionally creates for its customers. ETW easily aligns all employees to your strategy through outcome-based, actionable performance goals.  This allows you to engage your employees through more meaningful conversations to drive better results.</p>
             </div>
             <div class="column is-7 is-offset-1 has-text-centered">
-              <img src="/images/goal-card.png" alt="Goal Card" class="sr-goal-card">
-              <img src="/images/note-one.png" alt="Note" class="sr-note-1 m-r-2">
-              <img src="/images/note-two.png" alt="Note" class="sr-note-2 m-l-2">
+              <img src="@/assets/images/goal-card.png" alt="Goal Card" class="sr-goal-card">
+              <img src="@/assets/images/note-one.png" alt="Note" class="sr-note-1 m-r-2">
+              <img src="@/assets/images/note-two.png" alt="Note" class="sr-note-2 m-l-2">
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@
           <div class="columns">
             <div class="column is-5 is-offset-6">
               <figure class="image is-96x96 sr-down">
-                <img src="/images/thumbnails/kpi.png" alt="Performance">
+                <img src="@/assets/images/thumbnails/kpi.png" alt="Performance">
               </figure>
               <h1 class="title sr-up">Analyze with Metrics and Key Performance Indicators</h1>
               <p class="is-size-5 sr-up-delay">Use real-time progress updates to drive high performance with 11 different KPI report and presentation types. Our highly customizable dashboard allows you to see the information in whichever display makes the most sense for you.</p>
@@ -127,7 +127,7 @@
           <div class="columns">
             <div class="column is-4 is-offset-1">
               <figure class="image is-96x96 sr-down">
-                <img src="/images/thumbnails/performance-score.png" alt="Performance">
+                <img src="@/assets/images/thumbnails/performance-score.png" alt="Performance">
               </figure>
               <h1 class="title sr-down">Performance &amp; Alignment Development through Evaluations</h1>
               <p class="is-size-5 sr-up-delay">Conducting performance reviews once or twice a year is not an effective process.  ETW captures real-time improvement conversations around performance, culture and leadership.  With ETW, employees will know where they stand and what's expected 100% of the time.  Formal evaluations are made easy because there are no surprises and all conversations and actions are contextualized within each performance, culture and leadership goal.</p>
@@ -156,8 +156,8 @@
           <div class="column is-6">
 
             <div class="p-a-3">
-              <figure class="image is-5by3 has-shadow m-b-1">
-                <img src="/images/backgrounds/software-meetings-min.jpg" alt="Meetings Screenshot">
+              <figure class="image has-shadow m-b-1">
+                <img src="@/assets/images/backgrounds/software-meetings-min.jpg" alt="Meetings Screenshot">
               </figure>
 
               <div class="columns is-mobile is-vcentered">
@@ -166,7 +166,7 @@
                 </div>
                 <div class="column is-narrow">
                   <figure class="image is-96x96 sr-down">
-                    <img src="/images/thumbnails/meetings.png" alt="Meetings">
+                    <img src="@/assets/images/thumbnails/meetings.png" alt="Meetings">
                   </figure>
                 </div>
               </div>
@@ -178,7 +178,7 @@
 
             <div class="p-a-3">
               <figure class="image has-shadow m-b-1">
-                <img src="/images/backgrounds/software-ai-min.jpg" alt="Action Items Screenshot">
+                <img src="@/assets/images/backgrounds/software-ai-min.jpg" alt="Action Items Screenshot">
               </figure>
 
               <div class="columns is-mobile is-vcentered">
@@ -187,7 +187,7 @@
                 </div>
                 <div class="column is-narrow">
                   <figure class="image is-96x96 sr-down">
-                    <img src="/images/thumbnails/action-items.png" alt="Action Items">
+                    <img src="@/assets/images/thumbnails/action-items.png" alt="Action Items">
                   </figure>
                 </div>
               </div>
@@ -219,12 +219,12 @@ export default {
         {
           title: 'Increased Alignment',
           body: "Transparency increases accountability and promotes a complete understanding of how each and every employee's role affects the success of the company. Give employees transparency into top company goals for a highly engaged workforce.",
-          image: '/images/thumbnails/engagement-min.jpg'
+          image: require('@/assets/images/thumbnails/engagement-min.jpg')
         },
         {
           title: 'Contextual Feedback & Development',
           body: `Provide continuous feedback through conversations aligned to your employee's assigned goals. Emphasize career development and progression to create a culture of high performers throughout your entire organization.`,
-          image: '/images/thumbnails/performance-min.jpg'
+          image: require('@/assets/images/thumbnails/performance-min.jpg')
         }
       ]
     }

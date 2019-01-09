@@ -90,7 +90,7 @@ export default {
 
       events: [
         {
-          image: '/case-studies/images/rob_hamilton_med_trans.jpg',
+          image: require('@/assets/images/case-studies/images/rob_hamilton_med_trans.jpg'),
           title: 'Leadership That Gets Results',
           type: 'webinar',
           description: `Learn from a recent interview with Rob Hamilton, president of Med-Trans about what sets capable leaders apart from everyone else. Good communication and the ability to articulate and execute on a company’s strategy.`,

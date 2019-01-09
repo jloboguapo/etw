@@ -5,7 +5,7 @@
         <div class="columns">
           <div class="column">
             <router-link :to="{ name: 'home' }" class="brand">
-              <img src="/brand/brand-horizontal.svg" alt="ETW : Execute To Win">
+              <img src="@/assets/images/brand/brand-horizontal.svg" alt="ETW : Execute To Win">
             </router-link>
 
             <div class="m-b-_5 m-t-1">
@@ -79,9 +79,9 @@
 
           </div>
           <div class="column">
-            <a href="https://itunes.apple.com/us/app/etw-mobile/id1252717437?mt=8" target="_blank"><img src="/images/mobile/app-store.png" alt="App Store" class="store-button"></a>
+            <a href="https://itunes.apple.com/us/app/etw-mobile/id1252717437?mt=8" target="_blank"><img src="@/assets/images/mobile/app-store.png" alt="App Store" class="store-button"></a>
             <br>
-            <a href="https://play.google.com/store/apps/details?id=com.etw.android&hl=en" target="_blank"><img src="/images/mobile/google-play.png" alt="Google Play" class="store-button"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.etw.android&hl=en" target="_blank"><img src="@/assets/images/mobile/google-play.png" alt="Google Play" class="store-button"></a>
           </div>
         </div>
       </div>
@@ -91,10 +91,10 @@
       <div class="columns">
         <div class="column has-text-centered has-text-grey">
           <small class="has-text-white">
-            <img src="/brand/brand.svg" class="image is-24x24 brand-image m-r-_5"  alt="ETW : Execute To Win">
+            <img src="@/assets/images/brand/brand.svg" class="image is-24x24 brand-image m-r-_5"  alt="ETW : Execute To Win">
             Improving the way the world does business
             <span class="has-text-grey-light m-x-1">|</span>
-            {{ new Date().getFullYear() }} ETW®
+            {{ new Date().getFullYear() }} ETW&reg;
           </small>
         </div>
       </div>

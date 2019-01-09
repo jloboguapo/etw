@@ -11,7 +11,7 @@
 
             <!-- logo -->
             <router-link :to="{ name: 'home' }" class="navbar-item m-r-2">
-              <img src="/brand/brand-horizontal-light.svg" alt="ETW : Execute To Win">
+              <img src="@/assets/images/brand/brand-horizontal-light.svg" alt="ETW : Execute To Win">
             </router-link>
 
             <!-- hamburger menu -->

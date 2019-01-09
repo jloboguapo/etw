@@ -12,7 +12,7 @@
       @toggleModal="toggleModal()">
   </modal-hubspot>
 
-  <section class="hero is-large contact-intro">
+  <section class="hero is-medium contact-intro">
     <div class="hero-body">
       <div class="container">
 

@@ -1,7 +1,7 @@
 .hero-privacy-intro {
   background: $grey-dark;
-  background-image: url(../../../public/images/backgrounds/Triangles.png);
-  background-image: url(../../../public/images/backgrounds/Triangles.png), linear-gradient(to right, $grey-dark 0%,$black-ter 100%);
+  background-image: url(../images/backgrounds/Triangles.png);
+  background-image: url(../images/backgrounds/Triangles.png), linear-gradient(to right, $grey-dark 0%,$black-ter 100%);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -10,7 +10,7 @@
     content: "";
     display: block;
     padding-bottom: 3%;
-    background-image: url(../../../public/images/backgrounds/round-edge.svg);
+    background-image: url(../images/backgrounds/round-edge.svg);
     width: 110%;
     margin-left: -5%;
     margin-bottom: -.625rem !important;
