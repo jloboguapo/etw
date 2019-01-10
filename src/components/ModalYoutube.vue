@@ -12,7 +12,8 @@
         <youtube
             :video-id="videoId"
             :player-vars="videoPlayerOptions"
-            ref="youtube" />
+            ref="youtube"
+            id="modal-youtube-player" />
       </div>
     </div>
 
@@ -94,7 +95,7 @@ export default {
 </script>
 
 <style>
-  iframe {
+  #modal-youtube-player {
     width: 80vw;
     height: 80vh;
   }
