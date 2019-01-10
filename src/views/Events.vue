@@ -68,7 +68,13 @@
         <section class="section sr-up-interval">
           <div class="columns is-variable is-8">
             <div class="column is-5 has-text-right">
-              <iframe src='https://www.podbean.com/media/player/i9yxd-a14a9b?from=yiiadmin&download=1&version=1' data-link='https://www.podbean.com/media/player/i9yxd-a14a9b?from=yiiadmin&download=1&version=1' height='122' width='100%' frameborder='0' scrolling='no' data-name='pb-iframe-player' ></iframe>
+              <a
+                  href="https://www.podbean.com/media/player/i9yxd-a14a9b?from=yiiadmin&download=1&version=1"
+                  target="_blank">
+                <img
+                    src="@/assets/images/events/talent_talk.jpg"
+                    alt="TalentTalk Radio with Chris Dyer" />
+              </a>
             </div>
             <div class="column is-7">
               <h1 class="title">
