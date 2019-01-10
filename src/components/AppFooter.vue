@@ -94,7 +94,7 @@
             <img src="@/assets/images/brand/brand.svg" class="image is-24x24 brand-image m-r-_5"  alt="ETW : Execute To Win">
             Improving the way the world does business
             <span class="has-text-grey-light m-x-1">|</span>
-            {{ new Date().getFullYear() }} ETW®
+            <span v-html="yearAndLogo"></span>
           </small>
         </div>
       </div>
@@ -102,3 +102,13 @@
 
   </footer>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      yearAndLogo: `${new Date().getFullYear()} ETW &reg;`
+    }
+  }
+}
+</script>
