@@ -1,0 +1,296 @@
+<template>
+  <div>
+
+    <!--
+
+    INTRO
+
+    -->
+    <section class="hero is-medium is-dark software-intro p-t-5">
+      <div class="hero-head">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-8-desktop is-10-tablet">
+              <h1 class="title is-1 has-text-centered has-text-white sr-up">Software to Align Your Employees with Your Strategy and Intentional Culture</h1>
+              <div class="has-text-centered m-y-2">
+                <a href="https://itunes.apple.com/us/app/etw-mobile/id1252717437?mt=8" target="_blank"><img src="@/assets/images/mobile/app-store.png" alt="App Store" class="store-button sr-app-store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.etw.android&hl=en" target="_blank"><img src="@/assets/images/mobile/google-play.png" alt="Google Play" class="store-button sr-google-play"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-body sr-screenshots"><!-- placeholder --></div>
+    </section>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div class="container">
+
+      <!--
+
+      FOCUS ON RESULTS
+
+      -->
+      <section class="section software-focus m-y-5">
+
+        <h3 class="title is-3 has-text-centered m-b-4 sr-up">Focus on tangible results</h3>
+
+        <div class="columns is-multiline">
+          <div class="column is-6-desktop is-12-tablet sr-up" v-for="result in results" v-bind:key="result.title">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-96x96">
+                  <img v-bind:src="result.image" v-bind:alt="result.title">
+                </figure>
+              </div>
+              <div class="media-content m-l-1">
+                <div class="content">
+                  <h3 class="title is-4">{{ result.title }}</h3>
+                  <p class="is-size-5">{{ result.body }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!--
+
+      PLANS
+
+      -->
+      <section class="hero is-light is-medium software-plans m-b-2">
+        <div class="hero-body">
+          <div class="columns">
+            <div class="column is-5 is-offset-6">
+              <figure class="image is-96x96 sr-down">
+                <img src="@/assets/images/thumbnails/plans.png" alt="Plans">
+              </figure>
+              <h1 class="title sr-up">Visualize Your Strategy with Plans</h1>
+              <p class="is-size-5 sr-up">Creating a living, breathing execution plan that mirrors your strategy is a challenge for most organizations.  The plan feature in ETW allows you to create and cascade top-level plans and supporting plans throughout your organization.  ETW's plan functionality easily accommodates hierarchical, cross-functional and special projects team structures. Users have the ability to create an unlimited number of plans and related supporting plans to properly align their objectives.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+
+      NOTES
+
+      -->
+      <section class="hero software-notes m-y-3">
+        <div class="hero-body">
+          <div class="columns is-vcentered">
+            <div class="column is-4">
+              <figure class="image is-96x96 sr-left">
+                <img src="@/assets/images/thumbnails/goals.png" alt="Goals">
+              </figure>
+              <h3 class="title is-3 sr-left">Better Conversations through Aligned Goals</h3>
+              <p class="is-size-5 sr-left-delay">Your strategy defines the value your organization intentionally creates for its customers. ETW easily aligns all employees to your strategy through outcome-based, actionable performance goals.  This allows you to engage your employees through more meaningful conversations to drive better results.</p>
+            </div>
+            <div class="column is-7 is-offset-1 has-text-centered">
+              <img src="@/assets/images/goal-card.png" alt="Goal Card" class="sr-goal-card">
+              <img src="@/assets/images/note-one.png" alt="Note" class="sr-note-1 m-r-2">
+              <img src="@/assets/images/note-two.png" alt="Note" class="sr-note-2 m-l-2">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+
+      KPI
+
+      -->
+      <section class="hero is-medium is-light software-kpi m-y-2">
+        <div class="hero-body">
+          <div class="columns">
+            <div class="column is-5 is-offset-6">
+              <figure class="image is-96x96 sr-down">
+                <img src="@/assets/images/thumbnails/kpi.png" alt="Performance">
+              </figure>
+              <h1 class="title sr-up">Analyze with Metrics and Key Performance Indicators</h1>
+              <p class="is-size-5 sr-up-delay">Use real-time progress updates to drive high performance with 11 different KPI report and presentation types. Our highly customizable dashboard allows you to see the information in whichever display makes the most sense for you.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+
+      EVALUATIONS
+
+      -->
+      <section class="hero is-medium bg-white-bis software-evaluations m-y-2">
+        <div class="hero-body">
+          <div class="columns">
+            <div class="column is-4 is-offset-1">
+              <figure class="image is-96x96 sr-down">
+                <img src="@/assets/images/thumbnails/performance-score.png" alt="Performance">
+              </figure>
+              <h1 class="title sr-down">Performance &amp; Alignment Development through Evaluations</h1>
+              <p class="is-size-5 sr-up-delay">Conducting performance reviews once or twice a year is not an effective process.  ETW captures real-time improvement conversations around performance, culture and leadership.  With ETW, employees will know where they stand and what's expected 100% of the time.  Formal evaluations are made easy because there are no surprises and all conversations and actions are contextualized within each performance, culture and leadership goal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+
+      TRAY
+
+      -->
+      <section class="hero p-x-2 is-light b-b software-tray">
+       <div class="hero-body">
+         <div class="columns">
+           <div class="column column is-8">
+               <h1 class="title sr-up">Productivity at Your Fingertips</h1>
+               <p class="is-size-5 sr-up-delay">ETW's powerful contextual productivity tray delivers an always-accessible suite of tools allowing simultaneous navigation of your organization's operating system.</p>
+             </div>
+         </div>
+       </div>
+      </section>
+      <section class="m-b-2 bg-white-bis">
+        <div class="columns is-gapless">
+          <div class="column is-6">
+
+            <div class="p-a-3">
+              <figure class="image has-shadow m-b-1">
+                <img src="@/assets/images/backgrounds/software-meetings-min.jpg" alt="Meetings Screenshot">
+              </figure>
+
+              <div class="columns is-mobile is-vcentered">
+                <div class="column">
+                  <h1 class="title is-4 sr-up">Give Your Meetings Structure &amp; Increase Productivity</h1>
+                </div>
+                <div class="column is-narrow">
+                  <figure class="image is-96x96 sr-down">
+                    <img src="@/assets/images/thumbnails/meetings.png" alt="Meetings">
+                  </figure>
+                </div>
+              </div>
+              <p class="is-size-6 sr-up-delay">Meetings without a set agenda, rules of engagement or context are significantly less productive. The ETW meeting feature unlocks your meetings effectiveness by providing contextual organization to your 1:1's, team, strategic, board of directors or any initiative meetings for your organization. ETW optimizes your meeting time through contextual topics, notes, action items and attendance allowing you and your team to focus on getting better results.</p>
+            </div>
+
+          </div>
+          <div class="column is-6">
+
+            <div class="p-a-3">
+              <figure class="image has-shadow m-b-1">
+                <img src="@/assets/images/backgrounds/software-ai-min.jpg" alt="Action Items Screenshot">
+              </figure>
+
+              <div class="columns is-mobile is-vcentered">
+                <div class="column">
+                  <h1 class="title is-4 sr-up">Drive &amp; Track Contextual Milestones Through Action Items</h1>
+                </div>
+                <div class="column is-narrow">
+                  <figure class="image is-96x96 sr-down">
+                    <img src="@/assets/images/thumbnails/action-items.png" alt="Action Items">
+                  </figure>
+                </div>
+              </div>
+              <p class="is-size-6 sr-up-delay">Staying on top of the actions that help you exceed your goals is a common challenge. We make it easy by contextualizing Action Items with each goal. We also give team members quick access from anywhere through a consolidated Action Item list regardless of where their actions originate from (Goals, Personal, Manager Assigned or Meetings). What if everyone in your organization did what they said they would 100% of the time? ETW's Action Item functionality gives you the capability to move in that direction fast.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- end of container -->
+
+  </div>
+
+</template>
+
+<script>
+export default {
+
+  data () {
+    return {
+
+      /**
+       * Focus on Results Sections
+       * @type {Array}
+       */
+      results: [
+        {
+          title: 'Increased Alignment',
+          body: "Transparency increases accountability and promotes a complete understanding of how each and every employee's role affects the success of the company. Give employees transparency into top company goals for a highly engaged workforce.",
+          image: require('@/assets/images/thumbnails/engagement-min.jpg')
+        },
+        {
+          title: 'Contextual Feedback & Development',
+          body: `Provide continuous feedback through conversations aligned to your employee's assigned goals. Emphasize career development and progression to create a culture of high performers throughout your entire organization.`,
+          image: require('@/assets/images/thumbnails/performance-min.jpg')
+        }
+      ]
+    }
+  },
+
+  metaInfo () { return this.$store.getters['meta/showByPage']('software') },
+
+  mounted () {
+    this.scrollReveal.reveal('.sr-up')
+
+    this.scrollReveal.reveal('.sr-up-delay', {
+      delay: 100
+    })
+
+    this.scrollReveal.reveal('.sr-down', {
+      origin: 'top'
+    })
+
+    this.scrollReveal.reveal('.sr-left', {
+      origin: 'left'
+    })
+
+    this.scrollReveal.reveal('.sr-left-delay', {
+      origin: 'left',
+      delay: 100
+    })
+
+    this.scrollReveal.reveal('.sr-app-store', {
+      origin: 'left',
+      delay: 100
+    })
+
+    this.scrollReveal.reveal('.sr-google-play', {
+      origin: 'right',
+      delay: 150
+    })
+
+    this.scrollReveal.reveal('.sr-screenshots', {
+      delay: 300
+    })
+
+    this.scrollReveal.reveal('.sr-goal-card', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '300px',
+      scale: 1,
+      opacity: 1,
+      reset: false
+    })
+
+    this.scrollReveal.reveal('.sr-note-1', {
+      delay: 1000,
+      reset: false,
+      origin: 'left'
+    })
+
+    this.scrollReveal.reveal('.sr-note-2', {
+      delay: 1500,
+      afterReveal: (domEl) => {
+        domEl.classList.add('animated')
+        domEl.classList.add('shake')
+      },
+      reset: false,
+      origin: 'right'
+    })
+  }
+
+}
+</script>

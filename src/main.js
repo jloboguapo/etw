@@ -1,92 +1,49 @@
-/*
-|--------------------------------------------------------------------------
-| Start the App.
-|--------------------------------------------------------------------------
-|
-| This will start the application by creating a vue.js instance
-| and will pull in the app modules and router.
-|
-*/
-
 import $ from 'jquery'
-import lodash from 'lodash'
+import App from './App.vue'
+import Meta from 'vue-meta'
 import router from './router'
 import ScrollReveal from 'scrollreveal'
+import store from './store'
 import Vue from 'vue'
 import VueAnalytics from 'vue-analytics'
-import VueGtm from 'vue-gtm'
-import vueScript2 from 'vue-script2'
-import vueSmoothScroll from 'vue-smoothscroll'
+import VueYoutube from 'vue-youtube'
 
-import Wrapper from './views/wrapper/wrapper.vue'
+import './assets/styles/styles.scss'
 
-/**
- * We'll load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features.
- */
-window.$ = window.jQuery = $
-
-/**
- * Turn off for production.
- *
- * This is to show helpful tips in development
- * mode. Turn off in production.
- */
 Vue.config.productionTip = false
 
 /**
- * Mount lodash globally.
- *
- * This allows you to access lodash function anywhere
- * in the app via "_."".
+ * For dynamic meta data from /store/meta.store.js
  */
-Vue.prototype._ = lodash
+Vue.use(Meta)
+
+/**
+ * We need jQuery for the Hubspot modal windows
+ */
+window.$ = window.jQuery = $
 
 /**
  * Mount ScrollReveal globally.
  *
  * This allows you animate items onto the page
  */
-Vue.prototype.scrollReveal = ScrollReveal({ reset: true })
+Vue.prototype.scrollReveal = ScrollReveal({
+  reset: true,
+  distance: '10px'
+})
 
-/**
- * For loading script tags in the templates
- */
-Vue.use(vueScript2)
-
-/**
- * This is to slow down scrolling of name anchors
- */
-Vue.use(vueSmoothScroll)
+Vue.use(VueYoutube)
 
 /**
  * Google analytics
- *
- * https://github.com/MatteoGabriele/vue-analytics
  */
 Vue.use(VueAnalytics, {
   id: 'UA-76992300-1',
   router
 })
 
-/**
- * Google Tag Manager
- *
- * https://github.com/mib200/vue-gtm
- */
-Vue.use(VueGtm, {
-  vueRouter: router
-})
-
-/**
- * Vue instance.
- *
- * Start the applicaton.
- */
- /* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
-  template: '<wrapper/>',
-  components: { Wrapper }
-})
+  store,
+  render: h => h(App)
+}).$mount('#app')

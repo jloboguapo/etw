@@ -8,15 +8,7 @@
 @import "~bulma/bulma";
 
 // Bulma extensions
-@import "~bulma-extensions/bulma-divider/divider";
-@import "~bulma-extensions/bulma-pricingtable/pricing-table";
-
-// Vue Video Player
-@import "~video.js/dist/video-js.css";
-@import "~vue-video-player/src/custom-theme.css";
-
-// Animate.css
-@import "~animate.css/animate.css";
+@import "~bulma-extensions/bulma-divider/dist/css/bulma-divider.min.css";
 
 // App specific
 @import "buttons";
@@ -26,7 +18,7 @@
 @import "icons";
 @import "modals";
 @import "scaffolding";
-@import "scroll-animation";
+@import "animation";
 @import "view-about";
 @import "view-contact";
 @import "view-home";

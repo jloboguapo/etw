@@ -8,7 +8,7 @@
   content: "";
   display: block;
   padding-bottom: 3%;
-  background-image: url("../../../static/images/backgrounds/round-edge.svg");
+  background-image: url("../images/backgrounds/round-edge.svg");
   width: 110%;
   margin-left: -5%;
   margin-bottom: -.625rem !important;
@@ -46,4 +46,17 @@
 .is-clickable {
   cursor: pointer;
   pointer-events: auto !important;
+}
+
+#app {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 400px;
+}
+
+@include mobile { 
+
+  #app {
+    padding-bottom: 1000px;
+  }
 }

@@ -16,7 +16,7 @@
 @include tablet {
 
   .home-intro {
-    background-image: url(../../../static/images/backgrounds/boardroom.jpg);
+    background-image: url(../images/backgrounds/boardroom-min.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -31,7 +31,7 @@
       content: "";
       display: block;
       padding-bottom: 3%;
-      background-image: url(../../../static/images/backgrounds/round-edge.svg);
+      background-image: url(../images/backgrounds/round-edge.svg);
       width: 110%;
       margin-left: -5%;
       margin-bottom: -.625rem !important;
@@ -52,21 +52,21 @@
   }
 
   .home-improving-alignment {
-    background-image: url(../../../static/images/backgrounds/section-about.jpg);
+    background-image: url(../images/backgrounds/section-about-min.jpg);
     background-position: 80% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
   .home-professional-services {
-    background-image: url(../../../static/images/backgrounds/section-services.jpg);
+    background-image: url(../images/backgrounds/section-services-min.jpg);
     background-position: 40% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
   .home-software {
-    background-image: url(../../../static/images/backgrounds/section-software.jpg);
+    background-image: url(../images/backgrounds/section-software-min.jpg);
     background-size: auto 100%;
     background-position: center top;
     background-repeat: no-repeat;

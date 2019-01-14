@@ -11,7 +11,7 @@
 @include tablet {
 
   .services-intro {
-    background-image: url(../../../static/images/backgrounds/section-alignment.jpg);
+    background-image: url(../images/backgrounds/section-alignment-min.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -22,7 +22,7 @@
   }
 
   .services-professional-services {
-    background-image: url(../../../static/images/backgrounds/services-workshops.jpg);
+    background-image: url(../images/backgrounds/services-workshops-min.jpg);
     background-position: 70% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 
     :before {
       content: '';
-      background-image: url(../../../static/images/backgrounds/Triangles.png);
+      background-image: url(../images/backgrounds/Triangles-min.png);
       background-repeat: no-repeat;
       background-position: left center;
       background-size: cover;
