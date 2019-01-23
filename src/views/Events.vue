@@ -22,6 +22,50 @@
 
       <div class="container">
 
+        <!-- JED NORDEN -->
+        <section class="section sr-up-interval">
+          <div class="columns is-variable is-8">
+            <div class="column is-5 has-text-right">
+              <a
+                  href="https://offers.etw.com/how-ceos-can-get-better-results-2"
+                  target="_blank">
+                <img
+                    src="@/assets/images/events/jed_norden.jpg"
+                    alt="How CEOs Can Get Better Results" />
+              </a>
+            </div>
+            <div class="column is-7">
+              <h1 class="title">
+                <a
+                    href="https://offers.etw.com/how-ceos-can-get-better-results-2"
+                    class="has-text-dark"
+                    target="_blank">
+                  How CEOs Can Get Better Results
+                </a>
+              </h1>
+              <h2 class="subtitle">webinar</h2>
+              <p>Many CEOs are challenged with building the right bench strength and executing their strategic plan. Lee Benson, CEO & Founder of ETW recently met with Jed Norden to discuss some of the proven and practical things that CEOs can do to produce sustainable results this year. Jed has held strategic senior leadership positions in human resources and operations management in Fortune 500 manufacturing, service and retail companies.</p>
+
+              <div class="buttons m-t-2">
+
+                <button
+                    class="button is-success"
+                    v-on:click="toggleYoutubeModal('tWb_NZRLPek')">
+                  Preview
+                </button>
+
+                <a
+                    href="https://offers.etw.com/how-ceos-can-get-better-results-2"
+                    target="_blank"
+                    class="button is-primary">Watch the Webinar</a>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!-- end Jed Norden -->
+
         <!-- ROB HAMILTON MED TRANS -->
         <section class="section sr-up-interval">
           <div class="columns is-variable is-8">
@@ -64,7 +108,9 @@
             </div>
           </div>
         </section>
+        <!-- end Med Trans -->
 
+        <!-- TALENT TALK -->
         <section class="section sr-up-interval">
           <div class="columns is-variable is-8">
             <div class="column is-5 has-text-right">
@@ -93,6 +139,7 @@
             </div>
           </div>
         </section>
+        <!-- end Talent Talk -->
 
       </div>
 
