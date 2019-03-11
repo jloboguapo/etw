@@ -84,13 +84,6 @@ export default new Router({
       component: UserAgreement
     },
 
-    {
-      path: '/network',
-      redirect: to => {
-        window.location = 'https://etw.splashthat.com/'
-      }
-    },
-
     // For the home page
     {
       path: '/',
