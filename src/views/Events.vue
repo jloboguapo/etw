@@ -22,6 +22,44 @@
 
       <div class="container">
 
+        <!-- LEADERHIP SUMMIT -->
+        <section class="section sr-up-interval">
+          <div class="columns is-variable is-8">
+            <div class="column is-5 has-text-right">
+              <a
+                  href="https://etw.splashthat.com/"
+                  target="_blank">
+                <img
+                    src="@/assets/images/events/leadership_summit.png"
+                    alt="Join us for the Network Leadership Summit"
+                    style="max-width: 370px;" />
+              </a>
+            </div>
+            <div class="column is-7">
+              <h1 class="title">
+                <a
+                    href="https://etw.splashthat.com/"
+                    class="has-text-dark"
+                    target="_blank">
+                  Join us for the Network Leadership Summit
+                </a>
+              </h1>
+              <h2 class="subtitle">April 9, 2019</h2>
+              <p>The inaugural Network Leadership Summit will provide fresh perspectives from of some of the country’s most admired authors, management coaches, entrepreneurs and People leaders. This dynamic half-day program is set for 7:30 a.m. to 1:10 p.m., April 9 at The Showcase Room, located inside The Yard at Tempe’s Farmer Arts District.</p>
+
+              <div class="buttons m-t-2">
+
+                <a
+                    href="https://etw.splashthat.com/"
+                    target="_blank"
+                    class="button is-primary">Register Now</a>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         <!-- JED NORDEN -->
         <section class="section sr-up-interval">
           <div class="columns is-variable is-8">
