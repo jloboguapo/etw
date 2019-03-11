@@ -44,7 +44,7 @@
                   Join us for the Network Leadership Summit
                 </a>
               </h1>
-              <h2 class="subtitle">conference April 9, 2019</h2>
+              <h2 class="subtitle">April 9, 2019</h2>
               <p>The inaugural Network Leadership Summit will provide fresh perspectives from of some of the country’s most admired authors, management coaches, entrepreneurs and People leaders. This dynamic half-day program is set for 7:30 a.m. to 1:10 p.m., April 9 at The Showcase Room, located inside The Yard at Tempe’s Farmer Arts District.</p>
 
               <div class="buttons m-t-2">
