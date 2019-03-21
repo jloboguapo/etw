@@ -22,7 +22,6 @@
 
       <div class="container">
 
-
          <!-- CAPABLE LEADERSHIP -->
         <section class="section sr-up-interval">
           <div class="columns is-variable is-8">
@@ -42,7 +41,7 @@
                     href="http://go.chiefexecutive.net/webinar-Capable-Leadership/"
                     class="has-text-dark"
                     target="_blank">
-                  What is "Capable Leadership? Why Does it Matter to Your Revenue?
+                  What is "Capable Leadership?" Why Does it Matter to Your Revenue?
                 </a>
               </h1>
               <h2 class="subtitle">Webinar on March 26, 2019 at 2:00pm EST</h2>
@@ -60,7 +59,6 @@
             </div>
           </div>
         </section>
-
 
         <!-- LEADERHIP SUMMIT -->
         <section class="section sr-up-interval">
