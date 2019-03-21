@@ -22,6 +22,44 @@
 
       <div class="container">
 
+         <!-- CAPABLE LEADERSHIP -->
+        <section class="section sr-up-interval">
+          <div class="columns is-variable is-8">
+            <div class="column is-5 has-text-right">
+              <a
+                  href="http://go.chiefexecutive.net/webinar-Capable-Leadership/"
+                  target="_blank">
+                <img
+                    src="@/assets/images/events/capable_leadership.png"
+                    alt="Join us for the Capable Leadership Webinar"
+                    style="max-width: 370px;" />
+              </a>
+            </div>
+            <div class="column is-7">
+              <h1 class="title">
+                <a
+                    href="http://go.chiefexecutive.net/webinar-Capable-Leadership/"
+                    class="has-text-dark"
+                    target="_blank">
+                  What is "Capable Leadership?" Why Does it Matter to Your Revenue?
+                </a>
+              </h1>
+              <h2 class="subtitle">Webinar on March 26, 2019 at 2:00pm EST</h2>
+              <p>Are your best employees leaving because they believe you are not investing in their development? When it comes to driving your organization forward, there’s nothing more important than capable leadership, the ability to motivate and coach your team to its highest potential. Lee Benson, Founder and CEO of ETW and Jack Welch, Former Chairman and CEO of General Electric Company will be featured guests on a webinar hosted by Chief Executive Group discussing the winning behaviors that today’s leaders will need to succeed.</p>
+
+              <div class="buttons m-t-2">
+
+                <a
+                    href="http://go.chiefexecutive.net/webinar-Capable-Leadership/"
+                    target="_blank"
+                    class="button is-primary">Register Now</a>
+
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         <!-- LEADERHIP SUMMIT -->
         <section class="section sr-up-interval">
           <div class="columns is-variable is-8">
