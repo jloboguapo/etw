@@ -1,14 +1,11 @@
 <template>
   <div>
 
-    <div class="p-t-_5 has-text-centered">
-      <!-- IMAGE BANNER -->
+    <div class="app-banner">
       <a
+          class="banner"
           href="https://etw.splashthat.com/"
           target="blank">
-        <img
-            src="@/assets/images/events/etw-leaderboard.jpg"
-            alt="Join us for the Capable Leadership Webinar">
       </a>
     </div>
 
@@ -63,3 +60,29 @@ export default {
 }
 
 </script>
+
+<style>
+  .app-banner {
+    background-color: white;
+    display: flex;
+    height: 150px;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 40;
+  }
+
+  .app-banner .banner {
+    width: 1344px;
+    height: 150px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    background-image: url("../assets/images/events/etw-leaderboard.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
