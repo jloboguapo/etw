@@ -65,7 +65,7 @@ export default {
   .app-banner {
     background-color: white;
     display: flex;
-    height: 150px;
+    height: 100px;
     left: 0;
     margin: 0 auto;
     overflow: hidden;
@@ -77,12 +77,13 @@ export default {
 
   .app-banner .banner {
     width: 1344px;
-    height: 150px;
+    height: 100px;
     display: block;
     overflow: hidden;
     margin: 0 auto;
     background-image: url("../assets/images/events/etw-leaderboard.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: auto 100px;
   }
 </style>
