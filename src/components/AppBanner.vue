@@ -76,7 +76,7 @@ export default {
   }
 
   .app-banner .banner {
-    width: 1344px;
+    width: 100%;
     height: 100px;
     display: block;
     overflow: hidden;
