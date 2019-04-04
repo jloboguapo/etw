@@ -51,13 +51,13 @@
 #app {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 400px;
+  padding-bottom: 328px;
   margin-top: 100px;
 }
 
-@include mobile { 
+@include mobile {
 
   #app {
-    padding-bottom: 1000px;
+    padding-bottom: 872px;
   }
 }

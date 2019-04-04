@@ -5,51 +5,191 @@
     <div>
 
       <!-- HERO SECTION -->
-      <section class="hero is-dark is-medium home-intro">
+      <section class="hero is-dark home-intro">
         <div class="hero-body">
           <div class="container">
             <div class="columns is-multiline">
-              <div class="column is-7-desktop is-12-tablet">
-                <h1 class="title is-1 sr-intro-title has-text-white">
-                  What if your employees were 100% aligned to leadership, strategy and culture?
-                </h1>
-                <!-- VIDEO MODAL -->
-                <button class="button is-large is-success is-rounded m-t-1" v-on:click="toggleVideoModal()">
-                  <span>Learn more</span>
-                  <span class="icon">
-                    <i class="icon-play is-32 m-t-_5"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="column">
-                <div class="columns is-centered">
-                  <div class="column is-narrow has-text-right">
-                    <h2 class="subtitle is-3 has-text-right has-text-white">
-                      <span class="bullets sr-bullets"><span class="has-text-grey-light">Better</span> <strong class="has-text-light">Alignment</strong></span><br>
-                      <span class="bullets sr-bullets"><span class="has-text-grey-light">Drives better</span> <strong class="has-text-light">Conversations</strong></span><br>
-                      <span class="bullets sr-bullets"><span class="has-text-grey-light">Leading to better</span> <strong class="has-text-light">Actions</strong></span><br>
-                      <span class="bullets sr-bullets"><span class="has-text-grey-light">Producing extraordinary</span> <strong class="has-text-light">Results</strong></span>
-                    </h2>
-                    <div class="m-t-2">
-                      <button class="button is-large is-rounded is-primary" v-on:click="toggleHubspotModal()">
-                        Contact us to get started
-                      </button>
-                    </div>
-                  </div>
+              <div class="column has-text-centered sr-intro-title">
+                <h1 class="title is-size-1 is-size-2-mobile title-text">Only the intentional become exceptional</h1>
+                <h1 class="is-size-5 subtitle-text">ETW is an intentional leadership platform that helps high performing organizations deliver results faster. It’s your time to win. </h1>
+                <br/>
+                <br/>
+                <br/>
+                <div class="m-t-2">
+                  <button class="button is-uppercase has-text-weight-semibold is-large is-red is-primary" v-on:click="toggleHubspotModal()">
+                    Request a demo
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="has-text-centered">
-            </div>
           </div>
         </div>
-        <div class="scroll-down">
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <span>Scroll down</span>
-        </div>
       </section>
+
+    <section>
+      <div class="hero-body">
+          <div class="container">
+            <br/>
+            <h1 class="title is-1-desktop is-3-mobile has-text-centered has-text-green-darker">Purpose x People x Process = Winning</h1>
+            <br/>
+            <br/>
+            <div class="columns is-multiline has-text-centered is-centered">
+                <div class="column sr-bullets">
+                    <div class="icon-text-container">
+                        <figure class="image is-96x96 is-inline-block has-margin-right"><img src="@/assets/images/icons/focus.png"/></figure>
+                        <br/>
+                        <br/>
+                        <p>
+                            <strong class="has-text-grey-light">Create relentless focus</strong>
+                            <br/>
+                            <span class="has-text-grey-light">By focusing on your top priorities within the ETW platform, everyone becomes aligned and contributes toward what matters most.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="column sr-bullets">
+                    <div class="icon-text-container">
+                        <figure class="image is-96x96 is-inline-block has-margin-right"><img src="@/assets/images/icons/leaders.png"/></figure>
+                        <br/>
+                        <br/>
+                        <p>
+                            <strong class="has-text-grey-light">Develop extraordinary leaders</strong>
+                            <br/>
+                            <span class="has-text-grey-light">Gain a pulse on the development of your teams and individuals in one platform, empowering them to learn, apply, and succeed.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="column sr-bullets">
+                    <div class="icon-text-container">
+                        <figure class="image is-96x96 is-inline-block has-margin-right"><img src="@/assets/images/icons/culture.png"/></figure>
+                        <br/>
+                        <br/>
+                        <p>
+                            <strong class="has-text-grey-light">Cultivate healthy culture</strong>
+                            <br/>
+                            <span class="has-text-grey-light">When the right people are aligned to the right goals and habits, everybody wins. Pack a punch in your performance through proven, repeatable team processes.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="is-divider"></div>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="hero-body">
+          <div class="container">
+              <div class="columns is-desktop">
+                <div class="column">
+                   <div class="quote-text-container">
+                    <div class="column has-text-centered">
+                        <h1 class="is-size-2 is-italic quote-text has-text-weight-semibold">“ETW helped drive turnaround results in just 3 months.”</h1>
+                    </div>
+                    <div class="columns is-centered is-mobile">
+                        <div class="column is-hidden-touch">
+                           <h2 class="is-size-3 has-text-weight-light has-text-grey-light">- CHMM, Operations Manager</h2>
+                           <figure class="image is-inline-block is-32x32 is-inline-block has-margin-right has-vertical-align-middle"><img src="@/assets/images/icons/chemcare.png"/></figure>
+                           <h2 class="is-size-3 is-inline-block has-text-weight-light has-vertical-align-middle">US ChemCare</h2>
+                        </div>
+                        <div class="column is-hidden-desktop has-text-right">
+                            <h2 class="is-size-3 has-text-weight-light has-text-grey-light">- CHMM, Operations Manager</h2>
+                        </div>
+                        <div class="column is-hidden-desktop">
+                            <figure class="image is-inline-block is-32x32 is-inline-block has-margin-right has-vertical-align-middle"><img src="@/assets/images/icons/chemcare.png"/></figure>
+                            <h2 class="is-size-3 is-inline-block has-text-weight-light has-vertical-align-middle">US ChemCare</h2>
+                        </div>
+                    </div>
+                    <div class="columns is-multiline is-vcentered">
+                        <div class="column has-text-centered">
+                            <router-link :to="{name: 'customerSuccess'}">
+                                <span class="has-text-green is-italic has-text-weight-semibold">See More </span><span class="has-text-green">▶</span>
+                            </router-link>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column has-text-centered">
+                    <iframe class="embedded-video" src="https://www.youtube.com/embed/EakfI3qrPOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+      </div>
+      <br/>
+    </section>
+
+    <section>
+        <div class="columns is-multiline is-vcentered is-mobile">
+            <div class="column has-text-centered is-centered tile-1">
+                <div class="columns home-tile is-multiline is-vcentered">
+                    <div class="column has-text-centered is-centered sr-left">
+                        <div class="tile-text">
+                        <h1 class="title has-text-white">People-driven solutions</h1>
+                        <br/>
+                        <h1 class="subtitle has-text-white">After decades of growing global, market-leading brands, our solution architects have the hands-on experience needed to help you deliver results faster. Traction requires action.</h1>
+                        <br/>
+                            <router-link :to="{name: 'services'}">
+                                <button class="button is-primary is-inverted is-outlined has-text-weight-semibold is-uppercase is-large">
+                                    Explore Our Solutions
+                                </button>
+                            </router-link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column has-text-centered is-centered tile-2">
+                <div class="columns home-tile is-multiline is-vcentered">
+                    <div class="column has-text-centered is-centered tile-text sr-right">
+                        <h1 class="title has-text-white">Platform-enabled execution</h1>
+                        <br/>
+                        <h1 class="subtitle has-text-white">Built on ETW’s intentional leadership platform, our software products, Align and Drive, enable you to stay focused on your most important number while developing your leaders at scale.</h1>
+                        <br/>
+                        <router-link :to="{name: 'software'}">
+                            <button class="button is-primary is-inverted is-outlined has-text-weight-semibold is-uppercase is-large">
+                                Demo Our Software
+                            </button>
+                        </router-link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="columns is-multiline is-vcentered our-story is-mobile">
+            <div class="column">
+                <div class="columns is-multiline is-vcentered">
+                    <div class="column is-centered is-padded">
+                        <h1 class="title has-text-green-darker">This isn’t our first rodeo</h1>
+                        <p>Most teams spend too much time on strategy and not enough time on figuring out how they and their team will execute and sustain momentum. We know how that feels because we’ve been there. We’ve started businesses. We’ve grown them. We’ve sold them. And now, we’re here to help you with the lessons we’ve learned and the platform we’ve built from the ground up to deliver results faster.</p>
+                        <br/>
+                        <router-link :to="{name: 'about'}">
+                            <button class="button is-uppercase has-text-weight-semibold is-medium is-red is-primary">
+                                read our story
+                            </button>
+                        </router-link>
+                    </div>
+                </div>
+            </div>
+            <div class="column has-text-centered is-centered is-hidden-mobile">
+                <figure class="image is-inline-block has-margin-right is-padded"><img src="@/assets/images/backgrounds/computer-screen-tablet.png"/></figure>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="columns is-multiline is-vcentered crush-your-goals">
+            <div class="column has-text-centered sr-intro-title">
+                <h1 class="title">Crush your goals</h1>
+                <p class="">If you want to win, that’s what we’re all about. Unintentional leaders need not apply. Do you have what it takes?</p>
+                <br/>
+                <button class="button is-uppercase has-text-weight-semibold is-medium is-red is-primary" v-on:click="toggleHubspotModal()">
+                    Contact us to learn more
+                </button>
+            </div>
+        </div>
+    </section>
 
       <!--
 
@@ -76,83 +216,6 @@
       </modal-youtube>
 
     </div>
-
-    <!-- MAIN PAGE CONTENT -->
-  <div class="container">
-
-    <!--
-
-    IMPROVING ALIGNMENT
-
-    -->
-    <section class="hero is-medium is-light home-improving-alignment m-y-2">
-      <div class="hero-body">
-        <div class="columns">
-          <div class="column is-6 p-l-3">
-            <div class="m-b-2 m-t-3 sr-up">
-              <h5 class="has-text-grey">EXECUTE TO WIN</h5>
-              <h1 class="title is-1">Improving Alignment to Get Better Results</h1>
-            </div>
-            <p class="m-b-2 is-size-5 sr-up-delay">Execute to Win (ETW) is a consulting company that helps organizations improve alignment to get better results; alignment to intentional leadership, strategy, execution and culture. Only when organizations are aligned can they have the better conversations
-              leading to better actions to yield better results. Most organizations find alignment to be both their biggest challenge and opportunity. What would be different if your organization was 20, 30, 40, 50% more aligned? Our customers find that small
-              improvements in alignment yield large improvements in employee morale, engagement and bottom-line results.</p>
-            <router-link :to="{ name: 'about' }" tag="button" class="button is-medium is-rounded is-outlined is-primary">Learn more about ETW</router-link>
-          </div>
-          <div class="column is-background">
-            <!-- placeholder -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--
-
-    PROFESSIONAL SERVICES
-
-    -->
-    <section class="hero is-medium home-professional-services m-y-2">
-      <div class="hero-body">
-        <div class="columns">
-          <div class="column is-5 is-offset-6">
-            <div class="m-b-2 m-t-3 sr-up">
-              <h5>PROFESSIONAL SERVICES</h5>
-              <h1 class="title is-1">Align your organization for better results</h1>
-            </div>
-            <p class="m-b-2 is-size-5 sr-up-delay">Delivering workshops and facilitations to align leadership, strategy, execution and culture.</p>
-            <router-link :to="{ name: 'services' }" tag="button" class="button is-medium is-primary is-outlined is-rounded sr-up-delay">
-              Learn more about our services
-            </router-link>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--
-
-    SOFTWARE
-
-    -->
-    <section class="hero is-medium home-software">
-      <div class="hero-body">
-        <div class="columns is-centered">
-          <div class="column is-6-desktop is-10-tablet has-text-centered">
-            <h1 class="title is-1 m-b-3 sr-up">
-              Turn conversations into actions with ETW’s Software.
-            </h1>
-            <p class="is-size-5 m-b-2 sr-up-delay">
-              Web based application together with <br>
-              iOS and Android mobile solutions
-            </p>
-            <div>
-              <router-link :to="{ name: 'software' }" tag="button" class="button is-medium is-rounded is-outlined is-primary">Learn more about our software</router-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div>
-  <!-- end of container -->
 
   </div>
 </template>
@@ -206,6 +269,20 @@ export default {
       origin: 'top'
     })
 
+    this.scrollReveal.reveal('.sr-left', {
+      duration: 2000,
+      interval: 400,
+      scale: 1,
+      origin: 'left'
+    })
+
+    this.scrollReveal.reveal('.sr-right', {
+      duration: 2000,
+      interval: 400,
+      scale: 1,
+      origin: 'right'
+    })
+
     this.scrollReveal.reveal('.sr-up')
 
     this.scrollReveal.reveal('.sr-up-delay', {
@@ -227,10 +304,3 @@ export default {
 
 }
 </script>
-
-<style>
-  iframe {
-    width: 80vw;
-    height: 80vh;
-  }
-</style>

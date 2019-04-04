@@ -11,12 +11,42 @@
       font-size: 1.5rem;
     }
   }
+
+  .home-tile {
+    width: 100vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .tile-text {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quote-text-container {
+    max-width: 100vw;
+  }
+
+  .embedded-video {
+    height: 157.5px;
+    width: 280px;
+  }
+
+  .icon-text-container {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .crush-your-goals {
+    padding: 100px 10vw;
+  }
 }
 
 @include tablet {
 
   .home-intro {
-    background-image: url(../images/backgrounds/boardroom-min.jpg);
+    background-image: url(../images/backgrounds/conference-room.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -27,28 +57,9 @@
       font-weight: 700;
     }
 
-    &:after {
-      content: "";
-      display: block;
-      padding-bottom: 3%;
-      background-image: url(../images/backgrounds/round-edge.svg);
-      width: 110%;
-      margin-left: -5%;
-      margin-bottom: -.625rem !important;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center top;
-      margin-top: -3%;
-    }
-
-    .hero-body {
-      background: linear-gradient(135deg, rgba(darken($primary, 35%), .75) 0%, rgba(darken($primary, 30%), .75) 100%);
-    }
-
     .button {
       box-shadow: 0 1px 1px rgba($black, .2);
     }
-
   }
 
   .home-improving-alignment {
@@ -72,6 +83,47 @@
     background-repeat: no-repeat;
   }
 
+  .home-tile {
+    width: 100vw;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .tile-text {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .embedded-video {
+    height: 210px;
+    width: 373px;
+  }
+
+  .quote-text-container {
+    max-width: 100vw;
+  }
+
+  .icon-text-container {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .crush-your-goals {
+    padding: 100px 15vw;
+  }
+
+  .subtitle-text {
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-text {
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @include desktop {
@@ -79,9 +131,125 @@
     background-position: 90% 0;
     background-size: auto 100%;
   }
+
+  .home-tile {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .tile-text {
+    max-width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subtitle-text {
+    max-width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .embedded-video {
+    height: 315px;
+    width: 560px;
+  }
+
+  .quote-text-container {
+    max-width: 30vw;
+  }
+
+  .icon-text-container {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .crush-your-goals {
+    padding: 100px 30vw;
+  }
+}
+
+.crush-your-goals {
+  background-color: white;
+  background-image: url(../images/backgrounds/crush-your-goals.png);
+  background-size: cover;
+}
+
+.etw-text {
+  width: 450px
+}
+
+.quote-text {
+  color: #007078;
+}
+
+.subtitle.is-3 {
+  line-height: 4rem;
+}
+
+.tile-1 {
+  background-image: url(../images/backgrounds/tile-1.png);
+  background-size: cover;
+}
+
+.tile-2 {
+  background-image: url(../images/backgrounds/tile-2.png);
+  background-size: cover;
 }
 
 // for the scorll down
 .home-intro {
   position: relative;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.button {
+  border-width: 3px;
+}
+
+.is-red {
+  background-color: #E52A1F !important;
+  color: white;
+
+  &:hover {
+    background-color: white !important;
+    color: #E52A1F !important;
+  }
+}
+
+.has-margin-right {
+  margin-right: .7rem;
+}
+
+.our-story {
+  background-color: #E9E9E9;
+}
+
+.is-divider {
+  background-image: url(../images/divider.png);
+  border: none;
+  background-size: 100% auto;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 3px;
+}
+
+.has-vertical-align-middle {
+  vertical-align: middle;
+}
+
+.has-text-green {
+  color: #3BBFAD;
+}
+
+.has-text-green-darker {
+  color: #244B5A;
+}
+
+.is-padded {
+  padding: 10vw;
+}
+
+.button {
+  border-radius: 0;
 }
