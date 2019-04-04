@@ -85,20 +85,25 @@
                 <div class="column">
                    <div class="quote-text-container">
                     <div class="column has-text-centered">
-                        <h1 class="is-size-2 is-italic quote-text has-text-weight-semibold">“ETW helped drive turnaround results in just 3 months.”</h1>
+                        <h1 class="is-size-2 is-size-3-mobile is-italic quote-text has-text-weight-semibold">“ETW helped drive turnaround results in just 3 months.”</h1>
                     </div>
                     <div class="columns is-centered is-mobile">
+                        <div class="column is-hidden-tablet is-hidden-desktop has-text-centered">
+                           <h2 class="is-size-4 has-text-weight-light has-text-grey-light">- CHMM, Operations Manager</h2>
+                           <figure class="image is-inline-block is-32x32 is-inline-block has-margin-right has-vertical-align-middle"><img src="@/assets/images/icons/chemcare.png"/></figure>
+                           <h2 class="is-size-4 is-inline-block has-text-weight-semibold has-vertical-align-middle">US ChemCare</h2>
+                        </div>
                         <div class="column is-hidden-touch">
                            <h2 class="is-size-3 has-text-weight-light has-text-grey-light">- CHMM, Operations Manager</h2>
                            <figure class="image is-inline-block is-32x32 is-inline-block has-margin-right has-vertical-align-middle"><img src="@/assets/images/icons/chemcare.png"/></figure>
-                           <h2 class="is-size-3 is-inline-block has-text-weight-light has-vertical-align-middle">US ChemCare</h2>
+                           <h2 class="is-size-3 is-inline-block has-text-weight-semibold has-vertical-align-middle">US ChemCare</h2>
                         </div>
-                        <div class="column is-hidden-desktop has-text-right">
+                        <div class="column is-hidden-desktop is-hidden-mobile has-text-right">
                             <h2 class="is-size-3 has-text-weight-light has-text-grey-light">- CHMM, Operations Manager</h2>
                         </div>
-                        <div class="column is-hidden-desktop">
+                        <div class="column is-hidden-desktop is-hidden-mobile">
                             <figure class="image is-inline-block is-32x32 is-inline-block has-margin-right has-vertical-align-middle"><img src="@/assets/images/icons/chemcare.png"/></figure>
-                            <h2 class="is-size-3 is-inline-block has-text-weight-light has-vertical-align-middle">US ChemCare</h2>
+                            <h2 class="is-size-3 is-inline-block has-text-weight-semibold has-vertical-align-middle">US ChemCare</h2>
                         </div>
                     </div>
                     <div class="columns is-multiline is-vcentered">
@@ -120,25 +125,23 @@
     </section>
 
     <section>
-        <div class="columns is-multiline is-vcentered is-mobile">
+        <div class="columns is-multiline is-vcentered is-mobile is-marginless">
             <div class="column has-text-centered is-centered tile-1">
                 <div class="columns home-tile is-multiline is-vcentered">
-                    <div class="column has-text-centered is-centered sr-left">
-                        <div class="tile-text">
+                    <div class="column has-text-centered is-centered tile-text sr-left">
                         <h1 class="title has-text-white">People-driven solutions</h1>
                         <br/>
                         <h1 class="subtitle has-text-white">After decades of growing global, market-leading brands, our solution architects have the hands-on experience needed to help you deliver results faster. Traction requires action.</h1>
                         <br/>
-                            <router-link :to="{name: 'services'}">
-                                <button class="button is-primary is-inverted is-outlined has-text-weight-semibold is-uppercase is-large">
-                                    Explore Our Solutions
-                                </button>
-                            </router-link>
-                        </div>
+                        <router-link :to="{name: 'services'}">
+                            <button class="button is-primary is-inverted is-outlined has-text-weight-semibold is-uppercase is-large">
+                                Explore Our Solutions
+                            </button>
+                        </router-link>
                     </div>
                 </div>
             </div>
-            <div class="column has-text-centered is-centered tile-2">
+            <div class="column has-text-centered is-centered tile-2 is-marginless">
                 <div class="columns home-tile is-multiline is-vcentered">
                     <div class="column has-text-centered is-centered tile-text sr-right">
                         <h1 class="title has-text-white">Platform-enabled execution</h1>
@@ -157,7 +160,7 @@
     </section>
 
     <section>
-        <div class="columns is-multiline is-vcentered our-story is-mobile">
+        <div class="columns is-multiline is-vcentered our-story is-mobile is-marginless">
             <div class="column">
                 <div class="columns is-multiline is-vcentered">
                     <div class="column is-centered is-padded">
@@ -173,19 +176,19 @@
                 </div>
             </div>
             <div class="column has-text-centered is-centered is-hidden-mobile">
-                <figure class="image is-inline-block has-margin-right is-padded"><img src="@/assets/images/backgrounds/computer-screen-tablet.png"/></figure>
+                <figure class="image is-inline-block has-margin-right is-padded"><img src="@/assets/images/backgrounds/computer-screen.png"/></figure>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="columns is-multiline is-vcentered crush-your-goals">
+        <div class="columns is-multiline is-vcentered crush-your-goals is-marginless">
             <div class="column has-text-centered sr-intro-title">
                 <h1 class="title">Crush your goals</h1>
                 <p class="">If you want to win, that’s what we’re all about. Unintentional leaders need not apply. Do you have what it takes?</p>
                 <br/>
                 <button class="button is-uppercase has-text-weight-semibold is-medium is-red is-primary" v-on:click="toggleHubspotModal()">
-                    Contact us to learn more
+                    Contact us
                 </button>
             </div>
         </div>
@@ -259,28 +262,34 @@ export default {
 
   mounted () {
     this.scrollReveal.reveal('.sr-intro-title', {
-      duration: 1000
+      duration: 1000,
+      viewFactor: 0.5
     })
 
     this.scrollReveal.reveal('.sr-bullets', {
       duration: 400,
       interval: 400,
       scale: 1,
-      origin: 'top'
+      origin: 'top',
+      viewFactor: 0.5
     })
 
     this.scrollReveal.reveal('.sr-left', {
       duration: 2000,
       interval: 400,
+      distance: '300px',
       scale: 1,
-      origin: 'left'
+      origin: 'left',
+      viewFactor: 0.5
     })
 
     this.scrollReveal.reveal('.sr-right', {
       duration: 2000,
       interval: 400,
+      distance: '300px',
       scale: 1,
-      origin: 'right'
+      origin: 'right',
+      viewFactor: 0.5
     })
 
     this.scrollReveal.reveal('.sr-up')
