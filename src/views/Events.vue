@@ -60,8 +60,6 @@
           </div>
         </section>
 
-
-        
          <!-- CAPABLE LEADERSHIP -->
         <section class="section sr-up-interval">
           <div class="columns is-variable is-8">
