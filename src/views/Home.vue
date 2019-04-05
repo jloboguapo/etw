@@ -30,7 +30,7 @@
       <div class="hero-body">
           <div class="container">
             <br/>
-            <h1 class="title is-1-desktop is-3-mobile has-text-centered has-text-green-darker">Purpose x People x Process = Winning</h1>
+            <h1 class="title is-1-desktop is-3-mobile has-text-centered has-text-green-darker">Purpose + People + Process &rArr; Winning</h1>
             <br/>
             <br/>
             <div class="columns is-multiline has-text-centered is-centered">
@@ -150,7 +150,7 @@
                         <br/>
                         <router-link :to="{name: 'software'}">
                             <button class="button is-primary is-inverted is-outlined has-text-weight-semibold is-uppercase is-large">
-                                Demo Our Software
+                                Explore Our Software
                             </button>
                         </router-link>
                     </div>
