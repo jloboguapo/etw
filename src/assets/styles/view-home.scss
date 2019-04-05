@@ -203,11 +203,11 @@
   padding-bottom: 12rem;
 }
 
-.button {
+.alt-button {
+  border-radius: 0;
+  line-height: 0;
+  padding: 20px;
   border-width: 3px;
-}
-
-.is-red {
   background-color: #E52A1F !important;
   color: white;
 
@@ -248,8 +248,4 @@
 
 .is-padded {
   padding: 10vw;
-}
-
-.button {
-  border-radius: 0;
 }

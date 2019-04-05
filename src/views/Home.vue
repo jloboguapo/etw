@@ -16,7 +16,7 @@
                 <br/>
                 <br/>
                 <div class="m-t-2">
-                  <button class="button is-uppercase has-text-weight-semibold is-large is-red is-primary" v-on:click="toggleHubspotModal()">
+                  <button class="button is-uppercase has-text-weight-semibold is-large alt-button is-primary" v-on:click="toggleHubspotModal()">
                     Request a demo
                   </button>
                 </div>
@@ -168,7 +168,7 @@
                         <p>Most teams spend too much time on strategy and not enough time on figuring out how they and their team will execute and sustain momentum. We know how that feels because we’ve been there. We’ve started businesses. We’ve grown them. We’ve sold them. And now, we’re here to help you with the lessons we’ve learned and the platform we’ve built from the ground up to deliver results faster.</p>
                         <br/>
                         <router-link :to="{name: 'about'}">
-                            <button class="button is-uppercase has-text-weight-semibold is-medium is-red is-primary">
+                            <button class="button is-uppercase has-text-weight-semibold is-medium alt-button is-primary">
                                 read our story
                             </button>
                         </router-link>
@@ -187,7 +187,7 @@
                 <h1 class="title">Crush your goals</h1>
                 <p class="">If you want to win, that’s what we’re all about. Unintentional leaders need not apply. Do you have what it takes?</p>
                 <br/>
-                <button class="button is-uppercase has-text-weight-semibold is-medium is-red is-primary" v-on:click="toggleHubspotModal()">
+                <button class="button is-uppercase has-text-weight-semibold is-medium alt-button is-primary" v-on:click="toggleHubspotModal()">
                     Contact us
                 </button>
             </div>
@@ -262,30 +262,32 @@ export default {
 
   mounted () {
     this.scrollReveal.reveal('.sr-intro-title', {
-      duration: 1000
+      duration: 1000,
+      viewFactor: 0.5
     })
 
     this.scrollReveal.reveal('.sr-bullets', {
       duration: 400,
       interval: 400,
       scale: 1,
-      origin: 'top'
+      origin: 'top',
+      viewFactor: 0.5
     })
 
     this.scrollReveal.reveal('.sr-left', {
       duration: 2000,
       interval: 400,
-      distance: '300px',
       scale: 1,
-      origin: 'left'
+      origin: 'left',
+      viewFactor: 0.5
     })
 
     this.scrollReveal.reveal('.sr-right', {
       duration: 2000,
       interval: 400,
-      distance: '300px',
       scale: 1,
-      origin: 'right'
+      origin: 'right',
+      viewFactor: 0.5
     })
 
     this.scrollReveal.reveal('.sr-up')
