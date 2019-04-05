@@ -262,16 +262,14 @@ export default {
 
   mounted () {
     this.scrollReveal.reveal('.sr-intro-title', {
-      duration: 1000,
-      viewFactor: 0.5
+      duration: 1000
     })
 
     this.scrollReveal.reveal('.sr-bullets', {
       duration: 400,
       interval: 400,
       scale: 1,
-      origin: 'top',
-      viewFactor: 0.5
+      origin: 'top'
     })
 
     this.scrollReveal.reveal('.sr-left', {
@@ -279,8 +277,7 @@ export default {
       interval: 400,
       distance: '300px',
       scale: 1,
-      origin: 'left',
-      viewFactor: 0.5
+      origin: 'left'
     })
 
     this.scrollReveal.reveal('.sr-right', {
@@ -288,8 +285,7 @@ export default {
       interval: 400,
       distance: '300px',
       scale: 1,
-      origin: 'right',
-      viewFactor: 0.5
+      origin: 'right'
     })
 
     this.scrollReveal.reveal('.sr-up')
