@@ -27,7 +27,7 @@
           <div class="columns is-variable is-8">
             <div class="column is-5 has-text-right">
               <a
-                  href="https://etw.splashthat.com/"
+                  href=" http://bit.ly/etwnetworkdeck"
                   target="_blank">
                 <img
                     src="@/assets/images/events/leadership_summit.png"
@@ -38,10 +38,10 @@
             <div class="column is-7">
               <h1 class="title">
                 <a
-                    href="https://etw.splashthat.com/"
+                    href=" http://bit.ly/etwnetworkdeck"
                     class="has-text-dark"
                     target="_blank">
-                  Join us for the Network Leadership Summit
+                  Network Leadership Summit—Thanks for Joining Us!
                 </a>
               </h1>
               <h2 class="subtitle">April 9, 2019</h2>
@@ -50,9 +50,9 @@
               <div class="buttons m-t-2">
 
                 <a
-                    href="https://etw.splashthat.com/"
+                    href=" http://bit.ly/etwnetworkdeck"
                     target="_blank"
-                    class="button is-primary">Register Now</a>
+                    class="button is-primary">Download the Deck</a>
 
               </div>
 
