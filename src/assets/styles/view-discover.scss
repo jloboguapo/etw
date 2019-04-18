@@ -1,5 +1,5 @@
 @include mobile {
-  .home-intro {
+  .discover-intro {
     @include header-spacing;
     padding-bottom: 5rem;
 
@@ -12,7 +12,7 @@
     }
   }
 
-  .home-tile {
+  .discover-tile {
     width: 100vw;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -29,11 +29,11 @@
   }
 
   .embedded-video {
-    height: 157.5px;
-    width: 280px;
+    height: 315px;
+    width: 560px;
   }
 
-  .icon-text-container {
+  .statistic {
     padding-left: 15vw;
     padding-right: 15vw;
   }
@@ -45,8 +45,8 @@
 
 @include tablet {
 
-  .home-intro {
-    background-image: url(../images/backgrounds/conference-room.png);
+  .discover-intro {
+    background-image: url(../images/backgrounds/Triangles-min.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -62,28 +62,28 @@
     }
   }
 
-  .home-improving-alignment {
+  .discover-improving-alignment {
     background-image: url(../images/backgrounds/section-about-min.jpg);
     background-position: 80% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
-  .home-professional-services {
+  .discover-professional-services {
     background-image: url(../images/backgrounds/section-services-min.jpg);
     background-position: 40% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
-  .home-software {
+  .discover-software {
     background-image: url(../images/backgrounds/section-software-min.jpg);
     background-size: auto 100%;
     background-position: center top;
     background-repeat: no-repeat;
   }
 
-  .home-tile {
+  .discover-tile {
     width: 100vw;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -96,15 +96,15 @@
   }
 
   .embedded-video {
-    height: 210px;
-    width: 373px;
+    height: 420px;
+    width: 746px;
   }
 
   .quote-text-container {
     max-width: 100vw;
   }
 
-  .icon-text-container {
+  .statistic {
     padding-left: 4vw;
     padding-right: 4vw;
   }
@@ -127,12 +127,12 @@
 }
 
 @include desktop {
-  .home-improving-alignment {
+  .discover-improving-alignment {
     background-position: 90% 0;
     background-size: auto 100%;
   }
 
-  .home-tile {
+  .discover-tile {
     width: 50vw;
     height: 50vw;
   }
@@ -150,15 +150,15 @@
   }
 
   .embedded-video {
-    height: 315px;
-    width: 560px;
+    height: 420px;
+    width: 746px;
   }
 
   .quote-text-container {
     max-width: 30vw;
   }
 
-  .icon-text-container {
+  .statistic {
     padding-left: 4vw;
     padding-right: 4vw;
   }
@@ -196,11 +196,10 @@
   background-size: cover;
 }
 
-// for the scorll down
-.home-intro {
+.discover-intro {
   position: relative;
-  padding-top: 0rem;
-  padding-bottom: 12rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .alt-button {
@@ -221,7 +220,9 @@
   margin-right: .7rem;
 }
 
-.our-story {
+.workshop-goals {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-color: #E9E9E9;
 }
 
@@ -244,6 +245,10 @@
 
 .has-text-green-darker {
   color: #244B5A;
+}
+
+.has-margin-left {
+  margin-left: 2rem;
 }
 
 .is-padded {
