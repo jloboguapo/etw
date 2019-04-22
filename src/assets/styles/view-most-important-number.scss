@@ -1,5 +1,5 @@
 @include mobile {
-  .discover-intro {
+  .most-important-number-intro {
     @include header-spacing;
     padding-bottom: 5rem;
 
@@ -12,7 +12,7 @@
     }
   }
 
-  .discover-tile {
+  .most-important-number-tile {
     width: 100vw;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -45,7 +45,7 @@
 
 @include tablet {
 
-  .discover-intro {
+  .most-important-number-intro {
     background-image: url(../images/backgrounds/Triangles-min.png);
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -62,28 +62,28 @@
     }
   }
 
-  .discover-improving-alignment {
+  .most-important-number-improving-alignment {
     background-image: url(../images/backgrounds/section-about-min.jpg);
     background-position: 80% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
-  .discover-professional-services {
+  .most-important-number-professional-services {
     background-image: url(../images/backgrounds/section-services-min.jpg);
     background-position: 40% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
 
-  .discover-software {
+  .most-important-number-software {
     background-image: url(../images/backgrounds/section-software-min.jpg);
     background-size: auto 100%;
     background-position: center top;
     background-repeat: no-repeat;
   }
 
-  .discover-tile {
+  .most-important-number-tile {
     width: 100vw;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -127,12 +127,12 @@
 }
 
 @include desktop {
-  .discover-improving-alignment {
+  .most-important-number-improving-alignment {
     background-position: 90% 0;
     background-size: auto 100%;
   }
 
-  .discover-tile {
+  .most-important-number-tile {
     width: 50vw;
     height: 50vw;
   }
@@ -196,7 +196,7 @@
   background-size: cover;
 }
 
-.discover-intro {
+.most-important-number-intro {
   position: relative;
   padding-top: 6rem;
   padding-bottom: 6rem;
