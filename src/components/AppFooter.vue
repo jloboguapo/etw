@@ -39,6 +39,12 @@
               <a>Align Software</a>
             </router-link>
 
+             <router-link :to="{ name: 'most-important-number' }" tag="p">
+              <a>MIN Workshop</a>
+            </router-link>
+
+
+
           </div>
           <div class="column">
             <h6 class="title is-6">ABOUT</h6>
