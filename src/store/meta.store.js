@@ -212,6 +212,16 @@ export default {
         'linkedInImage': '/images/socials/Socialimages_LinkedIn - Home2.jpg'
       },
 
+      mostImportantNumber: {
+        title: 'Discover Your Most Important Number - ETW.com',
+        description: 'Every team has a number that’s most important to their overall success—you just may not know what your number is yet. ETW can help.',
+        url: 'https://www.etw.com/#/MIN',
+        'google+Image': '/images/socials/Socialimages_Facebook - HOME 2.jpg',
+        'facebookImage': '/images/socials/Socialimages_Facebook - HOME 2.jpg',
+        'twitterImage': '/images/socials/Socialimages_Twitter - HOME.jpg',
+        'linkedInImage': '/images/socials/Socialimages_LinkedIn - Home2.jpg'
+      },
+
       knowledgeCenter: {
         title: 'Knowledge Center - ETW.com',
         description: 'Insights, Workshops and Implementation resources to help you improve alignment.',

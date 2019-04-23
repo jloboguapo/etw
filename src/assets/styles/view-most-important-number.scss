@@ -1,0 +1,256 @@
+@include mobile {
+  .most-important-number-intro {
+    @include header-spacing;
+    padding-bottom: 5rem;
+
+    .title.is-1 {
+      font-size: 2rem;
+    }
+
+    .subtitle.is-3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .most-important-number-tile {
+    width: 100vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .tile-text {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quote-text-container {
+    max-width: 100vw;
+  }
+
+  .embedded-video {
+    height: 315px;
+    width: 560px;
+  }
+
+  .statistic {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .crush-your-goals {
+    padding: 100px 10vw;
+  }
+}
+
+@include tablet {
+
+  .most-important-number-intro {
+    background-image: url(../images/backgrounds/Triangles-min.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+    h1.is-1 {
+      font-size: 4rem;
+      line-height: 5rem;
+      font-weight: 700;
+    }
+
+    .button {
+      box-shadow: 0 1px 1px rgba($black, .2);
+    }
+  }
+
+  .most-important-number-improving-alignment {
+    background-image: url(../images/backgrounds/section-about-min.jpg);
+    background-position: 80% 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
+  .most-important-number-professional-services {
+    background-image: url(../images/backgrounds/section-services-min.jpg);
+    background-position: 40% 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
+  .most-important-number-software {
+    background-image: url(../images/backgrounds/section-software-min.jpg);
+    background-size: auto 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .most-important-number-tile {
+    width: 100vw;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .tile-text {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .embedded-video {
+    height: 420px;
+    width: 746px;
+  }
+
+  .quote-text-container {
+    max-width: 100vw;
+  }
+
+  .statistic {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .crush-your-goals {
+    padding: 100px 15vw;
+  }
+
+  .subtitle-text {
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-text {
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include desktop {
+  .most-important-number-improving-alignment {
+    background-position: 90% 0;
+    background-size: auto 100%;
+  }
+
+  .most-important-number-tile {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .tile-text {
+    max-width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subtitle-text {
+    max-width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .embedded-video {
+    height: 420px;
+    width: 746px;
+  }
+
+  .quote-text-container {
+    max-width: 30vw;
+  }
+
+  .statistic {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+
+  .crush-your-goals {
+    padding: 100px 30vw;
+  }
+}
+
+.crush-your-goals {
+  background-color: white;
+  background-image: url(../images/backgrounds/crush-your-goals.png);
+  background-size: cover;
+}
+
+.etw-text {
+  width: 450px
+}
+
+.quote-text {
+  color: #007078;
+}
+
+.subtitle.is-3 {
+  line-height: 4rem;
+}
+
+.tile-1 {
+  background-image: url(../images/backgrounds/tile-1.png);
+  background-size: cover;
+}
+
+.tile-2 {
+  background-image: url(../images/backgrounds/tile-2.png);
+  background-size: cover;
+}
+
+.most-important-number-intro {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.alt-button {
+  border-radius: 0;
+  line-height: 0;
+  padding: 20px;
+  border-width: 3px;
+  background-color: #E52A1F !important;
+  color: white;
+
+  &:hover {
+    background-color: white !important;
+    color: #E52A1F !important;
+  }
+}
+
+.has-margin-right {
+  margin-right: .7rem;
+}
+
+.workshop-goals {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #E9E9E9;
+}
+
+.is-divider {
+  background-image: url(../images/divider.png);
+  border: none;
+  background-size: 100% auto;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 3px;
+}
+
+.has-vertical-align-middle {
+  vertical-align: middle;
+}
+
+.has-text-green {
+  color: #3BBFAD;
+}
+
+.has-text-green-darker {
+  color: #244B5A;
+}
+
+.has-margin-left {
+  margin-left: 2rem;
+}
+
+.is-padded {
+  padding: 10vw;
+}

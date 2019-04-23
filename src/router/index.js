@@ -9,6 +9,7 @@ const CustomerAgreement = () => import('@/views/CustomerAgreement.vue')
 const CustomerSuccess = () => import('@/views/CustomerSuccess.vue')
 const Events = () => import('@/views/Events.vue')
 const Home = () => import('@/views/Home.vue')
+const MostImportantNumber = () => import('@/views/MostImportantNumber.vue')
 const KnowledgeCenter = () => import('@/views/KnowledgeCenter.vue')
 const NotFound = () => import('@/views/404.vue')
 const Privacy = () => import('@/views/Privacy.vue')
@@ -52,6 +53,12 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: Home
+    },
+
+    {
+      path: '/MIN',
+      name: 'most-important-number',
+      component: MostImportantNumber
     },
 
     {
