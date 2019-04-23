@@ -9,7 +9,7 @@
   <modal-hubspot
       v-bind:is-active="isShowHubspotModal"
       modal-title="Talk to me about the MIN workshop!"
-      @toggleModal="toggleModal()">
+      @toggleModal="toggleHubspotModal()">
   </modal-hubspot>
 
 
