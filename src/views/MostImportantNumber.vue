@@ -26,7 +26,7 @@
                 <h1 class="title is-size-2 is-size-3-mobile title-text">Discover Your Most Important Number (MIN)</h1>
                 <br/>
                 <div class="column has-text-centered">
-                    <iframe class="embedded-video" src="https://www.youtube.com/embed/efmTY2ie9eA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/333140666" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
                 <br/>
                 <h1 class="is-size-4 title-text" style="text-align: center;">Every team has a number that’s most important to overall success—you just may not know what your number is yet. Execute to Win can help.</h1>
@@ -135,7 +135,7 @@ we begin with an exclusive half-day workshop where you:</h1>
                 </div>
             </div>
             <br/>
-            <h1 class="subtitle is-size-5 has-text-centered has-text-green-darker">* ETW is extending to all Conscious Capitalism attendees 50% off a Most Important Number workshop at a total cost of $7,500. Contact us today to schedule your workshop.</h1>
+            <h1 class="subtitle is-size-5 has-text-centered has-text-green-darker">* ETW is extending a 50% discount through the end of May off a Most Important Number workshop at a total cost of $7,500. Contact us today to schedule your workshop.</h1>
             <br/>
             <div class="is-divider"></div>
           </div>
