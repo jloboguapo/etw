@@ -9,7 +9,8 @@
   <modal-hubspot
       v-bind:is-active="isModalActive"
       modal-title="Contact ETW Sales"
-      @toggleModal="toggleModal()">
+      @toggleModal="toggleModal()"
+      form-id="d6a266a7-9192-4b1b-b9dd-8aadd78dff3f">
   </modal-hubspot>
 
   <section class="hero is-medium contact-intro">
