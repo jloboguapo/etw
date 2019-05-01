@@ -203,7 +203,8 @@
           modal-id="contact"
           modal-title="Contact ETW Sales"
           v-bind:is-active="isShowHubspotModal"
-          @toggleModal="toggleHubspotModal()">
+          @toggleModal="toggleHubspotModal()"
+          form-id="6131a846-42ec-448b-8da8-278458485672">
       </modal-hubspot>
 
       <!--
