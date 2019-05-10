@@ -135,8 +135,10 @@ we begin with an exclusive half-day workshop where you:</h1>
                 </div>
             </div>
             <br/>
-            <h1 class="subtitle is-size-5 has-text-centered has-text-green-darker">* ETW is extending a 50% discount through the end of May off a Most Important Number workshop at a total cost of $7,500. Contact us today to schedule your workshop.</h1>
-            <br/>
+            <h1 class="subtitle is-size-5 has-text-centered has-text-green-darker">Contact us today to schedule your workshop.</h1>
+            <center><button class="button is-uppercase has-text-weight-semibold is-medium alt-button is-primary" v-on:click="toggleHubspotModal()">
+                    FIND MY MIN!
+                </button></center>
             <div class="is-divider"></div>
           </div>
       </div>
@@ -147,7 +149,7 @@ we begin with an exclusive half-day workshop where you:</h1>
         <div class="columns is-multiline is-vcentered crush-your-goals is-marginless" ref="contact">
             <div class="column has-text-centered sr-intro-title">
                 <h1 class="title">Only the intentional become exceptional</h1>
-                <p class="">It’s time to find your focus and accelerate your growth. To schedule your Most Important Number workshop, contact stacie.mallen@etw.com or click below.</p>
+                <p class="">It’s time to find your focus and accelerate your growth. To schedule your Most Important Number workshop, contact MIN@etw.com or click below.</p>
                 <br/>
                 <button class="button is-uppercase has-text-weight-semibold is-medium alt-button is-primary" v-on:click="toggleHubspotModal()">
                     What's my MIN?
