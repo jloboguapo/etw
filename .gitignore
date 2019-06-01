@@ -1,0 +1,7 @@
+node_modules
+dist/bundle.js
+.nyc_output/
+coverage/
+.idea
+public/bundle*
+public/.DS_Store
