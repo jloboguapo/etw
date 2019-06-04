@@ -4,23 +4,21 @@ const Home = props => {
   const [input, setInput] = useState(1);
 
   return (
-    <div className="etw-home-container">
-      How many times I have clicked {input}
+    <div className='etw-home-container'>
+      <img className='etw-logo' src='/logo.png' />
+      <p>
+        Performance Solutions
+      </p>
+      <p>
+        Leadership Resources
+      </p>
+      <p>
+        more
+      </p>
       <button
-        className="etw-home-button"
-        onClick={() => {
-          setInput(input + 1);
-        }}
+        className='etw-webinar-button'
       >
-        Increment
-      </button>
-      <button
-        className="etw-home-button"
-        onClick={() => {
-          setInput(input - 1);
-        }}
-      >
-        Decrement
+        JOIN A WEBINAR
       </button>
     </div>
   );
