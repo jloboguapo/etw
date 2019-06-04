@@ -17,11 +17,7 @@ module.exports = {
     hot: true,
     contentBase: path.join(__dirname, 'public'),
     publicPath: '/',
-    open: true,
-    setup(app) {
-      const express = require('express');
-      app.use(express.static(__dirname + '/resources'));
-    }
+    open: true
   },
   resolve: {
     modules: ['client/js', 'node_modules']
