@@ -1,26 +1,34 @@
-@import 'colors';
-@import 'variables';
-
-.etw-header {
-  background-color: $black;
-  color: $react-blue;
-  display: flex;
-  height: 50px;
-  left: 0;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-
-  .etw-header-content {
-    align-items: center;
-    display: flex;
-    font-size: $font-size;
-    margin: 0;
-    padding: 0 20px;
-
-    @media screen and (min-width: $breakpoints-tablet) {
-      padding: 0 50px;
+.etw-main-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  .etw-header-container {
+    text-align: right;
+    .etw-logo {
+      width: 80px;
+      height: 30px;
+      margin-top: 10px;
+      float: left;
+    }
+    .etw-webinar-button {
+      font-weight: 600;
+      padding: 5px 10px 6px 10px;
+      margin-top: 12px;
+      background-color: seagreen;
+      border-radius: 3px;
+      color: white;
+      outline: 0;
+      float: right;
+    }
+    p {
+      display: inline-block;
+      font-size: .83em;
+      font-weight: 600;
+      margin-top: 17px;
+      margin-right: 25px;
+      vertical-align: top;
+      text-align: center;
+      text-transform: uppercase;
     }
   }
 }

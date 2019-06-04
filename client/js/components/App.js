@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Cheader from './Cheader';
 import Footer from './Footer';
 
 import '../../sass/style.scss';

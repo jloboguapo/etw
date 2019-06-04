@@ -1,22 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { clearData } from '../actionCreators';
-import NavBar from './NavBar';
 
-const Header = props => {
-  const { dispatch } = props;
-  console.log('yo')
+function Header () {
   return (
-    <header className="etw-header">
-      <h1 className="etw-header-content">
-        <Link to="/" onClick={() => dispatch(clearData)}>
-          ETW
-        </Link>
-      </h1>
-      <NavBar />
-    </header>
+    <div className='etw-header-container'>
+      <img className='etw-logo' src='/logo.png' />
+      <p>
+        Performance Solutions
+      </p>
+      <p>
+        Leadership Resources
+      </p>
+      <p>
+        more
+      </p>
+      <button
+        className='etw-webinar-button'
+      >
+        JOIN A WEBINAR
+      </button>
+    </div>
   );
 };
 
-export default connect()(Header);
+export default Header;

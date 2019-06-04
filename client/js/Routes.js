@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './components/App';
-import Home from './components/Home';
+import Header from './components/Header';
 
 const Routes = () => (
   <BrowserRouter>
@@ -10,7 +10,7 @@ const Routes = () => (
         <Route
           exact
           path="/"
-          render={routeProps => <Home history={routeProps.history} />}
+          render={routeProps => <Header history={routeProps.history} />}
         />
       </Switch>
     </App>
