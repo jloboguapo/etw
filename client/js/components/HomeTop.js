@@ -19,13 +19,16 @@ class HomeTop extends Component {
                 </div>
                 <div className='etw-home-top-right-container'>
                     <div className='etw-home-top-right-container-1'>
-                    <img className='etw-strengthen-culture-icon' src='/etw-strengthen-culture.jpeg' />
+                        <img className='etw-strengthen-culture-icon' src='/etw-strengthen-culture.jpeg' />
                         <h4>
                             Strengthen culture
                         </h4>
                         <p>
                             Develop a value-creation mindset and skill set within all your employees.
                         </p>
+                        <h5>
+                            Put people first 
+                        </h5>
                     </div>
                     <div className='etw-home-top-right-container-2'>
                     <img className='etw-accelerate-growth-icon' src='/etw-accelerate-growth.jpeg' />
