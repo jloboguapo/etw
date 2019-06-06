@@ -6,7 +6,7 @@ import '../../sass/style.scss';
 
 export default function App({ children }) {
   return (
-    <div className="etw-main-container">
+    <div className="etw-ultimate-container">
       {window.location.pathname !== '/' && <Cheader />}
       {children}
       {window.location.pathname !== '/' && <Footer />}

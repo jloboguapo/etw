@@ -7,13 +7,14 @@
 @import 'content';
 @import 'variables';
 @import 'home';
+@import 'logosBanner';
 
 body {
   font-family: $font-default;
   margin: 0;
 }
 
-.etw-main-container {
+.etw-ultimate-container {
   display: flex;
   flex-direction: column;
   height: 100%;

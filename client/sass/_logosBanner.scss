@@ -1,0 +1,28 @@
+.etw-main-container {
+    .logos-banner {
+        background-color: 	#F4F1EC;
+        height: 145px;
+        width: 100%;
+        p {
+            font-size: .83em;
+            font-weight: 600;
+            margin-bottom: 5px;
+            padding-top: 40px;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        img {
+            height: 75px;
+            width: 150px;
+        }
+        .trip-spark-logo {
+            margin-left: 10%;
+        }
+        .univar-logo {
+            margin-left: 15%;
+        }
+        .verra-mobility-logo {
+            margin-left: 3%;
+        }
+    }
+}
