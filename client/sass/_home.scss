@@ -2,86 +2,93 @@
     background-color: #FBFCF4;
 }
 .etw-main-container {
-    .etw-webinar-button {
-        font-size: 13px;
-        font-weight: 600;
-        padding: 10px 20px 12px 20px;
-        margin-top: 5px;
-        background-color: #047074;
-        border-radius: 3px;
-        color: #FBFCF4;
-        outline: 0;
-        text-transform: uppercase;
-    }
-    .etw-home-top-container{
-        height: 360px;
-        h1 {
-            width: 90%;
-            letter-spacing: .07em;
-            font-size: 50px;
+    .etw-secondary-container {
+        .etw-webinar-button {
+            font-size: 13px;
+            font-weight: 600;
+            padding: 10px 20px 12px 20px;
+            margin-top: 5px;
+            background-color: #047074;
+            border-radius: 3px;
+            color: #FBFCF4;
+            outline: 0;
+            text-transform: uppercase;
         }
-        p {
-            color: #777777;
-            line-height: 1.5;
-        }
-        .etw-home-top-left-container {
-            height: 100%;
-            width: 60%;
-            float: left;
+        .etw-home-top-container{
+            height: 360px;
+            h1 {
+                width: 90%;
+                letter-spacing: .07em;
+                font-size: 50px;
+            }
             p {
-                width: 75%;
-                font-size: 1.1em;
-
+                color: #777777;
+                line-height: 1.5;
             }
-        }
-        .etw-home-top-right-container {
-            float: right;
-            height: 110%;
-            width: 40%;
-
-            h4 {
-                text-align: left;
-                padding-top: 30px;
-                padding-left: 27%;
-                letter-spacing: 1;
-            }
+            .etw-home-top-left-container {
+                height: 100%;
+                width: 60%;
+                float: left;
                 p {
-                    padding-left: 27%;
-                    margin-top: -10px;
-                    margin-bottom: -5px;
-                    width: 62%;
-                    font-size: .75em;
-                    color: #777777;
+                    width: 75%;
+                    font-size: 1.1em;
+
                 }
-            .etw-home-top-right-container-1 {
+            }
+            .etw-home-top-right-container {
+                float: right;
+                height: 110%;
+                width: 40%;
+
+                h4 {
+                    text-align: left;
+                    padding-top: 30px;
+                    padding-left: 27%;
+                    letter-spacing: 1;
+                }
+                    p {
+                        padding-left: 27%;
+                        margin-top: -10px;
+                        margin-bottom: -5px;
+                        width: 62%;
+                        font-size: .75em;
+                        color: #777777;
+                    }
+                .etw-home-top-right-container-1 {
+                    background-color: #FFFFFF;
+                    height: 37%;
+                    margin-top: 35px;
+                    border-radius: 4px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    h5 {
+                        color: #047074;
+                        text-transform: uppercase;
+                        font-size: .7em;
+                    }
+                    .people-first-arrow {
+                        color: #047074;
+                        font-size: 19px;
+                        font-weight: 350;
+                    }
+                    .etw-strengthen-culture-icon {
+                        height: 69%;
+                        width: 22%;
+                        float: left;
+                        margin: 23px;
+                    }
+                }
+            }
+            .etw-home-top-right-container-2 {
                 background-color: #FFFFFF;
                 height: 37%;
-                margin-top: 35px;
                 border-radius: 4px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                h5 {
-                    color: #047074;
-                    text-transform: uppercase;
-                    font-size: .7em;
-                }
-                .etw-strengthen-culture-icon {
+                .etw-accelerate-growth-icon {
                     height: 69%;
                     width: 22%;
                     float: left;
                     margin: 23px;
                 }
-            }
-        }
-        .etw-home-top-right-container-2 {
-            background-color: #FFFFFF;
-            height: 37%;
-            border-radius: 4px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            .etw-accelerate-growth-icon {
-                height: 69%;
-                width: 22%;
-                float: left;
-                margin: 23px;
             }
         }
     }
