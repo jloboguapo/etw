@@ -4,7 +4,7 @@ class Header extends Component {
   render(){
     return (
       <div className='etw-header-container'>
-        <img className='etw-logo' src='/etw-logo.png' />
+        <img className='etw-logo-dark-on-transparent' src='./resources/etw-logo-dark-on-transparent.svg' />
         <p>
           Performance Solutions
         </p>

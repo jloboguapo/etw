@@ -9,7 +9,7 @@ class HomeTop extends Component {
                         Only the intentional become exceptional
                     </h1>
                     <p>
-                        ETW is the Intentional Leadership Platform that high-performance organizations trust to strengthen and accelerate growth
+                        ETW is the Intentional Leadership Platform that high-performance organizations trust to strengthen culture and accelerate growth
                     </p>
                     <button
                     className='etw-webinar-button'
@@ -19,7 +19,7 @@ class HomeTop extends Component {
                 </div>
                 <div className='etw-home-top-right-container'>
                     <div className='etw-home-top-right-container-1'>
-                        <img className='etw-strengthen-culture-icon' src='/etw-strengthen-culture.jpeg' />
+                        <img className='etw-strengthen-culture-icon' src='./resources/etw-strengthen-culture.svg' />
                         <h4>
                             Strengthen culture
                         </h4>
@@ -31,7 +31,7 @@ class HomeTop extends Component {
                         </h5>
                         </div>
                     <div className='etw-home-top-right-container-2'>
-                    <img className='etw-accelerate-growth-icon' src='/etw-accelerate-growth.jpeg' />
+                    <img className='etw-accelerate-growth-icon' src='./resources/etw-accelerate-growth.svg' />
                         <h4>
                             Accelerate growth
                         </h4>
