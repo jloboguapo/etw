@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import HomeTop from './HomeTop';
 import LogosBanner from './LogosBanner';
+import Solutions from './Solutions';
 
 class Home extends Component {
     render() {
@@ -14,6 +15,9 @@ class Home extends Component {
             </div>
             <br/><br/><br/><br/><br/><br/>
             <LogosBanner />
+            <div className='etw-solutions-main-container'>
+                <Solutions />
+            </div>
         </div>
         );
     };
