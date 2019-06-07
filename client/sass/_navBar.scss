@@ -34,34 +34,16 @@
   }
 
   .etw-nav-bar-items {
-    color: $white;
-    font-weight: $font-weight-normal;
     position: relative;
     display: flex;
     align-items: center;
     padding: 0 10px;
-
-    &.selected {
-      color: $react-blue;
-
-      @media screen and (max-width: $breakpoints-tablet) {
-        outline: 0;
-        background-color: $react-gray-dark;
-        color: $react-white;
-      }
-    }
-
-    &:hover {
-      color: $react-white;
-    }
-
 
     @media screen and (min-width: $breakpoints-tablet) {
       .etw-nav-bar-selected-border {
         position: absolute;
         bottom: -1px;
         height: 4px;
-        background: $react-blue;
         left: 0;
         right: 0;
       }
