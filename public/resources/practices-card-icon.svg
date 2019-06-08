@@ -1,0 +1,18 @@
+
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01a_homepage" transform="translate(-751.000000, -1157.000000)">
+            <g id="Group-14" transform="translate(751.000000, 1157.000000)">
+                <rect id="Rectangle-Copy-7" fill-rule="nonzero" x="0" y="0" width="80" height="80"></rect>
+                <g id="icon-practices">
+                    <polygon id="Triangle" fill="#F9D423" fill-rule="nonzero" points="37.5 0 75 60 0 60"></polygon>
+                    <g id="Group-7" transform="translate(25.000000, 21.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M27.50285,31.834 L5.85425,2.65685714" id="Stroke-1"></path>
+                        <path d="M36.05285,6.08628571 C46.99115,9.73485714 54.4211,19.9291429 54.57215,31.4834286 C54.7232,43.0377143 47.56115,53.4205714 36.7226,57.3577143 C25.8869,61.2948571 13.7516,57.9234286 6.4841,48.952 C-0.7834,39.9834286 -1.58995,27.3834286 4.47485,17.5577143" id="Stroke-3"></path>
+                        <path d="M26.07785,8.99914286 C28.43765,8.99914286 30.35285,7.082 30.35285,4.71342857 C30.35285,2.34771429 28.43765,0.427714286 26.07785,0.427714286 C23.71805,0.427714286 21.80285,2.34771429 21.80285,4.71342857 C21.80285,7.082 23.71805,8.99914286 26.07785,8.99914286 Z" id="Stroke-5"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
