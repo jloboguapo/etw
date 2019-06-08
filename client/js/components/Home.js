@@ -19,6 +19,9 @@ class Home extends Component {
             <br/><br/><br/><br/><br/><br/>
                 <Solutions />
             </div>
+            <div className='etw-insights-ultimate-container'>
+            <br/><br/><br/><br/><br/><br/>
+            </div>
         </div>
         );
     };
