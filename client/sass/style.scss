@@ -8,6 +8,7 @@
 @import 'homeTop';
 @import 'logosBanner';
 @import 'solutions';
+@import 'insights';
 
 body {
   margin: 0;
@@ -23,13 +24,13 @@ body {
 
   .etw-webinar-button {
     font-family: $roboto;
-    font-size: 13px;
+    font-size: .82em;
     font-weight: 600;
-    letter-spacing: .01em;
-    padding: 10px 20px 10px 20px;
+    letter-spacing: .03em;
+    padding: 11px 17px 13px 17px;
     margin-top: 5px;
     background-color: $forest;
-    border-radius: 3px;
+    border-radius: 2px;
     color: $light-bone;
     outline: 0;
     text-transform: uppercase;

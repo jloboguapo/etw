@@ -3,7 +3,6 @@
 
 .etw-solutions-ultimate-container {
     background-color: #FFFFFF;
-    height: 100%;
     .etw-solutions-main-container {
         p {
             color: #777777;
@@ -40,7 +39,7 @@
                 display: inline-block;
                 width: 25%;
                 vertical-align: top;
-                height: 100%;
+                height: 47%;
                 img {
                     width: 30%;
                     display: block;
@@ -68,12 +67,70 @@
                 }
             }
             .priorities-card {
-                background: rgba(244,241,235, .5%);
+                background: rgba(244,241,235, .5);
                 background-size: 70% 70%;
-                height: 47%;
                 .view-our-solution {
                     width: 53%;
                     margin-top: 12%;
+                }
+            }
+        }
+        .testimonial-container {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: .5%;
+            padding-bottom: .5%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.1);
+            .divider-in-testimonials {
+                height: 25.5%;
+                margin-bottom: -4%;
+            }
+            .testimonial-container-left {
+                display: inline-block;
+                width: 40%;
+                margin-left: 3%;
+                text-align: center;
+                    .etw-webinar-button {
+                        color: #FFFFFF;
+                    }
+                    p {
+                    font-family: $roboto;
+                    font-weight: lighter;
+                    line-height: 1.6em;
+                    font-size: .8em;
+                    color: #777777;
+                    letter-spacing: .01em;
+                    width: 65%;
+                    margin-left: 17%;
+                    }
+                }
+            .testimonial-container-right {
+                float: right;
+                width: 56%;
+                text-align: center;
+                .quote {
+                    width: 6.5%;
+                    margin-top: 6%;
+                }
+                p {
+                    font-family: $lora;
+                    font-size: 1.6em;
+                    letter-spacing: .01em;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 3%;
+                    margin-bottom: 0;
+                }
+                h5 {
+                    font-family: $poppins;
+                    font-weight: lighter;
+                    font-size: .73em;
+                    letter-spacing: .01em;
+                    text-transform: uppercase;
+                    margin-top: 3%;
                 }
             }
         }

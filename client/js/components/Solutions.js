@@ -13,9 +13,9 @@ class Solutions extends Component {
             </p>
             <br/>
             </div>
-                <div className='etw-solutions-card-container'>
+            <div className='etw-solutions-card-container'>
                 <div className='people-card'>
-                <img className='people-card-icon' src='./resources/people-card-icon.svg' />
+                    <img className='people-card-icon' src='./resources/people-card-icon.svg' />
                     <h4>
                     People
                     </h4>
@@ -24,7 +24,7 @@ class Solutions extends Component {
                     </p>
                 </div>
                 <div className='priorities-card'>
-                <img className='priorities-card-icon' src='./resources/priorities-card-icon.svg' />
+                    <img className='priorities-card-icon' src='./resources/priorities-card-icon.svg' />
                     <h4>
                     Priorities
                     </h4>
@@ -34,7 +34,7 @@ class Solutions extends Component {
                     <img className='view-our-solution' src='./resources/view-our-solution.svg' />
                 </div>
                 <div className='practices-card'>
-                <img className='practices-card-icon' src='./resources/practices-card-icon.svg' />
+                    <img className='practices-card-icon' src='./resources/practices-card-icon.svg' />
                     <h4>
                     Practices
                     </h4>
@@ -43,7 +43,7 @@ class Solutions extends Component {
                     </p>
                 </div>
                 <div className='performance-card'>
-                <img className='performance-card-icon' src='./resources/performance-card-icon.svg' />
+                    <img className='performance-card-icon' src='./resources/performance-card-icon.svg' />
                     <h4>
                     Performance
                     </h4>
@@ -52,11 +52,30 @@ class Solutions extends Component {
                     </p>
                 </div>
             </div>
-                <div>
-                    <button
-                    className='etw-webinar-button'
-                    ></button>
+            <br/><br/><br/><br/><br/><br/>
+            <div className='testimonial-container'>
+                <div className='testimonial-container-left'>
+                <br/><br/><br/><br/>
+                <button className='etw-webinar-button'>
+                    Join our next webinar
+                </button>
+                <p>
+                    Every Tuesday, Thursday, and Friday, designed for C-level leaders like you.
+                </p>
                 </div>
+                <img className='divider-in-testimonials' src='./resources/divider-in-testimonials.svg' />
+                <div className='testimonial-container-right'>
+                    <img className='quote' src='./resources/quote.svg' />
+                    <p>
+                        ETW has made us far more productive because now we focus on the key things that drive results for our company.
+                    </p>
+                    <h5>
+                        Joe Grygiel, Air EVAC Lifeteam
+                    </h5>
+                </div>
+                <br/><br/><br/><br/>
+            </div>
+            <br/><br/><br/><br/><br/><br/>
         </div>
         );
     };
