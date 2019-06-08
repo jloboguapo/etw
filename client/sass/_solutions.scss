@@ -1,17 +1,81 @@
 @import 'colors';
 @import 'fonts';
 
-.etw-solutions-main-container {
+.etw-solutions-ultimate-container {
     background-color: #FFFFFF;
-    .etw-solutions-container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        text-align: center;
+    height: 100%;
+    .etw-solutions-main-container {
         p {
+            color: #777777;
+        }
+        .etw-solutions-text-container {
             margin-left: auto;
             margin-right: auto;
-            width: 60%;
+            width: 80%;
+            text-align: center;
+            h2 {
+                font-family: $lora;
+                font-size: 35px;
+                font-weight: bold;
+                line-height: 1.1em;
+                margin-bottom: 15px;
+            }
+            p {
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;
+                font-family: $montserrat;
+                line-height: 1.6em;
+            }
+        }
+        .etw-solutions-card-container {
+            text-align: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            .people-card,
+            .priorities-card,
+            .practices-card,
+            .performance-card {
+                display: inline-block;
+                width: 25%;
+                vertical-align: top;
+                height: 100%;
+                img {
+                    width: 30%;
+                    display: block;
+                    margin-left: -2%;
+                    margin-top: 6%;
+                    margin-left: 10%
+                }
+                h4 {
+                    font-family: $poppins;
+                    font-size: 1.1em;
+                    text-align: left;
+                    margin-top: 15%;
+                    margin-left: 10%;
+                }
+                p {
+                    font-family: $roboto;
+                    font-weight: lighter;
+                    text-align: left;
+                    line-height: 1.6em;
+                    font-size: .8em;
+                    color: #777777;
+                    width: 76%;
+                    margin-top: -5%;
+                    margin-left: 10%;
+                }
+            }
+            .priorities-card {
+                background: rgba(244,241,235, .5%);
+                background-size: 70% 70%;
+                height: 47%;
+                .view-our-solution {
+                    width: 53%;
+                    margin-top: 12%;
+                }
+            }
         }
     }
 }

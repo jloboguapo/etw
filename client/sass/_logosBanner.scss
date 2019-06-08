@@ -3,10 +3,9 @@
 
 .etw-main-container {
     .logos-banner {
-        background-color: 	#F4F1EC;
-        height: 145px;
+        background-color: 	#F4F1EB;
+        height: 23%;
         width: 100%;
-        margin-bottom: -20px;
         p {
             font-family: $roboto;
             font-size: .82em;
@@ -24,10 +23,12 @@
             margin-left: 10%;
         }
         .univar-logo {
-            margin-left: 15%;
+            margin-left: 16%;
         }
         .verra-mobility-logo {
             margin-left: 3%;
+            width: 9%;
         }
+
     }
 }
