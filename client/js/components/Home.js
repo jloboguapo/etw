@@ -15,7 +15,8 @@ class Home extends Component {
             </div>
             <br/><br/><br/><br/><br/><br/>
             <LogosBanner />
-            <div className='etw-solutions-main-container'>
+            <div className='etw-solutions-ultimate-container'>
+            <br/><br/><br/><br/><br/><br/>
                 <Solutions />
             </div>
         </div>
