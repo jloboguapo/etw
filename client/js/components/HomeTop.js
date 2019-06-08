@@ -26,9 +26,7 @@ class HomeTop extends Component {
                         <p>
                             Develop a value-creation mindset and skill set within all your employees.
                         </p>
-                        <h5>
-                            Put people first →
-                        </h5>
+                        <img className='put-people-first' src='./resources/put-people-first.svg' />
                         </div>
                     <div className='etw-home-top-right-container-2'>
                     <img className='etw-accelerate-growth-icon' src='./resources/etw-accelerate-growth.svg' />
