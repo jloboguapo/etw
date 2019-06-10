@@ -1,6 +1,6 @@
 import React from 'react';
 import Cheader from './Cheader';
-import Footer from './Footer';
+import Cfooter from './Cfooter';
 
 import '../../sass/style.scss';
 
@@ -9,7 +9,7 @@ export default function App({ children }) {
     <div className="etw-ultimate-container">
       {window.location.pathname !== '/' && <Cheader />}
       {children}
-      {window.location.pathname !== '/' && <Footer />}
+      {window.location.pathname !== '/' && <Cfooter />}
     </div>
   );
 }

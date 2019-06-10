@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { clearData } from '../actionCreators';
 import NavBar from './NavBar';
 
-const Header = props => {
+const Cheader = props => {
   const { dispatch } = props;
   console.log('yo')
   return (
@@ -19,4 +19,4 @@ const Header = props => {
   );
 };
 
-export default connect()(Header);
+export default connect()(Cheader);
