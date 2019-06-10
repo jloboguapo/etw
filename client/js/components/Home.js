@@ -1,30 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './Header';
 import HomeTop from './HomeTop';
 import LogosBanner from './LogosBanner';
 import Solutions from './Solutions';
+import Insights from './Insights';
+import Footer from './Footer';
 
-class Home extends Component {
-    render() {
-        return (
-        <div className='etw-main-container'>
-            <div className='etw-secondary-container'>
-                <Header />
-                <br/><br/><br/><br/><br/><br/>
-                <HomeTop />
-            </div>
-            <br/><br/><br/><br/><br/><br/>
-            <LogosBanner />
-            <div className='etw-solutions-ultimate-container'>
-            <br/><br/><br/><br/><br/><br/>
-                <Solutions />
-            </div>
-            <div className='etw-insights-ultimate-container'>
-            <br/><br/><br/><br/><br/><br/>
-            </div>
-        </div>
-        );
-    };
-};
-  
+const Home = () => {
+  return (
+    <div className="etw-main-container">
+      <div className="etw-secondary-container">
+        <Header />
+        <HomeTop />
+      </div>
+      <LogosBanner />
+      <div className="etw-solutions-ultimate-container">
+        <Solutions />
+      </div>
+      <div className="etw-insights-ultimate-container">
+        <Insights />
+      </div>
+      <div className="etw-footer-ultimate-container">
+        <Footer />
+      </div>
+    </div>
+  );
+}
+
 export default Home;
