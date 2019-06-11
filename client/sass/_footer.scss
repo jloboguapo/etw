@@ -8,9 +8,9 @@
     .etw-footer-top-container {
       display: flex;
       flex-direction: row;
-      margin-bottom: 56px;
+      margin-bottom: 40px;
       padding-bottom: 56px;
-      border-bottom: 1px solid #d6d4d0;
+      border-bottom: 1.5px solid #d6d4d0;
 
       .etw-company-description-container,
       .etw-footer-input-container {
@@ -26,9 +26,10 @@
         a {
           font-family: $roboto;
           font-size: 12px;
-          line-height: 1.6em;
+          line-height: 1.5;
           margin-bottom: 0;
           color: #777777;
+          width: 85%;
         }
 
         a {
@@ -36,10 +37,12 @@
           text-decoration: none;
         }
       }
+
       & :last-child {
 
         p {
           font-size: 18px;
+          letter-spacing: .3;
           margin-top: 0;
         }
 
@@ -54,20 +57,38 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 56px;
-    border-bottom: 1px solid #d6d4d0;
+    border-bottom: 1.5px solid #d6d4d0;
 
     .etw-footer-columns {
         display: flex;
         flex-direction: column;
         flex: 1;
 
+        h4, h5 {
+          font-family: $poppins;
+          margin-bottom: 10px;
+        }
+
+        h4 {
+          font-size: 17px;
+        }
+
+        h5 {
+          font-size: 11px;
+          margin-top: 32px;
+          letter-spacing: .4;
+          text-transform: uppercase;
+        }
+
         p,
         a {
           font-family: $roboto;
-          font-size: 12px;
-          line-height: 1.6em;
+          font-size: 13px;
+          line-height: 1.8;
+          letter-spacing: .4;
           margin-bottom: 0;
           color: #777777;
+          margin-top: 0;
         }
 
         a {
@@ -83,13 +104,14 @@
       .etw-footer-baseline-proprietary {
         display: flex;
         flex-direction: row;
-        flex: 6;
+        flex: 6.5;
         justify-content: space-between;
 
       p {
         font-family: $roboto;
-        font-size: 12px;
-        line-height: 1.6em;
+        font-size: 13px;
+        line-height: 1.6;
+        letter-spacing: .5;
         margin-bottom: 0;
         color: #777777;
       }
@@ -97,7 +119,7 @@
     .etw-footer-baseline-social {
         display: flex;
         flex-direction: row;
-        flex: 4;
+        flex: 3.5;
         justify-content: flex-end;
     }
   }
