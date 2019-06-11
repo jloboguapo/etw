@@ -3,30 +3,38 @@
 .etw-main-container {
   .etw-secondary-container {
     .etw-header-container {
-      text-align: right;
+      display: flex;
+      flex-direction: row;
       margin: spacing() 0 spacing(15);
 
-      .etw-logo-dark-on-transparent {
-        width: 11%;
-        margin-top: 10px;
-        float: left;
+      .etw-logo-header-container {
+        justify-content: flex-start;
+        flex: 2;
+
+        .etw-logo-dark-on-transparent {
+          width: 112px;
+          margin-top: 10px;
+        }
       }
 
-      p {
-        display: inline-block;
-        font-family: $roboto;
-        font-size: .82em;
-        font-weight: 500;
-        margin-top: 17px;
-        margin-right: 25px;
-        vertical-align: top;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: .01em;
-      }
-      
-      .etw-webinar-button {
-        margin-top: 5px;
+      .etw-header-links-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex: 3;
+        margin-top: 1px;
+
+        p {
+          font-family: "Roboto",sans-serif;
+          font-size: 13px;
+          text-transform: uppercase;
+          letter-spacing: 0.01em;
+          margin-top: 19px;
+        }
+
+        .etw-webinar-button {
+          margin-top: 7px;
+        }
       }
     }
   }

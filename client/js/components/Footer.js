@@ -96,7 +96,7 @@ const Footer = () => {
       </div>
       <div className="etw-footer-baseline-container">
         <div className="etw-footer-baseline-proprietary">
-          <p>2019 All rights reserved, Execute to Win, Inc</p>
+          <p>©2019 All rights reserved, Execute to Win, Inc</p>
           <p>Terms of use</p>
           <p>Privacy policy</p>
           <p>Global privacy compliance</p>
