@@ -1,3 +1,150 @@
 .etw-insights-ultimate-container {
-    background: #F4F1EB;
+  background: #f4f1eb;
+
+  .etw-insights-main-container {
+    display: flow-root;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 80px;
+    text-align: center;
+
+    p {
+      color: #777777;
+    }
+
+    .etw-insights-text-container {
+      h2 {
+        font-family: $lora;
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 1.1em;
+        margin-bottom: 15px;
+      }
+      p {
+        color: #777777;
+        font-size: 10px;
+
+        a {
+          color: #777777;
+        }
+      }
+    }
+
+    .etw-insights-card-container {
+      .etw-insights-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .image-content-wrapper {
+          display: flex;
+          flex-direction: column;
+          min-height: 300px;
+          width: 49%;
+          background-color: $white;
+          border-radius: 8px;
+          box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+
+          .insights-images {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            flex: 1;
+            display: flex;
+            align-items: flex-end;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+
+            &.etw-insights-image-phone {
+              background-image: url('/resources/insights-cat-1.jpg');
+            }
+
+            &.insights-cat-2 {
+              background-image: url('/resources/insights-cat-2.jpg');
+            }
+
+            &.insights-cat-3 {
+              background-image: url('/resources/insights-cat-3.jpg');
+            }
+
+            &.insights-cat-4 {
+              background-image: url('/resources/insights-cat-4.jpg');
+            }
+          }
+
+          &.full-width {
+            width: 100%;
+          }
+        }
+      }
+
+      & :last-child {
+        margin-bottom: 0;
+      }
+
+      .insights-category-container-5 {
+        background-color: $white;
+        width: 48%;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .quote {
+          height: 15%;
+          width: 8%;
+          margin-top: 5%;
+        }
+
+        .etw-client-quote {
+          font-family: $lora;
+          font-size: 1.6em;
+          letter-spacing: 0.01em;
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        h5 {
+          font-family: $poppins;
+          font-weight: lighter;
+          font-size: 0.73em;
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
+          margin-top: 3%;
+        }
+
+        .etw-webinar-button {
+          color: #ffffff;
+          margin-top: 5%;
+        }
+
+        p {
+          font-family: $roboto;
+          font-weight: lighter;
+          line-height: 1.6em;
+          font-size: 0.8em;
+          color: #777777;
+          letter-spacing: 0.01em;
+          margin-top: 3%;
+          width: 55%;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 60%;
+      }
+    }
+
+    .more-insights-arrow {
+      color: $forest;
+      margin: 40px 0 104px 0;
+      width: 10%;
+    }
+  }
 }
