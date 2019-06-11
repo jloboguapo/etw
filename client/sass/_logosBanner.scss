@@ -2,33 +2,62 @@
 @import 'fonts';
 
 .etw-main-container {
-    .logos-banner {
-        background-color: 	#F4F1EB;
-        height: 23%;
-        width: 100%;
+  .logos-banner-container {
+    background-color: #f4f1eb;
+    display: flex;
+    padding-bottom: 4px;
+
+    .logos-content-wrapper {
+      width: 100%;
+      margin: 32px 0 44px 0;
+
+      .logos-text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex: 1;
+
         p {
-            font-family: $roboto;
-            font-size: .82em;
-            font-weight: 500;
-            margin-bottom: 5px;
-            padding-top: 40px;
-            text-align: center;
-            text-transform: uppercase;
-          }
+          font-family: $roboto;
+          font-size: 0.82em;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+      .logos-svg-container {
+        display: flex;
+        flex-direction: row;
+
         img {
-            height: 75px;
-            width: 150px;
-        }
-        .trip-spark-logo {
-            margin-left: 10%;
-        }
-        .univar-logo {
-            margin-left: 16%;
-        }
-        .verra-mobility-logo {
-            margin-left: 3%;
-            width: 9%;
+            height: 38px;
         }
 
+        .verra-mobility-logo {
+            height: 44px;
+        }
+
+        .trip-spark-container {
+          display: flex;
+          flex: 18;
+          justify-content: center;
+
+
+          .trip-spark-logo {
+            display: flex;
+          }
+        }
+
+        .univar-logo,
+        .verra-mobility-logo {
+          display: flex;
+          flex: 6;
+          justify-content: center;
+        }
+        .logos-empty-div {
+          display: flex;
+          flex: 18;
+        }
+      }
     }
+  }
 }

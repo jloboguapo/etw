@@ -1,16 +1,104 @@
-@import 'colors';
-@import 'variables';
+.etw-footer-ultimate-container {
+  height: 50%;
 
-.etw-footer {
-  display: flex;
-  height: 50px;
-  margin: 0;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  flex-shrink: 0;
+  .etw-footer-main-container {
+    margin: 120px auto 20px auto;
+    width: 80%;
 
-  .etw-footer-items {
-    margin: 0;
+    .etw-footer-top-container {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid #d6d4d0;
+
+      .etw-company-description-container,
+      .etw-footer-input-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .etw-logo-dark-on-transparent {
+          width: 70px;
+        }
+
+        p,
+        a {
+          font-family: $roboto;
+          font-size: 12px;
+          line-height: 1.6em;
+          margin-bottom: 0;
+          color: #777777;
+        }
+
+        a {
+          color: rgb(85, 82, 82);
+          text-decoration: none;
+        }
+      }
+      & :last-child {
+
+        p {
+          font-size: 18px;
+          margin-top: 0;
+        }
+
+        .etw-subscribe-container {
+            margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .etw-footer-links-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #d6d4d0;
+
+    .etw-footer-columns {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        p,
+        a {
+          font-family: $roboto;
+          font-size: 12px;
+          line-height: 1.6em;
+          margin-bottom: 0;
+          color: #777777;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+  }
+  .etw-footer-baseline-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 8px;
+
+      .etw-footer-baseline-proprietary {
+        display: flex;
+        flex-direction: row;
+        flex: 6;
+        justify-content: space-between;
+
+      p {
+        font-family: $roboto;
+        font-size: 12px;
+        line-height: 1.6em;
+        margin-bottom: 0;
+        color: #777777;
+      }
+    }
+    .etw-footer-baseline-social {
+        display: flex;
+        flex-direction: row;
+        flex: 4;
+        justify-content: flex-end;
+    }
   }
 }

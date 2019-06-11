@@ -1,5 +1,6 @@
 // style.scss
 
+@import 'fonts';
 @import 'colors';
 @import 'header';
 @import 'footer';
@@ -9,6 +10,7 @@
 @import 'logosBanner';
 @import 'solutions';
 @import 'insights';
+@import 'subscribe';
 
 body {
   margin: 0;
@@ -16,19 +18,12 @@ body {
 
 }
 
-.etw-ultimate-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background-color: $light-bone;
-
   .etw-webinar-button {
     font-family: $roboto;
     font-size: .82em;
     font-weight: 600;
     letter-spacing: .03em;
     padding: 11px 17px 13px 17px;
-    margin-top: 5px;
     background-color: $forest;
     border-radius: 2px;
     color: $light-bone;
@@ -41,6 +36,8 @@ body {
       margin-left: auto;
       margin-right: auto;
       width: 80%;
+      height: 100%;
+      margin-bottom: -8%;
   }
 }
 
@@ -97,4 +94,3 @@ body {
       display: none;
     }
   }*/
-}

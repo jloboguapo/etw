@@ -1,15 +1,17 @@
-@import 'fonts';
+@import 'functions';
 
 .etw-main-container {
   .etw-secondary-container {
     .etw-header-container {
       text-align: right;
-      margin-top: 1%;
+      margin: spacing() 0 spacing(15);
+
       .etw-logo-dark-on-transparent {
         width: 11%;
         margin-top: 10px;
         float: left;
       }
+
       p {
         display: inline-block;
         font-family: $roboto;
@@ -21,6 +23,10 @@
         text-align: center;
         text-transform: uppercase;
         letter-spacing: .01em;
+      }
+      
+      .etw-webinar-button {
+        margin-top: 5px;
       }
     }
   }
