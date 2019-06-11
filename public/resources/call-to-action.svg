@@ -1,0 +1,18 @@
+
+<svg width="127px" height="12px" viewBox="0 0 127 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01a_homepage" transform="translate(-171.000000, -3932.000000)">
+            <g id="Group-11-Copy-2" transform="translate(151.000000, 3488.000000)">
+                <g id="Group-8" transform="translate(20.000000, 441.000000)">
+                    <text id="Call-to-Action" font-family="Helvetica" font-size="13" font-weight="normal" letter-spacing="0.5" fill="#007278">
+                        <tspan x="0" y="13">CALL TO ACTION</tspan>
+                    </text>
+                    <g id="arrow-right" transform="translate(116.000000, 4.000000)" stroke="#007278" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                        <path d="M0,5 L10,5" id="Path"></path>
+                        <polyline id="Path" points="5 0 10 5 5 10"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
