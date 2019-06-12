@@ -97,16 +97,41 @@ const Footer = () => {
       <div className="etw-footer-baseline-container">
         <div className="etw-footer-baseline-proprietary">
           <p>©2019 All rights reserved, Execute to Win, Inc</p>
-          <p>Terms of use</p>
-          <p>Privacy policy</p>
-          <p>Global privacy compliance</p>
+          <a href="/">
+            <p>Terms of use</p>
+          </a>
+          <a href="/">
+            <p>Privacy policy</p>
+          </a>
+          <a href="/">
+            <p>Global privacy compliance</p>
+          </a>
         </div>
         <div className="etw-footer-baseline-social">
-          <img className="social-media-icons" src="./resources/facebook.svg" />
-          <img className="social-media-icons" src="./resources/twitter.svg" />
-          <img className="social-media-icons" src="./resources/linkedin.svg" />
-          <img className="social-media-icons" src="./resources/instagram.svg" />
-          <img className="social-media-icons" src="./resources/medium.svg" />
+          <a href="/">
+            <img
+              className="social-media-icons"
+              src="./resources/facebook.svg"
+            />
+          </a>
+          <a href="/">
+            <img
+              className="social-media-icons"
+              src="./resources/linkedin.svg"
+            />
+          </a>
+          <a href="/">
+            <img className="social-media-icons" src="./resources/twitter.svg" />
+          </a>
+          <a href="/">
+            <img
+              className="social-media-icons"
+              src="./resources/instagram.svg"
+            />
+          </a>
+          <a href="/">
+            <img className="social-media-icons" src="./resources/medium.svg" />
+          </a>
         </div>
       </div>
     </div>
