@@ -1,8 +1,7 @@
 .etw-main-container {
   .etw-secondary-container {
     .etw-home-top-container {
-      display: flex;
-      flex-direction: row;
+      @include flex(row);
       width: 100%;
 
       h1 {
@@ -36,8 +35,7 @@
         flex: 4;
 
         .etw-core-values-containers {
-          display: flex;
-          flex-direction: row;
+          @include flex(row);
           background: $white;
           font-family: $poppins;
           padding: 30px;

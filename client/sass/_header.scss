@@ -3,8 +3,7 @@
 .etw-main-container {
   .etw-secondary-container {
     .etw-header-container {
-      display: flex;
-      flex-direction: row;
+      @include flex(row);
       margin: spacing() 0 spacing(15);
 
       .etw-logo-header-container {
@@ -18,8 +17,7 @@
       }
 
       .etw-header-links-container {
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
         justify-content: space-between;
         flex: 3;
         margin-top: 1px;
