@@ -1,20 +1,24 @@
 // style.scss
 
-@import 'fonts';
 @import 'colors';
-@import 'header';
+@import 'coreValues';
 @import 'footer';
-@import 'navBar';
-@import 'variables';
-@import 'homeTop';
-@import 'logosBanner';
-@import 'solutions';
+@import 'header';
 @import 'insights';
+@import 'logosBanner';
+@import 'navBar';
+@import 'solutions';
 @import 'subscribe';
+@import 'variables';
 
 body {
   margin: 0;
   background-color: $light-bone;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .etw-webinar-button {
