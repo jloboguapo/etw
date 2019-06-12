@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-const HomeTop = () => {
+const CoreValues = () => {
   return (
-    <div className="etw-home-top-container">
-      <div className="etw-home-top-left-container">
+    <div className="etw-core-values-container">
+      <div className="etw-core-values-left-container">
         <h1>Only the intentional become exceptional</h1>
         <p>
           ETW is the Intentional Leadership Platform that high-performance
@@ -11,7 +11,7 @@ const HomeTop = () => {
         </p>
         <button className="etw-webinar-button">JOIN our next WEBINAR</button>
       </div>
-      <div className="etw-home-top-right-container">
+      <div className="etw-core-values-right-container">
         <div className="etw-core-values-containers">
           <div className="etw-image">
             <img
@@ -53,4 +53,4 @@ const HomeTop = () => {
   );
 };
 
-export default HomeTop;
+export default CoreValues;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import HomeTop from './HomeTop';
+import CoreValues from './CoreValues';
 import LogosBanner from './LogosBanner';
 import Solutions from './Solutions';
 import Insights from './Insights';
@@ -11,7 +11,7 @@ const Home = () => {
     <div className="etw-main-container">
       <div className="etw-secondary-container">
         <Header />
-        <HomeTop />
+        <CoreValues />
       </div>
       <LogosBanner />
       <div className="etw-solutions-ultimate-container">

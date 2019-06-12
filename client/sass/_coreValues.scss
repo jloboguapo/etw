@@ -1,6 +1,9 @@
+@import 'fonts';
+@import 'functions';
+
 .etw-main-container {
   .etw-secondary-container {
-    .etw-home-top-container {
+    .etw-core-values-container {
       @include flex(row);
       width: 100%;
 
@@ -20,7 +23,7 @@
         line-height: 1.6em;
       }
 
-      .etw-home-top-left-container {
+      .etw-core-values-left-container {
         flex: 6;
 
         p {
@@ -31,7 +34,7 @@
         }
       }
 
-      .etw-home-top-right-container {
+      .etw-core-values-right-container {
         flex: 4;
 
         .etw-core-values-containers {
