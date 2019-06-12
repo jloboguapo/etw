@@ -34,10 +34,12 @@ const Solutions = () => {
             fosters unnecessary confusion, internal competition, and petty
             politics. Focus.
           </p>
-          <img
-            className="view-our-solution"
-            src="./resources/view-our-solution.svg"
-          />
+          <a href="/">
+            <img
+              className="view-our-solution"
+              src="./resources/view-our-solution.svg"
+            />
+          </a>
         </div>
         <div className="practices-card">
           <img
