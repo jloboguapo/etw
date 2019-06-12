@@ -1,20 +1,20 @@
 .etw-subscribe-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    .etw-input {
-        font-family: $roboto;
-        font-size: 14px;
-        padding: 8px;
-        margin-right: 8px;
-        min-width: 360px;
-        border: 0;
-        outline-color: $forest;
-        outline-width: thin;
+  .etw-input {
+    font-family: $roboto;
+    font-size: 14px;
+    padding: 8px;
+    margin-right: 8px;
+    min-width: 360px;
+    border: 0;
+    outline-color: $forest;
+    outline-width: thin;
 
-        &::placeholder {
-            color: #d6d4d0;
-        }
+    &::placeholder {
+      color: #d6d4d0;
     }
+  }
 }

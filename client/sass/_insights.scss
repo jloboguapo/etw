@@ -84,11 +84,12 @@
             width: 100%;
           }
 
-          h2, h4 {
+          h2,
+          h4 {
             width: 94%;
             font-family: $lora;
             font-weight: bold;
-            letter-spacing: .6;
+            letter-spacing: 0.6;
             margin-left: auto;
             margin-right: auto;
           }
@@ -98,7 +99,7 @@
           }
 
           h4 {
-            font-size: 21px;;
+            font-size: 21px;
           }
 
           img {
@@ -126,7 +127,7 @@
 
       .etw-client-quote {
         font-family: $lora;
-        font-size: 26px;;
+        font-size: 26px;
         line-height: 1.35;
         width: 85%;
         margin-left: auto;

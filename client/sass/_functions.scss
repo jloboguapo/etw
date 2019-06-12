@@ -1,3 +1,10 @@
 @function spacing($multiplier: 1) {
-    @return 8px * $multiplier;
+  @return 8px * $multiplier;
+}
+
+//also mixins
+
+@mixin size($size) {
+  height: $size;
+  width: $number;
 }

@@ -19,7 +19,7 @@ const Insights = props => {
           <div className="image-content-wrapper">
             <ImageWithPill imageClass="etw-insights-image-phone" />
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-            <img src='./resources/call-to-action.svg' />
+            <img src="./resources/call-to-action.svg" />
           </div>
           <div className="image-content-wrapper">
             <ImageWithPill imageClass="insights-cat-2" />
@@ -27,7 +27,7 @@ const Insights = props => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               pretium mauris nec aliquam porttitor.
             </h4>
-            <img src='./resources/call-to-action.svg' />
+            <img src="./resources/call-to-action.svg" />
           </div>
         </div>
         <div className="etw-insights-row">
@@ -37,7 +37,7 @@ const Insights = props => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               pretium mauris nec aliquam porttitor.
             </h2>
-            <img src='./resources/call-to-action.svg' />
+            <img src="./resources/call-to-action.svg" />
           </div>
         </div>
         <div className="etw-insights-row">
@@ -47,7 +47,7 @@ const Insights = props => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               pretium mauris nec aliquam porttitor.
             </h4>
-            <img src='./resources/call-to-action.svg' />
+            <img src="./resources/call-to-action.svg" />
           </div>
           <div className="insights-category-container-5">
             <img className="quote" src="./resources/quote.svg" />
