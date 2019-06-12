@@ -6,16 +6,14 @@
     width: 80%;
 
     .etw-footer-top-container {
-      display: flex;
-      flex-direction: row;
+      @include flex(row);
       margin-bottom: 40px;
       padding-bottom: 56px;
       border-bottom: 1.5px solid #d6d4d0;
 
       .etw-company-description-container,
       .etw-footer-input-container {
-        display: flex;
-        flex-direction: column;
+        @include flex;
         flex: 1;
 
         .etw-logo-dark-on-transparent {
@@ -53,14 +51,12 @@
   }
 
   .etw-footer-links-container {
-    display: flex;
-    flex-direction: row;
+    @include flex(row);
     padding-bottom: 56px;
     border-bottom: 1.5px solid #d6d4d0;
 
     .etw-footer-columns {
-      display: flex;
-      flex-direction: column;
+      @include flex;
       flex: 1;
 
       h4,
@@ -97,13 +93,11 @@
     }
   }
   .etw-footer-baseline-container {
-    display: flex;
-    flex-direction: row;
+    @include flex(row);
     margin-top: 14px;
 
     .etw-footer-baseline-proprietary {
-      display: flex;
-      flex-direction: row;
+      @include flex(row);
       flex: 6.5;
       justify-content: space-between;
 
@@ -117,8 +111,7 @@
       }
     }
     .etw-footer-baseline-social {
-      display: flex;
-      flex-direction: row;
+      @include flex(row);
       flex: 3.5;
       justify-content: flex-end;
       margin-top: 10px;

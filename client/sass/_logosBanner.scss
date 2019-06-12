@@ -12,8 +12,7 @@
       margin: 32px 0 44px 0;
 
       .logos-text-container {
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
         justify-content: center;
         flex: 1;
 
@@ -25,8 +24,7 @@
         }
       }
       .logos-svg-container {
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
 
         img {
           height: 38px;

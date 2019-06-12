@@ -4,7 +4,7 @@
 
 //also mixins
 
-@mixin size($size) {
-  height: $size;
-  width: $number;
+@mixin flex($flex-direction: column) {
+  display: flex;
+  flex-direction: $flex-direction;
 }

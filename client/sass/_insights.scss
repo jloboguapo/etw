@@ -35,14 +35,12 @@
 
     .etw-insights-card-container {
       .etw-insights-row {
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
         justify-content: space-between;
         margin-bottom: 40px;
 
         .image-content-wrapper {
-          display: flex;
-          flex-direction: column;
+          @include flex;
           min-height: 440;
           width: 48%;
           justify-content: center;
@@ -115,8 +113,7 @@
       background-color: $white;
       width: 48%;
       border-radius: 4px;
-      display: flex;
-      flex-direction: column;
+      @include flex;
       justify-content: center;
       align-items: center;
 
