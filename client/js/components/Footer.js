@@ -101,7 +101,13 @@ const Footer = () => {
           <p>Privacy policy</p>
           <p>Global privacy compliance</p>
         </div>
-        <div className="etw-footer-baseline-social" />
+        <div className="etw-footer-baseline-social">
+          <img className="social-media-icons" src="./resources/facebook.svg" />
+          <img className="social-media-icons" src="./resources/twitter.svg" />
+          <img className="social-media-icons" src="./resources/linkedin.svg" />
+          <img className="social-media-icons" src="./resources/instagram.svg" />
+          <img className="social-media-icons" src="./resources/medium.svg" />
+        </div>
       </div>
     </div>
   );
