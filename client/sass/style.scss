@@ -15,33 +15,32 @@
 body {
   margin: 0;
   background-color: $light-bone;
-
 }
 
-  .etw-webinar-button {
-    font-family: $roboto;
-    font-size: .82em;
-    font-weight: 600;
-    letter-spacing: .03em;
-    padding: 11px 17px 13px 17px;
-    background-color: $forest;
-    border-radius: 2px;
-    color: $light-bone;
-    outline: 0;
-    text-transform: uppercase;
+.etw-webinar-button {
+  font-family: $roboto;
+  font-size: 0.82em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 11px 17px 13px 17px;
+  background-color: $forest;
+  border-radius: 2px;
+  color: $light-bone;
+  outline: 0;
+  text-transform: uppercase;
 }
 
 .etw-main-container {
   .etw-secondary-container {
-      margin-left: auto;
-      margin-right: auto;
-      width: 80%;
-      height: 100%;
-      margin-bottom: -8%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+    margin-bottom: -8%;
   }
 }
 
-  /*@media only screen and (max-width: $breakpoints-tablet) {
+/*@media only screen and (max-width: $breakpoints-tablet) {
     h1 {
       font-size: 24px;
     }
