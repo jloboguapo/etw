@@ -1,5 +1,6 @@
 .etw-solutions-ultimate-container {
   background-color: #ffffff;
+  height: fit-content;
   .etw-solutions-main-container {
     margin: 0 auto;
     width: 80%;
@@ -73,62 +74,56 @@
         }
       }
     }
+
     .testimonial-container {
-      width: 98%;
-      padding-top: 0.75%;
-      padding-bottom: 0.75%;
+      @include flex(row);
+      margin: 104px auto;
       border-radius: 8px;
       box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
-      .divider-in-testimonials {
-        width: 1%;
-        height: 27.5%;
-        margin-left: -1%;
-        margin-bottom: -5%;
-      }
       .testimonial-container-left {
-        display: inline-block;
-        width: 40%;
-        margin-left: 3%;
-        text-align: center;
+        @include flex;
+        flex: 11;
+        justify-content: center;
+        margin: 32px;
+        border-right: 1px solid #d6d4d0;
+
         .etw-webinar-button {
           color: #ffffff;
+          margin: 0 auto;
         }
         p {
           font-family: $roboto;
           font-weight: lighter;
           line-height: 1.6em;
-          font-size: 0.8em;
+          font-size: 13px;
           color: #777777;
           letter-spacing: 0.01em;
-          width: 65%;
-          margin-left: 17%;
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
       .testimonial-container-right {
-        float: right;
-        width: 56%;
-        text-align: center;
+        @include flex;
+        flex: 14;
+        justify-content: center;
+        margin: 36px 2%;
         .quote {
-          width: 6.5%;
-          margin-top: 6%;
+          height: 28px;
         }
         p {
           font-family: $lora;
-          font-size: 1.6em;
-          letter-spacing: 0.01em;
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 3%;
-          margin-bottom: 0;
+          font-size: 26px;
+          line-height: 36px;
+          margin: 3% auto 0;
         }
         h5 {
           font-family: $poppins;
           font-weight: lighter;
-          font-size: 0.73em;
-          letter-spacing: 0.01em;
+          font-size: 11px;
+          letter-spacing: 0.8;
           text-transform: uppercase;
-          margin-top: 3%;
+          margin: 3% 0 0;
         }
       }
     }

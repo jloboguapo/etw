@@ -24,7 +24,7 @@
       }
 
       .etw-core-values-left-container {
-        flex: 6;
+        flex: 3;
 
         p {
           width: 64%;
@@ -35,7 +35,7 @@
       }
 
       .etw-core-values-right-container {
-        flex: 4;
+        flex: 2;
 
         .etw-core-values-containers {
           @include flex(row);
