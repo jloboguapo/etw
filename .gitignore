@@ -5,3 +5,7 @@ coverage/
 .idea
 public/bundle*
 public/.DS_Store
+.firebaserc
+firebase.json
+public/404.html
+.firebase/
