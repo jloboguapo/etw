@@ -66,28 +66,14 @@ const Solutions = () => {
           </p>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <div className="testimonial-container">
         <div className="testimonial-container-left">
-          <br />
-          <br />
-          <br />
-          <br />
           <button className="etw-webinar-button">Join our next webinar</button>
           <p>
             Every Tuesday, Thursday, and Friday, designed for C-level leaders
             like you.
           </p>
         </div>
-        <img
-          className="divider-in-testimonials"
-          src="./resources/divider-in-testimonials.svg"
-        />
         <div className="testimonial-container-right">
           <img className="quote" src="./resources/quote.svg" />
           <p>
@@ -96,17 +82,7 @@ const Solutions = () => {
           </p>
           <h5>Joe Grygiel, Air EVAC Lifeteam</h5>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 };
