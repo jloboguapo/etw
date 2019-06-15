@@ -11,6 +11,9 @@
     border: 0;
     outline-color: $forest;
     outline-width: thin;
+    @media only screen and (max-width: $phone) {
+      min-width: auto;
+    }
 
     &::placeholder {
       color: #d6d4d0;

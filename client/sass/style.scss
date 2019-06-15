@@ -30,65 +30,9 @@ a {
   color: $light-bone;
   outline: 0;
   text-transform: uppercase;
-}
 
-.etw-main-container {
-  .etw-secondary-container {
-    margin: 0 auto 104px;
-    width: 80%;
+  @media only screen and (max-width: $phone) {
+    width: 100%;
+    margin: 10% 0 20%;
   }
 }
-
-/*@media only screen and (max-width: $breakpoints-tablet) {
-    h1 {
-      font-size: 24px;
-    }
-  }
-
-  .arrangement {
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
-    @media only screen and (max-device-width: $breakpoints-phone) {
-      flex-direction: column;
-    }
-    @media only screen and (max-width: $breakpoints-phone) {
-      flex-direction: column;
-    }
-
-    .column {
-      flex-direction: column;
-      display: flex;
-
-      .sub-container {
-        display: flex;
-        flex-direction: row;
-        flex: 2;
-      }
-
-      &.col-right {
-        display: flex;
-        flex-direction: row;
-
-        .sub-column {
-          flex-direction: column;
-          flex: 1;
-          display: flex;
-        }
-      }
-
-      &.left {
-        flex: 1;
-      }
-
-      &.right {
-        flex: 1;
-      }
-    }
-  }
-
-  @media screen and (max-width: $breakpoints-tablet) {
-    .mobile-hide-content {
-      display: none;
-    }
-  }*/

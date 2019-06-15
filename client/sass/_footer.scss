@@ -1,9 +1,12 @@
 .etw-footer-ultimate-container {
-  height: 50%;
-
+  height: fit-content;
   .etw-footer-main-container {
-    margin: 120px auto 20px auto;
+    margin: 120px auto 20px;
     width: 80%;
+
+    @media only screen and (max-width: $phone) {
+      margin: 16% auto;
+    }
 
     .etw-footer-top-container {
       @include flex(row);
@@ -11,10 +14,18 @@
       padding-bottom: 56px;
       border-bottom: 1.5px solid #d6d4d0;
 
-      .etw-company-description-container,
-      .etw-footer-input-container {
+      @media only screen and (max-width: $phone) {
         @include flex;
-        flex: 1;
+        padding-bottom: 8%;
+      }
+
+      .etw-company-description-container {
+        @include flex;
+        flex: 10;
+
+        @media only screen and (max-width: $phone) {
+          margin-bottom: 20%;
+        }
 
         .etw-logo-dark-on-transparent {
           width: 70px;
@@ -35,83 +46,169 @@
         }
       }
 
-      & :last-child {
+      .etw-footer-input-container {
+        @include flex;
+        flex: 10;
+
+        @media only screen and (max-width: $phone) {
+          margin-bottom: inherit;
+        }
+
         p {
+          font-family: $roboto;
           font-size: 18px;
           letter-spacing: 0.3;
-          margin-top: 0;
+          line-height: 1.5;
+          width: 85%;
+          margin: 0;
+          color: #777777;
         }
 
         .etw-subscribe-container {
           margin-top: 8px;
+
+          @media only screen and (max-width: $phone) {
+            @include flex;
+
+            .etw-input {
+              margin-right: 0;
+            }
+
+            .etw-webinar-button {
+              margin: 5% auto 0;
+            }
+          }
         }
       }
     }
-  }
 
-  .etw-footer-links-container {
-    @include flex(row);
-    padding-bottom: 56px;
-    border-bottom: 1.5px solid #d6d4d0;
+    .etw-footer-links-container {
+      @include flex(row);
+      padding-bottom: 56px;
+      border-bottom: 1.5px solid #d6d4d0;
 
-    .etw-footer-columns {
-      @include flex;
-      flex: 1;
-
-      h4,
-      h5 {
-        font-family: $poppins;
-        margin-bottom: 10px;
+      @media only screen and (max-width: $phone) {
+        @include flex;
+        padding-bottom: 8.7%;
       }
 
-      h4 {
-        font-size: 17px;
-      }
+      .etw-footer-columns {
+        @include flex;
+        flex: 1;
 
-      h5 {
-        font-size: 11px;
-        margin-top: 32px;
-        letter-spacing: 0.4;
-        text-transform: uppercase;
-      }
+        @media only screen and (max-width: $phone) {
+          margin-bottom: 10%;
+        }
 
-      p,
-      a {
-        font-family: $roboto;
-        font-size: 13px;
-        line-height: 1.8;
-        letter-spacing: 0.4;
-        margin: 0;
-        color: #777777;
+        h4,
+        h5 {
+          font-family: $poppins;
+          margin-bottom: 10px;
+        }
+
+        h4 {
+          font-size: 17px;
+        }
+
+        h5 {
+          font-size: 11px;
+          margin-top: 32px;
+          letter-spacing: 0.4;
+          text-transform: uppercase;
+        }
+
+        p,
+        a {
+          font-family: $roboto;
+          font-size: 13px;
+          line-height: 1.8;
+          letter-spacing: 0.4;
+          margin: 0;
+          color: #777777;
+        }
       }
     }
-  }
-  .etw-footer-baseline-container {
-    @include flex(row);
-    margin-top: 14px;
-
-    .etw-footer-baseline-proprietary {
+    .etw-footer-baseline-container {
       @include flex(row);
-      flex: 6.5;
-      justify-content: space-between;
-
-      p {
-        font-family: $roboto;
-        font-size: 13px;
-        line-height: 1.6;
-        letter-spacing: 0.5;
-        margin-bottom: 0;
-        color: #777777;
+      margin-top: 14px;
+      @media only screen and (max-width: $phone) {
+        @include flex;
       }
-    }
-    .etw-footer-baseline-social {
-      @include flex(row);
-      flex: 3.5;
-      justify-content: flex-end;
-      margin-top: 10px;
-      .social-media-icons {
-        height: 20px;
-        width: 36px;
+
+      .etw-footer-baseline-proprietary {
+        @include flex(row);
+        flex: 6.86;
+        justify-content: space-between;
+
+        p {
+          font-family: $roboto;
+          font-size: 13px;
+          line-height: 1.6;
+          letter-spacing: 0.5;
+          margin-bottom: 0;
+          color: #777777;
+        }
+
+        .etw-copywright {
+          flex: 2.84;
+        }
+
+        .etw-footer-row-wrap {
+          @include flex(row);
+          justify-content: space-evenly;
+          flex: 2.16;
+        }
+
+        .etw-global-privacy {
+          flex: 1.64;
+        }
+
+        @media only screen and (max-width: $phone) {
+          @include flex;
+          text-align: center;
+          margin: 10% 0 1.1%;
+
+          .etw-footer-row-wrap {
+            @include flex(row);
+            justify-content: space-evenly;
+          }
+
+          span {
+            display: none;
+          }
+
+          .footer-global-privacy {
+            display: none;
+          }
+        }
+      }
+
+      .etw-footer-baseline-social {
+        @include flex(row);
+        flex: 3.58;
+        justify-content: flex-end;
+        margin-top: 10px;
+
+        @media only screen and (max-width: $phone) {
+          @include flex(row);
+          margin: 0 14% 50%;
+          justify-content: center;
+
+          a {
+            display: flex;
+            flex: 1;
+
+            img {
+              display: flex;
+              flex: 1;
+            }
+          }
+        }
+
+        .social-media-icons {
+          height: 20px;
+          width: 36px;
+        }
       }
     }
   }

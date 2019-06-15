@@ -1,21 +1,39 @@
 @import 'fonts';
 @import 'functions';
+@import 'mixins';
+@import 'variables';
 
 .etw-main-container {
   .etw-secondary-container {
+    margin: 0 auto 104px;
+    width: 80%;
+
+    @media only screen and (max-width: $phone) {
+      margin: 0 auto 25%;
+    }
+
     .etw-core-values-container {
       @include flex(row);
       width: 100%;
+
+      @media only screen and (max-width: $phone) {
+        @include flex;
+      }
 
       h1 {
         font-family: $lora;
         width: 90%;
         letter-spacing: 0.01em;
-        font-size: 3.3em;
+        font-size: 2.8em;
         font-weight: 500;
         margin-top: 0;
         margin-bottom: 20px;
         line-height: 1.1em;
+
+        @media only screen and (max-width: $phone) {
+          width: 95%;
+          font-size: 2.5em;
+        }
       }
       p {
         color: #777777;
@@ -28,9 +46,10 @@
 
         p {
           width: 64%;
-        }
-        .etw-webinar-button {
-          margin-top: 2%;
+
+          @media only screen and (max-width: $phone) {
+            width: 88%;
+          }
         }
       }
 
@@ -46,6 +65,11 @@
           box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
           margin-bottom: 20px;
 
+          @media only screen and (max-width: $phone) {
+            @include flex;
+            margin-bottom: 20px;
+          }
+
           &:last-child {
             margin-bottom: 0;
           }
@@ -58,6 +82,10 @@
           .etw-image {
             flex: 1;
             margin-right: 20px;
+
+            @media only screen and (max-width: $phone) {
+              margin: 0 0 20px;
+            }
           }
 
           .content-container {
