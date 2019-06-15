@@ -14,9 +14,8 @@ const Footer = () => {
             <p>
               Execute to Win (ETW) is the Intentional Leadership Platform that
               high-performance organizations trust to strengthen culture and
-              accelerate growth.
+              accelerate growth.<a href="/"> Learn more about us.</a>
             </p>
-            <a href="/">Learn more about us.</a>
           </div>
           <div className="etw-footer-input-container">
             <p>Get leadership resources in your inbox</p>
@@ -96,16 +95,24 @@ const Footer = () => {
       </div>
       <div className="etw-footer-baseline-container">
         <div className="etw-footer-baseline-proprietary">
-          <p>©2019 All rights reserved, Execute to Win, Inc</p>
-          <a href="/">
-            <p>Terms of use</p>
-          </a>
-          <a href="/">
-            <p>Privacy policy</p>
-          </a>
-          <a href="/">
-            <p>Global privacy compliance</p>
-          </a>
+          <p className='etw-copywright'>
+            ©2019{' '}
+            <span className="etw-footer-rights">All rights reserved, </span>
+            Execute to Win, Inc
+          </p>
+          <div className="etw-footer-row-wrap">
+            <p>
+              <a href="/">Terms of use </a>
+            </p>
+            <p>
+              <a href="/">Privacy policy</a>
+            </p>
+          </div>
+          <p className='etw-global-privacy'>
+            <a className="footer-global-privacy" href="/">
+              Global privacy compliance
+            </a>
+          </p>
         </div>
         <div className="etw-footer-baseline-social">
           <a href="/">

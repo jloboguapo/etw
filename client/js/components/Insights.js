@@ -13,7 +13,6 @@ const Insights = props => {
           By subscribing, you agree to our <a href="/">privacy policy.</a>
         </p>
       </div>
-      <br />
       <div className="etw-insights-card-container">
         <div className="etw-insights-row">
           <div className="image-content-wrapper">

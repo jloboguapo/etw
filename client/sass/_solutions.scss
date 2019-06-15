@@ -1,11 +1,17 @@
 .etw-solutions-ultimate-container {
   background-color: #ffffff;
   height: fit-content;
+
   .etw-solutions-main-container {
     margin: 0 auto;
     width: 80%;
     text-align: center;
     padding-top: 80px;
+
+    @media only screen and (max-width: $phone) {
+      padding-top: 15%;
+    }
+
     p {
       color: #777777;
     }
@@ -14,15 +20,20 @@
         font-family: $lora;
         font-size: 35px;
         font-weight: bold;
-        line-height: 1.1em;
+        line-height: 1.2em;
         margin-bottom: 15px;
       }
+
       p {
         font-family: $montserrat;
         margin-left: auto;
         margin-right: auto;
         width: 60%;
         line-height: 1.6em;
+
+        @media only screen and (max-width: $phone) {
+          width: 100%;
+        }
       }
     }
     .etw-solutions-card-container {
@@ -34,12 +45,19 @@
         width: 25%;
         vertical-align: top;
         height: 47%;
+
+        @media only screen and (max-width: $phone) {
+          width: 100%;
+          margin-bottom: 35%;
+        }
+
         img {
           width: 30%;
           display: block;
           margin-top: 6%;
           margin-left: 10%;
         }
+
         h4 {
           font-family: $poppins;
           font-size: 1.1em;
@@ -47,6 +65,7 @@
           margin-top: 15%;
           margin-left: 10%;
         }
+
         p {
           font-family: $roboto;
           font-weight: lighter;
@@ -59,17 +78,25 @@
           margin-left: 10%;
         }
       }
+
       .priorities-card {
         background: rgba(244, 241, 235, 0.5);
         width: 23%;
         margin-left: 1%;
         margin-right: 1%;
+
+        @media only screen and (max-width: $phone) {
+          width: 96%;
+          margin: 0 2%;
+        }
+
         img {
-          margin-left: 9%;
+          margin-left: 10%;
           margin-bottom: 20%;
         }
+
         .view-our-solution {
-          width: 57.5%;
+          width: 45%;
           margin-top: 12%;
         }
       }
@@ -80,6 +107,12 @@
       margin: 104px auto;
       border-radius: 8px;
       box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+
+      @media only screen and (max-width: $phone) {
+        @include flex;
+        margin: 0 auto 25%;
+      }
+
       .testimonial-container-left {
         @include flex;
         flex: 11;
@@ -87,10 +120,23 @@
         margin: 32px;
         border-right: 1px solid #d6d4d0;
 
+        @media only screen and (max-width: $phone) {
+          border-right: none;
+          border-bottom: 1px solid #d6d4d0;
+          padding-bottom: 10%;
+          margin-bottom: 0;
+          margin: 13% 13% 9%;
+        }
+
         .etw-webinar-button {
           color: #ffffff;
           margin: 0 auto;
+
+          @media only screen and (max-width: $phone) {
+            margin-bottom: 3%;
+          }
         }
+
         p {
           font-family: $roboto;
           font-weight: lighter;
@@ -101,29 +147,37 @@
           width: 70%;
           margin-left: auto;
           margin-right: auto;
+
+          @media only screen and (max-width: $phone) {
+            width: auto;
+          }
         }
       }
+
       .testimonial-container-right {
         @include flex;
         flex: 14;
         justify-content: center;
         margin: 36px 2%;
+
+        @media only screen and (max-width: $phone) {
+          margin: 2% 13% 13%;
+        }
+
         .quote {
           height: 28px;
+          @media only screen and (max-width: $phone) {
+            margin-bottom: 5%;
+            height: 26px;
+          }
         }
+
         p {
-          font-family: $lora;
-          font-size: 26px;
-          line-height: 36px;
-          margin: 3% auto 0;
+          @include p($font-size: 20px, $margin: 5% auto);
         }
+
         h5 {
-          font-family: $poppins;
-          font-weight: lighter;
-          font-size: 11px;
-          letter-spacing: 0.8;
-          text-transform: uppercase;
-          margin: 3% 0 0;
+          @include h5;
         }
       }
     }

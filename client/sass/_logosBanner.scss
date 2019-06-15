@@ -6,7 +6,11 @@
 
     .logos-content-wrapper {
       width: 100%;
-      margin: 32px 0 44px 0;
+      margin: 32px 0 44px;
+
+      @media only screen and (max-width: $phone) {
+        margin: 16px 0 22px;
+      }
 
       .logos-text-container {
         @include flex(row);
@@ -18,8 +22,10 @@
           font-size: 0.82em;
           text-transform: uppercase;
           text-align: center;
+          line-height: 1.6em;
         }
       }
+
       .logos-svg-container {
         @include flex(row);
 
@@ -38,6 +44,10 @@
 
           .trip-spark-logo {
             display: flex;
+
+            @media only screen and (max-width: $phone) {
+              display: none;
+            }
           }
         }
 
