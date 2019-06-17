@@ -5,7 +5,7 @@
     width: 80%;
 
     @media only screen and (max-width: $phone) {
-      margin: 16% auto;
+      margin: 68px auto;
     }
 
     .etw-footer-top-container {
@@ -16,7 +16,7 @@
 
       @media only screen and (max-width: $phone) {
         @include flex;
-        padding-bottom: 8%;
+        padding-bottom: 26px;
       }
 
       .etw-company-description-container {
@@ -24,7 +24,7 @@
         flex: 10;
 
         @media only screen and (max-width: $phone) {
-          margin-bottom: 20%;
+          margin-bottom: 32px;
         }
 
         .etw-logo-dark-on-transparent {
@@ -75,7 +75,8 @@
             }
 
             .etw-webinar-button {
-              margin: 5% auto 0;
+              width: 100%;
+              margin: 16px auto 0;
             }
           }
         }
@@ -89,7 +90,7 @@
 
       @media only screen and (max-width: $phone) {
         @include flex;
-        padding-bottom: 8.7%;
+        padding-bottom: 28px;
       }
 
       .etw-footer-columns {
@@ -97,7 +98,7 @@
         flex: 1;
 
         @media only screen and (max-width: $phone) {
-          margin-bottom: 10%;
+          margin-bottom: 32.875px;
         }
 
         h4,
@@ -166,7 +167,7 @@
         @media only screen and (max-width: $phone) {
           @include flex;
           text-align: center;
-          margin: 10% 0 1.1%;
+          margin: 32px 0 4px;
 
           .etw-footer-row-wrap {
             @include flex(row);
@@ -191,7 +192,7 @@
 
         @media only screen and (max-width: $phone) {
           @include flex(row);
-          margin: 0 14% 50%;
+          margin: 0 46px 144px;
           justify-content: center;
 
           a {

@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageWithPill from './ImageWithPill';
 import Subscribe from './Subscribe';
+import CallToAction from './CallToAction';
 
 const Insights = props => {
   return (
@@ -18,9 +19,7 @@ const Insights = props => {
           <div className="image-content-wrapper">
             <ImageWithPill imageClass="etw-insights-image-phone" />
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-            <a href="/">
-              <img src="./resources/call-to-action.svg" />
-            </a>
+            <CallToAction linkName="call to action" />
           </div>
           <div className="image-content-wrapper">
             <ImageWithPill imageClass="insights-cat-2" />
@@ -28,9 +27,7 @@ const Insights = props => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               pretium mauris nec aliquam porttitor.
             </h4>
-            <a href="/">
-              <img src="./resources/call-to-action.svg" />
-            </a>
+            <CallToAction linkName="call to action" />
           </div>
         </div>
         <div className="etw-insights-row">
@@ -40,9 +37,7 @@ const Insights = props => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               pretium mauris nec aliquam porttitor.
             </h2>
-            <a href="/">
-              <img src="./resources/call-to-action.svg" />
-            </a>
+            <CallToAction linkName="call to action" />
           </div>
         </div>
         <div className="etw-insights-row">
@@ -52,9 +47,7 @@ const Insights = props => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               pretium mauris nec aliquam porttitor.
             </h4>
-            <a href="/">
-              <img src="./resources/call-to-action.svg" />
-            </a>
+            <CallToAction linkName="call to action" />
           </div>
           <div className="insights-category-container-5">
             <img className="quote" src="./resources/quote.svg" />
@@ -73,12 +66,7 @@ const Insights = props => {
           </div>
         </div>
       </div>
-      <a href="/">
-        <img
-          className="more-insights-arrow"
-          src="./resources/more-insights-arrow.svg"
-        />
-      </a>
+        <CallToAction linkName="more insights" />
     </div>
   );
 };

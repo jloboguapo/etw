@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CallToAction from './CallToAction';
 
 const Solutions = () => {
   return (
@@ -22,6 +23,7 @@ const Solutions = () => {
             Whether facing employee disengagement, weak performers, or
             decreasing loyalty, investing in people always precedes performance.
           </p>
+          <CallToAction linkName="view our solution" />
         </div>
         <div className="priorities-card">
           <img
@@ -34,12 +36,7 @@ const Solutions = () => {
             fosters unnecessary confusion, internal competition, and petty
             politics. Focus.
           </p>
-          <a href="/">
-            <img
-              className="view-our-solution"
-              src="./resources/view-our-solution.svg"
-            />
-          </a>
+          <CallToAction linkName="view our solution" />
         </div>
         <div className="practices-card">
           <img
@@ -52,6 +49,7 @@ const Solutions = () => {
             productivity, it's cultural habits (or a lack thereof) that are the
             real culprit. Start improving.
           </p>
+          <CallToAction linkName="view our solution" />
         </div>
         <div className="performance-card">
           <img
@@ -64,6 +62,7 @@ const Solutions = () => {
             on honing their people, priorities, and practices. Unstick growth by
             getting intentional.
           </p>
+          <CallToAction linkName="view our solution" />
         </div>
       </div>
       <div className="testimonial-container">

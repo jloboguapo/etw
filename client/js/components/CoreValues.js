@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CallToAction from './CallToAction';
 
 const CoreValues = () => {
   return (
@@ -25,12 +26,7 @@ const CoreValues = () => {
               Develop a value-creation mindset and skill set within all your
               employees.
             </p>
-            <a href="/">
-              <img
-                className="put-people-first"
-                src="./resources/put-people-first.svg"
-              />
-            </a>
+            <CallToAction linkName="put people first" />
           </div>
         </div>
         <div className="etw-core-values-containers">
@@ -46,6 +42,7 @@ const CoreValues = () => {
               Clarify and accomplish what's most important across your
               organization.
             </p>
+            <CallToAction linkName="put people first" />
           </div>
         </div>
       </div>
