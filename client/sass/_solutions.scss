@@ -9,7 +9,7 @@
     padding-top: 80px;
 
     @media only screen and (max-width: $phone) {
-      padding-top: 15%;
+      padding-top: 50px;
     }
 
     p {
@@ -20,8 +20,12 @@
         font-family: $lora;
         font-size: 35px;
         font-weight: bold;
-        line-height: 1.2em;
+        line-height: 1.2;
         margin-bottom: 15px;
+
+        @media only screen and (max-width: $phone) {
+          font-size: 32px;
+        }
       }
 
       p {
@@ -29,9 +33,10 @@
         margin-left: auto;
         margin-right: auto;
         width: 60%;
-        line-height: 1.6em;
+        line-height: 1.6;
 
         @media only screen and (max-width: $phone) {
+          font-size: 14px;
           width: 100%;
         }
       }
@@ -48,34 +53,66 @@
 
         @media only screen and (max-width: $phone) {
           width: 100%;
-          margin-bottom: 35%;
+          margin-bottom: 12px;
         }
 
         img {
           width: 30%;
           display: block;
-          margin-top: 6%;
-          margin-left: 10%;
+          margin: 15px auto 36px 25.5px;
+
+          @media only screen and (max-width: $phone) {
+            margin-bottom: 0;
+          }
         }
 
         h4 {
           font-family: $poppins;
-          font-size: 1.1em;
+          font-size: 17px;
+          letter-spacing: 0.2;
           text-align: left;
-          margin-top: 15%;
-          margin-left: 10%;
+          margin: auto auto 10.5 25.5px;
+
+          @media only screen and (max-width: $phone) {
+            margin-top: 15px;
+          }
         }
 
         p {
           font-family: $roboto;
           font-weight: lighter;
           text-align: left;
-          line-height: 1.6em;
-          font-size: 0.8em;
+          line-height: 1.7;
+          font-size: 12.4px;
           color: #777777;
+          letter-spacing: 0.18;
           width: 76%;
-          margin-top: -5%;
-          margin-left: 10%;
+          margin: auto auto 13px 25.5px;
+        }
+
+        a {
+          @include flex(row);
+          display: none;
+
+          @media only screen and (max-width: $phone) {
+            display: flex;
+          }
+
+          .call-to-action {
+            @include call-to-action(
+              $font-size: 11px,
+              $font-family: Helvetica,
+              $letter-spacing: 0.5
+            );
+            font-weight: normal;
+            width: auto;
+            margin: 16px 0 22px 23.5px;
+          }
+
+          .arrow-svg {
+            width: auto;
+            margin: 19px auto 23px 6px;
+          }
         }
       }
 
@@ -90,14 +127,25 @@
           margin: 0 2%;
         }
 
-        img {
-          margin-left: 10%;
-          margin-bottom: 20%;
+        .priorities-card-icon {
+          width: 32.61%;
         }
 
-        .view-our-solution {
-          width: 45%;
-          margin-top: 12%;
+        img,
+        h4,
+        p {
+          margin-left: 23.5px;
+        }
+
+        a {
+          display: flex;
+        }
+      }
+
+      .performance-card {
+        @media only screen and (max-width: $phone) {
+          background: rgba(244, 241, 235, 0.5);
+          margin-bottom: 24px;
         }
       }
     }
@@ -110,7 +158,7 @@
 
       @media only screen and (max-width: $phone) {
         @include flex;
-        margin: 0 auto 25%;
+        margin: 20px auto 80px;
       }
 
       .testimonial-container-left {
@@ -121,11 +169,10 @@
         border-right: 1px solid #d6d4d0;
 
         @media only screen and (max-width: $phone) {
+          margin: 39px 39px 27px;
+          padding-bottom: 30px;
           border-right: none;
           border-bottom: 1px solid #d6d4d0;
-          padding-bottom: 10%;
-          margin-bottom: 0;
-          margin: 13% 13% 9%;
         }
 
         .etw-webinar-button {
@@ -133,17 +180,16 @@
           margin: 0 auto;
 
           @media only screen and (max-width: $phone) {
-            margin-bottom: 3%;
+            margin-bottom: 6px;
           }
         }
 
         p {
           font-family: $roboto;
           font-weight: lighter;
-          line-height: 1.6em;
+          line-height: 1.6;
           font-size: 13px;
           color: #777777;
-          letter-spacing: 0.01em;
           width: 70%;
           margin-left: auto;
           margin-right: auto;
@@ -158,26 +204,29 @@
         @include flex;
         flex: 14;
         justify-content: center;
-        margin: 36px 2%;
+        margin: 36px 21.2px;
 
         @media only screen and (max-width: $phone) {
-          margin: 2% 13% 13%;
+          margin: 6px 39px 39px;
         }
 
         .quote {
           height: 28px;
+
           @media only screen and (max-width: $phone) {
-            margin-bottom: 5%;
+            margin-bottom: 11px;
             height: 26px;
           }
         }
 
         p {
-          @include p($font-size: 20px, $margin: 5% auto);
+          @include p($font-size: 20px);
+          margin: 11px auto;
         }
 
         h5 {
           @include h5;
+          margin: 12px 0 0;
         }
       }
     }

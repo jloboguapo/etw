@@ -1,5 +1,3 @@
-// style.scss
-
 @import 'colors';
 @import 'coreValues';
 @import 'footer';
@@ -8,6 +6,7 @@
 @import 'logosBanner';
 @import 'solutions';
 @import 'subscribe';
+@import 'categoryPill';
 
 body {
   margin: 0;
@@ -21,18 +20,21 @@ a {
 
 .etw-webinar-button {
   font-family: $roboto;
-  font-size: 0.82em;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.5;
   padding: 11px 17px 13px 17px;
   background-color: $forest;
   border-radius: 2px;
   color: $light-bone;
   outline: 0;
   text-transform: uppercase;
+}
 
-  @media only screen and (max-width: $phone) {
-    width: 100%;
-    margin: 10% 0 20%;
-  }
+.call-to-action {
+  @include call-to-action;
+}
+
+.arrow-svg {
+  @include arrow;
 }
