@@ -4,15 +4,11 @@ import LogosBanner from './LogosBanner';
 import Solutions from './Solutions';
 import Insights from './Insights';
 
-const Home = () => {
+const PerformanceSolutions = () => {
   return (
     <>
-      <CoreValues />
-      <LogosBanner />
-      <Solutions />
-      <Insights />
     </>
   );
 };
 
-export default Home;
+export default PerformanceSolutions;
