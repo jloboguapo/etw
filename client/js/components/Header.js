@@ -10,9 +10,15 @@ const Header = () => {
         />
       </div>
       <div className="etw-header-links-container">
-        <a href='/'><p>Performance Solutions</p></a>
-        <a href='/'><p>Leadership Resources</p></a>
-        <a href='/'><p>more</p></a>
+        <a href="/">
+          <p>Performance Solutions</p>
+        </a>
+        <a href="/">
+          <p>Leadership Resources</p>
+        </a>
+        <a href="/">
+          <p>more</p>
+        </a>
         <button type="button" className="etw-webinar-button">
           JOIN A WEBINAR
         </button>

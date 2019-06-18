@@ -42,7 +42,7 @@ const CoreValues = () => {
               Clarify and accomplish what's most important across your
               organization.
             </p>
-            <CallToAction linkName="put people first" />
+            <CallToAction linkName="Keep performance-focused" />
           </div>
         </div>
       </div>
