@@ -135,6 +135,14 @@
           h2 {
             font-size: 36px;
 
+            @media only screen and (max-width: $desktop) {
+              font-size: 32px;
+            }
+
+            @media only screen and (max-width: $tablet) {
+              font-size: 28px;
+            }
+
             @media only screen and (max-width: $phone) {
               font-size: 21px;
             }
@@ -179,36 +187,36 @@
         width: 38px;
 
         @media only screen and (max-width: $phone) {
-        height: 32px;
-        width: 27px;
-      }
-    }
-
-    .etw-client-quote {
-      @include p;
-      width: 87%;
-      margin: 0 auto;
-
-      @media only screen and (max-width: $phone) {
-        font-size: 22px;
-        margin: 8px auto 16px;
-      }
-    }
-
-    h5 {
-      @include h5;
-          width: 85%;
+          height: 32px;
+          width: 27px;
         }
+      }
 
-    .etw-webinar-button {
-      color: #ffffff;
-      margin-top: 12px;
+      .etw-client-quote {
+        @include p;
+        width: 87%;
+        margin: 0 auto;
 
-      @media only screen and (max-width: $phone) {
-        margin: 39px;
+        @media only screen and (max-width: $phone) {
+          font-size: 22px;
+          margin: 8px auto 16px;
+        }
+      }
+
+      h5 {
+        @include h5;
         width: 85%;
       }
-    }
+
+      .etw-webinar-button {
+        color: #ffffff;
+        margin-top: 12px;
+
+        @media only screen and (max-width: $phone) {
+          margin: 39px;
+          width: 85%;
+        }
+      }
 
       p {
         font-family: $roboto;

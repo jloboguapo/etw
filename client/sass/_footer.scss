@@ -5,7 +5,7 @@
     width: 80%;
 
     @media only screen and (max-width: $phone) {
-      margin: 68px auto;
+      margin: 68px auto 0;
     }
 
     .etw-footer-top-container {
@@ -14,16 +14,15 @@
       padding-bottom: 56px;
       border-bottom: 1.5px solid #d6d4d0;
 
-      @media only screen and (max-width: $phone) {
+      @media only screen and (max-width: 985px) {
         @include flex;
         padding-bottom: 26px;
       }
 
       .etw-company-description-container {
         @include flex;
-        flex: 10;
 
-        @media only screen and (max-width: $phone) {
+        @media only screen and (max-width: 985px) {
           margin-bottom: 32px;
         }
 
@@ -48,9 +47,8 @@
 
       .etw-footer-input-container {
         @include flex;
-        flex: 10;
 
-        @media only screen and (max-width: $phone) {
+        @media only screen and (max-width: 985px) {
           margin-bottom: inherit;
         }
 
@@ -67,7 +65,7 @@
         .etw-subscribe-container {
           margin-top: 8px;
 
-          @media only screen and (max-width: $phone) {
+          @media only screen and (max-width: 985px) {
             @include flex;
 
             .etw-input {
@@ -91,6 +89,19 @@
       @media only screen and (max-width: $phone) {
         @include flex;
         padding-bottom: 28px;
+      }
+
+      .footer-link-wraps {
+        @include flex(row);
+        flex: 1;
+
+        @media only screen and (max-width: $tablet) {
+          @include flex;
+
+          .footer-link-wrap-2 {
+            margin-top: 32px;
+          }
+        }
       }
 
       .etw-footer-columns {
@@ -124,15 +135,21 @@
           font-size: 13px;
           line-height: 1.8;
           letter-spacing: 0.4;
+          width: 95%;
           margin: 0;
           color: #777777;
+        }
+
+        @media only screen and (max-width: $tablet) {
+          width: 94%;
         }
       }
     }
     .etw-footer-baseline-container {
       @include flex(row);
       margin-top: 14px;
-      @media only screen and (max-width: $phone) {
+
+      @media only screen and (max-width: $tablet) {
         @include flex;
       }
 
@@ -150,36 +167,41 @@
           color: #777777;
         }
 
-        .etw-copywright {
-          flex: 2.84;
+        @media only screen and (max-width: 1264px) {
+          justify-content: normal;
+
+          p {
+            margin: 13px 22px 0 0;
+          }
+
+          .etw-footer-rights {
+            display: none;
+          }
+
+          .etw-global-privacy {
+            display: none;
+          }
         }
 
-        .etw-footer-row-wrap {
+        @media only screen and (max-width: $tablet) {
           @include flex(row);
-          justify-content: space-evenly;
-          flex: 2.16;
-        }
+          margin: 32px 0 4px;
+          justify-content: center;
 
-        .etw-global-privacy {
-          flex: 1.64;
+          p {
+            margin: 13px 6px 0;
+          }
         }
 
         @media only screen and (max-width: $phone) {
           @include flex;
-          text-align: center;
-          margin: 32px 0 4px;
+          align-items: center;
 
-          .etw-footer-row-wrap {
+          .base-footer-wrap {
             @include flex(row);
-            justify-content: space-evenly;
-          }
-
-          span {
-            display: none;
-          }
-
-          .footer-global-privacy {
-            display: none;
+            p {
+              margin: 13px 6px 0;
+            }
           }
         }
       }
@@ -190,19 +212,13 @@
         justify-content: flex-end;
         margin-top: 10px;
 
-        @media only screen and (max-width: $phone) {
+        @media only screen and (max-width: $tablet) {
           @include flex(row);
-          margin: 0 46px 144px;
+          margin: 8px auto 24px;
           justify-content: center;
 
           a {
-            display: flex;
-            flex: 1;
-
-            img {
-              display: flex;
-              flex: 1;
-            }
+            margin: 6px 2px;
           }
         }
 
