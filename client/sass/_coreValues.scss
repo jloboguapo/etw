@@ -17,7 +17,7 @@
       @include flex(row);
       width: 100%;
 
-      @media only screen and (max-width: $phone) {
+      @media only screen and (max-width: $tablet) {
         @include flex;
       }
 
@@ -29,6 +29,15 @@
         margin-top: 0;
         margin-bottom: 20px;
         line-height: 1.1;
+
+        @media only screen and (max-width: $desktop) {
+          width: 100%;
+        }
+
+        @media only screen and (max-width: $tablet) {
+          max-width: 100%;
+          font-size: 45px;
+        }
 
         @media only screen and (max-width: $phone) {
           width: 95%;
@@ -46,26 +55,50 @@
         flex: 3;
 
         p {
-          width: 64%;
-          
-          @media only screen and (max-width: $phone) {
+          width: 75%;
+
+          @media only screen and (max-width: $desktop) {
+            width: 100%;
+            max-width: 324px;
+          }
+
+          @media only screen and (max-width: $tablet) {
             width: 97%;
+            max-width: 100%;
+          }
+
+          @media only screen and (max-width: 744px) {
+            width: 97%;
+            max-width: 75%;
+          }
+
+          @media only screen and (max-width: $phone) {
+            width: 96%;
+            max-width: 75%;
+          }
+
+          @media only screen and (max-width: 472px) {
+            width: 97%;
+            max-width: 324px;
           }
         }
-          
-          .etw-webinar-button {
 
-            margin-top: 16px;
+        .etw-webinar-button {
+          margin-top: 16px;
 
-            @media only screen and (max-width: $phone) {
+          @media only screen and (max-width: $tablet) {
             width: 100%;
             margin: 30px 0 60px;
+          }
         }
-      }
       }
 
       .etw-core-values-right-container {
         flex: 2;
+
+        @media only screen and (max-width: $desktop) {
+          flex: 3;
+        }
 
         .etw-core-values-containers {
           @include flex(row);
@@ -75,6 +108,16 @@
           border-radius: 4px;
           box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
           margin-bottom: 20px;
+
+          @media only screen and (max-width: $desktop) {
+            @include flex;
+            margin-bottom: 24px;
+          }
+
+          @media only screen and (max-width: $tablet) {
+            @include flex(row);
+            margin-right: 24px;
+          }
 
           @media only screen and (max-width: $phone) {
             @include flex;
@@ -92,10 +135,20 @@
 
           .etw-image {
             flex: 1;
-            margin-right: 20px;
+            height: 100px;
+            max-width: 100px;
+            margin: auto 20px auto auto;
+
+            @media only screen and (max-width: $desktop) {
+              margin: 0 0 24px 0;
+            }
+
+            @media only screen and (max-width: $tablet) {
+              margin: 0 20px 0 0;
+            }
 
             @media only screen and (max-width: $phone) {
-              margin: 0 0 20px;
+              margin: 0 0 24px 0;
             }
           }
 
@@ -109,6 +162,7 @@
             p {
               width: 100%;
               font-size: 12px;
+              margin: 10px auto;
             }
 
             a {
