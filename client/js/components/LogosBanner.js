@@ -11,13 +11,13 @@ const LogosBanner = () => {
           <div className="trip-spark-container">
             <img
               className="trip-spark-logo"
-              src="./resources/trip-spark-logo.svg"
+              src="/trip-spark-logo.svg"
             />
           </div>
-          <img className="univar-logo" src="./resources/univar-logo.svg" />
+          <img className="univar-logo" src="/univar-logo.svg" />
           <img
             className="verra-mobility-logo"
-            src="./resources/verra-mobility-logo.svg"
+            src="/verra-mobility-logo.svg"
           />
           <div className="logos-empty-div" />
         </div>

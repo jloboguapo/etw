@@ -97,19 +97,19 @@
             font-size: 24px;
 
             &.etw-insights-image-phone {
-              background-image: url('/resources/insights-cat-1.jpg');
+              background-image: url('/insights-cat-1.jpg');
             }
 
             &.insights-cat-2 {
-              background-image: url('/resources/insights-cat-2.jpg');
+              background-image: url('/insights-cat-2.jpg');
             }
 
             &.insights-cat-3 {
-              background-image: url('/resources/insights-cat-3.jpg');
+              background-image: url('/insights-cat-3.jpg');
             }
 
             &.insights-cat-4 {
-              background-image: url('/resources/insights-cat-4.jpg');
+              background-image: url('/insights-cat-4.jpg');
             }
           }
 
@@ -229,27 +229,27 @@
         width: 57%;
       }
     }
+  }
 
-    .arrow-link {
-      @include flex(row);
-      justify-content: center;
+  .arrow-link {
+    @include flex(row);
+    justify-content: center;
+    margin: 20px 0 0;
+    padding-bottom: 104px;
+
+    @media only screen and (max-width: $phone) {
+      margin: 24px 0 0;
+      padding-bottom: 60px;
+    }
+
+    .call-to-action {
+      @include call-to-action($font-size: 12px);
       margin: 20px 0 0;
-      padding-bottom: 104px;
+    }
 
-      @media only screen and (max-width: $phone) {
-        margin: 24px 0 0;
-        padding-bottom: 60px;
-      }
-
-      .call-to-action {
-        @include call-to-action($font-size: 12px);
-        margin: 20px 0 0;
-      }
-
-      .arrow-svg {
-        height: 12px;
-        margin: 20.4px 0 0 6px;
-      }
+    .arrow-svg {
+      height: 12px;
+      margin: 20.4px 0 0 6px;
     }
   }
 }
