@@ -1,8 +1,10 @@
 @import 'colors';
+@import 'combatDisengagement';
 @import 'coreValues';
 @import 'footer';
 @import 'header';
 @import 'insights';
+@import 'intentionalCulture';
 @import 'logosBanner';
 @import 'solutions';
 @import 'subscribe';
@@ -11,6 +13,18 @@
 body {
   margin: 0;
   background-color: $light-bone;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #222;
+}
+
+p {
+  color: #777;
 }
 
 a {

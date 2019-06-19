@@ -1,10 +1,156 @@
-.etw-main-container {
-  .etw-secondary-container {
-    margin: 0 auto 104px;
+@import 'colors';
+@import 'fonts';
+@import 'functions';
+@import 'mixins';
+@import 'variables';
+
+.combat-disengagement-ultimate-container {
+  background-color: #ffffff;
+
+  .combat-disengagement-main-container {
+    margin: 0 auto;
     width: 80%;
+    text-align: center;
+    padding-top: 80px;
 
     @media only screen and (max-width: $phone) {
-      margin: 0 auto 96px;
+      padding-top: 50px;
+    }
+
+    .combat-disengagement-text-container {
+      h2 {
+        font-family: $lora;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1;
+        width: 75%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: $tablet) {
+          font-size: 34px;
+        }
+
+        @media only screen and (max-width: 550px) {
+          width: 100%;
+        }
+
+        @media only screen and (max-width: $phone) {
+          font-size: 32px;
+        }
+
+        span {
+          color: $sea;
+        }
+      }
+
+      p {
+        font-family: $montserrat;
+        margin: 16px auto;
+        width: 50%;
+        line-height: 1.6;
+
+        @media only screen and (max-width: $phone) {
+          font-size: 14px;
+          width: 89%;
+        }
+
+        @media only screen and (max-width: 597px) {
+          width: 64%;
+        }
+      }
+    }
+
+    .combat-disengagement-card-container {
+      @include flex(row);
+      margin-bottom: 80px;
+
+      @media only screen and (max-width: $phone) {
+        @include flex;
+      }
+
+      .lack-card,
+      .not-engaged-card,
+      .no-direction-card {
+        flex: 1;
+
+        @media only screen and (max-width: $desktop) {
+          width: 50%;
+          margin-top: inherit;
+          margin-bottom: 12px;
+        }
+
+        @media only screen and (max-width: $phone) {
+          width: 100%;
+          margin-bottom: 12px;
+        }
+
+        img {
+          width: 54%;
+          display: block;
+          margin: 15px auto 24px 25.5px;
+
+          @media only screen and (max-width: $phone) {
+            margin-bottom: 0;
+          }
+        }
+
+        h4 {
+          font-family: $poppins;
+          font-weight: bolder;
+          font-size: 17px;
+          letter-spacing: 0.2;
+          text-align: left;
+          width: 83%;
+          margin: auto auto 10.5 25.5px;
+
+          @media only screen and (max-width: $phone) {
+            margin-top: 15px;
+          }
+
+          .percent-span {
+            color: black;
+            font-family: Helvetica;
+            font-weight: 900;
+            font-size: 18px;
+          }
+
+          .lack-span {
+            color: $sea;
+          }
+        }
+
+        .cite-p {
+          font-family: $roboto;
+          font-weight: lighter;
+          font-size: 9px;
+          text-align: left;
+          width: 87%;
+          margin: auto auto 13px 25.5px;
+        }
+      }
+
+      .not-engaged-card {
+        span {
+          color: $fire;
+        }
+      }
+
+      img,
+      h4,
+      p {
+        margin-left: 23.5px;
+
+        @media only screen and (max-width: $desktop) {
+          margin-left: 25.5;
+        }
+      }
+
+      .no-direction-card {
+        span {
+          color: $sun;
+        }
+      }
     }
 
     .etw-core-values-container {
@@ -88,14 +234,6 @@
 
       .etw-core-values-right-container {
         flex: 2;
-
-        @media only screen and (max-width: 1151px) {
-          flex: 2.13;
-        }
-
-        @media only screen and (max-width: 1109px) {
-          flex: 2.5;
-        }
 
         @media only screen and (max-width: $desktop) {
           flex: 3;
