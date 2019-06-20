@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const LogosBanner = () => {
   return (
-    <div className="logos-banner-container">
+    <div className="logos-banner-ultimate-container">
       <div className="logos-content-wrapper">
         <div className="logos-text-container">
           <p>intentional cultures both big and small leverage us to win</p>

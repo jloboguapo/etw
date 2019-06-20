@@ -66,8 +66,8 @@ const Insights = props => {
             </div>
           </div>
         </div>
+        <CallToAction linkName="more insights" />
       </div>
-      <CallToAction linkName="more insights" />
     </div>
   );
 };

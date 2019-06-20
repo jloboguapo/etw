@@ -4,7 +4,7 @@ import Button from './Button';
 
 const CoreValues = () => {
   return (
-    <div className="etw-secondary-container">
+    <div className="etw-core-values-ultimate-container">
       <div className="etw-core-values-container">
         <div className="etw-core-values-left-container">
           <h1>Only the intentional become exceptional</h1>

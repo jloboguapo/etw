@@ -5,10 +5,10 @@
     margin: 0 auto;
     width: 80%;
     text-align: center;
-    padding-top: 80px;
+    padding: 80px 0 104px;
 
     @media only screen and (max-width: $phone) {
-      padding-top: 50px;
+      padding: 50px 0 80px;
     }
 
     p {
@@ -163,13 +163,14 @@
 
     .testimonial-container {
       @include flex(row);
-      margin: 104px auto;
+      height: fit-content;
+      margin: 104px auto 0;
       border-radius: 8px;
       box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
 
       @media only screen and (max-width: $tablet) {
         @include flex;
-        margin: 20px auto 80px;
+        margin: 20px auto 0;
       }
 
       .testimonial-container-left {

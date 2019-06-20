@@ -39,15 +39,15 @@ const ServicesSoftware = () => {
             </p>
           </div>
         </div>
-        <div className="testimonial-container">
-          <div className="testimonial-container-left">
+        <div className="ss-testimonial-container">
+          <div className="ss-testimonial-container-left">
             <Button content="Join our next webinar" />
             <p>
               Every Tuesday, Thursday, and Friday, designed for C-level leaders
               like you.
             </p>
           </div>
-          <div className="testimonial-container-right">
+          <div className="ss-testimonial-container-right">
             <img className="quote" src="/quote.svg" />
             <p>
               ETW has made us far more productive because now we focus on the
