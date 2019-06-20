@@ -2,6 +2,7 @@ import React from 'react';
 import ImageWithPill from './ImageWithPill';
 import Subscribe from './Subscribe';
 import CallToAction from './CallToAction';
+import Button from './Button';
 
 const Insights = props => {
   return (
@@ -57,9 +58,7 @@ const Insights = props => {
                 secret sauce.
               </p>
               <h5>high-performance client name</h5>
-              <button className="etw-webinar-button">
-                JOIN our next webinar
-              </button>
+              <Button content="JOIN our next webinar" />
               <p>
                 Every Tuesday, Thursday, and Friday, designed for C-level
                 leaders like you.

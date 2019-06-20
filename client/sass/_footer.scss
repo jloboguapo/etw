@@ -1,8 +1,9 @@
 .etw-footer-ultimate-container {
   height: fit-content;
   .etw-footer-main-container {
-    margin: 120px auto 20px;
     width: 80%;
+    margin: 0 auto 20px;
+    padding-top: 112px;
 
     @media only screen and (max-width: $phone) {
       margin: 68px auto 0;
@@ -37,7 +38,7 @@
           line-height: 1.5;
           margin-bottom: 0;
           color: #777777;
-          width: 85%;
+          width: 80%;
         }
 
         a {

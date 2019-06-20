@@ -1,0 +1,109 @@
+.ready-win-ultimate-container {
+  background-color: #ffffff;
+
+  .ready-win-main-container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding: 80px 0 104px;
+
+    @media only screen and (max-width: $phone) {
+      padding-top: 50px;
+    }
+
+    .ready-win-form-container {
+      border-radius: 8px;
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+      width: 65%;
+      margin: auto;
+
+      button {
+        width: 100%;
+      }
+
+      h2 {
+        font-family: $lora;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 1;
+        width: 75%;
+        margin: 56px auto 0;
+
+        @media only screen and (max-width: $tablet) {
+          font-size: 34px;
+        }
+
+        @media only screen and (max-width: 550px) {
+          width: 100%;
+        }
+
+        @media only screen and (max-width: $phone) {
+          font-size: 32px;
+        }
+      }
+
+      p {
+        font-family: $montserrat;
+        margin: 16px auto;
+        width: 95%;
+        line-height: 1.6;
+
+        @media only screen and (max-width: $phone) {
+          font-size: 14px;
+          width: 89%;
+        }
+
+        @media only screen and (max-width: 597px) {
+          width: 64%;
+        }
+      }
+
+      .etw-subscribe-container {
+        @include flex;
+        align-items: center;
+        margin: 28px auto 56px;
+
+        .etw-input {
+          font-family: $roboto;
+          font-size: 14px;
+          padding: 8px;
+          margin: 8px;
+          height: 56px;
+          width: 75%;
+          border: solid #d6d4d0 1px;
+          border-radius: 4px;
+          outline-color: #007278;
+          outline-width: thin;
+        }
+
+        button {
+          width: 193px;
+          margin: 8px;
+        }
+      }
+
+      .link-container {
+        background-color: #f4f1eb;
+        padding: 8px;
+
+        a {
+          display: flex;
+          justify-content: center;
+
+          p {
+            font-family: $poppins;
+            font-size: 13px;
+            font-weight: bold;
+            width: auto;
+            margin: 0;
+          }
+
+          img {
+            margin: 3px 0 0 6px;
+          }
+        }
+      }
+    }
+  }
+}

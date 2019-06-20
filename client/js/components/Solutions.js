@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CallToAction from './CallToAction';
+import Button from './Button';
 
 const Solutions = () => {
   return (
@@ -15,10 +16,7 @@ const Solutions = () => {
         </div>
         <div className="etw-solutions-card-container">
           <div className="people-card">
-            <img
-              className="people-card-icon"
-              src="/people-card-icon.svg"
-            />
+            <img className="people-card-icon" src="/people-card-icon.svg" />
             <h4>People</h4>
             <p>
               Whether facing employee disengagement, weak performers, or
@@ -69,9 +67,7 @@ const Solutions = () => {
         </div>
         <div className="testimonial-container">
           <div className="testimonial-container-left">
-            <button className="etw-webinar-button">
-              Join our next webinar
-            </button>
+            <Button content="Join our next webinar" />
             <p>
               Every Tuesday, Thursday, and Friday, designed for C-level leaders
               like you.
