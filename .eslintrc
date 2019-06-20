@@ -7,36 +7,24 @@
   },
   "plugins": [],
   "parserOptions": {
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true,
-        "experimentalObjectRestSpread": true
-      }
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "ecmaVersion": 2018
+    }
   },
   "settings": {
     "rules": {
-      "strict": [
-        2,
-        "function"
-      ],
-      "eqeqeq": [
-        2,
-        "smart"
-      ],
+      "strict": [2, "function"],
+      "eqeqeq": [2, "smart"],
       "no-redeclare": [
         2,
         {
           "builtinGlobals": true
         }
       ],
-      "no-use-before-define": [
-        2,
-        "nofunc"
-      ],
-      "comma-style": [
-        2,
-        "last"
-      ],
+      "no-use-before-define": [2, "nofunc"],
+      "comma-style": [2, "last"],
       "no-multiple-empty-lines": [
         2,
         {
@@ -51,18 +39,9 @@
           "SwitchCase": 1
         }
       ],
-      "quotes": [
-        2,
-        "single"
-      ],
-      "semi": [
-        2,
-        "always"
-      ],
-      "arrow-body-style": [
-        2,
-        "always"
-      ],
+      "quotes": [2, "single"],
+      "semi": [2, "always"],
+      "arrow-body-style": [2, "always"],
       "space-before-function-paren": [
         2,
         {
@@ -73,11 +52,7 @@
       "no-warning-comments": [
         1,
         {
-          "terms": [
-            "todo",
-            "fixme",
-            "fix"
-          ],
+          "terms": ["todo", "fixme", "fix"],
           "location": "start"
         }
       ],
@@ -89,10 +64,7 @@
           "allow": []
         }
       ],
-      "no-mixed-spaces-and-tabs": [
-        1,
-        "smart-tabs"
-      ],
+      "no-mixed-spaces-and-tabs": [1, "smart-tabs"],
       "quote-props": [
         1,
         "consistent-as-needed",
@@ -137,10 +109,7 @@
       "no-inline-comments": 0,
       "no-underscore-dangle": 0,
       "linebreak-style": 0,
-      "jsx-quotes": [
-        2,
-        "prefer-double"
-      ],
+      "jsx-quotes": [2, "prefer-double"],
       "react/jsx-curly-spacing": 1,
       "react/jsx-key": 1,
       "react/jsx-no-duplicate-props": 1,
