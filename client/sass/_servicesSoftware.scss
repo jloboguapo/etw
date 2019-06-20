@@ -5,10 +5,10 @@
     margin: 0 auto;
     width: 80%;
     text-align: center;
-    padding: 108px 0;
+    padding: 108px 0 124px;
 
     @media only screen and (max-width: $phone) {
-      padding-top: 50px;
+      padding: 64px 0;
     }
 
     .etw-ss-text-container {
@@ -31,6 +31,7 @@
 
         @media only screen and (max-width: $phone) {
           font-size: 32px;
+          margin: 0 auto 24px;
         }
       }
 
@@ -40,13 +41,13 @@
         width: 65%;
         line-height: 1.6;
 
+        @media only screen and (max-width: $tablet) {
+          width: 64%;
+        }
+
         @media only screen and (max-width: $phone) {
           font-size: 14px;
           width: 89%;
-        }
-
-        @media only screen and (max-width: 597px) {
-          width: 64%;
         }
       }
     }
@@ -54,8 +55,10 @@
       @include flex(row);
       justify-content: center;
       margin: 40px auto 0;
+
       @media only screen and (max-width: $phone) {
         @include flex;
+        margin: 16px auto 0;
       }
 
       .services-card,
@@ -63,9 +66,12 @@
         width: 35%;
 
         @media only screen and (max-width: $desktop) {
-          width: 50%;
           margin-top: inherit;
           margin-bottom: 12px;
+        }
+
+        @media only screen and (max-width: 814px) {
+          width: 50%;
         }
 
         @media only screen and (max-width: $phone) {
@@ -116,7 +122,11 @@
 
       @media only screen and (max-width: $tablet) {
         @include flex;
-        margin: 20px auto 80px;
+      }
+
+      @media only screen and (max-width: $phone) {
+        @include flex;
+        margin: 40px auto auto;
       }
 
       .ss-testimonial-container-left {

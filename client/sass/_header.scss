@@ -2,10 +2,12 @@
   .etw-header-ultimate-container {
     .etw-header-container {
       @include flex(row);
-      margin: spacing() 0 spacing(15);
+      width: 80%;
+      margin: 0 auto;
+      padding: spacing() 0 spacing(15);
 
       @media only screen and (max-width: $phone) {
-        margin: 8px 0 98px;
+        padding: 8px 0 98px;
       }
 
       .etw-logo-header-container {
