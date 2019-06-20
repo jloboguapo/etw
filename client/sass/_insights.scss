@@ -5,11 +5,11 @@
     display: flow-root;
     margin: 0 auto;
     width: 80%;
-    padding-top: 80px;
+    padding: 80px 0 104px;
     text-align: center;
 
     @media only screen and (max-width: $phone) {
-      padding-top: 40px;
+      padding: 40px 0 60px;
     }
 
     p {
@@ -229,27 +229,25 @@
         width: 57%;
       }
     }
-  }
 
-  .arrow-link {
-    @include flex(row);
-    justify-content: center;
-    margin: 20px 0 0;
-    padding-bottom: 104px;
-
-    @media only screen and (max-width: $phone) {
-      margin: 24px 0 0;
-      padding-bottom: 60px;
-    }
-
-    .call-to-action {
-      @include call-to-action($font-size: 12px);
+    .arrow-link {
+      @include flex(row);
+      justify-content: center;
       margin: 20px 0 0;
-    }
 
-    .arrow-svg {
-      height: 12px;
-      margin: 20.4px 0 0 6px;
+      @media only screen and (max-width: $phone) {
+        margin: 24px 0 0;
+      }
+
+      .call-to-action {
+        @include call-to-action($font-size: 12px);
+        margin: 20px 0 0;
+      }
+
+      .arrow-svg {
+        height: 12px;
+        margin: 20.4px 0 0 6px;
+      }
     }
   }
 }

@@ -6,7 +6,8 @@
     padding-top: 112px;
 
     @media only screen and (max-width: $phone) {
-      margin: 68px auto 0;
+      margin: 0 auto 0;
+      padding-top: 80px;
     }
 
     .etw-footer-top-container {

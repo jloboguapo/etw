@@ -106,8 +106,9 @@
       }
     }
 
-    .testimonial-container {
+    .ss-testimonial-container {
       @include flex(row);
+      height: fit-content;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
@@ -118,7 +119,7 @@
         margin: 20px auto 80px;
       }
 
-      .testimonial-container-left {
+      .ss-testimonial-container-left {
         @include flex;
         flex: 11;
         justify-content: center;
@@ -161,7 +162,7 @@
         }
       }
 
-      .testimonial-container-right {
+      .ss-testimonial-container-right {
         @include flex;
         flex: 14;
         justify-content: center;

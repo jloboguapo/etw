@@ -3,7 +3,7 @@ import Button from './Button';
 
 const Header = () => {
   return (
-    <div className="etw-secondary-container">
+    <div className="etw-header-ultimate-container">
       <div className="etw-header-container">
         <div className="etw-logo-header-container">
           <img
