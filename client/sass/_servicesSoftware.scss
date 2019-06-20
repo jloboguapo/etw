@@ -1,26 +1,33 @@
-.etw-solutions-ultimate-container {
-  background-color: #ffffff;
+.etw-ss-ultimate-container {
+  background-color: $light-bone;
 
-  .etw-solutions-main-container {
+  .etw-ss-main-container {
     margin: 0 auto;
     width: 80%;
     text-align: center;
-    padding-top: 80px;
+    padding: 108px 0;
 
     @media only screen and (max-width: $phone) {
       padding-top: 50px;
     }
 
-    p {
-      color: #777777;
-    }
-    .etw-solutions-text-container {
+    .etw-ss-text-container {
       h2 {
         font-family: $lora;
-        font-size: 35px;
+        font-size: 36px;
         font-weight: bold;
         line-height: 1.2;
-        margin-bottom: 15px;
+        letter-spacing: 1;
+        width: 75%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: $tablet) {
+          font-size: 34px;
+        }
+
+        @media only screen and (max-width: 550px) {
+          width: 100%;
+        }
 
         @media only screen and (max-width: $phone) {
           font-size: 32px;
@@ -29,25 +36,31 @@
 
       p {
         font-family: $montserrat;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
+        margin: 16px auto;
+        width: 65%;
         line-height: 1.6;
 
         @media only screen and (max-width: $phone) {
           font-size: 14px;
-          width: 100%;
+          width: 89%;
+        }
+
+        @media only screen and (max-width: 597px) {
+          width: 64%;
         }
       }
     }
-    .etw-solutions-card-container {
-      .people-card,
-      .priorities-card,
-      .practices-card,
-      .performance-card {
-        display: inline-block;
-        width: 25%;
-        vertical-align: top;
+    .etw-ss-card-container {
+      @include flex(row);
+      justify-content: center;
+      margin: 40px auto 0;
+      @media only screen and (max-width: $phone) {
+        @include flex;
+      }
+
+      .services-card,
+      .software-card {
+        width: 35%;
 
         @media only screen and (max-width: $desktop) {
           width: 50%;
@@ -61,10 +74,7 @@
         }
 
         img {
-          width: 30%;
-          display: block;
-          margin: 15px auto 36px 25.5px;
-
+          height: 54px;
           @media only screen and (max-width: $phone) {
             margin-bottom: 0;
           }
@@ -72,10 +82,10 @@
 
         h4 {
           font-family: $poppins;
+          font-weight: bolder;
           font-size: 17px;
           letter-spacing: 0.2;
-          text-align: left;
-          margin: auto auto 10.5 25.5px;
+          margin: 16px auto 0;
 
           @media only screen and (max-width: $phone) {
             margin-top: 15px;
@@ -83,89 +93,25 @@
         }
 
         p {
-          font-family: $roboto;
-          font-weight: lighter;
-          text-align: left;
-          line-height: 1.7;
-          font-size: 12.4px;
-          color: #777777;
-          letter-spacing: 0.18;
-          width: 76%;
-          margin: auto auto 13px 25.5px;
-        }
+          font-size: 12px;
+          font-family: $montserrat;
+          line-height: 1.6;
+          width: 95%;
+          margin: 10px 8px 0;
 
-        a {
-          @include flex(row);
-          display: none;
-
-          @media only screen and (max-width: $desktop) {
-            display: flex;
+          span {
+            color: $sea;
           }
-
-          .call-to-action {
-            @include call-to-action;
-            font-weight: normal;
-            width: auto;
-            margin: 16px 0 22px 23.5px;
-          }
-
-          .arrow-svg {
-            width: auto;
-            margin: 19px auto 23px 6px;
-          }
-        }
-      }
-
-      .priorities-card {
-        background: rgba(244, 241, 235, 0.5);
-        width: 23%;
-        margin: 0 1%;
-
-        @media only screen and (max-width: $desktop) {
-          width: 50%;
-          margin: auto;
-        }
-
-        @media only screen and (max-width: $phone) {
-          width: 96%;
-          margin: 0 2%;
-        }
-
-        .priorities-card-icon {
-          width: 32.61%;
-
-          @media only screen and (max-width: $desktop) {
-            width: 30%;
-          }
-        }
-
-        img,
-        h4,
-        p {
-          margin-left: 23.5px;
-
-          @media only screen and (max-width: $desktop) {
-            margin-left: 25.5;
-          }
-        }
-
-        a {
-          display: flex;
-        }
-      }
-
-      .performance-card {
-        @media only screen and (max-width: $phone) {
-          margin-bottom: 24px;
         }
       }
     }
 
     .testimonial-container {
       @include flex(row);
-      margin: 104px auto;
+      background: #fff;
       border-radius: 8px;
       box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+      margin: 80px auto auto;
 
       @media only screen and (max-width: $tablet) {
         @include flex;
@@ -235,7 +181,7 @@
         }
 
         p {
-          @include p($font-size: 20px);
+          @include p;
           margin: 11px auto;
         }
 

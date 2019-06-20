@@ -58,10 +58,10 @@ const CombatDisengagment = () => {
           </div>
         </div>
 
-        <div className="etw-core-values-container">
-          <div className="etw-core-values-left-container">
+        <div className="execution-container">
+          <div className="playbook-container">
             <h1>
-              We help you develop and execution playbook to combat disengagement
+              We help you develop an execution playbook to combat disengagement
               and unlock high-performance
             </h1>
             <p>
@@ -72,37 +72,76 @@ const CombatDisengagment = () => {
             </p>
             <CallToAction linkName="download an execution playbook sample" />
           </div>
-          <div className="etw-core-values-right-container">
-            <div className="etw-core-values-containers">
-              <div className="etw-image">
-                <img
-                  className="etw-strengthen-culture-icon"
-                  src="./etw-strengthen-culture.svg"
-                />
+          <div className="inputs-outputs-container">
+            <div className="people-performance-containers-wrap">
+              <h5>people-first inputs</h5>
+              <div className="people-performance-containers">
+                <div className="etw-image">
+                  <img
+                    className="improving-people-icon"
+                    src="/improving-people-icon.svg"
+                  />
+                </div>
+                <div className="content-container">
+                  <h4>Improving people</h4>
+                  <p>
+                    When your people are focused on the right priorities and
+                    practicing the behaviors essential to generating results,
+                    performance follows. These are the building blocks of every
+                    intentional leader and culture.
+                  </p>
+                </div>
               </div>
-              <div className="content-container">
-                <h4>Strengthen culture</h4>
-                <p>
-                  Develop a value-creation mindset and skill set within all your
-                  employees.
-                </p>
-                <CallToAction linkName="put people first" />
+              <div className="people-performance-containers">
+                <div className="etw-image">
+                  <img
+                    className="aligned-priorities-icon"
+                    src="/aligned-priorities-icon.svg"
+                  />
+                </div>
+                <div className="content-container">
+                  <h4>Aligned priorities</h4>
+                  <p>
+                    As your people are being developed, we also help your
+                    leadership define a most important number (MIN) which
+                    everyone can then focus on and advance.
+                  </p>
+                </div>
               </div>
+              <div className="people-performance-containers">
+                <div className="etw-image">
+                  <img
+                    className="healthy-practices-icon"
+                    src="/healthy-practices-icon.svg"
+                  />
+                </div>
+                <div className="content-container">
+                  <h4>Healthy practices</h4>
+                  <p>
+                    From goal-setting to communication, effective planning to
+                    creative resource allocation, your team's behaviors and
+                    processes are what lead to organizational change.
+                  </p>
+                </div>
+              </div>{' '}
             </div>
-            <div className="etw-core-values-containers">
-              <div className="etw-image">
-                <img
-                  className="etw-accelerate-growth-icon"
-                  src="/etw-accelerate-growth.svg"
-                />
-              </div>
-              <div className="content-container">
-                <h4>Accelerate growth</h4>
-                <p>
-                  Clarify and accomplish what's most important across your
-                  organization.
-                </p>
-                <CallToAction linkName="Keep performance-focused" />
+            <div className="people-performance-containers-wrap">
+              <h5>performance-focused outputs</h5>
+              <div className="people-performance-containers">
+                <div className="etw-image">
+                  <img
+                    className="winning-performance-icon"
+                    src="/winning-performance-icon.svg"
+                  />
+                </div>
+                <div className="content-container">
+                  <h4>Winning performance</h4>
+                  <p>
+                    Whether it's EBITDA or another number indicative of your
+                    performance, accelerating your organization's growth is an
+                    output of intense focus on your key inputs.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

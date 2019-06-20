@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CallToAction from './CallToAction';
+import Button from './Button';
 
 const CoreValues = () => {
   return (
@@ -11,14 +12,14 @@ const CoreValues = () => {
             ETW is the Intentional Leadership Platform that high-performance
             organizations trust to strengthen culture and accelerate growth
           </p>
-          <button className="etw-webinar-button">JOIN our next WEBINAR</button>
+          <Button content="JOIN our next WEBINAR" />
         </div>
         <div className="etw-core-values-right-container">
           <div className="etw-core-values-containers">
             <div className="etw-image">
               <img
                 className="etw-strengthen-culture-icon"
-                src="./etw-strengthen-culture.svg"
+                src="/etw-strengthen-culture.svg"
               />
             </div>
             <div className="content-container">

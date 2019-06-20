@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CategoryPill from './CategoryPill';
 
-const ImageWithPills = ({ imageClass }) => (
+const ImageWithPill = ({ imageClass }) => (
   <div className={`insights-images ${imageClass}`}>
     <CategoryPill />
   </div>
 );
 
-ImageWithPills.propTypes = {
+ImageWithPill.propTypes = {
   imageClass: PropTypes.string.isRequired
 };
 
-export default ImageWithPills;
+export default ImageWithPill;

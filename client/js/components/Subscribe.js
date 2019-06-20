@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from './Button';
 
 const Subscribe = props => {
   const [value, setValue] = useState('');
@@ -16,9 +17,7 @@ const Subscribe = props => {
         onChange={e => setValue(e.target.value)}
         placeholder="name@company.com"
       />
-      <button type="submit" className="etw-webinar-button">
-        Subscribe
-      </button>
+      <Button content="Subscribe" />
     </form>
   );
 };
