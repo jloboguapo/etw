@@ -13,9 +13,6 @@
 
     .etw-ss-text-container {
       h2 {
-        font-family: $lora;
-        font-size: 36px;
-        font-weight: bold;
         line-height: 1.2;
         letter-spacing: 1;
         width: 75%;
@@ -87,10 +84,6 @@
         }
 
         h4 {
-          font-family: $poppins;
-          font-weight: bolder;
-          font-size: 17px;
-          letter-spacing: 0.2;
           margin: 16px auto 0;
 
           @media only screen and (max-width: $phone) {
@@ -197,7 +190,6 @@
         }
 
         h5 {
-          @include h5;
           margin: 12px 0 0;
         }
       }

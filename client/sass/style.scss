@@ -1,4 +1,4 @@
-@import 'colors';
+@import 'articles';
 @import 'combatDisengagement';
 @import 'coreValues';
 @import 'footer';
@@ -25,6 +25,35 @@ h5 {
   color: #222;
 }
 
+h1 {
+  font-family: $lora;
+  font-size: 53px;
+  margin: 0 0 20px;
+  letter-spacing: 1;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: $lora;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: $poppins;
+  font-weight: bolder;
+  font-size: 17px;
+  letter-spacing: 0.2;
+}
+
+h5 {
+  font-family: $poppins;
+  font-weight: lighter;
+  font-size: 11px;
+  letter-spacing: 0.8;
+  text-transform: uppercase;
+}
+
 p {
   color: #777;
 }
@@ -47,10 +76,18 @@ a {
   text-transform: uppercase;
 }
 
-.call-to-action {
-  @include call-to-action;
+.arrow-link {
+  @include flex(row);
+
+  .call-to-action {
+    font-size: 11px;
+    font-family: helvetica;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+    color: $forest;
+  }
 }
 
 .arrow-svg {
-  @include arrow;
+  height: 10px;
 }

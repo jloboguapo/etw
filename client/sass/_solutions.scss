@@ -16,9 +16,7 @@
     }
     .etw-solutions-text-container {
       h2 {
-        font-family: $lora;
         font-size: 35px;
-        font-weight: bold;
         line-height: 1.2;
         margin-bottom: 15px;
 
@@ -71,9 +69,6 @@
         }
 
         h4 {
-          font-family: $poppins;
-          font-size: 17px;
-          letter-spacing: 0.2;
           text-align: left;
           margin: auto auto 10.5 25.5px;
 
@@ -103,7 +98,10 @@
           }
 
           .call-to-action {
-            @include call-to-action;
+            font-size: 11px;
+            font-family: helvetica;
+            letter-spacing: 0.5;
+            color: $forest;
             font-weight: normal;
             width: auto;
             margin: 16px 0 22px 23.5px;
@@ -241,7 +239,6 @@
         }
 
         h5 {
-          @include h5;
           margin: 12px 0 0;
         }
       }
