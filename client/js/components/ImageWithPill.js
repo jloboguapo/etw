@@ -4,7 +4,7 @@ import CategoryPill from './CategoryPill';
 
 const ImageWithPill = ({ imageClass }) => (
   <div className={`insights-images ${imageClass}`}>
-    <CategoryPill />
+    <CategoryPill content="category" />
   </div>
 );
 
