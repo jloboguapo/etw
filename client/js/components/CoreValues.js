@@ -28,7 +28,10 @@ const CoreValues = () => {
                 Develop a value-creation mindset and skill set within all your
                 employees.
               </p>
-              <CallToAction linkName="put people first" />
+              <CallToAction
+                linkUrl="/performanceSolutions"
+                linkName="put people first"
+              />
             </div>
           </div>
           <div className="etw-core-values-containers">
@@ -44,7 +47,7 @@ const CoreValues = () => {
                 Clarify and accomplish what's most important across your
                 organization.
               </p>
-              <CallToAction linkName="Keep performance-focused" />
+              <CallToAction linkUrl='/leadershipResources' linkName="Keep performance-focused" />
             </div>
           </div>
         </div>

@@ -6,16 +6,18 @@ const Header = () => {
     <div className="etw-header-ultimate-container">
       <div className="etw-header-container">
         <div className="etw-logo-header-container">
-          <img
-            className="etw-logo-dark-on-transparent"
-            src="/etw-logo-dark-on-transparent.svg"
-          />
+          <a href="/">
+            <img
+              className="etw-logo-dark-on-transparent"
+              src="/etw-logo-dark-on-transparent.svg"
+            />
+          </a>
         </div>
         <div className="etw-header-links-container">
           <a href="/performanceSolutions">
             <p>Performance Solutions</p>
           </a>
-          <a href="/">
+          <a href="/leadershipResources">
             <p>Leadership Resources</p>
           </a>
           <a href="/">

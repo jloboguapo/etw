@@ -20,15 +20,15 @@ const Insights = props => {
           <div className="etw-insights-row">
             <div className="image-content-wrapper">
               <ImageWithPill imageClass="etw-insights-image-phone" />
-              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
               <CallToAction linkName="call to action" />
             </div>
             <div className="image-content-wrapper">
               <ImageWithPill imageClass="insights-cat-2" />
-              <h4>
+              <h3>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 pretium mauris nec aliquam porttitor.
-              </h4>
+              </h3>
               <CallToAction linkName="call to action" />
             </div>
           </div>
@@ -45,10 +45,10 @@ const Insights = props => {
           <div className="etw-insights-row">
             <div className="image-content-wrapper">
               <ImageWithPill imageClass="insights-cat-4" />
-              <h4>
+              <h3>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 pretium mauris nec aliquam porttitor.
-              </h4>
+              </h3>
               <CallToAction linkName="call to action" />
             </div>
             <div className="insights-category-container-5">

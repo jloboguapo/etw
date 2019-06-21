@@ -6,12 +6,10 @@ import '../../sass/style.scss';
 
 export default function App({ children }) {
   return (
-    <div className="etw-ultimate-container">
-      <div className="etw-main-container">
-        <Header />
-        {children}
-        <Footer />
-      </div>
+    <div className="etw-main-container">
+      <Header />
+      {children}
+      <Footer />
     </div>
   );
 }
