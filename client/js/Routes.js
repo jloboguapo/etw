@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './components/App';
 import Home from './components/Home';
 import PerformanceSolutions from './components/PerformanceSolutions';
+import LeadershipResources from './components/LeadershipResources';
 
 const Routes = () => (
   <BrowserRouter>
@@ -18,6 +19,13 @@ const Routes = () => (
           path="/performanceSolutions"
           render={routeProps => (
             <PerformanceSolutions history={routeProps.history} />
+          )}
+        />
+        <Route
+          exact
+          path="/leadershipResources"
+          render={routeProps => (
+            <LeadershipResources history={routeProps.history} />
           )}
         />
       </Switch>

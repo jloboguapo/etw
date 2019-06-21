@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CategoryPill = () => (
+const CategoryPill = ({ content }) => (
   <div className="category-pill-container">
-    <span className="category-pill-text">CATEGORY</span>
+    <span className="category-pill-text">{content}</span>
   </div>
 );
 
