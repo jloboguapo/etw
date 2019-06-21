@@ -18,12 +18,7 @@
       }
 
       h1 {
-        font-family: $lora;
         width: 90%;
-        font-size: 53px;
-        margin-top: 0;
-        margin-bottom: 20px;
-        line-height: 1.1;
 
         @media only screen and (max-width: $desktop) {
           width: 100%;
@@ -172,7 +167,9 @@
               @include flex(row);
 
               .call-to-action {
-                @include call-to-action;
+                font-size: 11px;
+                font-family: helvetica;
+                color: $forest;
                 width: auto;
                 margin: 0 0;
               }
