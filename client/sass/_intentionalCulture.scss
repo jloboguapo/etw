@@ -13,25 +13,22 @@
       justify-content: center;
 
       span {
-        font-size: 10px;
-        margin-top: 10px;
+        font-size: 11px;
+        font-family: Helvetica;
+        text-transform: uppercase;
+        color: #007278;
+        letter-spacing: 0.2;
       }
 
-      a {
-        margin: auto 6px 10px;
+      .bullet {
+        color: #222;
+        font-size: 13px;
+        margin: -1px 4px 10px;
+      }
 
-        p {
-          letter-spacing: 0.2;
-
-          span {
-            font-size: 11px;
-
-            @media only screen and (max-width: 397px) {
-              span {
-                display: none;
-              }
-            }
-          }
+      @media only screen and (max-width: 397px) {
+        .hidden {
+          display: none;
         }
       }
     }

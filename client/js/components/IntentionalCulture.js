@@ -5,21 +5,13 @@ const IntentionalCulture = () => {
   return (
     <div className="intentional-culture-container">
       <div className="link-row-container">
-        <LinkNoArrow
-          linkName={
-            <span>
-              <span>performance </span>solutions
-            </span>
-          }
-        />
-        <span>&bull;</span>
-        <LinkNoArrow
-          linkName={
-            <span>
-              <span>strengthen </span>culture
-            </span>
-          }
-        />
+        <span>
+          <span className="hidden">performance </span>solutions
+        </span>
+        <span className="bullet">&bull;</span>
+        <span>
+          <span className="hidden">strengthen </span>culture
+        </span>
       </div>
       <div className="intentional-culture-text-container">
         <h1>Build an intentional culture</h1>
