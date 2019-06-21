@@ -1,0 +1,82 @@
+@import 'colors';
+@import 'fonts';
+@import 'functions';
+@import 'mixins';
+@import 'variables';
+
+.articles-main-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 104px;
+
+  @media only screen and (max-width: $phone) {
+    margin: 0 auto;
+    padding-bottom: 96px;
+  }
+
+  .articles-text-container {
+    margin-bottom: 64px;
+
+    h1 {
+      letter-spacing: 0.5;
+      margin: 0 0 10px;
+      @media only screen and (max-width: $desktop) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: $tablet) {
+        max-width: 100%;
+        font-size: 45px;
+      }
+
+      @media only screen and (max-width: $phone) {
+        width: 95%;
+        font-size: 40px;
+      }
+    }
+
+    .tags-container {
+      @include flex(row);
+
+      span {
+        font-family: $poppins;
+        font-weight: bolder;
+        font-size: 11px;
+        letter-spacing: 1;
+        text-transform: uppercase;
+        margin: auto 4px;
+      }
+
+      .category-pill-container {
+        border-radius: 12px;
+        margin: 10px 0 10px 5px;
+      }
+    }
+  }
+
+  .bio-article-container {
+    @include flex(row);
+
+    .bio-container {
+      @include flex;
+
+      .pic-container {
+        height: 130px;
+        width: 130px;
+
+        .lee-benson {
+          background-image: url(http://0:8080/lee-benson.jpg);
+          background-position: right;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          height: 100%;
+        }
+      }
+
+      .article-container {
+        @include flex;
+      }
+    }
+  }
+}
