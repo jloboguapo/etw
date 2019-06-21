@@ -52,8 +52,8 @@ const Footer = () => {
               <h4>Solutions</h4>
               <p>Face your enterprise-level challenges head-on.</p>
               <h5>By outcome</h5>
-              <a href="/">Strengthen Culture</a>
-              <a href="/">Accelerate Growth</a>
+              <a href="/performanceSolutions">Strengthen Culture</a>
+              <a href="/leadershipResources">Accelerate Growth</a>
               <h5>By solution</h5>
               <a href="/">Leadership development</a>
               <a href="/">Goal definition and reporting</a>
