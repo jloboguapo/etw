@@ -20,6 +20,8 @@ const ReadyWin = () => {
             <CallToAction
               linkUrl="/"
               linkName="not convinced? read some case studies"
+              arrowClassName="arrow-svg"
+              source="arrow.svg"
             />
           </div>
         </div>
