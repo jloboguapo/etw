@@ -17,7 +17,10 @@ const ReadyWin = () => {
           </p>
           <ReadyWinForm />
           <div className="link-container">
-            <CallToAction linkName="not convinced? read some case studies" />
+            <CallToAction
+              linkUrl="/"
+              linkName="not convinced? read some case studies"
+            />
           </div>
         </div>
       </div>

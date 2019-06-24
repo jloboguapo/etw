@@ -41,7 +41,9 @@ const ServicesSoftware = () => {
         </div>
         <div className="ss-testimonial-container">
           <div className="ss-testimonial-container-left">
-            <Button content="Join our next webinar" />
+            <a className="button-link" href="/">
+              <Button content="Join our next webinar" />
+            </a>
             <p>
               Every Tuesday, Thursday, and Friday, designed for C-level leaders
               like you.

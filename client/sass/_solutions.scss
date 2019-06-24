@@ -86,11 +86,12 @@
           color: #777777;
           letter-spacing: 0.18;
           width: 76%;
-          margin: auto auto 13px 25.5px;
+          margin: auto auto 29px 25.5px;
         }
 
         a {
           @include flex(row);
+          margin: 0 0 22px 23.5px;
           display: none;
 
           @media only screen and (max-width: $desktop) {
@@ -104,51 +105,29 @@
             color: $forest;
             font-weight: normal;
             width: auto;
-            margin: 16px 0 22px 23.5px;
+            margin: 0;
           }
 
           .arrow-svg {
             width: auto;
-            margin: 19px auto 23px 6px;
+            margin: 3px 0 0 6px;
+          }
+        }
+
+        @media only screen and (min-width: $desktop) {
+          &:hover {
+            background: rgba(244, 241, 235, 0.5);
+
+            a {
+              display: flex;
+            }
           }
         }
       }
 
       .priorities-card {
-        background: rgba(244, 241, 235, 0.5);
-        width: 23%;
-        margin: 0 1%;
-
         @media only screen and (max-width: $desktop) {
-          width: 50%;
-          margin: auto;
-        }
-
-        @media only screen and (max-width: $phone) {
-          width: 96%;
-          margin: 0 2%;
-        }
-
-        .priorities-card-icon {
-          width: 32.61%;
-
-          @media only screen and (max-width: $desktop) {
-            width: 30%;
-          }
-        }
-
-        img,
-        h4,
-        p {
-          margin-left: 23.5px;
-
-          @media only screen and (max-width: $desktop) {
-            margin-left: 25.5;
-          }
-        }
-
-        a {
-          display: flex;
+          background: rgba(244, 241, 235, 0.5);
         }
       }
 
@@ -189,12 +168,15 @@
           border-bottom: 1px solid #d6d4d0;
         }
 
-        .etw-webinar-button {
-          color: #ffffff;
+        a {
           margin: 0 auto;
 
           @media only screen and (max-width: $tablet) {
             margin-bottom: 6px;
+          }
+
+          .etw-webinar-button {
+            color: #ffffff;
           }
         }
 

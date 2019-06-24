@@ -73,12 +73,14 @@
           }
         }
 
-        .etw-webinar-button {
+        .button-link {
           margin-top: 16px;
 
-          @media only screen and (max-width: $tablet) {
-            width: 100%;
-            margin: 30px 0 60px;
+          .etw-webinar-button {
+            @media only screen and (max-width: $tablet) {
+              width: 100%;
+              margin: 30px 0 60px;
+            }
           }
         }
       }
@@ -164,7 +166,11 @@
             }
 
             a {
-              @include flex(row);
+              display: none;
+
+              @media only screen and (max-width: $desktop) {
+                @include flex(row);
+              }
 
               .call-to-action {
                 font-size: 11px;
@@ -177,6 +183,12 @@
               .arrow-svg {
                 margin: 3px 0 0 3px;
               }
+            }
+          }
+
+          &:hover {
+            a {
+              @include flex(row);
             }
           }
         }

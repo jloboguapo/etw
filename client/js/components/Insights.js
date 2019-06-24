@@ -21,7 +21,7 @@ const Insights = props => {
             <div className="image-content-wrapper">
               <ImageWithPill imageClass="etw-insights-image-phone" />
               <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-              <CallToAction linkName="call to action" />
+              <CallToAction linkUrl="/" linkName="call to action" />
             </div>
             <div className="image-content-wrapper">
               <ImageWithPill imageClass="insights-cat-2" />
@@ -29,7 +29,7 @@ const Insights = props => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 pretium mauris nec aliquam porttitor.
               </h3>
-              <CallToAction linkName="call to action" />
+              <CallToAction linkUrl="/" linkName="call to action" />
             </div>
           </div>
           <div className="etw-insights-row">
@@ -39,7 +39,7 @@ const Insights = props => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 pretium mauris nec aliquam porttitor.
               </h2>
-              <CallToAction linkName="call to action" />
+              <CallToAction linkUrl="/" linkName="call to action" />
             </div>
           </div>
           <div className="etw-insights-row">
@@ -49,7 +49,7 @@ const Insights = props => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 pretium mauris nec aliquam porttitor.
               </h3>
-              <CallToAction linkName="call to action" />
+              <CallToAction linkUrl="/" linkName="call to action" />
             </div>
             <div className="insights-category-container-5">
               <img className="quote" src="/quote.svg" />
@@ -58,7 +58,9 @@ const Insights = props => {
                 secret sauce.
               </p>
               <h5>high-performance client name</h5>
-              <Button content="JOIN our next webinar" />
+              <a className="button-link" href="/">
+                <Button content="JOIN our next webinar" />
+              </a>
               <p>
                 Every Tuesday, Thursday, and Friday, designed for C-level
                 leaders like you.
@@ -66,7 +68,7 @@ const Insights = props => {
             </div>
           </div>
         </div>
-        <CallToAction linkName="more insights" />
+        <CallToAction linkUrl="/" linkName="more insights" />
       </div>
     </div>
   );

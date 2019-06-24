@@ -23,7 +23,7 @@ const Solutions = () => {
               decreasing loyalty, investing in people always precedes
               performance.
             </p>
-            <CallToAction linkName="view our solution" />
+            <CallToAction linkUrl="/" linkName="view our solution" />
           </div>
           <div className="priorities-card">
             <img
@@ -36,7 +36,7 @@ const Solutions = () => {
               fosters unnecessary confusion, internal competition, and petty
               politics. Focus.
             </p>
-            <CallToAction linkName="view our solution" />
+            <CallToAction linkUrl="/" linkName="view our solution" />
           </div>
           <div className="practices-card">
             <img
@@ -49,7 +49,7 @@ const Solutions = () => {
               productivity, it's cultural habits (or a lack thereof) that are
               the real culprit. Start improving.
             </p>
-            <CallToAction linkName="view our solution" />
+            <CallToAction linkUrl="/" linkName="view our solution" />
           </div>
           <div className="performance-card">
             <img
@@ -62,12 +62,14 @@ const Solutions = () => {
               focused on honing their people, priorities, and practices. Unstick
               growth by getting intentional.
             </p>
-            <CallToAction linkName="view our solution" />
+            <CallToAction linkUrl="/" linkName="view our solution" />
           </div>
         </div>
         <div className="testimonial-container">
           <div className="testimonial-container-left">
-            <Button content="Join our next webinar" />
+            <a className="button-link" href="/">
+              <Button content="Join our next webinar" />
+            </a>
             <p>
               Every Tuesday, Thursday, and Friday, designed for C-level leaders
               like you.

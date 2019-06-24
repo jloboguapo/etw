@@ -23,7 +23,9 @@ const Header = () => {
           <a href="/">
             <p>more</p>
           </a>
-          <Button content="JOIN A WEBINAR" />
+          <a className="button-link" href="/">
+            <Button content="JOIN A WEBINAR" />
+          </a>
         </div>
       </div>
     </div>
