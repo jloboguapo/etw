@@ -70,7 +70,10 @@ const CombatDisengagment = () => {
               performance follows. These are the building blocks of every
               intentional leader and culture.
             </p>
-            <CallToAction linkName="download an execution playbook sample" />
+            <CallToAction
+              linkUrl="/"
+              linkName="download an execution playbook sample"
+            />
           </div>
           <div className="inputs-outputs-container">
             <div className="people-performance-containers-wrap">

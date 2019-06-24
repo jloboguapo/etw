@@ -12,7 +12,9 @@ const CoreValues = () => {
             ETW is the Intentional Leadership Platform that high-performance
             organizations trust to strengthen culture and accelerate growth
           </p>
-          <Button content="JOIN our next WEBINAR" />
+          <a className="button-link" href="/">
+            <Button content="JOIN our next WEBINAR" />
+          </a>
         </div>
         <div className="etw-core-values-right-container">
           <div className="etw-core-values-containers">
@@ -47,7 +49,10 @@ const CoreValues = () => {
                 Clarify and accomplish what's most important across your
                 organization.
               </p>
-              <CallToAction linkUrl='/leadershipResources' linkName="Keep performance-focused" />
+              <CallToAction
+                linkUrl="/leadershipResources"
+                linkName="Keep performance-focused"
+              />
             </div>
           </div>
         </div>

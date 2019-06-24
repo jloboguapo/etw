@@ -184,6 +184,7 @@
 
         a {
           @include flex(row);
+          margin: 27px 0;
 
           @media only screen and (max-width: $tablet) {
             margin: 0 0 40px;
@@ -192,10 +193,11 @@
           p {
             width: auto;
             font-family: Helvetica;
+            margin: 0;
           }
 
           img {
-            margin: 14px 6px 0;
+            margin: 3px 6px 0;
           }
         }
       }

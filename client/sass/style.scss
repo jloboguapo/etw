@@ -61,6 +61,7 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  width: fit-content;
 }
 
 .etw-webinar-button {
@@ -74,6 +75,10 @@ a {
   color: $light-bone;
   outline: 0;
   text-transform: uppercase;
+
+  &:hover {
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
+  }
 }
 
 .arrow-link {
