@@ -23,7 +23,12 @@ const Solutions = () => {
               decreasing loyalty, investing in people always precedes
               performance.
             </p>
-            <CallToAction linkUrl="/" linkName="view our solution" />
+            <CallToAction
+              linkUrl="/"
+              linkName="view our solution"
+              arrowClassName="arrow-svg"
+              source="arrow.svg"
+            />
           </div>
           <div className="priorities-card">
             <img
@@ -36,7 +41,12 @@ const Solutions = () => {
               fosters unnecessary confusion, internal competition, and petty
               politics. Focus.
             </p>
-            <CallToAction linkUrl="/" linkName="view our solution" />
+            <CallToAction
+              linkUrl="/"
+              linkName="view our solution"
+              arrowClassName="arrow-svg"
+              source="arrow.svg"
+            />
           </div>
           <div className="practices-card">
             <img
@@ -49,7 +59,12 @@ const Solutions = () => {
               productivity, it's cultural habits (or a lack thereof) that are
               the real culprit. Start improving.
             </p>
-            <CallToAction linkUrl="/" linkName="view our solution" />
+            <CallToAction
+              linkUrl="/"
+              linkName="view our solution"
+              arrowClassName="arrow-svg"
+              source="arrow.svg"
+            />
           </div>
           <div className="performance-card">
             <img
@@ -62,7 +77,12 @@ const Solutions = () => {
               focused on honing their people, priorities, and practices. Unstick
               growth by getting intentional.
             </p>
-            <CallToAction linkUrl="/" linkName="view our solution" />
+            <CallToAction
+              linkUrl="/"
+              linkName="view our solution"
+              arrowClassName="arrow-svg"
+              source="arrow.svg"
+            />
           </div>
         </div>
         <div className="testimonial-container">

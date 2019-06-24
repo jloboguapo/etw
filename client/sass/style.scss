@@ -28,6 +28,7 @@ h5 {
 h1 {
   font-family: $lora;
   font-size: 53px;
+  font-weight: lighter;
   margin: 0 0 20px;
   letter-spacing: 1;
   line-height: 1.1;
@@ -36,12 +37,12 @@ h1 {
 h2 {
   font-family: $lora;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 h4 {
   font-family: $poppins;
-  font-weight: bolder;
+  font-weight: lighter;
   font-size: 17px;
   letter-spacing: 0.2;
 }
@@ -53,11 +54,9 @@ h5 {
   letter-spacing: 0.8;
   text-transform: uppercase;
 }
-
 p {
   color: #777;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -69,7 +68,7 @@ a {
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.5;
-  padding: 11px 17px 13px 17px;
+  padding: 8px 20px;
   background-color: $forest;
   border-radius: 2px;
   color: $light-bone;
@@ -86,13 +85,14 @@ a {
 
   .call-to-action {
     font-size: 11px;
-    font-family: helvetica;
+    font-family: $poppins-semiBold;
     letter-spacing: 0.5;
     text-transform: uppercase;
     color: $forest;
   }
 }
 
-.arrow-svg {
+.arrow-svg,
+.arrow-white-svg {
   height: 10px;
 }

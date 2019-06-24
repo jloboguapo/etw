@@ -37,7 +37,8 @@
       p {
         width: 80%;
         color: #777777;
-        font-family: $montserrat;
+        font-family: $roboto-light;
+        font-size: 18px;
         line-height: 1.6;
       }
 
@@ -174,7 +175,7 @@
 
               .call-to-action {
                 font-size: 11px;
-                font-family: helvetica;
+                font-family: $poppins-semiBold;
                 color: $forest;
                 width: auto;
                 margin: 0 0;
