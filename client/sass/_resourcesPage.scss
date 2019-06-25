@@ -86,7 +86,7 @@
             margin-bottom: 24px;
           }
 
-          .insights-images {
+          .images {
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -98,16 +98,16 @@
             font-family: $lora;
             font-size: 24px;
 
-            &.etw-insights-image-phone {
-              background-image: url('/insights-cat-1.jpg');
+            &.hustle {
+              background-image: url('/hustle.jpg');
             }
 
-            &.insights-cat-2 {
-              background-image: url('/insights-cat-2.jpg');
+            &.spacecraft {
+              background-image: url('/spacecraft.jpg');
             }
 
-            &.insights-cat-3 {
-              background-image: url('/insights-cat-3.jpg');
+            &.horse-race {
+              background-image: url('/horse-race.jpg');
             }
 
             &.insights-cat-4 {

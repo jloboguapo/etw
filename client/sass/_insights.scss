@@ -82,7 +82,7 @@
             margin-bottom: 24px;
           }
 
-          .insights-images {
+          .images {
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -94,20 +94,21 @@
             font-family: $lora;
             font-size: 24px;
 
-            &.etw-insights-image-phone {
-              background-image: url('/insights-cat-1.jpg');
+            &.phone-on-desk {
+              background-image: url('/phone-on-desk.svg');
             }
 
-            &.insights-cat-2 {
-              background-image: url('/insights-cat-2.jpg');
+            &.tower {
+              background-image: url('/tower.svg');
             }
 
-            &.insights-cat-3 {
-              background-image: url('/insights-cat-3.jpg');
+            &.typing-hands {
+              background-image: url('/typing-hands.svg');
+              background-position: top;
             }
 
-            &.insights-cat-4 {
-              background-image: url('/insights-cat-4.jpg');
+            &.laptop-angle {
+              background-image: url('/laptop-angle.svg');
             }
           }
 
