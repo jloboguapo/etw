@@ -1,13 +1,17 @@
 import React from 'react';
 import Articles from './Articles';
 import ResourcesPage from './ResourcesPage';
+import HeaderWhite from './HeaderWhite';
 
 const LeadershipResources = () => {
   return (
-    <div className="leadership-resources-container">
-      <Articles />
-      <ResourcesPage />
-    </div>
+    <>
+      <HeaderWhite />
+      <div className="leadership-resources-container">
+        <Articles />
+        <ResourcesPage />
+      </div>
+    </>
   );
 };
 
