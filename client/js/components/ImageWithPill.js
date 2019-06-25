@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import CategoryPill from './CategoryPill';
 
 const ImageWithPill = ({ imageClass }) => (
-  <div className={`insights-images ${imageClass}`}>
+  <div className={`images ${imageClass}`}>
     <CategoryPill content="category" />
   </div>
 );

@@ -20,7 +20,7 @@ const ResourcesPage = props => {
         <div className="etw-resources-card-container">
           <div className="etw-resources-row">
             <div className="image-content-wrapper">
-              <ImageWithPill imageClass="etw-insights-image-phone" />
+              <ImageWithPill imageClass="hustle" />
               <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
               <CallToAction
                 linkUrl="/"
@@ -30,7 +30,7 @@ const ResourcesPage = props => {
               />
             </div>
             <div className="image-content-wrapper">
-              <ImageWithPill imageClass="insights-cat-2" />
+              <ImageWithPill imageClass="spacecraft" />
               <h3>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 pretium mauris nec aliquam porttitor.
