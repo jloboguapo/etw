@@ -33,6 +33,12 @@ const Articles = () => {
             arrowClassName="arrow-svg"
             source="/arrow.svg"
           />
+          <div className="share-links">
+            <h4>Share this insight</h4>
+            <img className="share-icons" src="/share-facebook.svg" />
+            <img className="share-icons" src="/share-twitter.svg" />
+            <img className="share-icons" src="/share-linkedin.svg" />
+          </div>
         </div>
         <div className="article-container">
           <div className="blog-pics blog-header-pic" />
