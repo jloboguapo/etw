@@ -119,7 +119,7 @@
           h3 {
             width: initial;
             font-family: $lora;
-            font-weight: bold;
+            font-weight: lighter;
             font-size: 21px;
             letter-spacing: 0.6;
             @include margin-sides(20px);
@@ -150,7 +150,7 @@
             margin: 0 0 20px 20px;
 
             .arrow-svg {
-              margin: 1px 0 0 6px;
+              margin: 3px 0 0 6px;
             }
           }
         }
@@ -241,7 +241,7 @@
 
       .arrow-svg {
         height: 12px;
-        margin: 0.4px 0 0 6px;
+        margin: 3px 0 0 6px;
       }
     }
   }

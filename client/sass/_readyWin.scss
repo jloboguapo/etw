@@ -51,7 +51,8 @@
       }
 
       p {
-        font-family: $montserrat;
+        font-family: $roboto-light;
+        font-size: 18px;
         margin: 16px auto;
         width: 95%;
         line-height: 1.6;
@@ -81,7 +82,7 @@
         }
 
         button {
-          width: 193px;
+          width: 200px;
           margin: 8px;
         }
       }
@@ -98,12 +99,13 @@
           p {
             font-family: $poppins;
             font-size: 13px;
-            font-weight: bold;
+            font-weight: lighter;
             width: auto;
             margin: 0;
           }
 
           img {
+            height: 11px;
             margin: 4px 0 0 6px;
 
             @media only screen and (max-width: $phone) {
