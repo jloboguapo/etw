@@ -3,6 +3,7 @@ import Button from './Button';
 import CategoryPill from './CategoryPill';
 import CallToAction from './CallToAction';
 import BlogTags from './BlogTags';
+import CallToActionNoLink from './CallToActionNoLink';
 
 const Articles = () => {
   return (
@@ -35,7 +36,7 @@ const Articles = () => {
             source="/arrow.svg"
           />
           <div className="share-links">
-            <h4 className='share-insight'>Share this insight</h4>
+            <h4 className="share-insight">Share this insight</h4>
             <a className="share-media" href="/">
               <img className="share-icons" src="/share-facebook.svg" />
             </a>
@@ -117,8 +118,8 @@ const Articles = () => {
           <a className="button-link" href="/">
             <Button
               content={
-                <CallToAction
-                  linkName="download the etw guide to change management"
+                <CallToActionNoLink
+                  content="download the etw guide to change management"
                   arrowClassName="arrow-white-svg"
                   source="arrow-white.svg"
                 />

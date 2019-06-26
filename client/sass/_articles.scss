@@ -241,25 +241,23 @@
           width: 100%;
 
           .etw-webinar-button {
+            @include flex(row);
+            justify-content: center;
             width: 100%;
             border: 0;
             border-radius: 0 0 4px 4px;
 
-            .arrow-link {
-              margin: auto;
+            .call-to-action {
+              color: $white;
+              margin: 0;
+              font-family: $poppins-semiBold;
+              font-size: 13px;
+            }
 
-              .call-to-action {
-                color: $white;
-                margin: 0;
-                font-family: $poppins-semiBold;
-                font-size: 13px;
-              }
-
-              .arrow-white-svg {
-                color: $white;
-                height: 12px;
-                margin: 3px 0 0 4px;
-              }
+            .arrow-white-svg {
+              color: $white;
+              height: 12px;
+              margin: 3px 0 0 4px;
             }
           }
         }
