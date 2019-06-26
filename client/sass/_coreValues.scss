@@ -30,7 +30,7 @@
         }
 
         @media only screen and (max-width: $phone) {
-          width: 95%;
+          width: 94%;
           font-size: 40px;
         }
       }
@@ -40,6 +40,11 @@
         font-family: $roboto-light;
         font-size: 18px;
         line-height: 1.6;
+
+        @media only screen and (max-width: $tablet) {
+          font-size: 16px;
+          width: 100%;
+        }
       }
 
       .etw-core-values-left-container {
@@ -53,24 +58,13 @@
             max-width: 324px;
           }
 
+          @media only screen and (max-width: 840px) {
+            width: 94%;
+          }
+
           @media only screen and (max-width: $tablet) {
-            width: 97%;
+            width: 100%;
             max-width: 100%;
-          }
-
-          @media only screen and (max-width: 744px) {
-            width: 97%;
-            max-width: 75%;
-          }
-
-          @media only screen and (max-width: $phone) {
-            width: 96%;
-            max-width: 75%;
-          }
-
-          @media only screen and (max-width: 472px) {
-            width: 97%;
-            max-width: 324px;
           }
         }
 
@@ -117,12 +111,10 @@
 
           @media only screen and (max-width: $tablet) {
             @include flex(row);
-            margin-right: 24px;
           }
 
           @media only screen and (max-width: $phone) {
             @include flex;
-            margin-bottom: 24px;
           }
 
           &:last-child {
@@ -162,7 +154,7 @@
 
             p {
               width: 100%;
-              font-size: 12px;
+              font-size: 13px;
               margin: 10px auto;
             }
 

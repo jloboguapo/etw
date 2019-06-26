@@ -186,9 +186,23 @@
         width: 87%;
         margin: 0 auto;
 
-        @media only screen and (max-width: $phone) {
+        @media only screen and (max-width: $desktop) {
+          font-size: 24px;
+          width: 79%;
+        }
+
+        @media only screen and (max-width: $tablet) {
           font-size: 22px;
+          width: 79%;
+        }
+
+        @media only screen and (max-width: $phone) {
+          width: 89%;
           margin: 8px auto 16px;
+        }
+
+        @media only screen and (max-width: 486px) {
+          width: 73%;
         }
       }
 
