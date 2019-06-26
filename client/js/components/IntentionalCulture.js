@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import LinkNoArrow from './LinkNoArrow';
 
 const IntentionalCulture = () => {
   return (
