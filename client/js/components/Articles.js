@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './Button';
 import CategoryPill from './CategoryPill';
 import CallToAction from './CallToAction';
+import BlogTags from './BlogTags';
 
 const Articles = () => {
   return (
@@ -11,7 +12,7 @@ const Articles = () => {
           Change management is no joke, and the title can be longer if needed
         </h1>
         <div className="tags-container">
-          <span>leadership resources</span>
+          <BlogTags />
           <span>&bull;</span>
           <span>August 8, 2019</span>
           <CategoryPill content="culture" />
@@ -34,10 +35,16 @@ const Articles = () => {
             source="/arrow.svg"
           />
           <div className="share-links">
-            <h4>Share this insight</h4>
-            <img className="share-icons" src="/share-facebook.svg" />
-            <img className="share-icons" src="/share-twitter.svg" />
-            <img className="share-icons" src="/share-linkedin.svg" />
+            <h4 className='share-insight'>Share this insight</h4>
+            <a className="share-media" href="/">
+              <img className="share-icons" src="/share-facebook.svg" />
+            </a>
+            <a className="share-media" href="/">
+              <img className="share-icons" src="/share-twitter.svg" />
+            </a>
+            <a className="share-media" href="/">
+              <img className="share-icons" src="/share-linkedin.svg" />
+            </a>
           </div>
         </div>
         <div className="article-container">

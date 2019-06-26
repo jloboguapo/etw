@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FooterMobileWrap = content =>
+const FooterMobileWrap = () =>
   window.matchMedia('(max-width: 500px)').matches ? (
     <div className="base-footer-wrap">
       <p>
