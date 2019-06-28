@@ -2,7 +2,6 @@ import React from 'react';
 import ImageWithPill from './ImageWithPill';
 import Subscribe from './Subscribe';
 import CallToAction from './CallToAction';
-import Button from './Button';
 
 const ResourcesPage = props => {
   return (
