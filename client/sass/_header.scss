@@ -23,7 +23,8 @@
           margin-top: 10px;
 
           @media only screen and (max-width: $phone) {
-            width: 28%;
+            width: 104px;
+            margin-top: 12px;
           }
         }
       }
@@ -36,6 +37,34 @@
 
         @media only screen and (max-width: $desktop) {
           display: none;
+
+          &.burger-expanded {
+            @include flex;
+            flex: 0;
+            position: absolute;
+            text-align: end;
+            background: #d2d3cd;
+            border-radius: 4px;
+            box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+            padding: 48px 16px 16px;
+            transform: translate(2px, 6px);
+            right: 9%;
+
+            a {
+              min-width: 163px;
+              margin: 4px 0;
+
+              &:hover {
+                p {
+                  color: $forest;
+                }
+              }
+            }
+          }
+
+          .etw-webinar-button {
+            width: 100%;
+          }
         }
 
         p {
@@ -44,10 +73,24 @@
           font-size: 13px;
           text-transform: uppercase;
           margin-top: 19px;
+
+          @media only screen and (max-width: $desktop) {
+            margin: 0;
+          }
         }
 
         .button-link {
           margin-top: 10px;
+        }
+      }
+
+      img.etw-hammie-burger {
+        position: relative;
+        max-height: 32px;
+        margin: 14px 0 0;
+
+        @media only screen and (min-width: 1025px) {
+          display: none;
         }
       }
     }

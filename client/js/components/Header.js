@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
 
 const Header = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
   return (
     <div className="etw-header-ultimate-container">
       <div className="etw-header-container">
         <div className="etw-logo-header-container">
-          <a href="/">
+          <a className="logo-link" href="/">
             <img
               className="etw-logo-dark-on-transparent"
               src="/etw-logo-dark-on-transparent.svg"
             />
           </a>
         </div>
-        <div className="etw-header-links-container">
+        <div
+          className={`etw-header-links-container ${
+            showMobileMenu ? 'burger-expanded' : ''
+          }`}
+        >
           <a href="/performanceSolutions">
             <p>Performance Solutions</p>
           </a>
@@ -27,6 +33,13 @@ const Header = () => {
             <Button content="JOIN A WEBINAR" />
           </a>
         </div>
+        <img
+          className={`etw-hammie-burger  ${showMobileMenu ? 'expanded' : ''}`}
+          onClick={() => {
+            setShowMobileMenu(!showMobileMenu);
+          }}
+          src="/hamburger.svg"
+        />
       </div>
     </div>
   );
