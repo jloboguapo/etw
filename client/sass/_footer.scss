@@ -14,7 +14,7 @@
       @include flex(row);
       margin-bottom: 40px;
       padding-bottom: 56px;
-      border-bottom: 1.5px solid #d6d4d0;
+      border-bottom: 1.5px solid $grey;
 
       @media only screen and (max-width: 985px) {
         @include flex;
@@ -86,7 +86,7 @@
     .etw-footer-links-container {
       @include flex(row);
       padding-bottom: 56px;
-      border-bottom: 1.5px solid #d6d4d0;
+      border-bottom: 1.5px solid $grey;
 
       @media only screen and (max-width: $phone) {
         @include flex;
