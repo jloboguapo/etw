@@ -7,15 +7,12 @@ import ReadyWin from './ReadyWin';
 
 const PerformanceSolutions = () => {
   return (
-    <>
-      <Header />
-      <div className="performance-solutions-container">
-        <IntentionalCulture />
-        <CombatDisengagement />
-        <ServicesSoftware />
-        <ReadyWin />
-      </div>
-    </>
+    <div className="performance-solutions-container">
+      <IntentionalCulture />
+      <CombatDisengagement />
+      <ServicesSoftware />
+      <ReadyWin />
+    </div>
   );
 };
 

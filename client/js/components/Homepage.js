@@ -1,14 +1,12 @@
 import React from 'react';
-import Header from './Header';
 import CoreValues from './CoreValues';
 import LogosBanner from './LogosBanner';
 import Solutions from './Solutions';
 import Insights from './Insights';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
-      <Header />
       <CoreValues />
       <LogosBanner />
       <Solutions />
@@ -17,4 +15,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

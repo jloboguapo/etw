@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Articles from './Articles';
 import ResourcesPage from './ResourcesPage';
 import HeaderWhite from './HeaderWhite';
 
-const LeadershipResources = () => {
+const LeadershipResources = props => {
+  useEffect(() => {
+    document.body.className = 'leadership-resources-wrapper';
+  }, []);
+
   return (
-    <>
-      <HeaderWhite />
-      <div className="leadership-resources-container">
-        <Articles />
-        <ResourcesPage />
-      </div>
-    </>
+    <div className="leadership-resources-container">
+      <Articles />
+      <ResourcesPage />
+    </div>
   );
 };
 

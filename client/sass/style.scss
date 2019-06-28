@@ -15,8 +15,13 @@
 @import 'categoryPill';
 
 body {
-  margin: 0;
   background-color: $light-bone;
+  overscroll-behavior: none;
+  margin: 0;
+
+  &.leadership-resources-wrapper {
+    background-color: $white;
+  }
 }
 
 h1,

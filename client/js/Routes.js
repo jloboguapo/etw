@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './components/App';
-import Home from './components/Home';
+import HomePage from './components/HomePage';
 import PerformanceSolutions from './components/PerformanceSolutions';
 import LeadershipResources from './components/LeadershipResources';
 
@@ -12,7 +12,7 @@ const Routes = () => (
         <Route
           exact
           path="/"
-          render={routeProps => <Home history={routeProps.history} />}
+          render={routeProps => <HomePage history={routeProps.history} />}
         />
         <Route
           exact
