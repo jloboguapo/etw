@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from './Button';
 import CallToAction from './CallToAction';
 import ReadyWinForm from './ReadyWinForm';

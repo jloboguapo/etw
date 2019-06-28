@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Articles from './Articles';
 import ResourcesPage from './ResourcesPage';
-import HeaderWhite from './HeaderWhite';
 
 const LeadershipResources = props => {
   useEffect(() => {
