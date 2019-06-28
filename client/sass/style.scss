@@ -113,6 +113,10 @@ a {
   padding: 8px 20px;
   background-color: $night;
   border-radius: 2px;
-  color: #d6d4d0;
+  color: $grey;
   outline: 0;
+}
+
+.list-unstyled {
+  list-style: none;
 }

@@ -156,7 +156,7 @@
         flex: 11;
         justify-content: center;
         margin: 32px;
-        border-right: 1px solid #d6d4d0;
+        border-right: 1px solid $grey;
 
         @media only screen and (max-width: $desktop) {
           margin: 32px 0;
@@ -166,7 +166,7 @@
           margin: 39px 39px 27px;
           padding-bottom: 30px;
           border-right: none;
-          border-bottom: 1px solid #d6d4d0;
+          border-bottom: 1px solid $grey;
         }
 
         a {
