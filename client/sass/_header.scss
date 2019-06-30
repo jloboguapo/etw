@@ -50,6 +50,10 @@
         &.menu-performance-solutions-open {
           .menu-performance-solutions-main-container {
             display: initial;
+
+            @media only screen and (max-width: $desktop) {
+              display: none;
+            }
           }
         }
 
@@ -64,6 +68,10 @@
         &.menu-leadership-resources-open {
           .menu-leadership-resources-main-container {
             display: initial;
+
+            @media only screen and (max-width: $desktop) {
+              display: none;
+            }
           }
         }
 
@@ -78,6 +86,10 @@
         &.menu-more-open {
           .menu-more-main-container {
             display: initial;
+
+            @media only screen and (max-width: $desktop) {
+              display: none;
+            }
           }
         }
 
@@ -98,7 +110,7 @@
             right: 8%;
 
             a.header-main-links {
-              min-width: 163px;
+              min-width: 100%;
               margin: 4px 0;
 
               &:after {
