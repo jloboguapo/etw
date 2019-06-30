@@ -32,11 +32,58 @@
       .etw-header-links-container {
         @include flex(row);
         justify-content: space-between;
-        flex: 3;
+        flex: 4;
         margin-top: 1px;
+
+        @media only screen and (max-width: 1200px) {
+          flex: 3;
+        }
+
+        .menu-performance-solutions-main-container {
+          display: none;
+
+          &:hover {
+            display: initial;
+          }
+        }
+
+        &.menu-performance-solutions-open {
+          .menu-performance-solutions-main-container {
+            display: initial;
+          }
+        }
+
+        .menu-leadership-resources-main-container {
+          display: none;
+
+          &:hover {
+            display: initial;
+          }
+        }
+
+        &.menu-leadership-resources-open {
+          .menu-leadership-resources-main-container {
+            display: initial;
+          }
+        }
+
+        .menu-more-main-container {
+          display: none;
+
+          &:hover {
+            display: initial;
+          }
+        }
+
+        &.menu-more-open {
+          .menu-more-main-container {
+            display: initial;
+          }
+        }
 
         @media only screen and (max-width: $desktop) {
           display: none;
+          margin-top: 0;
 
           &.burger-expanded {
             @include flex;
@@ -46,13 +93,17 @@
             background: #d2d3cd;
             border-radius: 4px;
             box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
-            padding: 48px 16px 16px;
+            padding: 48px 20px 16px;
             transform: translate(2px, 6px);
-            right: 9%;
+            right: 8%;
 
-            a {
+            a.header-main-links {
               min-width: 163px;
               margin: 4px 0;
+
+              &:after {
+                width: 50px;
+              }
 
               &:hover {
                 p {
@@ -62,9 +113,17 @@
             }
           }
 
-          .etw-webinar-button {
+          .button-link {
             width: 100%;
+
+            .etw-webinar-button {
+              width: 100%;
+            }
           }
+        }
+
+        a.header-main-links {
+          margin: 19px 0 0 0;
         }
 
         p {
@@ -72,7 +131,7 @@
           font-family: $poppins;
           font-size: 13px;
           text-transform: uppercase;
-          margin-top: 19px;
+          margin: 0 0 22px;
 
           @media only screen and (max-width: $desktop) {
             margin: 0;
@@ -80,6 +139,7 @@
         }
 
         .button-link {
+          height: fit-content;
           margin-top: 10px;
         }
       }

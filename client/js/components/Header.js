@@ -1,8 +1,20 @@
 import React, { useState } from 'react';
 import Button from './Button';
+import MenuPerformanceSolutions from './MenuPerformanceSolutions';
+import MenuLeadershipResources from './MenuLeadershipResources';
+import MenuMore from './MenuMore';
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [
+    showmenuPerformanceSolutions,
+    setShowmenuPerformanceSolutions
+  ] = useState(false);
+  const [
+    showmenuLeadershipResources,
+    setShowmenuLeadershipResources
+  ] = useState(false);
+  const [showmenuMore, setShowmenuMore] = useState(false);
 
   return (
     <div className="etw-header-ultimate-container">
@@ -18,17 +30,53 @@ const Header = () => {
         <div
           className={`etw-header-links-container ${
             showMobileMenu ? 'burger-expanded' : ''
-          }`}
+          } ${
+            showmenuPerformanceSolutions
+              ? 'menu-performance-solutions-open'
+              : ''
+          }
+          ${showmenuLeadershipResources ? 'menu-leadership-resources-open' : ''}
+          ${showmenuMore ? 'menu-more-open' : ''}`}
         >
-          <a href="/performanceSolutions">
+          <a
+            className="header-main-links performance-solutions-link"
+            onMouseEnter={() => {
+              setShowmenuPerformanceSolutions(!showmenuPerformanceSolutions);
+            }}
+            onMouseLeave={() => {
+              setShowmenuPerformanceSolutions(!showmenuPerformanceSolutions);
+            }}
+            href="/performanceSolutions"
+          >
             <p>Performance Solutions</p>
           </a>
-          <a href="/leadershipResources">
+          <MenuPerformanceSolutions />
+          <a
+            className="header-main-links leadership-resources-link"
+            onMouseEnter={() => {
+              setShowmenuLeadershipResources(!showmenuLeadershipResources);
+            }}
+            onMouseLeave={() => {
+              setShowmenuLeadershipResources(!showmenuLeadershipResources);
+            }}
+            href="/leadershipResources"
+          >
             <p>Leadership Resources</p>
           </a>
-          <a href="/">
+          <MenuLeadershipResources />
+          <a
+            className="header-main-links more-link"
+            onMouseEnter={() => {
+              setShowmenuMore(!showmenuMore);
+            }}
+            onMouseLeave={() => {
+              setShowmenuMore(!showmenuMore);
+            }}
+            href="/"
+          >
             <p>more</p>
           </a>
+          <MenuMore />
           <a className="button-link" href="/">
             <Button content="JOIN A WEBINAR" />
           </a>
