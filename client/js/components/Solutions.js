@@ -26,7 +26,7 @@ const Solutions = () => {
             <CallToAction
               linkUrl="/"
               linkName="view our solution"
-              arrowClassName="arrow-svg"
+              arrowClassName="arrow"
               source="arrow.svg"
             />
           </div>
@@ -44,7 +44,7 @@ const Solutions = () => {
             <CallToAction
               linkUrl="/"
               linkName="view our solution"
-              arrowClassName="arrow-svg"
+              arrowClassName="arrow"
               source="arrow.svg"
             />
           </div>
@@ -62,7 +62,7 @@ const Solutions = () => {
             <CallToAction
               linkUrl="/"
               linkName="view our solution"
-              arrowClassName="arrow-svg"
+              arrowClassName="arrow"
               source="arrow.svg"
             />
           </div>
@@ -80,7 +80,7 @@ const Solutions = () => {
             <CallToAction
               linkUrl="/"
               linkName="view our solution"
-              arrowClassName="arrow-svg"
+              arrowClassName="arrow"
               source="arrow.svg"
             />
           </div>

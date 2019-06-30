@@ -73,7 +73,7 @@ const CombatDisengagment = () => {
             <CallToAction
               linkUrl="/"
               linkName="download an execution playbook sample"
-              arrowClassName="arrow-svg"
+              arrowClassName="arrow"
               source="arrow.svg"
             />
           </div>

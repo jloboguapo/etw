@@ -129,7 +129,7 @@
             margin: 0;
           }
 
-          .arrow-svg {
+          .arrow {
             margin: 5px 0 0 6px;
           }
         }
@@ -156,109 +156,109 @@
 
           @media only screen and (max-width: 819px) {
             margin: 17px 0px 0 11px;
-
-            @media only screen and (max-width: 399px) {
-              margin: 0 8px 0 0;
-            }
           }
 
-          .share-icons {
-            height: 30px;
+          @media only screen and (max-width: 399px) {
+            margin: 0 8px 0 0;
+          }
+        }
+
+        .share-icons {
+          height: 30px;
+        }
+      }
+    }
+
+    .article-container {
+      @include flex;
+      flex: 75;
+      justify-content: center;
+      text-align: left;
+
+      .blog-pics {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end;
+        flex: 1;
+        border-radius: 4px;
+
+        &.blog-header-pic {
+          background-image: url('/typing-hands.svg');
+          min-height: 280px;
+          margin-bottom: 18px;
+        }
+
+        &.blog-footer-pic {
+          background-image: url('/blog-footer-pic.svg');
+          min-height: 340px;
+          margin-top: 56px;
+          border-radius: 4px 4px 0 0;
+
+          @media only screen and (max-width: 470px) {
+            background-position: inherit;
           }
         }
       }
 
-      .article-container {
-        @include flex;
-        flex: 75;
-        justify-content: center;
-        text-align: left;
+      p,
+      li {
+        font-family: $roboto-light;
+        font-size: 18px;
+        color: #777;
+        line-height: 1.6;
 
-        .blog-pics {
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          display: flex;
-          align-items: flex-end;
-          flex: 1;
-          border-radius: 4px;
-
-          &.blog-header-pic {
-            background-image: url('/typing-hands.svg');
-            min-height: 280px;
-            margin-bottom: 18px;
-          }
-
-          &.blog-footer-pic {
-            background-image: url('/blog-footer-pic.svg');
-            min-height: 340px;
-            margin-top: 56px;
-            border-radius: 4px 4px 0 0;
-
-            @media only screen and (max-width: 470px) {
-              background-position: inherit;
-            }
-          }
+        @media only screen and (max-width: $tablet) {
+          font-size: 17px;
         }
 
-        p,
-        li {
-          font-family: $roboto-light;
-          font-size: 18px;
-          color: #777;
-          line-height: 1.6;
+        @media only screen and (max-width: $phone) {
+          font-size: 16px;
+        }
+      }
 
-          @media only screen and (max-width: $tablet) {
-            font-size: 17px;
-          }
+      h2 {
+        margin: 0;
 
-          @media only screen and (max-width: $phone) {
-            font-size: 16px;
-          }
+        @media only screen and (max-width: $tablet) {
+          font-size: 34px;
         }
 
-        h2 {
-          margin: 0;
-
-          @media only screen and (max-width: $tablet) {
-            font-size: 34px;
-          }
-
-          @media only screen and (max-width: $phone) {
-            font-size: 32px;
-          }
+        @media only screen and (max-width: $phone) {
+          font-size: 32px;
         }
+      }
 
-        h3 {
-          margin-bottom: 64px;
-        }
+      h3 {
+        margin-bottom: 64px;
+      }
 
-        a {
-          color: $sea;
-        }
+      a {
+        color: $sea;
+      }
 
-        .button-link {
+      .button-link {
+        width: 100%;
+
+        .etw-webinar-button {
+          @include flex(row);
+          justify-content: center;
           width: 100%;
+          border: 0;
+          border-radius: 0 0 4px 4px;
 
-          .etw-webinar-button {
-            @include flex(row);
-            justify-content: center;
-            width: 100%;
-            border: 0;
-            border-radius: 0 0 4px 4px;
+          .call-to-action {
+            color: $white;
+            margin: 0;
+            font-family: $poppins-semiBold;
+            font-size: 13px;
+          }
 
-            .call-to-action {
-              color: $white;
-              margin: 0;
-              font-family: $poppins-semiBold;
-              font-size: 13px;
-            }
-
-            .arrow-white-svg {
-              color: $white;
-              height: 12px;
-              margin: 3px 0 0 4px;
-            }
+          .arrow-white {
+            color: $white;
+            height: 12px;
+            margin: 3px 0 0 4px;
           }
         }
       }

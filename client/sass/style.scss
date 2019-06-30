@@ -3,10 +3,10 @@
 @import 'coreValues';
 @import 'footer';
 @import 'header';
-@import 'headerWhite';
 @import 'insights';
 @import 'intentionalCulture';
 @import 'logosBanner';
+@import 'menu';
 @import 'readyWin';
 @import 'resourcesPage';
 @import 'servicesSoftware';
@@ -99,8 +99,8 @@ a {
   }
 }
 
-.arrow-svg,
-.arrow-white-svg {
+.arrow,
+.arrow-white {
   height: 10px;
 }
 

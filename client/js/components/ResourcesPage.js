@@ -24,7 +24,7 @@ const ResourcesPage = props => {
               <CallToAction
                 linkUrl="/"
                 linkName="call to action"
-                arrowClassName="arrow-svg"
+                arrowClassName="arrow"
                 source="arrow.svg"
               />
             </div>
@@ -37,7 +37,7 @@ const ResourcesPage = props => {
               <CallToAction
                 linkUrl="/"
                 linkName="call to action"
-                arrowClassName="arrow-svg"
+                arrowClassName="arrow"
                 source="arrow.svg"
               />
             </div>

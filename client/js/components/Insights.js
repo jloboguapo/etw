@@ -24,7 +24,7 @@ const Insights = props => {
               <CallToAction
                 linkUrl="/"
                 linkName="call to action"
-                arrowClassName="arrow-svg"
+                arrowClassName="arrow"
                 source="arrow.svg"
               />
             </div>
@@ -37,7 +37,7 @@ const Insights = props => {
               <CallToAction
                 linkUrl="/"
                 linkName="call to action"
-                arrowClassName="arrow-svg"
+                arrowClassName="arrow"
                 source="arrow.svg"
               />
             </div>
@@ -52,7 +52,7 @@ const Insights = props => {
               <CallToAction
                 linkUrl="/"
                 linkName="call to action"
-                arrowClassName="arrow-svg"
+                arrowClassName="arrow"
                 source="arrow.svg"
               />
             </div>
@@ -67,7 +67,7 @@ const Insights = props => {
               <CallToAction
                 linkUrl="/"
                 linkName="call to action"
-                arrowClassName="arrow-svg"
+                arrowClassName="arrow"
                 source="arrow.svg"
               />
             </div>
@@ -91,7 +91,7 @@ const Insights = props => {
         <CallToAction
           linkUrl="/"
           linkName="more insights"
-          arrowClassName="arrow-svg"
+          arrowClassName="arrow"
           source="arrow.svg"
         />
       </div>
