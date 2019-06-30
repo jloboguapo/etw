@@ -32,7 +32,7 @@ const Articles = () => {
           <CallToAction
             linkUrl="/"
             linkName="full bio"
-            arrowClassName="arrow-svg"
+            arrowClassName="arrow"
             source="/arrow.svg"
           />
           <div className="share-links">
@@ -120,7 +120,7 @@ const Articles = () => {
               content={
                 <CallToActionNoLink
                   content="download the etw guide to change management"
-                  arrowClassName="arrow-white-svg"
+                  arrowClassName="arrow-white"
                   source="arrow-white.svg"
                 />
               }

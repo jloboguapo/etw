@@ -33,7 +33,7 @@ const CoreValues = () => {
               <CallToAction
                 linkUrl="/performanceSolutions"
                 linkName="put people first"
-                arrowClassName="arrow-svg"
+                arrowClassName="arrow"
                 source="arrow.svg"
               />
             </div>
@@ -54,7 +54,7 @@ const CoreValues = () => {
               <CallToAction
                 linkUrl="/leadershipResources"
                 linkName="Keep performance-focused"
-                arrowClassName="arrow-svg"
+                arrowClassName="arrow"
                 source="arrow.svg"
               />
             </div>
