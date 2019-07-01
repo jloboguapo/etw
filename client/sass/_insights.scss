@@ -89,10 +89,10 @@
             display: flex;
             align-items: flex-end;
             flex: 1;
-            border-top-left-radius: inherit;
-            border-top-right-radius: inherit;
             font-family: $lora;
             font-size: 24px;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
 
             &.phone-on-desk {
               background-image: url('/phone-on-desk.svg');
@@ -119,8 +119,7 @@
           h2,
           h3 {
             width: initial;
-            font-family: $lora;
-            font-weight: lighter;
+            @include lora-light;
             font-size: 21px;
             letter-spacing: 0.6;
             @include margin-sides(20px);
@@ -230,8 +229,7 @@
       }
 
       p {
-        font-family: $roboto;
-        font-weight: lighter;
+        @include light-roboto;
         line-height: 1.6;
         font-size: 12.5px;
         letter-spacing: 0.5px;

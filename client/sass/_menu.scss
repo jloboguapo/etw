@@ -39,7 +39,7 @@
 
       p.menu-tagline {
         color: #777;
-        font-family: $roboto-light;
+        @include light-roboto;
         font-size: 12px;
         text-transform: none;
         margin: 0;
@@ -58,7 +58,7 @@
       margin: 0;
 
       p.call-to-action {
-        font-family: $roboto-light;
+        @include light-roboto;
         line-height: 1.8;
         text-transform: none;
         margin: 0;

@@ -12,3 +12,23 @@
   height: $sides;
   width: $sides;
 }
+
+@mixin lora-light {
+  font-family: $lora;
+  font-weight: lighter;
+}
+
+@mixin poppins-light {
+  font-family: $poppins;
+  font-weight: lighter;
+}
+
+@mixin poppins-semiBold {
+  font-family: $poppins;
+  font-weight: 600;
+}
+
+@mixin light-roboto {
+  font-family: $roboto;
+  font-weight: lighter;
+}

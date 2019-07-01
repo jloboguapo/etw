@@ -34,7 +34,7 @@
 
         p,
         a {
-          font-family: $roboto-light;
+          @include light-roboto;
           font-size: 12px;
           line-height: 1.5;
           margin-bottom: 0;
@@ -55,7 +55,7 @@
         }
 
         p {
-          font-family: $roboto-light;
+          @include light-roboto;
           font-size: 18px;
           letter-spacing: 0.3;
           line-height: 1.5;
@@ -127,7 +127,7 @@
 
         p,
         a {
-          font-family: $roboto-light;
+          @include light-roboto;
           font-size: 13px;
           line-height: 1.8;
           letter-spacing: 0.4;

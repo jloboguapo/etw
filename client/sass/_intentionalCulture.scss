@@ -47,7 +47,7 @@
       }
 
       p {
-        font-family: $roboto-light;
+        @include light-roboto;
         font-size: 18px;
         color: #777777;
         margin: 16px auto;
