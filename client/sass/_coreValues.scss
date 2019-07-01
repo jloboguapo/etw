@@ -128,11 +128,11 @@
           @media only screen and (max-width: $desktop) {
             @include flex;
             margin-bottom: 24px;
-            min-height: 100%;
           }
 
           @media only screen and (max-width: $tablet) {
             @include flex(row);
+            min-height: 0;
           }
 
           @media only screen and (max-width: $phone) {
