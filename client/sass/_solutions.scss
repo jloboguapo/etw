@@ -40,41 +40,73 @@
       }
     }
     .etw-solutions-card-container {
-      .people-card,
-      .priorities-card,
-      .practices-card,
-      .performance-card {
-        display: inline-block;
+      .cards {
+        display: inline-grid;
+        grid-template-rows: 134px 58px 174px;
+        height: 382px;
         width: 25%;
-        vertical-align: top;
+        padding: 0 0 22px 0;
 
         @media only screen and (max-width: $desktop) {
-          width: 50%;
-          margin-top: inherit;
-          margin-bottom: 12px;
+          grid-template-rows: 48% 10% 32%;
+          @include square(50%);
+          margin-bottom: 24px;
+          padding: 0;
+        }
+
+        @media only screen and (max-width: 932px) {
+          grid-template-rows: 43% 10% 36%;
+        }
+
+        @media only screen and (max-width: 870px) {
+          grid-template-rows: 42% 11% 36%;
+        }
+
+        @media only screen and (max-width: $tablet) {
+          grid-template-rows: 38% 12% 40%;
+          height: 47%;
+        }
+
+        @media only screen and (max-width: 672px) {
+          grid-template-rows: 36% 11% 43%;
+        }
+
+        @media only screen and (max-width: 609px) {
+          grid-template-rows: 34% 10% 46%;
+        }
+
+        @media only screen and (max-width: 559px) {
+          grid-template-rows: 30% 10% 50%;
         }
 
         @media only screen and (max-width: $phone) {
+          display: inline-block;
+          vertical-align: top;
           width: 100%;
-          margin-bottom: 12px;
         }
 
-        img {
-          width: 30%;
-          display: block;
-          margin: 15px auto 36px 25.5px;
+        .card-icons {
+          @include square(76px);
+          margin: 15px auto auto 25.5px;
+
+          @media only screen and (max-width: $desktop) {
+            height: auto;
+            width: 30%;
+            margin: 15px 0 0 25.5px;
+          }
 
           @media only screen and (max-width: $phone) {
-            margin-bottom: 0;
+            display: block;
+            margin: 15px auto 24px 25.5px;
           }
         }
 
         h4 {
           text-align: left;
-          margin: auto auto 10.5 25.5px;
+          margin: 0 0 0 25.5px;
 
           @media only screen and (max-width: $phone) {
-            margin-top: 15px;
+            margin: auto auto 10.5px 25.5px;
           }
         }
 
@@ -87,16 +119,21 @@
           color: #777777;
           letter-spacing: 0.18;
           width: 76%;
-          margin: auto auto 29px 25.5px;
+          margin: 0 0 0 25.5px;
+
+          @media only screen and (max-width: $phone) {
+            margin: auto auto 29px 25.5px;
+          }
         }
 
         a {
           @include flex(row);
-          margin: 0 0 22px 23.5px;
+          margin: 0 0 0 25.5px;
           display: none;
 
           @media only screen and (max-width: $desktop) {
             display: flex;
+            margin: 0 0 22px 25.5px;
           }
 
           .call-to-action {
@@ -217,7 +254,9 @@
         }
 
         p {
-          @include p($font-size: 20px);
+          font-family: $lora;
+          font-size: 20px;
+          line-height: 1.35;
           margin: 11px auto;
         }
 

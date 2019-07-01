@@ -15,8 +15,8 @@ const Solutions = () => {
           <br />
         </div>
         <div className="etw-solutions-card-container">
-          <div className="people-card">
-            <img className="people-card-icon" src="/people-card-icon.svg" />
+          <div className="cards people-card">
+            <img className="card-icons people-card-icon" src="/people-card-icon.svg" />
             <h4>People</h4>
             <p>
               Whether facing employee disengagement, weak performers, or
@@ -30,9 +30,9 @@ const Solutions = () => {
               source="arrow.svg"
             />
           </div>
-          <div className="priorities-card">
+          <div className="cards priorities-card">
             <img
-              className="priorities-card-icon"
+              className="card-icons priorities-card-icon"
               src="/priorities-card-icon.svg"
             />
             <h4>Priorities</h4>
@@ -48,9 +48,9 @@ const Solutions = () => {
               source="arrow.svg"
             />
           </div>
-          <div className="practices-card">
+          <div className="cards practices-card">
             <img
-              className="practices-card-icon"
+              className="card-icons practices-card-icon"
               src="/practices-card-icon.svg"
             />
             <h4>Practices</h4>
@@ -66,9 +66,9 @@ const Solutions = () => {
               source="arrow.svg"
             />
           </div>
-          <div className="performance-card">
+          <div className="cards performance-card">
             <img
-              className="performance-card-icon"
+              className="card-icons performance-card-icon"
               src="/performance-card-icon.svg"
             />
             <h4>Performance</h4>
@@ -96,7 +96,7 @@ const Solutions = () => {
             </p>
           </div>
           <div className="testimonial-container-right">
-            <img className="quote" src="/quote.svg" />
+            <img className="card-icons quote" src="/quote.svg" />
             <p>
               ETW has made us far more productive because now we focus on the
               key things that drive results for our company.

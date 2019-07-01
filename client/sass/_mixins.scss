@@ -3,17 +3,12 @@
   flex-direction: $flex-direction;
 }
 
-@mixin p($font-family: $lora, $font-size: 26px, $line-height: 1.35) {
-  font-family: $font-family;
-  font-size: $font-size;
-  line-height: $line-height;
-}
-
 @mixin margin-sides($margin-sides) {
   margin-left: $margin-sides;
   margin-right: $margin-sides;
 }
 
-@mixin arrow($height: 10px) {
-  height: $height;
+@mixin square($sides) {
+  height: $sides;
+  width: $sides;
 }
