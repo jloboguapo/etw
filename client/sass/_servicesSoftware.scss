@@ -189,7 +189,9 @@
         }
 
         p {
-          @include p;
+          font-family: $lora;
+          font-size: 26px;
+          line-height: 1.35;
           margin: 11px auto;
 
           @media only screen and (max-width: $desktop) {
