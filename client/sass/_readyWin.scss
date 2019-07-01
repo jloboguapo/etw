@@ -51,7 +51,7 @@
       }
 
       p {
-        font-family: $roboto-light;
+        @include light-roboto;
         font-size: 18px;
         margin: 16px auto;
         width: 95%;
@@ -98,9 +98,8 @@
           margin: 0 auto;
 
           p {
-            font-family: $poppins;
+            @include poppins-light;
             font-size: 13px;
-            font-weight: lighter;
             width: auto;
             margin: 0;
           }

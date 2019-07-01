@@ -122,8 +122,7 @@
           h2,
           h3 {
             width: initial;
-            font-family: $lora;
-            font-weight: lighter;
+            @include lora-light;
             font-size: 21px;
             letter-spacing: 0.6;
             @include margin-sides(20px);

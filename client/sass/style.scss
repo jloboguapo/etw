@@ -33,30 +33,26 @@ h5 {
 }
 
 h1 {
-  font-family: $lora;
+  @include lora-light;
   font-size: 53px;
-  font-weight: lighter;
   margin: 0 0 20px;
   letter-spacing: 1;
   line-height: 1.1;
 }
 
 h2 {
-  font-family: $lora;
+  @include lora-light;
   font-size: 36px;
-  font-weight: lighter;
 }
 
 h4 {
-  font-family: $poppins;
-  font-weight: lighter;
+  @include poppins-light;
   font-size: 17px;
   letter-spacing: 0.2;
 }
 
 h5 {
-  font-family: $poppins;
-  font-weight: lighter;
+  @include poppins-light;
   font-size: 11px;
   letter-spacing: 0.8;
   text-transform: uppercase;
@@ -92,7 +88,7 @@ a {
 
   .call-to-action {
     font-size: 11px;
-    font-family: $poppins-semiBold;
+    @include poppins-semiBold;
     letter-spacing: 0.5;
     text-transform: uppercase;
     color: $forest;

@@ -33,7 +33,7 @@
       }
 
       p {
-        font-family: $roboto-light;
+        @include light-roboto;
         font-size: 18px;
         margin: 16px auto;
         width: 65%;
@@ -94,7 +94,7 @@
 
         p {
           font-size: 14px;
-          font-family: $roboto-light;
+          @include light-roboto;
           line-height: 1.6;
           width: 95%;
           margin: 10px 8px 0;
@@ -154,8 +154,7 @@
         }
 
         p {
-          font-family: $roboto;
-          font-weight: lighter;
+          @include light-roboto;
           line-height: 1.6;
           font-size: 13px;
           color: #777777;
