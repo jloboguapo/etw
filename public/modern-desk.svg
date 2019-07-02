@@ -2,8 +2,6 @@
 <svg width="548px" height="480px" viewBox="0 0 548 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <rect id="path-1" x="0" y="0" width="548" height="480" rx="4"></rect>
-        <filter x="0" y="0" width="108.6%" height="109.8%" filterUnits="objectBoundingBox" id="filter-2">
-        </filter>
         <pattern id="pattern-3" patternUnits="objectBoundingBox" x="0%" width="100%" height="100%">
             <use xlink:href="#image-4"></use>
         </pattern>
@@ -11,8 +9,8 @@
         <rect id="path-5" x="0" y="0" width="98" height="26" rx="13"></rect>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="03a_resource_permalink" transform="translate(0.000000, -3362.000000)">
-            <g id="Group-10" transform="translate(0.000000, 3375.000000)">
+        <g id="03a_resource_permalink" transform="translate(0.000000, 0.000000)">
+            <g id="Group-10" transform="translate(0.000000, 0.000000)">
                 <g id="Group-11-Copy-2" transform="translate(0.000000, 0.000000)">
                     <g id="Rectangle" fill-rule="nonzero">
                         <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
