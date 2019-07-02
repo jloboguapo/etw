@@ -1,0 +1,15 @@
+.carousel {
+  .control-dots,
+  .carousel-status,
+  .thumbs-wrapper {
+    display: none;
+  }
+
+  .slider-wrapper.axis-horizontal .slider .slide {
+    background-color: transparent;
+
+    .legend {
+      display: none;
+    }
+  }
+}
