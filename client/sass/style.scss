@@ -74,13 +74,15 @@ a {
   letter-spacing: 0.5;
   padding: 8px 20px;
   background-color: $forest;
+  border: none;
   border-radius: 2px;
   color: $light-bone;
   outline: 0;
   text-transform: uppercase;
 
   &:hover {
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+    background-color: $dark-forest;
   }
 }
 
