@@ -20,7 +20,7 @@ const ResourcesPage = props => {
         </div>
         <Carousel
           centerMode={
-            window.matchMedia('(max-width: 768px)').matches ? false : true
+            !window.matchMedia('(max-width: 768px)').matches
           }
           centerSlidePercentage={
             window.matchMedia('(max-width: 768px)').matches ? 80 : 39
