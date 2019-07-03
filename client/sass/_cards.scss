@@ -1,0 +1,79 @@
+.card {
+    box-shadow: $box-shadow;
+
+    .card-title {
+        font-family   : $headings-font-family;
+        font-size     : 1.5rem;
+        text-transform: none;
+        display       : block;
+        font-weight   : bold;
+        color         : $gray-900;
+
+        &:hover {
+            text-decoration: none;
+            color          : $link-hover-color;
+        }
+    }
+
+    &.card-lg {
+        .card-title {
+            font-size: 2.5rem;
+
+            @include media-breakpoint-down(md) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &.testimonial-card {
+        .card-body {
+            padding: 2.5rem;
+
+            .row {
+                align-items: center;
+            }
+
+            .testimonial-cta {
+                text-align: center;
+                padding   : 0 2.5rem;
+            }
+
+            .testimonial-quote {
+                text-align : center;
+                padding    : 0 2.5rem;
+                border-left: 2px solid $gray-300;
+
+                @include media-breakpoint-down(md) {
+                    border-left  : none;
+                    padding-left : 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    &.insight-card {
+        min-height: 30rem;
+
+        &.card-lg {
+            min-height: 34rem;
+        }
+
+        .card-img-bg {
+            background-size        : cover;
+            background-position    : center center;
+            background-repeat      : no-repeat;
+            display                : flex;
+            align-items            : flex-end;
+            flex                   : 1;
+            border-top-left-radius : inherit;
+            border-top-right-radius: inherit;
+            padding                : 1rem 1.25rem;
+        }
+
+        .card-body {
+            flex: 0 0 auto;
+        }
+
+    }
+}

@@ -1,170 +1,59 @@
-.etw-main-container {
-  .etw-header-ultimate-container {
-    .etw-header-container {
-      @include flex(row);
-      width: 80%;
-      margin: 0 auto;
-      padding: spacing() 0 spacing(15);
-
-      @media only screen and (max-width: $phone) {
-        padding: 8px 0 98px;
-      }
-
-      .etw-logo-header-container {
-        justify-content: flex-start;
-        flex: 2;
-
-        @media only screen and (max-width: 1200px) {
-          flex: 1.2;
-        }
-
-        .etw-logo-dark-on-transparent {
-          width: 112px;
-          margin-top: 10px;
-
-          @media only screen and (max-width: $phone) {
-            width: 104px;
-            margin-top: 12px;
-          }
-        }
-      }
-
-      .etw-header-links-container {
+header {
+    .container {
         @include flex(row);
-        justify-content: space-between;
-        flex: 4;
-        margin-top: 1px;
+        align-items: center;
+        margin     : 0 auto;
+        padding    : 1.125rem 0;
 
-        @media only screen and (max-width: 1200px) {
-          flex: 3;
+        @include media-breakpoint-down(md) {
+            padding: 8px 0 98px;
         }
 
-        .menu-performance-solutions-main-container {
-          display: none;
+        .logo {
+            justify-content: flex-start;
+            align-items    : center;
+            flex           : 2;
 
-          &:hover {
-            display: initial;
-          }
-        }
-
-        &.menu-performance-solutions-open {
-          .menu-performance-solutions-main-container {
-            display: initial;
-
-            @media only screen and (max-width: $desktop) {
-              display: none;
+            @include media-breakpoint-up(lg) {
+                flex: 1.2;
             }
-          }
-        }
 
-        .menu-leadership-resources-main-container {
-          display: none;
+            img {
+                width     : 112px;
+                margin-top: 10px;
 
-          &:hover {
-            display: initial;
-          }
-        }
-
-        &.menu-leadership-resources-open {
-          .menu-leadership-resources-main-container {
-            display: initial;
-
-            @media only screen and (max-width: $desktop) {
-              display: none;
-            }
-          }
-        }
-
-        .menu-more-main-container {
-          display: none;
-
-          &:hover {
-            display: initial;
-          }
-        }
-
-        &.menu-more-open {
-          .menu-more-main-container {
-            display: initial;
-
-            @media only screen and (max-width: $desktop) {
-              display: none;
-            }
-          }
-        }
-
-        @media only screen and (max-width: $desktop) {
-          display: none;
-          margin-top: 0;
-
-          &.burger-expanded {
-            @include flex;
-            flex: 0;
-            position: absolute;
-            text-align: end;
-            background: $dark-fog;
-            border-radius: 4px;
-            box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
-            padding: 48px 20px 16px;
-            transform: translate(2px, 6px);
-            right: 8%;
-
-            a.header-main-links {
-              min-width: 100%;
-              margin: 4px 0;
-
-              &:after {
-                width: 50px;
-              }
-
-              &:hover {
-                p {
-                  color: $forest;
+                @include media-breakpoint-down(md) {
+                    width: 28%;
                 }
-              }
             }
-          }
+        }
 
-          .button-link {
-            width: 100%;
+        .header-links {
+            @include flex(row);
+            justify-content: space-between;
+            align-items    : center;
+            margin-left    : auto;
 
-            .etw-webinar-button {
-              width: 100%;
+            @include media-breakpoint-down(md) {
+                display: none;
             }
-          }
+
+            a {
+                margin-left: 1.875rem;
+            }
+
+            a:not(.btn) {
+                color         : $gray-900;
+                font-family   : 'Poppins', sans-serif;
+                font-size     : 0.9375rem;
+                text-transform: uppercase;
+                font-weight   : 600;
+
+                &:hover {
+                    text-decoration: none;
+                    color          : $link-hover-color;
+                }
+            }
         }
-
-        a.header-main-links {
-          margin: 19px 0 0 0;
-        }
-
-        p {
-          color: #222;
-          font-family: $poppins;
-          font-size: 13px;
-          text-transform: uppercase;
-          margin: 0 0 22px;
-
-          @media only screen and (max-width: $desktop) {
-            margin: 0;
-          }
-        }
-
-        .button-link {
-          height: fit-content;
-          margin-top: 10px;
-        }
-      }
-
-      img.etw-hammie-burger {
-        position: relative;
-        max-height: 32px;
-        margin: 14px 0 0;
-
-        @media only screen and (min-width: 1025px) {
-          display: none;
-        }
-      }
     }
-  }
 }

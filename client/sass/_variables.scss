@@ -1,4 +1,160 @@
-$phone: 500px;
-$tablet: 768px;
-$desktop: 1024px;
+// Variables
+//
+// Reference: https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
 
+//
+// Colors
+// ==================================================
+$night: #254c5a;
+$forest: #007278;
+$sea: #41bdac;
+$sky: #b3dfd8;
+$rain: #e0f1ee;
+$heart: #d02b30;
+$dusk: #605063;
+$fire: #f5634a;
+$ember: #ff9c5b;
+$sun: #f9d423;
+$bone: #eff3cd;
+$fog: #efebe2;
+$bisque: #f4f1EB;
+$white: #fff;
+
+$light-bone: lighten($bone, 8.9);
+
+// Bootstrap color system
+
+$white: #fff;
+$gray-100: #fcfcfc;
+$gray-200: #f7f7f7;
+$gray-300: #eeeeee;
+$gray-400: #dddddd;
+$gray-500: #cccccc;
+$gray-600: #bbbbbb;
+$gray-700: #888888;
+$gray-800: #777777;
+$gray-900: #222222;
+$black: #000;
+
+$grays: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(("100": $gray-100, "200": $gray-200, "300": $gray-300, "400": $gray-400, "500": $gray-500, "600": $gray-600, "700": $gray-700, "800": $gray-800, "900": $gray-900), $grays);
+$blue: $forest;
+$purple: $dusk;
+$pink: $fire;
+$red: $heart;
+$orange: $ember;
+$yellow: $sun;
+$green: $forest;
+$teal: $sea;
+$cyan: $sky;
+
+$colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(("blue": $blue, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green, "teal": $teal, "cyan": $cyan, "white": $white, "gray": $gray-600, "gray-dark": $gray-800), $colors);
+
+$primary: $blue;
+$secondary: $bisque;
+$success: $green;
+$info: $teal;
+$warning: $yellow;
+$danger: $red;
+$light: $light-bone;
+$dark: $gray-900;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(("primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark), $theme-colors);
+
+//
+// Spacing
+// ==================================================
+$spacer: 1rem;
+$spacers: (
+    0 : 0,
+    1 : ($spacer * .25),
+    2 : ($spacer * .5),
+    3 : ($spacer * .625),
+    4 : $spacer,
+    5 : ($spacer * 1.25),
+    6 : ($spacer * 1.5),
+    7 : ($spacer * 1.875),
+    8 : ($spacer * 2.5),
+    9 : ($spacer * 3.75),
+    10: ($spacer * 5),
+    11: ($spacer * 7.5),
+);
+
+//
+// Options
+// ==================================================
+$enable-caret: false;
+$enable-rounded: true;
+$enable-shadows: true;
+
+//
+// Components
+// ==================================================
+$box-shadow: 0 0 1rem 0 rgba($black, .1);
+
+//
+// Body
+// ==================================================
+$body-bg: $light-bone;
+$body-color: $gray-800;
+
+//
+// Typography
+// ==================================================
+$font-family-sans-serif: "Roboto", sans-serif;
+
+$link-color: inherit;
+$link-hover-color: $primary;
+
+$h1-font-size: 3.5rem;
+$h2-font-size: 2.25rem;
+$h3-font-size: 1.25rem;
+$h4-font-size: 1.125rem;
+$h5-font-size: 0.75rem;
+$h6-font-size: 0.8125rem;
+
+$headings-font-family: "Lora", serif;
+$headings-color: $gray-900;
+$headings-font-weight: bold;
+$headings-margin-bottom: 0.625rem;
+
+$lead-font-size: 1.25rem;
+$lead-font-weight: normal;
+
+$small-font-size: 0.625rem;
+
+//
+// Buttons & Forms
+// ==================================================
+$input-btn-font-size: 0.9375rem;
+$input-btn-padding-y: 0.5625rem;
+$input-btn-padding-x: 1.25rem;
+
+//
+// Buttons
+// ==================================================
+$btn-border-radius: 0.125rem;
+$btn-box-shadow: none;
+$btn-font-weight: 600;
+$btn-font-family: "Poppins", sans-serif;
+
+//
+// Inputs
+// ==================================================
+$input-font-family: $font-family-sans-serif;
+$input-border-radius: 0.125rem;
+$input-box-shadow: none;
+$input-border-width: 0;
+
+//
+// Cards
+// ==================================================
+$card-spacer-y: 1.875rem;
+$card-spacer-x: 1.875rem;
+$card-border-width: 0;
+$card-border-radius: 0.25rem;
