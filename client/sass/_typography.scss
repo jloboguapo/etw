@@ -7,6 +7,13 @@ h1 {
     }
 }
 
+.h2,
+h2 {
+    @include media-breakpoint-down(md) {
+        font-size: 1.875rem;
+    }
+}
+
 .h3,
 h3 {
     font-family: 'Poppins', sans-serif;
@@ -27,8 +34,23 @@ h5 {
     letter-spacing: 0.5px;
 }
 
+.h6,
+h6 {
+    font-family   : 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight   : 600;
+    letter-spacing: 0.5px;
+}
+
 p {
     font-size: 0.9375rem;
+
+    &.cite-p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size  : 9px;
+        text-align : left;
+    }
 }
 
 a {
@@ -36,7 +58,8 @@ a {
 }
 
 .arrow-link {
-    transition: $transition-base;
+    transition : $transition-base;
+    font-family: 'Poppins', sans-serif;
 
     .call-to-action {
         font-size     : 0.8125rem;
@@ -48,8 +71,6 @@ a {
     img {
         width      : 10px;
         margin-left: 0.25rem;
-        position   : relative;
-        top        : -1px;
         transition : $transition-base;
     }
 
@@ -77,7 +98,7 @@ blockquote {
 
     p {
         font-family: $headings-font-family;
-        font-size  : 1.875rem;
+        font-size  : 1.75rem;
         color      : $gray-800;
 
         @include media-breakpoint-down(md) {
@@ -141,4 +162,44 @@ blockquote {
             background-color: $info;
         }
     }
+}
+
+.text-night {
+    color: #254c5a;
+}
+
+.text-forest {
+    color: #007278;
+}
+
+.text-sea {
+    color: #41bdac;
+}
+
+.text-sky {
+    color: #b3dfd8;
+}
+
+.text-rain {
+    color: #e0f1ee;
+}
+
+.text-heart {
+    color: #d02b30;
+}
+
+.text-dusk {
+    color: #605063;
+}
+
+.text-fire {
+    color: #f5634a;
+}
+
+.text-ember {
+    color: #ff9c5b;
+}
+
+.text-sun {
+    color: #f9d423;
 }

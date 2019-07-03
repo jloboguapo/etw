@@ -1,18 +1,37 @@
 .card {
     box-shadow: $box-shadow;
 
-    .card-title {
-        font-family   : $headings-font-family;
-        font-size     : 1.5rem;
-        text-transform: none;
-        display       : block;
-        font-weight   : bold;
-        color         : $gray-900;
+    .card-header {
+        padding      : 1.25rem 1.875rem;
+        border-radius: 0.25rem 0.25rem 0 0;
 
-        &:hover {
-            text-decoration: none;
-            color          : $link-hover-color;
+        .card-title {
+            @extend .h6;
+            font-size: 0.9375rem;
+            margin   : 0;
         }
+    }
+
+    .card-body {
+        .card-title {
+            font-family   : $headings-font-family;
+            font-size     : 1.5rem;
+            text-transform: none;
+            display       : block;
+            font-weight   : bold;
+            color         : $gray-900;
+
+            &:hover {
+                text-decoration: none;
+                color          : $link-hover-color;
+            }
+        }
+    }
+
+    .card-footer {
+        border-radius   : 0 0 0.25rem 0.25rem;
+        padding         : 0.625rem 1.875rem;
+        background-color: $bisque;
     }
 
     &.card-lg {
@@ -75,5 +94,21 @@
             flex: 0 0 auto;
         }
 
+    }
+
+    &.list-card {
+        .list-card-group {
+            display    : flex;
+            align-items: flex-start;
+
+            &:not(:last-child) {
+                margin-bottom: 1.25rem;
+            }
+
+            img {
+                flex        : 0 0 auto;
+                margin-right: 1.25rem;
+            }
+        }
     }
 }
