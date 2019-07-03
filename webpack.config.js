@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: ['./client/js/index.js'],
@@ -41,6 +42,7 @@ module.exports = {
               sourceMap: true
             }
           },
+          'postcss-loader',
           'sass-loader?outputStyle=compressed&sourceMap'
         ]
       },
@@ -53,6 +55,11 @@ module.exports = {
   plugins: [
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'development'
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [autoprefixer()]
+      }
     })
   ],
   watch: true
