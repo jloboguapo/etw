@@ -27,8 +27,8 @@ const Header = () => {
             </a>
 
             <div className="header-links">
-                <a href="/">Performance Solutions</a>
-                <a href="/">Leadership Resources</a>
+                <a href="/performanceSolutions">Performance Solutions</a>
+                <a href="/leadershipResources">Leadership Resources</a>
                 <a href="/">More</a>
                 <Button variant="primary" className="button-link" href="/">Join a Webinar</Button>
             </div>

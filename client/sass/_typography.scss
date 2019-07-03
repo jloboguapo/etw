@@ -1,6 +1,10 @@
 .h1,
 h1 {
     margin-bottom: 1.25rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: 2.25rem;
+    }
 }
 
 .h3,
@@ -91,6 +95,50 @@ blockquote {
 
         &::before {
             display: none;
+        }
+    }
+}
+
+.highlight {
+    position: relative;
+
+    &::before {
+        content : '';
+        width   : 100%;
+        height  : 1.25rem;
+        position: absolute;
+        bottom  : 0.25rem;
+        opacity : 0.3;
+        z-index : -1;
+    }
+
+    &.highlight-primary {
+        &::before {
+            background-color: $primary;
+        }
+    }
+
+    &.highlight-success {
+        &::before {
+            background-color: $success;
+        }
+    }
+
+    &.highlight-warning {
+        &::before {
+            background-color: $warning;
+        }
+    }
+
+    &.highlight-danger {
+        &::before {
+            background-color: $danger;
+        }
+    }
+
+    &.highlight-info {
+        &::before {
+            background-color: $info;
         }
     }
 }
