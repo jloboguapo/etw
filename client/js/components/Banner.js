@@ -3,7 +3,7 @@ import CallToAction from './CallToAction';
 
 const Banner = ({ content }) => (
   <button type="banner" className="etw-leadership-banner">
-    {content}
+    <div>{content}</div>
     <CallToAction
       linkUrl="/"
       linkName="rsvp now"
