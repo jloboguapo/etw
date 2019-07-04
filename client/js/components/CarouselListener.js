@@ -5,7 +5,7 @@ import ImageWithPill from './ImageWithPill';
 import CallToAction from './CallToAction';
 
 const CarouselListener = () => {
-  const [centerMode, setCenterMode] = useState(false);
+  const [centerMode, setCenterMode] = useState(!window.matchMedia('(max-width: 768px)').matches);
 
   useEffect(() => {
     window.addEventListener('resize', () => {
