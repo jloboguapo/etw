@@ -6,15 +6,15 @@ const BlogTags = () => {
   );
 
   useEffect(() => {
-    window.addEventListener('resize', () => {
+    const resizeEvent = () =>
       setMobile(!window.matchMedia('(max-width: 328px)').matches);
-    });
-    window.removeEventListener('resize', () => {
-      setMobile(!window.matchMedia('(max-width: 328px)').matches);
-    });
-  });
+    window.addEventListener('resize', resizeEvent);
 
-  console.log(mobile);
+    return () => {
+      window.removeEventListener('resize', resizeEvent);
+    };
+  }, []);
+
   return mobile ? <span>leadership resources</span> : <span>leadership</span>;
 };
 

@@ -6,15 +6,15 @@ const FooterMobileWrap = () => {
   );
 
   useEffect(() => {
-    window.addEventListener('resize', () => {
+    const resizeEvent = () =>
       setMobileWrap(!window.matchMedia('(max-width: 500px)').matches);
-    });
-    window.removeEventListener('resize', () => {
-      setMobileWrap(!window.matchMedia('(max-width: 500px)').matches);
-    });
-  });
+    window.addEventListener('resize', resizeEvent);
 
-  console.log(mobileWrap);
+    return () => {
+      window.removeEventListener('resize', resizeEvent);
+    };
+  }, []);
+
   return mobileWrap ? (
     <>
       <p>
