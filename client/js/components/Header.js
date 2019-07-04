@@ -3,6 +3,7 @@ import Button from './Button';
 import MenuPerformanceSolutions from './MenuPerformanceSolutions';
 import MenuLeadershipResources from './MenuLeadershipResources';
 import MenuMore from './MenuMore';
+import Banner from './Banner';
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -18,6 +19,7 @@ const Header = () => {
 
   return (
     <div className="etw-header-ultimate-container">
+      <Banner content="Join ETW at our next intentional leadership network event, September 5, 2019." />
       <div className="etw-header-container">
         <div className="etw-logo-header-container">
           <a className="logo-link" href="/">
