@@ -5,16 +5,19 @@ import ImageWithPill from './ImageWithPill';
 import CallToAction from './CallToAction';
 
 const CarouselListener = () => {
-  const [centerMode, setCenterMode] = useState(!window.matchMedia('(max-width: 768px)').matches);
+  const [centerMode, setCenterMode] = useState(
+    !window.matchMedia('(max-width: 768px)').matches
+  );
 
   useEffect(() => {
-    window.addEventListener('resize', () => {
+    const resizeEvent = () =>
       setCenterMode(!window.matchMedia('(max-width: 768px)').matches);
-    });
-    window.removeEventListener('resize', () => {
-      setCenterMode(!window.matchMedia('(max-width: 768px)').matches);
-    });
-  });
+    window.addEventListener('resize', resizeEvent);
+
+    return () => {
+      window.removeEventListener('resize', resizeEvent);
+    };
+  }, []);
 
   return (
     <Carousel
