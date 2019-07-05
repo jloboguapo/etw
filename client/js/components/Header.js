@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import MenuPerformanceSolutions from './MenuPerformanceSolutions';
 import MenuLeadershipResources from './MenuLeadershipResources';
 import MenuMore from './MenuMore';
+import Banner from './Banner';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -20,7 +21,8 @@ const Header = () => {
   const [showmenuMore, setShowmenuMore] = useState(false);
 
   return (
-    <header class="header-public">
+    <header className="header-public">
+        <Banner content="Join ETW at our next intentional leadership network event, September 5, 2019." />
         <Container>
             <a className="logo" href="/">
                 <img src="/etw-logo-dark-on-transparent.svg" />
