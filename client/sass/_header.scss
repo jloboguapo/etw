@@ -1,3 +1,7 @@
+.leadership-resources-wrapper > #container > div > header {
+    background-color: $white;
+}
+
 header {
     .container {
         @include flex(row);
@@ -20,7 +24,6 @@ header {
 
             img {
                 width     : 112px;
-                margin-top: 10px;
 
                 @include media-breakpoint-down(md) {
                     width: 28%;

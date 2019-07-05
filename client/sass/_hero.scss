@@ -34,7 +34,7 @@
     .card {
         padding    : 1.875rem;
         @include flex(row);
-        align-items: flex-start;
+        align-items: center;
 
         &:not(:last-child) {
             margin-bottom: 1.25rem;
@@ -79,7 +79,7 @@
 
     &.hero-simple {
         text-align: center;
-
+        
         @include media-breakpoint-down(md) {
             text-align: left;
         }
