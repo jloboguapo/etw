@@ -7,8 +7,8 @@ const IntentionalCulture = () => {
   return (
     <Container className="hero hero-simple py-8 py-lg-11">
         <ul className="hero-meta">
-            <li class="text-success">Performance solutions</li>
-            <li class="text-success">Strengthen culture</li>
+            <li className="text-success">Performance solutions</li>
+            <li className="text-success">Strengthen culture</li>
         </ul>
 		<h1>Build an <span className="highlight highlight-info">intentional culture</span></h1>
         <Row>
