@@ -111,10 +111,10 @@ const Footer = () => {
         <Row className="footer-baseline-container">
             <Col xl={8}>
                 <ul className="list-inline">
-                    <li className="list-inline-item">&copy; 2019 Execute to Win Inc. All rights reserved. </li>
+                    <li className="list-inline-item">&copy; 2019 Execute to Win Inc.<span> All rights reserved.</span></li>
                     <li className="list-inline-item"><a href="#">Terms of use</a></li>
                     <li className="list-inline-item"><a href="#">Privacy Policy</a></li>
-                    <li className="list-inline-item"><a href="#">Global privacy compliance</a></li>
+                    <li className="list-inline-item global"><a href="#">Global privacy compliance</a></li>
                 </ul>
             </Col>
             <Col>
