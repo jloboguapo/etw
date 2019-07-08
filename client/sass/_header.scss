@@ -60,6 +60,10 @@
                     height          : 0.125rem;
                     background-color: transparent;
                     transition      : $transition-base;
+
+                    @include media-breakpoint-down(md) {
+                        display: none !important;
+                    }
                 }
 
                 @include media-breakpoint-down(md) {
