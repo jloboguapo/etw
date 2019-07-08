@@ -57,6 +57,10 @@ a {
     transition: $transition-base;
 }
 
+::selection {
+    background-color: rgba($info, .3);
+}
+
 .arrow-link {
     transition : $transition-base;
     font-family: 'Poppins', sans-serif;
