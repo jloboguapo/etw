@@ -64,6 +64,10 @@
 
         .col-xl-8 {
             padding-right: 0;
+
+            @include media-breakpoint-down(lg) {
+                padding-right: 15px;
+            }
         }
 
         @include media-breakpoint-down(lg) {
@@ -74,6 +78,16 @@
             li {
                 &:not(:last-child) {
                     margin-right: 1.25rem;
+                }
+
+                @include media-breakpoint-down(xs) {
+                    span {
+                        display: none;
+                    }
+
+                    &.global {
+                        display: none;
+                    }
                 }
             }
 
@@ -90,7 +104,7 @@
 
                         &:first-child {
                             width        : 100%;
-                            margin-bottom: 0.25rem;
+                            margin: 0 auto .25rem;
                         }
                     }
                 }
