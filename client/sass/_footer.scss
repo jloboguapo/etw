@@ -1,228 +1,114 @@
-.etw-footer-ultimate-container {
-  height: fit-content;
-  .etw-footer-main-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 112px 0 20px;
+.footer-main-container {
+    padding-top   : 7.5rem;
+    padding-bottom: 1.875rem;
 
-    @media only screen and (max-width: $phone) {
-      margin: 0 auto;
-      padding: 80px 0 0;
+    @include media-breakpoint-down(md) {
+        padding-top: 1.875rem;
     }
 
-    .etw-footer-top-container {
-      @include flex(row);
-      margin-bottom: 40px;
-      padding-bottom: 56px;
-      border-bottom: 1.5px solid $grey;
+    .footer-top-container {
+        padding-bottom: 3.75rem;
+        margin-bottom : 3.75rem;
+        border-bottom : 0.125rem solid $fog;
 
-      @media only screen and (max-width: 985px) {
-        @include flex;
-        padding-bottom: 26px;
-      }
-
-      .etw-company-description-container {
-        @include flex;
-
-        @media only screen and (max-width: 985px) {
-          margin-bottom: 32px;
-        }
-
-        .etw-logo-dark-on-transparent {
-          width: 70px;
-        }
-
-        p,
-        a {
-          @include light-roboto;
-          font-size: 12px;
-          line-height: 1.5;
-          margin-bottom: 0;
-          color: #777777;
-          width: 80%;
-        }
-
-        a {
-          color: rgb(85, 82, 82);
-        }
-      }
-
-      .etw-footer-input-container {
-        @include flex;
-
-        @media only screen and (max-width: 985px) {
-          margin-bottom: inherit;
-        }
-
-        p {
-          @include light-roboto;
-          font-size: 18px;
-          letter-spacing: 0.3;
-          line-height: 1.5;
-          width: 85%;
-          margin: 0;
-          color: #777777;
-        }
-
-        .etw-subscribe-container {
-          margin-top: 8px;
-
-          @media only screen and (max-width: 985px) {
-            @include flex;
-
-            .etw-input {
-              margin-right: 0;
+        .company-description-container {
+            .logo {
+                margin-bottom: 0.625rem;
+                height       : 1.875rem;
+                width        : auto;
             }
 
-            .etw-webinar-button {
-              width: 100%;
-              margin: 16px auto 0;
-            }
-          }
-        }
-      }
-    }
-
-    .etw-footer-links-container {
-      @include flex(row);
-      padding-bottom: 56px;
-      border-bottom: 1.5px solid $grey;
-
-      @media only screen and (max-width: $phone) {
-        @include flex;
-        padding-bottom: 28px;
-      }
-
-      .footer-link-wraps {
-        @include flex(row);
-        flex: 1;
-
-        @media only screen and (max-width: $tablet) {
-          @include flex;
-
-          .footer-link-wrap-2 {
-            margin-top: 32px;
-          }
-        }
-      }
-
-      .etw-footer-columns {
-        @include flex;
-        flex: 1;
-
-        @media only screen and (max-width: $phone) {
-          margin-bottom: 32.875px;
-        }
-
-        h4,
-        h5 {
-          font-family: $poppins;
-          margin-bottom: 10px;
-        }
-
-        h5 {
-          margin-top: 32px;
-          letter-spacing: 0.4;
-        }
-
-        p,
-        a {
-          @include light-roboto;
-          font-size: 13px;
-          line-height: 1.8;
-          letter-spacing: 0.4;
-          width: 95%;
-          margin: 0;
-          color: #777777;
-        }
-
-        @media only screen and (max-width: $tablet) {
-          width: 94%;
-        }
-      }
-    }
-    .etw-footer-baseline-container {
-      @include flex(row);
-      margin-top: 14px;
-
-      @media only screen and (max-width: $tablet) {
-        @include flex;
-      }
-
-      .etw-footer-baseline-proprietary {
-        @include flex(row);
-        flex: 6.86;
-        justify-content: space-between;
-
-        p {
-          font-family: $roboto;
-          font-size: 13px;
-          line-height: 1.6;
-          letter-spacing: 0.5;
-          margin-bottom: 0;
-          color: #777777;
-        }
-
-        @media only screen and (max-width: 1264px) {
-          justify-content: normal;
-
-          p {
-            margin: 13px 22px 0 0;
-          }
-
-          .etw-footer-rights {
-            display: none;
-          }
-
-          .etw-global-privacy {
-            display: none;
-          }
-        }
-
-        @media only screen and (max-width: $tablet) {
-          @include flex(row);
-          margin: 32px 0 4px;
-          justify-content: center;
-
-          p {
-            margin: 13px 6px 0;
-          }
-        }
-
-        @media only screen and (max-width: $phone) {
-          @include flex;
-          align-items: center;
-
-          .base-footer-wrap {
-            @include flex(row);
             p {
-              margin: 13px 6px 0;
+                font-size    : 0.8125rem;
+                padding-right: 5rem;
+                margin-bottom: 0;
+
+                @include media-breakpoint-down(md) {
+                    padding-right: 0;
+                    margin-bottom: 1.875rem;
+                }
             }
-          }
-        }
-      }
-
-      .etw-footer-baseline-social {
-        @include flex(row);
-        flex: 3.58;
-        justify-content: flex-end;
-        margin-top: 10px;
-
-        @media only screen and (max-width: $tablet) {
-          @include flex(row);
-          margin: 8px auto 24px;
-          justify-content: center;
-
-          a {
-            margin: 6px 2px;
-          }
         }
 
-        .social-media-icons {
-          height: 20px;
-          width: 36px;
+        .footer-input-container {
+            p.small {
+                margin-bottom: 0;
+            }
+
+            .subscribe-container {
+                .subscribe-input {
+                    flex: 1;
+                }
+            }
         }
-      }
     }
-  }
+
+    .footer-links-container {
+        padding-bottom: 3.75rem;
+        margin-bottom : 3.75rem;
+        border-bottom : 0.125rem solid $fog;
+
+        h5 {
+            margin-top: 2.5rem;
+        }
+
+        ul {
+            margin     : 0;
+            font-size  : 0.9375rem;
+            line-height: 1.7;
+        }
+    }
+
+    .footer-baseline-container {
+        font-size: 0.9375rem;
+
+        .col-xl-8 {
+            padding-right: 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-right: 1.25rem;
+                }
+            }
+
+            &:not(.footer-baseline-social) {
+                li {
+                    @include media-breakpoint-down(lg) {
+                        margin-right: 0.625rem;
+                        margin-left : 0.625rem;
+
+                        &:not(:last-child) {
+                            margin-right: 0.625rem;
+                            margin-left : 0.625rem;
+                        }
+
+                        &:first-child {
+                            width        : 100%;
+                            margin-bottom: 0.25rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-baseline-social {
+            text-align: right;
+
+            @include media-breakpoint-down(lg) {
+                text-align: center;
+            }
+
+            a {
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
 }

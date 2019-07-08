@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from './Button';
+import Button from 'react-bootstrap/Button';
 
 const ReadyWinForm = props => {
   const [value, setValue] = useState('');
@@ -10,32 +10,45 @@ const ReadyWinForm = props => {
   };
 
   return (
-    <form className="etw-subscribe-container" onSubmit={handleSubmit}>
-      <input
-        className="etw-input"
-        value={value}
-        onChange={e => setValue(e.target.value)}
-        placeholder="Name"
-      />
-      <input
-        className="etw-input"
-        value={value}
-        onChange={e => setValue(e.target.value)}
-        placeholder="Organization name"
-      />
-      <input
-        className="etw-input"
-        value={value}
-        onChange={e => setValue(e.target.value)}
-        placeholder="Email"
-      />
-      <input
-        className="etw-input"
-        value={value}
-        onChange={e => setValue(e.target.value)}
-        placeholder="Role of title"
-      />
-      <Button content="Request information" />
+    <form className="etw-subscribe-container mx-lg-10" onSubmit={handleSubmit}>
+        <div className="form-group">
+            <input
+              className="form-control form-control-lg"
+              value={value}
+              onChange={e => setValue(e.target.value)}
+              placeholder="Name"
+            />
+        </div>
+
+        <div className="form-group">
+            <input
+              className="form-control form-control-lg"
+              value={value}
+              onChange={e => setValue(e.target.value)}
+              placeholder="Organization name"
+            />
+        </div>
+
+        <div className="form-group">
+            <input
+              className="form-control form-control-lg"
+              value={value}
+              onChange={e => setValue(e.target.value)}
+              placeholder="Email"
+            />
+        </div>
+
+        <div className="form-group">
+            <select class="custom-select custom-select-lg">
+                <option selected disabled value="">Role or title</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+        </div>
+
+        <Button variant="success">Request information</Button>
     </form>
   );
 };

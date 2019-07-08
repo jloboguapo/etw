@@ -8,7 +8,7 @@ const LeadershipResources = props => {
   }, []);
 
   return (
-    <div className="leadership-resources-container">
+    <div className="leadership-resources-container bg-white">
       <Articles />
       <ResourcesPage />
     </div>

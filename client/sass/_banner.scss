@@ -1,53 +1,48 @@
-#container > div > div.etw-header-ultimate-container > button {
-  display: none;
+#container > div > header > button {
+    display: none;
 }
 
-.leadership-resources-wrapper
-  > #container
-  > div
-  > div.etw-header-ultimate-container
-  > button {
-  @include flex(row);
-  justify-content: center;
-  font-family: $roboto;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.5;
-  width: 100%;
-  padding: 8px 20px;
-  background-color: $night;
-  border: none;
-  color: #ffffffdb;
-  outline: 0;
-
-  @media only screen and (max-width: 570px) {
-    align-items: center;
-  }
-
-  div {
-    @media only screen and (max-width: 570px) {
-      flex: 1;
-    }
-  }
-
-  a {
-    margin: -3px 0 0 8px;
+.leadership-resources-wrapper > #container > div > header > button {
+    @include flex(row);
+    justify-content : center;
+    font-size       : 11px;
+    font-weight     : 600;
+    letter-spacing  : 0.5;
+    width           : 100%;
+    padding         : 8px 20px;
+    background-color: $night;
+    border          : none;
+    color           : #ffffffdb;
+    outline         : 0;
 
     @media only screen and (max-width: 570px) {
-      flex: 1;
-      justify-content: center;
-      margin: 0;
+        align-items: center;
     }
 
-    .call-to-action {
-      color: $white;
-      font-size: 14px;
-      margin: 0;
+    div {
+        @media only screen and (max-width: 570px) {
+            flex: 1;
+        }
     }
 
-    .arrow-white {
-      height: 12px;
-      margin: 4px 0 0 4px;
+    .arrow-link {
+        margin: -3px 0 0 8px;
+
+        @media only screen and (max-width: 570px) {
+            flex           : 1;
+            justify-content: center;
+            margin         : 0;
+        }
+
+        .call-to-action {
+            color    : $white;
+            font-size: 14px;
+            margin   : 0;
+        }
+
+        .arrow-white {
+            width     : auto;
+            margin-top: -3px;
+        }
     }
-  }
 }

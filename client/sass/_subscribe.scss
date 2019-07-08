@@ -1,22 +1,26 @@
-.etw-subscribe-container {
-  @include flex(row);
-  justify-content: center;
+.subscribe-container {
+    .subscribe-input {
+        width    : 26rem;
+        max-width: 100%;
 
-  .etw-input {
-    font-family: $roboto;
-    font-size: 14px;
-    padding: 8px;
-    margin-right: 8px;
-    min-width: 360px;
-    border: 0;
-    outline-color: $forest;
-    outline-width: thin;
-    @media only screen and (max-width: $phone) {
-      min-width: auto;
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
     }
 
-    &::placeholder {
-      color: $grey;
+    .btn {
+        @include media-breakpoint-down(md) {
+            width     : 100%;
+            margin-top: 1.25rem;
+        }
     }
-  }
+
+    p.small {
+        flex       : 0 0 100%;
+        padding-top: 0.625rem;
+
+        a {
+            text-decoration: underline;
+        }
+    }
 }
