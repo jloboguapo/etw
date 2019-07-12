@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: ['./client/js/index.js'],
@@ -35,14 +36,16 @@ module.exports = {
       {
         test: /\.s?css$/,
         use: [
-          'style-loader',
+          'style-loader?sourceMap',
           {
-            loader: 'css-loader',
+            loader: MiniCssExtractPlugin.loader,
             options: {
+              hmr: process.env.NODE_ENV === 'development',
               sourceMap: true
             }
           },
-          'postcss-loader',
+          'css-loader?sourceMap',
+          'postcss-loader?sourceMap',
           'sass-loader?outputStyle=compressed&sourceMap'
         ]
       },
@@ -60,6 +63,10 @@ module.exports = {
       options: {
         postcss: [autoprefixer()]
       }
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     })
   ],
   watch: true
