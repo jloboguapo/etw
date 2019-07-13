@@ -112,3 +112,27 @@
         }
     }
 }
+
+/* Card deck */
+.card-deck {
+    flex-wrap: wrap;
+
+    .card {
+        flex         : 0 0 calc(50% - 30px);
+        margin-bottom: 2.5rem;
+
+        &.card-lg {
+            flex: 0 0 calc(100% - 30px);
+        }
+
+        &.testimonial-card {
+            .testimonial-quote {
+                border-left  : none;
+                padding-left : 0;
+                padding-right: 0;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+}

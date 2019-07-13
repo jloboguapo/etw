@@ -1,15 +1,77 @@
 .carousel {
-  .control-dots,
-  .carousel-status,
-  .thumbs-wrapper {
-    display: none;
-  }
+    position: relative;
 
-  .slider-wrapper.axis-horizontal .slider .slide {
-    background-color: transparent;
-
-    .legend {
-      display: none;
+    .carousel-status,
+    .control-dots,
+    .thumbs-wrapper {
+        display: none;
     }
-  }
+
+    .control-arrow {
+        position         : absolute !important;
+        z-index          : 99 !important;
+        top              : 50% !important;
+        -webkit-transform: translateY(-50%) !important;
+        transform        : translateY(-50%) !important;
+        height           : 2.75rem !important;
+        width            : 2.75rem !important;
+        border-radius    : 2.75rem !important;
+        border           : 1px solid #ddd !important;
+        font-size        : 0.875rem !important;
+        background-color : #fff !important;
+        padding          : 0 !important;
+        transition       : $transition-base;
+
+        &::before {
+            display: none !important;
+        }
+
+        &.control-disabled {
+            opacity: 0.6;
+        }
+    }
+
+    .slider-wrapper.axis-horizontal .slider .slide {
+        background-color: transparent;
+
+        .legend {
+            display: none;
+        }
+    }
+
+    .slide {
+        .card {
+            text-align  : left;
+            margin-left : 1rem;
+            margin-right: 1rem;
+
+            .card-img-bg {
+                height: 18rem;
+                flex  : 0 0 auto;
+            }
+
+            .card-body {
+                flex: 1;
+
+                .card-title {
+                    display           : -webkit-box;
+                    line-clamp        : 3;
+                    -webkit-line-clamp: 3;
+                    text-overflow     : ellipsis;
+                    -webkit-box-orient: vertical;
+                    overflow          : hidden;
+                }
+
+                .arrow-link {
+                    margin-top: auto;
+
+                    img {
+                        width         : 10px !important;
+                        vertical-align: unset !important;
+                    }
+                }
+            }
+        }
+    }
+
 }

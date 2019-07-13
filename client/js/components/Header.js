@@ -11,8 +11,8 @@ const Header = () => {
 
     return (
         <Container className="header">
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">
+            <Navbar expand="lg">
+                <Navbar.Brand href="/">
                      <img src="/etw-logo-dark-on-transparent.svg" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

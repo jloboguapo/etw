@@ -43,6 +43,7 @@ const Insights = props => {
                 />
               </Card.Body>
             </Card>
+            
             <Card className="insight-card">
               <div
                 className="card-img-bg"
@@ -65,9 +66,7 @@ const Insights = props => {
                 />
               </Card.Body>
             </Card>
-          </CardDeck>
 
-          <CardDeck>
             <Card className="insight-card card-lg">
               <div
                 className="card-img-bg"
@@ -90,9 +89,7 @@ const Insights = props => {
                 />
               </Card.Body>
             </Card>
-          </CardDeck>
 
-          <CardDeck>
             <Card className="insight-card">
               <div
                 className="card-img-bg"
@@ -129,10 +126,10 @@ const Insights = props => {
                   </blockquote>
                 </div>
                 <div className="testimonial-cta">
-                  <Button href="#" variant="primary" className="mb-3">
-                    JOIN our next webinar
+                  <Button href="#" variant="primary" className="mt-lg-5 mb-3">
+                    Join our next webinar
                   </Button>
-                  <p>
+                  <p className="px-lg-8">
                     Every Tuesday, Thursday, and Friday, designed for C-level
                     leaders like you.
                   </p>
@@ -141,7 +138,7 @@ const Insights = props => {
             </Card>
           </CardDeck>
 
-          <p className="text-center mt-9 mb-0">
+          <p className="text-center mb-0">
             <CallToAction
               linkUrl="/"
               linkName="More insights"

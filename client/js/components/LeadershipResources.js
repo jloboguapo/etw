@@ -1,16 +1,14 @@
 import React, { useEffect } from 'react';
-import Articles from './Articles';
-import ResourcesPage from './ResourcesPage';
+import Article from './Article';
 
 const LeadershipResources = props => {
   useEffect(() => {
-    document.body.className = 'leadership-resources-wrapper';
+    document.body.className = 'bg-white';
   }, []);
 
   return (
-    <div className="leadership-resources-container bg-white">
-      <Articles />
-      <ResourcesPage />
+    <div className="leadership-resources-container">
+      <Article />
     </div>
   );
 };
