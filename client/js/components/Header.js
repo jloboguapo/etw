@@ -24,7 +24,7 @@ const Header = () => {
     console.log(response);
 
     setLogo(response.includes.Asset[0].fields.file.url);
-    setHeaderLinks(response.items[0].fields.dropdownMenu);
+    setHeaderLinks(response.items[0].fields.headerObjects);
     setButton(response.items[0].fields.button);
   };
 
