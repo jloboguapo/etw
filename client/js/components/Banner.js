@@ -2,15 +2,15 @@ import React from 'react';
 import CallToAction from './CallToAction';
 
 const Banner = ({ content }) => (
-  <button type="banner" className="etw-leadership-banner">
-    <div>{content}</div>
+  <div class="banner">
+    <div class="banner-content">{content}</div>
     <CallToAction
       linkUrl="/"
-      linkName="rsvp now"
+      linkName="RSVP Now"
       arrowClassName="arrow-white"
       source="/arrow-white.svg"
     />
-  </button>
+  </div>
 );
 
 export default Banner;
