@@ -23,7 +23,7 @@ const Header = () => {
     });
 
     setLogo(response.includes.Asset[0].fields.file.url);
-    setHeaderLinks(response.items[0].fields.dropdownMenu);
+    setHeaderLinks(response.items[0].fields.headerObjects);
     setButton(response.items[0].fields.button);
   };
 
@@ -71,7 +71,7 @@ function save() {
         <Collapse id="basic-navbar-nav">
           <Nav>
             <NavDropdown title={headerLinks[0]} id="solutions-nav-dropdown">
-              <Item href="/performanceSolutions" className="dropdown-cap">
+              <Item href="/performancesolutions" className="dropdown-cap">
                 <img src="/winning-performance-icon.svg" />
                 <div className="dropdown-cap-text">
                   <h4>Performance Solutions</h4>
@@ -79,24 +79,24 @@ function save() {
                 </div>
               </Item>
               <DropdownHeader>By outcome</DropdownHeader>
-              <Item href="/performanceSolutions">Strengthen culture</Item>
-              <Item href="/performanceSolutions">Accelerate growth</Item>
+              <Item href="/performancesolutions">Strengthen culture</Item>
+              <Item href="/performancesolutions">Accelerate growth</Item>
               <DropdownHeader>By solution</DropdownHeader>
-              <Item href="/performanceSolutions">Leadership development</Item>
-              <Item href="/performanceSolutions">
+              <Item href="/performancesolutions">Leadership development</Item>
+              <Item href="/performancesolutions">
                 Goal definition and reporting
               </Item>
-              <Item href="/performanceSolutions">
+              <Item href="/performancesolutions">
                 Behavior and process design
               </Item>
-              <Item href="/performanceSolutions">Performance delivery</Item>
+              <Item href="/performancesolutions">Performance delivery</Item>
               <DropdownHeader>Dig deeper</DropdownHeader>
-              <Item href="/performanceSolutions">Why ETW</Item>
-              <Item href="/performanceSolutions">Clients</Item>
-              <Item href="/performanceSolutions">Pricing</Item>
+              <Item href="/performancesolutions">Why ETW</Item>
+              <Item href="/performancesolutions">Clients</Item>
+              <Item href="/performancesolutions">Pricing</Item>
             </NavDropdown>
             <NavDropdown title={headerLinks[1]} id="leadership-nav-dropdown">
-              <Item href="/leadershipResources" className="dropdown-cap">
+              <Item href="/leadershipresources" className="dropdown-cap">
                 <img src="/winning-performance-icon.svg" />
                 <div className="dropdown-cap-text">
                   <h4>Leadership resources</h4>
@@ -104,28 +104,28 @@ function save() {
                 </div>
               </Item>
               <DropdownHeader>Popular</DropdownHeader>
-              <Item href="/leadershipResources">
+              <Item href="/leadershipresources">
                 Intentional leadership score
                 <Badge pill variant="info" className="ml-2">
                   5 Min
                 </Badge>
               </Item>
-              <Item href="/leadershipResources">
+              <Item href="/leadershipresources">
                 What is the most important number?
               </Item>
-              <Item href="/leadershipResources">
+              <Item href="/leadershipresources">
                 Best habits to strengthen culture
               </Item>
-              <Item href="/leadershipResources">
+              <Item href="/leadershipresources">
                 2019 state of international leadership
               </Item>
-              <Item href="/leadershipResources">About the ETW approach</Item>
+              <Item href="/leadershipresources">About the ETW approach</Item>
               <DropdownHeader>Learn more</DropdownHeader>
-              <Item href="/leadershipResources">Articles</Item>
-              <Item href="/leadershipResources">White papers</Item>
-              <Item href="/leadershipResources">Fact sheets</Item>
-              <Item href="/leadershipResources">Checklists</Item>
-              <Item href="/leadershipResources">Case studies</Item>
+              <Item href="/leadershipresources">Articles</Item>
+              <Item href="/leadershipresources">White papers</Item>
+              <Item href="/leadershipresources">Fact sheets</Item>
+              <Item href="/leadershipresources">Checklists</Item>
+              <Item href="/leadershipresources">Case studies</Item>
             </NavDropdown>
             <NavDropdown title={headerLinks[2]} id="more-nav-dropdown">
               <Item className="dropdown-cap">

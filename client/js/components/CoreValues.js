@@ -18,7 +18,7 @@ const CoreValues = () => {
 			</Col>
 
 			<Col>
-				<Card as="a" href="#">
+				<Card as="a" href="/performancesolutions">
 					<Card.Img src="/etw-strengthen-culture.svg"/>
 					<Card.Body>
 						<h3>Strengthen culture</h3>
@@ -28,7 +28,7 @@ const CoreValues = () => {
 						<CallToActionNoLink content="Put people first" arrowClassName="arrow-svg" source="arrow.svg"/>
 					</Card.Body>
 				</Card>
-				<Card as="a" href="#">
+				<Card as="a" href="leadershipresources">
 					<Card.Img src="/etw-accelerate-growth.svg"/>
 					<Card.Body>
 						<h3>Accelerate growth</h3>
@@ -41,67 +41,6 @@ const CoreValues = () => {
 			</Col>
 		</Row>
 	</Container> );
-
-
-    // <div className="hero py-8 py-lg-11">
-    //   <div className="etw-core-values-container">
-    //     <div className="etw-core-values-left-container">
-    //       <h1>Only the intentional become exceptional</h1>
-    //       <p>
-    //         ETW is the Intentional Leadership Platform that high-performance
-    //         organizations trust to strengthen culture and accelerate growth.
-    //       </p>
-    //       <a className="button-link" href="/">
-    //         <Button content="JOIN our next WEBINAR" />
-    //       </a>
-    //     </div>
-    //     <div className="etw-core-values-right-container">
-    //       <div className="etw-core-values-containers">
-    //         <div className="etw-image">
-    //           <img
-    //             className="etw-strengthen-culture-icon"
-    //             src="/etw-strengthen-culture.svg"
-    //           />
-    //         </div>
-    //         <div className="content-container">
-    //           <h4>Strengthen culture</h4>
-    //           <p>
-    //             Develop a value-creation mindset and skill set within all your
-    //             employees.
-    //           </p>
-    //           <CallToAction
-    //             linkUrl="/performanceSolutions"
-    //             linkName="put people first"
-    //             arrowClassName="arrow"
-    //             source="arrow.svg"
-    //           />
-    //         </div>
-    //       </div>
-    //       <div className="etw-core-values-containers">
-    //         <div className="etw-image">
-    //           <img
-    //             className="etw-accelerate-growth-icon"
-    //             src="/etw-accelerate-growth.svg"
-    //           />
-    //         </div>
-    //         <div className="content-container">
-    //           <h4>Accelerate growth</h4>
-    //           <p>
-    //             Clarify and accomplish what's most important across your
-    //             organization.
-    //           </p>
-    //           <CallToAction
-    //             linkUrl="/leadershipResources"
-    //             linkName="Keep performance-focused"
-    //             arrowClassName="arrow"
-    //             source="arrow.svg"
-    //           />
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-  // );
 };
 
 export default CoreValues;
