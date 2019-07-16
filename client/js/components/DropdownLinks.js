@@ -31,8 +31,8 @@ const DropdownLinks = ({ link }) => {
 			<NavDropdown.Item href="/performanceSolutions" className="dropdown-cap">
 				<img src="/winning-performance-icon.svg" />
 				<div className="dropdown-cap-text">
-					<h4>Performance Solutions</h4>
-					<p>Face your challenges head-on</p>
+					<h4>{ link.fields.title }</h4>
+					<p>{ link.fields.subtitle }</p>
 				</div>
 			</NavDropdown.Item>
 			{
