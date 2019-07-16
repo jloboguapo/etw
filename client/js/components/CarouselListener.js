@@ -34,8 +34,8 @@ const CarouselListener = () => {
                 <Badge pill variant="info">Category</Badge>
             </div>
             <Card.Body>
-                <Card.Title as="a" href="#">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                <Card.Title>
+                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
                 </Card.Title>
                 <CallToAction
                     linkUrl="/"
