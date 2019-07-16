@@ -23,7 +23,7 @@ const DropdownLinks = ({ link }) => {
 
   return (
     <NavDropdown title={link.navTitle} id={`${link.navTitle}NavDropdown`}>
-      <Item href="/performanceSolutions" className="dropdown-cap">
+      <Item href="/performancesolutions" className="dropdown-cap">
         <img src="/winning-performance-icon.svg" />
         <div className="dropdown-cap-text">
           <h4>Performance Solutions</h4>
