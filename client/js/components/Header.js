@@ -21,7 +21,6 @@ const Header = () => {
       include: 10,
       content_type: 'heading'
     });
-    console.log(response);
 
     setLogo(response.includes.Asset[0].fields.file.url);
     setHeaderLinks(response.items[0].fields.dropdownMenu);
@@ -31,12 +30,6 @@ const Header = () => {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(headerLinks);
-  //getEntry('7b09buh97lZKb2WHgOSQEL');
-
-  const toDropdownLinks = (link, key) => {
-    return <DropdownLinks key={ key } link={ link } />
-  }
 
   return (
     <Container className="header">
@@ -47,9 +40,13 @@ const Header = () => {
         <Toggle aria-controls="basic-navbar-nav" />
         <Collapse id="basic-navbar-nav">
           <Nav>
-            {headerLinks.map(link => (
-              <DropdownLinks key={link} link={link} />
-            ))}
+            {
+            	headerLinks.map(link => {
+	            	return (
+		              <DropdownLinks key={ link.sys.id } link={ link } />
+		            )
+	            })
+            }
 
             <Button variant="primary" className="navbar-button" href="/">
               {button}
