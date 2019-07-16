@@ -2,8 +2,8 @@ import React from 'react';
 import CallToAction from './CallToAction';
 
 const Banner = ({ content }) => (
-  <div class="banner">
-    <div class="banner-content">{content}</div>
+  <div className="banner">
+    <div className="banner-content">{content}</div>
     <CallToAction
       linkUrl="/"
       linkName="RSVP Now"

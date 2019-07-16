@@ -16,14 +16,14 @@ const Routes = () => (
         />
         <Route
           exact
-          path="/performanceSolutions"
+          path="/performancesolutions"
           render={routeProps => (
             <PerformanceSolutions history={routeProps.history} />
           )}
         />
         <Route
           exact
-          path="/leadershipResources"
+          path="/leadershipresources"
           render={routeProps => (
             <LeadershipResources history={routeProps.history} />
           )}

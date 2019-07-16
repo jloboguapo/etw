@@ -10,9 +10,10 @@ const CarouselListener = () => {
     !window.matchMedia('(max-width: 768px)').matches
   );
 
+  const resizeEvent = () =>
+    setCenterMode(!window.matchMedia('(max-width: 768px)').matches);
+
   useEffect(() => {
-    const resizeEvent = () =>
-      setCenterMode(!window.matchMedia('(max-width: 768px)').matches);
     window.addEventListener('resize', resizeEvent);
 
     return () => {
@@ -63,43 +64,51 @@ const CarouselListener = () => {
                 />
             </Card.Body>
         </Card>
+      <Card className="insight-card">
+        <div
+          className="card-img-bg"
+          style={{ backgroundImage: `url("/tower.svg")` }}
+        >
+          <Badge pill variant="info">
+            Category
+          </Badge>
+        </div>
+        <Card.Body>
+          <Card.Title>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            pretium mauris nec aliquam porttitor.
+          </Card.Title>
+          <CallToAction
+            linkUrl="/"
+            linkName="call to action"
+            arrowClassName="arrow-svg"
+            source="arrow.svg"
+          />
+        </Card.Body>
+      </Card>
 
-        <Card className="insight-card">
-            <div className="card-img-bg" style={{ backgroundImage: `url("/typing-hands.svg")` }}>
-                <Badge pill variant="info">Category</Badge>
-            </div>
-            <Card.Body>
-                <Card.Title>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus pretium mauris nec aliquam porttitor.
-                </Card.Title>
-                <CallToAction
-                    linkUrl="/"
-                    linkName="call to action"
-                    arrowClassName="arrow-svg"
-                    source="arrow.svg"
-                />
-            </Card.Body>
-        </Card>
-
-        <Card className="insight-card">
-            <div className="card-img-bg" style={{ backgroundImage: `url("/laptop-angle.svg")` }}>
-                <Badge pill variant="info">Category</Badge>
-            </div>
-            <Card.Body>
-                <Card.Title>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus pretium mauris nec aliquam porttitor.
-                </Card.Title>
-                <CallToAction
-                    linkUrl="/"
-                    linkName="call to action"
-                    arrowClassName="arrow-svg"
-                    source="arrow.svg"
-                />
-            </Card.Body>
-        </Card>
-
+      <Card className="insight-card">
+        <div
+          className="card-img-bg"
+          style={{ backgroundImage: `url("/typing-hands.svg")` }}
+        >
+          <Badge pill variant="info">
+            Category
+          </Badge>
+        </div>
+        <Card.Body>
+          <Card.Title>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            pretium mauris nec aliquam porttitor.
+          </Card.Title>
+          <CallToAction
+            linkUrl="/"
+            linkName="call to action"
+            arrowClassName="arrow-svg"
+            source="arrow.svg"
+          />
+        </Card.Body>
+      </Card>
   </Carousel>
   );
 };
