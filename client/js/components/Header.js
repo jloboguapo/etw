@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import { Header as DropdownHeader } from 'react-bootstrap/Dropdown';
-import Navbar, { Brand, Toggle, Collapse } from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown, { Item } from 'react-bootstrap/NavDropdown';
-import Badge from 'react-bootstrap/Badge';
+import Navbar, { Brand, Toggle, Collapse } from 'react-bootstrap/Navbar';
 import DropdownLinks from './DropdownLinks';
 import { useContentful } from '../utils/customHooks';
 
@@ -40,16 +37,11 @@ const Header = () => {
         <Toggle aria-controls="basic-navbar-nav" />
         <Collapse id="basic-navbar-nav">
           <Nav>
-            {
-            	headerLinks.map(link => {
-	            	return (
-		              <DropdownLinks key={ link.sys.id } link={ link } />
-		            )
-	            })
-            }
-
+            {headerLinks.map(link => {
+              return <DropdownLinks key={link.sys.id} link={link} />;
+            })}
             <Button variant="primary" className="navbar-button" href="/">
-              { button }
+              {button}
             </Button>
           </Nav>
         </Collapse>
