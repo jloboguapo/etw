@@ -4,7 +4,7 @@ import CallToActionNoLink from './CallToActionNoLink';
 import Pill from './Pill';
 
 const CtaCardLarge = ({ url }) => (
-  <Card className="insight-card card-lg">
+  <Card className="insight-card card-lg" as="a" href="/">
     <div className="card-img-bg" style={{ backgroundImage: `url("${url}")` }}>
       <Pill content="category" />
     </div>
