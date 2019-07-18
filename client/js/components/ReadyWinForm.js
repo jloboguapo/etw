@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import useFormHandler from './FormHandler';
+import ButtonUp from './Button';
 
 const ReadyWinForm = props => {
   const { inputs, handleInputChange, handleSubmit } = useFormHandler();
@@ -51,9 +51,8 @@ const ReadyWinForm = props => {
         </select>
       </div>
 
-      <Button type="submit" variant="success">
-        Request information
-      </Button>
+      <ButtonUp type="submit" variant="success"
+        content='Request information' />
     </form>
   );
 };

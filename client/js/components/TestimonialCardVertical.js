@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import ButtonUp from './Button';
 
 const TestimonialCardVertical = () => (
   <Card className="testimonial-card">
@@ -17,9 +17,12 @@ const TestimonialCardVertical = () => (
         </blockquote>
       </div>
       <div className="testimonial-cta">
-        <Button href="#" variant="primary" className="mt-lg-5 mb-3">
-          Join our next webinar
-        </Button>
+        <ButtonUp
+          href="#"
+          variant="primary"
+          className="mt-lg-5 mb-3"
+          content="Join our next webinar"
+        />
         <p className="px-lg-8">
           Every Tuesday, Thursday, and Friday, designed for C-level leaders like
           you.

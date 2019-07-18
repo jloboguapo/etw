@@ -1,17 +1,20 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import ButtonUp from './Button';
 
 const TestimonialCardHorizontal = () => (
   <Card className="testimonial-card">
     <Card.Body>
       <Row>
         <Col lg="5" className="testimonial-cta mb-4 mb-lg-0">
-          <Button href="#" variant="primary" className="mb-3">
-            Join our next webinar
-          </Button>
+          <ButtonUp
+            href="#"
+            variant="primary"
+            className="mb-3"
+            content="Join our next webinar"
+          />
           <p>
             Every Tuesday, Thursday, and Friday, designed for C-level leaders
             like you.

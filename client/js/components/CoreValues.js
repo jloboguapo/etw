@@ -1,9 +1,9 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CoreValuesCard from './CoreValuesCard';
+import ButtonUp from './Button';
 
 const CoreValues = () => {
   return (
@@ -15,9 +15,12 @@ const CoreValues = () => {
             ETW is the Intentional Leadership Platform that high-performance
             organizations trust to strengthen culture and accelerate growth.
           </p>
-          <Button variant="primary" className="button-link" href="/">
-            Join our next webinar
-          </Button>
+          <ButtonUp
+            variant="primary"
+            className="button-link"
+            href="/"
+            content="Join our next webinar"
+          />
         </Col>
 
         <Col>

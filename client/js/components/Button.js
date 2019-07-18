@@ -1,9 +1,10 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
-const Button = ({ content }) => (
-  <button type="button" className="etw-webinar-button">
+const ButtonUp = ({ className, href, type, variant, content }) => (
+  <Button className={className} href={href} type={type} variant={variant}>
     {content}
-  </button>
+  </Button>
 );
 
-export default Button;
+export default ButtonUp;

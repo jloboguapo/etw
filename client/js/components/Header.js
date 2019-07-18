@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar, { Brand, Toggle, Collapse } from 'react-bootstrap/Navbar';
 import DropdownLinks from './DropdownLinks';
 import { useContentful } from '../utils/customHooks';
+import ButtonUp from './Button';
 
 const Header = () => {
   const [headerLinks, setHeaderLinks] = useState([]);
@@ -40,9 +40,12 @@ const Header = () => {
             {headerLinks.map(link => {
               return <DropdownLinks key={link.sys.id} link={link} />;
             })}
-            <Button variant="primary" className="navbar-button" href="/">
-              {button}
-            </Button>
+            <ButtonUp
+              variant="primary"
+              className="navbar-button"
+              content={button}
+              href="/"
+            />
           </Nav>
         </Collapse>
       </Navbar>
