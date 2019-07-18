@@ -1,10 +1,9 @@
 import React from 'react';
 import CallToActionNoLink from './CallToActionNoLink';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+import TestimonialCardHorizontal from './TestimonialCardHorizontal';
 
 const Solutions = () => {
   return (<div className="bg-white py-8 py-lg-11">
@@ -51,22 +50,7 @@ const Solutions = () => {
 				</Col>
 			</Row>
 
-			<Card className="testimonial-card">
-				<Card.Body>
-					<Row>
-						<Col lg="5" className="testimonial-cta mb-4 mb-lg-0">
-							<Button href="#" variant="primary" className="mb-3">Join our next webinar</Button>
-							<p>Every Tuesday, Thursday, and Friday, designed for C-level leaders like you.</p>
-						</Col>
-						<Col className="testimonial-quote">
-							<blockquote>
-								<p>ETW has made us far more productive because now we focus on the key things that drive results for our company.</p>
-								<footer className="blockquote-footer">Joe Grygiel, Air EVAC Lifeteam</footer>
-							</blockquote>
-						</Col>
-					</Row>
-				</Card.Body>
-			</Card>
+			<TestimonialCardHorizontal />
 		</Container>
 	</div> );
 };

@@ -39,7 +39,7 @@ const DropdownLinks = ({ link }) => {
           <p>{link.fields.subtitle}</p>
         </div>
       </NavDropdown.Item>
-      {link.fields.menu && link.fields.menu.map(toHeaderGroup)}
+      {link.fields.menu.map(toHeaderGroup)}
     </NavDropdown>
   );
 };

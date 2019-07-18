@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import CallToAction from './CallToAction';
-import Card from 'react-bootstrap/Card';
-import Badge from 'react-bootstrap/Badge';
+import CtaCardCarousel from './CtaCardCarousel';
 
 const CarouselListener = () => {
   const [centerMode, setCenterMode] = useState(
@@ -30,86 +28,12 @@ const CarouselListener = () => {
       selectedItem={1}
       showThumbs={false}
     >
-        <Card className="insight-card">
-            <div className="card-img-bg" style={{ backgroundImage: `url("/phone-on-desk.svg")` }}>
-                <Badge pill variant="info">Category</Badge>
-            </div>
-            <Card.Body>
-                <Card.Title>
-                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                </Card.Title>
-                <CallToAction
-                    linkUrl="/"
-                    linkName="call to action"
-                    arrowClassName="arrow-svg"
-                    source="arrow.svg"
-                />
-            </Card.Body>
-        </Card>
-
-        <Card className="insight-card">
-            <div className="card-img-bg" style={{ backgroundImage: `url("/tower.svg")` }}>
-                <Badge pill variant="info">Category</Badge>
-            </div>
-            <Card.Body>
-                <Card.Title>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus pretium mauris nec aliquam porttitor.
-                </Card.Title>
-                <CallToAction
-                    linkUrl="/"
-                    linkName="call to action"
-                    arrowClassName="arrow-svg"
-                    source="arrow.svg"
-                />
-            </Card.Body>
-        </Card>
-      <Card className="insight-card">
-        <div
-          className="card-img-bg"
-          style={{ backgroundImage: `url("/tower.svg")` }}
-        >
-          <Badge pill variant="info">
-            Category
-          </Badge>
-        </div>
-        <Card.Body>
-          <Card.Title>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            pretium mauris nec aliquam porttitor.
-          </Card.Title>
-          <CallToAction
-            linkUrl="/"
-            linkName="call to action"
-            arrowClassName="arrow-svg"
-            source="arrow.svg"
-          />
-        </Card.Body>
-      </Card>
-
-      <Card className="insight-card">
-        <div
-          className="card-img-bg"
-          style={{ backgroundImage: `url("/typing-hands.svg")` }}
-        >
-          <Badge pill variant="info">
-            Category
-          </Badge>
-        </div>
-        <Card.Body>
-          <Card.Title>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            pretium mauris nec aliquam porttitor.
-          </Card.Title>
-          <CallToAction
-            linkUrl="/"
-            linkName="call to action"
-            arrowClassName="arrow-svg"
-            source="arrow.svg"
-          />
-        </Card.Body>
-      </Card>
-  </Carousel>
+      <CtaCardCarousel url="/camera-desert.svg" />
+      <CtaCardCarousel url="/photo-mountain.svg" />
+      <CtaCardCarousel url="/modern-desk.svg" />
+      <CtaCardCarousel url="/horse-race.jpg" />
+      <CtaCardCarousel url="/spacecraft.jpg" />
+    </Carousel>
   );
 };
 
