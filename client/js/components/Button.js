@@ -1,8 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-const ButtonUp = ({ className, href, type, variant, content }) => (
-  <Button className={className} href={href} type={type} variant={variant}>
+const ButtonUp = ({ className, href, type, variant, style, content }) => (
+  <Button className={className} href={href} type={type} variant={variant} style={style}>
     {content}
   </Button>
 );

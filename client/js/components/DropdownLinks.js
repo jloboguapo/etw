@@ -3,8 +3,9 @@ import Badge from 'react-bootstrap/Badge';
 import PropTypes from 'prop-types';
 import Dropdown from 'react-bootstrap/Dropdown';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import ButtonUp from './Button';
 
-const DropdownLinks = ({ link }) => {
+const DropdownLinks = ({ link, button }) => {
   const toHeaderGroup = group => {
     return (
       <span key={group.fields.title}>
@@ -17,10 +18,12 @@ const DropdownLinks = ({ link }) => {
   const toItem = item => (
     <NavDropdown.Item
       href={item.fields.href}
-      key={item.fields.title}
+      key={item.fields.title || item.fields.text}
       className={item.fields.className ? item.fields.className : ''}
     >
-      {item.fields.title}
+      {item.fields.title || (
+        <ButtonUp content={item.fields.text} style={{ width: '100%' }} />
+      )}
       <Badge pill variant="info" className="ml-2">
         {item.fields.badge}
       </Badge>

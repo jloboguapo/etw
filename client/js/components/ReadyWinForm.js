@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import useFormHandler from './FormHandler';
+import React from 'react';
+import useFormHandler from '../utils/customHooks';
 import ButtonUp from './Button';
 
 const ReadyWinForm = props => {
-  const { inputs, handleInputChange, handleSubmit } = useFormHandler();
+  const { handleInputChange, handleSubmit, inputs } = useFormHandler();
 
   return (
     <form className="etw-subscribe-container mx-lg-10" onSubmit={handleSubmit}>
@@ -51,8 +51,7 @@ const ReadyWinForm = props => {
         </select>
       </div>
 
-      <ButtonUp type="submit" variant="success"
-        content='Request information' />
+      <ButtonUp type="submit" variant="success" content="Request information" />
     </form>
   );
 };

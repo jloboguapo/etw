@@ -16,12 +16,12 @@ const Header = () => {
   const fetchData = async () => {
     const response = await client.getEntries({
       include: 10,
-      content_type: 'heading'
+      content_type: 'header'
     });
 
     setLogo(response.includes.Asset[0].fields.file.url);
     setHeaderLinks(response.items[0].fields.dropdownMenu);
-    setButton(response.items[0].fields.button);
+    setButton(response.items[0].fields.button.fields);
   };
 
   useEffect(() => {
@@ -38,13 +38,15 @@ const Header = () => {
         <Collapse id="basic-navbar-nav">
           <Nav>
             {headerLinks.map(link => {
-              return <DropdownLinks key={link.sys.id} link={link} />;
+              return (
+                <DropdownLinks key={link.sys.id} link={link} button={button} />
+              );
             })}
             <ButtonUp
               variant="primary"
               className="navbar-button"
-              content={button}
-              href="/"
+              content={button.text}
+              href={button.href}
             />
           </Nav>
         </Collapse>
