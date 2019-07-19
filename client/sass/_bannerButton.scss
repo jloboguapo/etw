@@ -1,4 +1,4 @@
-.banner {
+.banner-button {
     display         : flex;
     align-items     : center;
     justify-content : center;
@@ -6,7 +6,7 @@
     padding         : 0.5rem;
     background-color: $night;
 
-    .banner-content {
+    .banner-button-content {
         font-family: 'Roboto', sans-serif;
         font-size  : 0.8125rem;
         color      : rgba($white, .75);

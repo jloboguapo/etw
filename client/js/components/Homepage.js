@@ -1,6 +1,6 @@
 import React from 'react';
 import MainLayout from './MainLayout';
-import LogosBanner from './LogosBanner';
+import Banner from './Banner';
 import Solutions from './Solutions';
 import Insights from './Insights';
 import Header from './Header';
@@ -11,7 +11,7 @@ const HomePage = () => {
     <>
       <Header />
       <MainLayout />
-      <LogosBanner />
+      <Banner />
       <Solutions />
       <Insights />
       <Footer />

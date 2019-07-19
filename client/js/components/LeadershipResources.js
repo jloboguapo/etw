@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Article from './Article';
-import Banner from './Banner';
+import BannerButton from './BannerButton';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -11,7 +11,7 @@ const LeadershipResources = props => {
 
   return (
     <div className="leadership-resources-container">
-      <Banner content="Join ETW at our next intentional leadership network event, September 5, 2019." />
+      <BannerButton content="Join ETW at our next intentional leadership network event, September 5, 2019." />
       <Header />
       <Article />
       <Footer />
