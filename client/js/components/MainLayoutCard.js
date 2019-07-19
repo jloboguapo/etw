@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import CallToActionNoLink from './CallToActionNoLink';
 
-const CoreValuesCard = ({ href, src, title, subtitle, ctaContent }) => (
+const MainLayoutCard = ({ href, src, title, subtitle, ctaContent }) => (
   <Card as="a" href={href}>
     <Card.Img src={src} />
     <Card.Body>
@@ -17,4 +17,4 @@ const CoreValuesCard = ({ href, src, title, subtitle, ctaContent }) => (
   </Card>
 );
 
-export default CoreValuesCard;
+export default MainLayoutCard;

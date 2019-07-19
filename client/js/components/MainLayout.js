@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CoreValuesCard from './CoreValuesCard';
+import MainLayoutCard from './MainLayoutCard';
 import ButtonUp from './Button';
 import { useContentful } from '../utils/customHooks';
 
-const CoreValues = () => {
+const MainLayout = () => {
   const [title, setTitle] = useState('');
   const [subtitle, setSubtitle] = useState('');
   const [button, setButton] = useState('');
@@ -47,7 +47,7 @@ const CoreValues = () => {
         <Col>
           {cards.map(card => {
             return (
-              <CoreValuesCard
+              <MainLayoutCard
                 key={card.sys.id}
                 href={card.fields.href}
                 src={card.fields.icon.fields.file.url}
@@ -63,4 +63,4 @@ const CoreValues = () => {
   );
 };
 
-export default CoreValues;
+export default MainLayout;

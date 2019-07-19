@@ -1,5 +1,5 @@
 import React from 'react';
-import CoreValues from './CoreValues';
+import MainLayout from './MainLayout';
 import LogosBanner from './LogosBanner';
 import Solutions from './Solutions';
 import Insights from './Insights';
@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <CoreValues />
+      <MainLayout />
       <LogosBanner />
       <Solutions />
       <Insights />
