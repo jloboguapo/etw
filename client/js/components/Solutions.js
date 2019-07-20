@@ -5,7 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import TestimonialCardHorizontal from './TestimonialCardHorizontal';
 
-const Solutions = () => {
+const Solutions = props => {
+	console.log(props.id);
   return (<div className="bg-white py-8 py-lg-11">
 		<Container className="etw-solutions-main-container">
 			<Row className="justify-content-md-center text-lg-center">

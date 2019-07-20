@@ -4,26 +4,22 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import MainLayoutCard from './MainLayoutCard';
 import ButtonUp from './Button';
-import { useContentful } from '../utils/customHooks';
+import { getEntriesById } from '../utils/contentfulHelpers';
 
-const MainLayout = () => {
+const MainLayout = props => {
+  const { id } = props;
   const [title, setTitle] = useState('');
   const [subtitle, setSubtitle] = useState('');
   const [button, setButton] = useState('');
   const [cards, setCards] = useState([]);
 
-  const client = useContentful();
-
   const fetchData = async () => {
-    const response = await client.getEntries({
-      include: 10,
-      content_type: 'mainLayout'
-    });
+    const items = await getEntriesById(id);
 
-    setTitle(response.items[0].fields.title);
-    setSubtitle(response.items[0].fields.subtitle);
-    setButton(response.items[0].fields.button.fields);
-    setCards(response.items[0].fields.cards);
+    setTitle(items.title);
+    setSubtitle(items.subtitle);
+    setButton(items.button.fields);
+    setCards(items.cards);
   };
 
   useEffect(() => {

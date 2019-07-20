@@ -5,14 +5,13 @@ import BlogPageLayoutContainer from './BlogPageLayoutContainer';
 import DefaultPageLayoutContainer from './DefaultPageLayoutContainer';
 import { setBannerButtonContent } from '../actionCreators';
 import { useContentful } from '../utils/customHooks';
-import HomePage from './HomePage';
+import HomePageLayoutContainer from './HomePageLayoutContainer';
 
 const ContentContainer = props => {
   const dispatch = useDispatch();
   const client = useContentful();
   const [entry, setEntry] = useState({});
   const { id, pageLayout } = props;
-  console.log(pageLayout);
 
   const getEntry = async () => {
     const response = await client.getEntry(id);
@@ -32,7 +31,7 @@ const ContentContainer = props => {
 
   switch (pageLayout) {
     case 'home':
-      return <HomePage />;
+      return <HomePageLayoutContainer data={entry} />;
     case 'blog':
       return <BlogPageLayoutContainer data={entry} />;
     case 'default':
