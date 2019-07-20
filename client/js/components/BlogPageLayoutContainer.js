@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Article from './Article';
 
-const LeadershipResources = props => {
+const BlogPageLayout = props => {
   useEffect(() => {
     document.body.className = 'bg-white';
   }, []);
@@ -13,4 +13,4 @@ const LeadershipResources = props => {
   );
 };
 
-export default LeadershipResources;
+export default BlogPageLayout;

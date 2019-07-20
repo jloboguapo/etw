@@ -5,7 +5,7 @@ import BlogPageLayoutContainer from './BlogPageLayoutContainer';
 import DefaultPageLayoutContainer from './DefaultPageLayoutContainer';
 import { setBannerButtonContent } from '../actionCreators';
 import { useContentful } from '../utils/customHooks';
-import HomePage from './Homepage';
+import HomePage from './HomePage';
 
 const ContentContainer = props => {
   const dispatch = useDispatch();
@@ -30,11 +30,6 @@ const ContentContainer = props => {
     getEntry();
   }, []);
 
-  console.log(entry);
-  // if (props.title === 'Performance Solutions') {
-  //   return <PerformanceSolutions />;
-  // }
-  // return <LeadershipResources />;
   switch (pageLayout) {
     case 'home':
       return <HomePage />;

@@ -4,7 +4,7 @@ import IntentionalCulture from './IntentionalCulture';
 import ServicesSoftware from './ServicesSoftware';
 import ReadyWin from './ReadyWin';
 
-const PerformanceSolutions = () => {
+const DefaultPageLayoutContainer = () => {
   return (
     <div className="performance-solutions-container">
       <IntentionalCulture />
@@ -15,4 +15,4 @@ const PerformanceSolutions = () => {
   );
 };
 
-export default PerformanceSolutions;
+export default DefaultPageLayoutContainer;
