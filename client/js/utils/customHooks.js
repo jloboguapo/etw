@@ -7,7 +7,7 @@ export const useContentful = () =>
     accessToken: 'NsCGjckS1lVjwbDFBRVsReHqY00wH-rPK9ECBg6Oqec'
   });
 
-const useFormHandler = () => {
+export const useFormHandler = () => {
   const [inputs, setInputs] = useState({});
 
   const handleSubmit = e => {
@@ -28,4 +28,3 @@ const useFormHandler = () => {
     inputs
   };
 };
-export default useFormHandler;

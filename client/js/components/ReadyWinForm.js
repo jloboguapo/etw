@@ -1,5 +1,5 @@
 import React from 'react';
-import useFormHandler from '../utils/customHooks';
+import { useFormHandler } from '../utils/customHooks';
 import ButtonUp from './Button';
 
 const ReadyWinForm = props => {
