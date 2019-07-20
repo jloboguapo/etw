@@ -30,19 +30,26 @@ const Routes = () => {
     <BrowserRouter>
       <App>
         <Switch>
-          {pages.map(page => (
-            <Route
-              exact
-              key={page.fields.path}
-              path={page.fields.path}
-              render={routeProps => (
-                <ContentContainer
-                  history={routeProps.history}
-                  title={page.fields.title}
-                />
-              )}
-            />
-          ))}
+          {pages.map(({ fields, sys }) => {
+            const { id } = sys;
+            const { path, title, pageLayout } = fields;
+
+            return (
+              <Route
+                exact
+                key={path}
+                path={path}
+                render={routeProps => (
+                  <ContentContainer
+                    history={routeProps.history}
+                    title={title}
+                    id={id}
+                    pageLayout={pageLayout}
+                  />
+                )}
+              />
+            );
+          })}
         </Switch>
       </App>
     </BrowserRouter>
