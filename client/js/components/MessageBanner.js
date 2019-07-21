@@ -1,9 +1,9 @@
 import React from 'react';
 import CallToAction from './CallToAction';
 
-const BannerButton = ({ content }) => (
-  <div className="banner-button">
-    <div className="banner-button-content">{content}</div>
+const MessageBanner = ({ content }) => (
+  <div className="message-banner">
+    <div className="message-banner-content">{content}</div>
     <CallToAction
       linkUrl="/"
       linkName="RSVP Now"
@@ -13,5 +13,5 @@ const BannerButton = ({ content }) => (
   </div>
 );
 
-export default BannerButton;
+export default MessageBanner;
 

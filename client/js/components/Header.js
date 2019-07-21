@@ -7,13 +7,13 @@ import Navbar, { Brand, Toggle, Collapse } from 'react-bootstrap/Navbar';
 import DropdownLinks from './DropdownLinks';
 import { useContentful } from '../utils/customHooks';
 import ButtonUp from './Button';
-import BannerButton from './BannerButton';
+import MessageBanner from './MessageBanner';
 
 const Header = props => {
   const [headerLinks, setHeaderLinks] = useState([]);
   const [button, setButton] = useState('');
   const [logo, setLogo] = useState('');
-  const bannerButtonContent = useSelector(state => state.bannerButtonContent);
+  const messageBannerContent = useSelector(state => state.messageBannerContent);
   const client = useContentful();
 
   const fetchData = async () => {
@@ -33,7 +33,7 @@ const Header = props => {
 
   return (
     <>
-      {bannerButtonContent && <BannerButton content={bannerButtonContent} />}
+      {messageBannerContent && <MessageBanner content={messageBannerContent} />}
       <Container className="header">
         <Navbar expand="lg">
           <Brand href="/">

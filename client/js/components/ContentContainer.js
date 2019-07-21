@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import BlogPageLayoutContainer from './BlogPageLayoutContainer';
 import DefaultPageLayoutContainer from './DefaultPageLayoutContainer';
-import { setBannerButtonContent } from '../actionCreators';
+import { setMessageBannerContent } from '../actionCreators';
 import { useContentful } from '../utils/customHooks';
 import HomePageLayoutContainer from './HomePageLayoutContainer';
 
@@ -19,15 +19,15 @@ const ContentContainer = props => {
       const { sections } = response.fields;
       const found =
         sections &&
-        sections.find(section => section.fields && section.fields.bannerButton);
+        sections.find(section => section.fields && section.fields.messageBanner);
 
       if (found) {
-        dispatch(setBannerButtonContent(found.fields.bannerButton));
+        dispatch(setMessageBannerContent(found.fields.messageBanner));
       }
 
       setEntry(response);
     } catch (err) {
-      console.warn(err || 'Error finding bannerButton');
+      console.warn(err || 'Error finding messageBanner');
     }
   };
 

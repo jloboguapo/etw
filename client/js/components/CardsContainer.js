@@ -1,92 +1,69 @@
-import React from 'react';
-import CallToActionNoLink from './CallToActionNoLink';
+import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import _isEmpty from 'lodash.isempty';
+import CallToActionNoLink from './CallToActionNoLink';
 import TestimonialCardHorizontal from './TestimonialCardHorizontal';
+import { getEntriesById } from '../utils/contentfulHelpers';
 
 const CardsContainer = props => {
-  console.log(props.id);
+  const [cards, setCards] = useState([]);
+  const [subtext, setSubtext] = useState('');
+  const [testimonialCards, setTestimonialCards] = useState({});
+  const [title, setTitle] = useState('');
+  const { id } = props;
+
+  const fetchData = async () => {
+    const items = await getEntriesById(id);
+
+    setCards(items.cards);
+    setSubtext(items.subtext);
+    setTestimonialCards(items.testimonialCards);
+    setTitle(items.title);
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const renderCard = card => {
+    const {
+      href,
+      icon,
+      title: cardTitle,
+      subtitle: cardSubtitle,
+      cta
+    } = card.fields;
+
+    return (
+      <Col key={cardTitle} xs={6} lg={3}>
+        <a href={href} className="cards-container-card">
+          {icon && <img src={icon.fields.file.url} />}
+          {cardTitle && <h3>{cardTitle}</h3>}
+          {cardSubtitle && <p>{cardSubtitle}</p>}
+          {cta && (
+            <CallToActionNoLink
+              content={cta}
+              arrowClassName="arrow-svg"
+              source="arrow.svg"
+            />
+          )}
+        </a>
+      </Col>
+    );
+  };
+
   return (
     <div className="bg-white py-8 py-lg-11">
-      <Container className="etw-solutions-main-container">
+      <Container className="etw-cards-container-main-container">
         <Row className="justify-content-md-center text-lg-center">
           <Col lg={8}>
-            <h2>Solutions built for high performance</h2>
-            <p className="lead mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim
-            </p>
+            {title && <h2>{title}</h2>}
+            {subtext && <p className="lead mb-8">{subtext}</p>}
           </Col>
         </Row>
-
-        <Row className="mb-8 mb-lg-11">
-          <Col xs={6} lg={3}>
-            <a href="#" className="solution-card people-card">
-              <img src="/people-card-icon.svg" />
-              <h3>People</h3>
-              <p>
-                Whether facing employee disengagement, weak performers, or
-                decreasing loyalty, investing in people always precedes
-                performance.
-              </p>
-              <CallToActionNoLink
-                content="View our solution"
-                arrowClassName="arrow-svg"
-                source="arrow.svg"
-              />
-            </a>
-          </Col>
-          <Col xs={6} lg={3}>
-            <a href="#" className="solution-card priorities-card">
-              <img src="/priorities-card-icon.svg" />
-              <h3>Priorities</h3>
-              <p>
-                Too many goals, unhelpful KPIs, and a lack of team-wide
-                alignment fosters unnecessary confusion, internal competition,
-                and petty politics. Focus.
-              </p>
-              <CallToActionNoLink
-                content="View our solution"
-                arrowClassName="arrow-svg"
-                source="arrow.svg"
-              />
-            </a>
-          </Col>
-          <Col xs={6} lg={3}>
-            <a href="#" className="solution-card quote-fuse-card">
-              <img src="/practices-card-icon.svg" />
-              <h3>Practices</h3>
-              <p>
-                While ineffective processes can be to blame for some lost
-                productivity, it's cultural habits (or a lack thereof) that are
-                the real culprit. Start improving.
-              </p>
-              <CallToActionNoLink
-                content="View our solution"
-                arrowClassName="arrow-svg"
-                source="arrow.svg"
-              />
-            </a>
-          </Col>
-          <Col xs={6} lg={3}>
-            <a href="#" className="solution-card quote-vector-card">
-              <img src="/performance-card-icon.svg" />
-              <h3>Performance</h3>
-              <p>
-                Performance is just an outcome of leadership becoming laser
-                focused on honing their people, priorities, and practices.
-                Unstick growth by getting intentional.
-              </p>
-              <CallToActionNoLink
-                content="View our solution"
-                arrowClassName="arrow-svg"
-                source="arrow.svg"
-              />
-            </a>
-          </Col>
-        </Row>
-
-        <TestimonialCardHorizontal />
+        <Row className="mb-8 mb-lg-11">{!_isEmpty(cards) && cards.map(renderCard)}</Row>
+        {!_isEmpty(testimonialCards) && (
+          <TestimonialCardHorizontal data={testimonialCards.fields} />
+        )}
       </Container>
     </div>
   );

@@ -5,6 +5,7 @@ export const getEntriesById = async id => {
 
   try {
     const response = await contentful.getEntries({
+      include: 10,
       'sys.id': id
     });
 

@@ -1,15 +1,15 @@
 import { createReducer } from 'redux-starter-kit';
-import { clearData, setBannerButtonContent } from '../actionCreators';
+import { clearData, setMessageBannerContent } from '../actionCreators';
 
 export const defaults = {
   content: '',
   showHeader: false,
-  bannerButtonContent: ''
+  messageBannerContent: ''
 };
 
 export default createReducer(defaults, {
   [clearData]: () => defaults,
-  [setBannerButtonContent]: (state, action) => {
-    state.bannerButtonContent = action.payload;
+  [setMessageBannerContent]: (state, action) => {
+    state.messageBannerContent = action.payload;
   }
 });
