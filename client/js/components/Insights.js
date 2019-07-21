@@ -1,15 +1,12 @@
 import React from 'react';
+import { CardDeck, Col, Container, Row } from 'react-bootstrap';
 import Subscribe from './Subscribe';
 import CallToAction from './CallToAction';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import CardDeck from 'react-bootstrap/CardDeck';
 import TestimonialCardVertical from './TestimonialCardVertical';
 import CtaCard from './CtaCard';
 import CtaCardLarge from './CtaCardLarge';
 
-const Insights = props => {
+const Insights = () => {
   return (
     <div className="bg-secondary py-8 py-lg-11">
       <Container className="insights-wrapper">
@@ -21,10 +18,10 @@ const Insights = props => {
         </Row>
         <div className="insights-card-container mt-8 mt-lg-11">
           <CardDeck>
-            <CtaCard url='/phone-on-desk.svg' />
-            <CtaCard url='/tower.svg' />
-            <CtaCardLarge url='/typing-hands.svg' />
-            <CtaCard url='/laptop-angle.svg' />
+            <CtaCard url="/phone-on-desk.svg" />
+            <CtaCard url="/tower.svg" />
+            <CtaCardLarge url="/typing-hands.svg" />
+            <CtaCard url="/laptop-angle.svg" />
             <TestimonialCardVertical />
           </CardDeck>
           <p className="text-center mb-0">

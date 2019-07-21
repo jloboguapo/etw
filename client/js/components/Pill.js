@@ -1,5 +1,5 @@
 import React from 'react';
-import Badge from 'react-bootstrap/Badge';
+import { Badge } from 'react-bootstrap';
 
 const Pill = ({ content }) => (
   <Badge pill variant="info">

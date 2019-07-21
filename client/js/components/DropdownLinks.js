@@ -1,8 +1,7 @@
 import React from 'react';
-import Badge from 'react-bootstrap/Badge';
 import PropTypes from 'prop-types';
-import Dropdown from 'react-bootstrap/Dropdown';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Badge, Dropdown } from 'react-bootstrap';
+import NavDropdown, { Item } from 'react-bootstrap/NavDropdown';
 import ButtonUp from './Button';
 
 const DropdownLinks = ({ link, button }) => {
@@ -35,13 +34,13 @@ const DropdownLinks = ({ link, button }) => {
       title={link.fields.title}
       id={`${link.fields.title}NavDropdown`}
     >
-      <NavDropdown.Item href="/performanceSolutions" className="dropdown-cap">
+      <Item href="/performanceSolutions" className="dropdown-cap">
         <img src="/winning-performance-icon.svg" />
         <div className="dropdown-cap-text">
           <h4>{link.fields.title}</h4>
           <p>{link.fields.subtitle}</p>
         </div>
-      </NavDropdown.Item>
+      </Item>
       {link.fields.menu.map(toHeaderGroup)}
     </NavDropdown>
   );

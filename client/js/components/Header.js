@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import PropTypes from 'prop-types';
-import Container from 'react-bootstrap/Container';
 import { useSelector } from 'react-redux';
+import { Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar, { Brand, Toggle, Collapse } from 'react-bootstrap/Navbar';
 import DropdownLinks from './DropdownLinks';

@@ -1,12 +1,11 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import { Col, Row } from 'react-bootstrap';
+import Card, { Body } from 'react-bootstrap/Card';
 import ButtonUp from './Button';
 
 const TestimonialCardHorizontal = () => (
   <Card className="testimonial-card">
-    <Card.Body>
+    <Body>
       <Row>
         <Col lg="5" className="testimonial-cta mb-4 mb-lg-0">
           <ButtonUp
@@ -32,7 +31,7 @@ const TestimonialCardHorizontal = () => (
           </blockquote>
         </Col>
       </Row>
-    </Card.Body>
+    </Body>
   </Card>
 );
 

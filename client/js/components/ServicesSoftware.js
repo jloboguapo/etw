@@ -1,7 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Col, Container, Row } from 'react-bootstrap';
 import TestimonialCardHorizontal from './TestimonialCardHorizontal';
 
 const ServicesSoftware = () => {

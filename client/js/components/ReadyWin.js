@@ -1,10 +1,8 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import Card, { Body, Footer, Header, Title } from 'react-bootstrap/Card';
 import CallToAction from './CallToAction';
 import ReadyWinForm from './ReadyWinForm';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
 
 const ReadyWin = () => {
   return (
@@ -13,12 +11,12 @@ const ReadyWin = () => {
         <Row className="justify-content-center">
           <Col lg={8}>
             <Card className="text-center">
-              <Card.Header className="bg-success">
-                <Card.Title className="text-white">
+              <Header className="bg-success">
+                <Title className="text-white">
                   Partner with ETW to strengthen your culture
-                </Card.Title>
-              </Card.Header>
-              <Card.Body>
+                </Title>
+              </Header>
+              <Body>
                 <h2>Are you ready to win?</h2>
                 <p className="lead mb-8">
                   Now is your time to develop high-performance leaders,
@@ -26,15 +24,15 @@ const ReadyWin = () => {
                   habits, and more. Unintentional leaders need not apply.
                 </p>
                 <ReadyWinForm />
-              </Card.Body>
-              <Card.Footer>
+              </Body>
+              <Footer>
                 <CallToAction
                   linkUrl="/"
                   linkName="not convinced? read some case studies"
                   arrowClassName="arrow"
                   source="arrow.svg"
                 />
-              </Card.Footer>
+              </Footer>
             </Card>
           </Col>
         </Row>

@@ -14,15 +14,21 @@ const ContentContainer = props => {
   const { id, pageLayout } = props;
 
   const getEntry = async () => {
-    const response = await client.getEntry(id);
-    const { sections } = response.fields;
-    const found = sections && sections.find(section => section.fields.bannerButton);
+    try {
+      const response = await client.getEntry(id);
+      const { sections } = response.fields;
+      const found =
+        sections &&
+        sections.find(section => section.fields && section.fields.bannerButton);
 
-    if (found) {
-      dispatch(setBannerButtonContent(found.fields.bannerButton));
+      if (found) {
+        dispatch(setBannerButtonContent(found.fields.bannerButton));
+      }
+
+      setEntry(response);
+    } catch (err) {
+      console.warn(err || 'Error finding bannerButton');
     }
-
-    setEntry(response);
   };
 
   useEffect(() => {

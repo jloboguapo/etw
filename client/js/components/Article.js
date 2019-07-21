@@ -1,13 +1,11 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import Card, { Footer, Img } from 'react-bootstrap/Card';
 import CallToAction from './CallToAction';
 import CallToActionNoLink from './CallToActionNoLink';
-import SubscribeSection from './SubscribeSection';
 import CarouselListener from './CarouselListener';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
 import Pill from './Pill';
+import SubscribeSection from './SubscribeSection';
 
 const Article = () => {
   return (
@@ -141,14 +139,14 @@ const Article = () => {
               href="#"
               className="article-cta-card border-0 shadow-none"
             >
-              <Card.Img variant="top" src="blog-footer-pic.svg" />
-              <Card.Footer className="bg-success rounded-bottom">
+              <Img variant="top" src="blog-footer-pic.svg" />
+              <Footer className="bg-success rounded-bottom">
                 <CallToActionNoLink
                   content="Download the ETW guide to change management"
                   arrowClassName="arrow-white"
                   source="arrow-white.svg"
                 />
-              </Card.Footer>
+              </Footer>
             </Card>
           </Col>
         </Row>

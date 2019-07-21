@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
+import Card, { Body, Title } from 'react-bootstrap/Card';
 import CallToAction from './CallToAction';
 import Pill from './Pill';
 
@@ -8,17 +8,17 @@ const CtaCardCarousel = ({ url }) => (
     <div className="card-img-bg" style={{ backgroundImage: `url("${url}")` }}>
       <Pill content="category" />
     </div>
-    <Card.Body>
-      <Card.Title as="a" href="/">
+    <Body>
+      <Title as="a" href="/">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </Card.Title>
+      </Title>
       <CallToAction
         linkUrl="/"
         linkName="call to action"
         arrowClassName="arrow-svg"
         source="arrow.svg"
       />
-    </Card.Body>
+    </Body>
   </Card>
 );
 
