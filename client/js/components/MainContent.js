@@ -9,10 +9,11 @@ import CtaCard from './CtaCard';
 import { getEntriesById } from '../utils/contentfulHelpers';
 
 const MainContent = ({ id }) => {
-  const [cta, setCta] = useState();
-  const [ctaCards, setCtaCards] = useState();
-  const [subscription, setSubscription] = useState();
-  const [title, setTitle] = useState();
+  const [cta, setCta] = useState({});
+  const [ctaCards, setCtaCards] = useState([]);
+  const [subscription, setSubscription] = useState({});
+  const [title, setTitle] = useState('');
+  const [testimonial, setTestimonial] = useState({});
 
   const fetchData = async () => {
     const items = await getEntriesById(id);
@@ -21,6 +22,7 @@ const MainContent = ({ id }) => {
     setCtaCards(items.ctaCards);
     setSubscription(items.subscription);
     setTitle(items.title);
+    setTestimonial(items.testimonialCardVertical);
   };
 
   useEffect(() => {
@@ -40,13 +42,15 @@ const MainContent = ({ id }) => {
         <Row className="justify-content-md-center text-center">
           <Col lg={8}>
             {title && <h2 className="mb-7">{title}</h2>}
-            {subscription && <Subscribe subscription={subscription} />}
+            {subscription && <Subscribe {...subscription.fields} />}
           </Col>
         </Row>
         <div className="main-content-card-container mt-8 mt-lg-11">
           <CardDeck>
             {!_isEmpty(ctaCards) && ctaCards.map(renderCards)}
-            <TestimonialCardVertical />
+            {!_isEmpty(testimonial) && (
+              <TestimonialCardVertical {...testimonial.fields} />
+            )}
           </CardDeck>
           {!_isEmpty(cta) && (
             <p className="text-center mb-0">
