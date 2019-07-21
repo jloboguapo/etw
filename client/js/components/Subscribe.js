@@ -3,6 +3,7 @@ import ButtonUp from './Button';
 
 const Subscribe = props => {
   const [value, setValue] = useState('');
+  const { subscription } = props;
 
   const handleSubmit = e => {
     e.preventDefault();
