@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import _isEmpty from 'lodash.isempty';
 import TestimonialCardHorizontal from './TestimonialCardHorizontal';
+import { getEntriesById } from '../utils/contentfulHelpers';
 
-const ServicesSoftware = () => {
+const ServicesSoftware = props => {
+  const [testimonialCards, setTestimonialCards] = useState({});
+  const { id } = props;
+
+  const fetchData = async () => {
+    const items = await getEntriesById(id);
+
+    setTestimonialCards(items.testimonialCards);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <Container className="services-software-container py-8 py-lg-11">
       <Row className="justify-content-lg-center text-lg-center mb-10">
@@ -39,7 +54,9 @@ const ServicesSoftware = () => {
         </Col>
       </Row>
 
-      <TestimonialCardHorizontal />
+      {!_isEmpty(testimonialCards) && (
+        <TestimonialCardHorizontal data={testimonialCards.fields} />
+      )}
     </Container>
   );
 };

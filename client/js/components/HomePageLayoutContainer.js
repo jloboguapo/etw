@@ -8,9 +8,9 @@ import MainContent from './MainContent';
 const HomePageLayoutContainer = props => {
   const { data } = props;
   const found = name =>
-    data.fields.sections.find(section => section.fields && section.fields.name === name);
+    data.sections.find(section => section.fields && section.fields.name === name);
 
-  if (data && data.fields) {
+  if (data && data.sections) {
     const foundHeroContent = found('heroContent');
     const foundCardsContainer = found('cardsContainer');
     const foundMainContent = found('mainContent');
@@ -18,7 +18,7 @@ const HomePageLayoutContainer = props => {
     return (
       <>
         {foundHeroContent && <HeroContent id={foundHeroContent.sys.id} />}
-        {data.fields.bannerId && <Banner id={data.fields.bannerId} />}
+        {data.bannerId && <Banner id={data.bannerId} />}
         {foundCardsContainer && (
           <CardsContainer id={foundCardsContainer.sys.id} />
         )}

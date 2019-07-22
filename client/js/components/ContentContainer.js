@@ -4,19 +4,18 @@ import { useDispatch } from 'react-redux';
 import BlogPageLayoutContainer from './BlogPageLayoutContainer';
 import DefaultPageLayoutContainer from './DefaultPageLayoutContainer';
 import { setMessageBannerContent } from '../actionCreators';
-import { useContentful } from '../utils/customHooks';
 import HomePageLayoutContainer from './HomePageLayoutContainer';
+import { getEntriesById } from '../utils/contentfulHelpers';
 
 const ContentContainer = props => {
   const dispatch = useDispatch();
-  const client = useContentful();
   const [entry, setEntry] = useState({});
   const { id, pageLayout } = props;
 
   const getEntry = async () => {
     try {
-      const response = await client.getEntry(id);
-      const { sections } = response.fields;
+      const response = await getEntriesById(id);
+      const { sections } = response;
       const found =
         sections &&
         sections.find(section => section.fields && section.fields.messageBanner);

@@ -3,6 +3,7 @@ import ButtonUp from './Button';
 
 const Subscribe = props => {
   const [value, setValue] = useState('');
+  const { button, placeholderText, privacyLink } = props;
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -18,16 +19,16 @@ const Subscribe = props => {
         className="subscribe-input form-control"
         value={value}
         onChange={e => setValue(e.target.value)}
-        placeholder="name@company.com"
+        placeholder={placeholderText}
       />
       <ButtonUp
         type="submit"
         variant="primary"
         className="ml-0 ml-lg-3"
-        content="Subscribe"
+        content={button}
       />
       <p className="small">
-        By subscribing, you agree to our <a href="#">privacy policy</a>.
+        By subscribing, you agree to our <a href={privacyLink}>privacy policy</a>.
       </p>
     </form>
   );
