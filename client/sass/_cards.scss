@@ -72,7 +72,7 @@
     }
 
     &.insight-card {
-        min-height: 30rem;
+        min-height     : 30rem;
         text-decoration: none;
 
         &.card-lg {
@@ -121,6 +121,10 @@
     .card {
         flex         : 0 0 calc(50% - 30px);
         margin-bottom: 2.5rem;
+
+        @include media-breakpoint-down(md) {
+            flex: 0 0 calc(100% - 30px);
+        }
 
         &.card-lg {
             flex: 0 0 calc(100% - 30px);

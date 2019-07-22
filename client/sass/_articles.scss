@@ -16,8 +16,8 @@
             }
 
             .article-meta {
-                > span,
-                > a {
+                > a,
+                > span {
                     color         : $gray-900;
                     font-size     : 0.8125rem;
                     font-weight   : 600;
@@ -40,6 +40,10 @@
                 .badge {
                     transition : $transition-base;
                     margin-left: 0.625rem;
+
+                    // @include media-breakpoint-down(md) {
+                    //     margin-left: 0;
+                    // }
 
                     &:hover {
                         opacity: 0.8;

@@ -1,31 +1,33 @@
-@import 'variables';
-
 .message-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0.5rem;
-  background-color: $night;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    text-align      : center;
+    padding         : 0.5rem;
+    background-color: $night;
 
-  .message-banner-content {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8125rem;
-    color: rgba($white, 0.75);
-    font-weight: 500;
-  }
-
-  .arrow-link {
-    margin-left: 0.625rem;
-
-    .call-to-action {
-      color: $white;
-      font-size: 0.9375rem;
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
     }
 
-    img {
-      position: relative;
-      top: -1px;
+    .message-banner-content {
+        font-family: 'Roboto', sans-serif;
+        font-size  : 0.8125rem;
+        color      : rgba($white, 0.75);
+        font-weight: 500;
     }
-  }
+
+    .arrow-link {
+        margin-left: 0.625rem;
+
+        .call-to-action {
+            color    : $white;
+            font-size: 0.9375rem;
+        }
+
+        img {
+            position: relative;
+            top     : -1px;
+        }
+    }
 }
