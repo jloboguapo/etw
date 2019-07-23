@@ -1,29 +1,39 @@
 import React from 'react';
-import CombatDisengagement from './CombatDisengagement';
-import IntentionalCulture from './IntentionalCulture';
+import PropTypes from 'prop-types';
+import StatsSection from './StatsSection';
+import DefaultSection from './DefaultSection';
 import ServicesSoftware from './ServicesSoftware';
 import ReadyWin from './ReadyWin';
 
 const DefaultPageLayoutContainer = props => {
   const { data } = props;
   const found = name =>
-    data.sections.find(section => section.fields && section.fields.name === name);
+    data.sections.find(
+      section => section.fields && section.fields.name === name
+    );
+  console.log(data)
 
   if (data && data.sections) {
-    const foundHeroContent = found('heroContent');
-    const foundCardsContainer = found('cardsContainer');
+    const foundDefaultSection = found('defaultSection');
+    const foundStatsSection = found('statsSection');
     const foundServices = found('mainContent');
 
     return (
       <div className="performance-solutions-container">
-        <IntentionalCulture/>
-        <CombatDisengagement/>
-        <ServicesSoftware/>
-        <ReadyWin/>
+        {foundDefaultSection && (
+          <DefaultSection id={foundDefaultSection.sys.id} />
+        )}
+        {foundStatsSection && <StatsSection id={foundStatsSection.sys.id} />}
+        <ServicesSoftware />
+        <ReadyWin />
       </div>
     );
   }
   return null;
+};
+
+DefaultPageLayoutContainer.propTypes = {
+  data: PropTypes.object.isRequired
 };
 
 export default DefaultPageLayoutContainer;
