@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StatsSection from './StatsSection';
+import ChartsCardsContainer from './ChartsCardsContainer';
 import DefaultSection from './DefaultSection';
 import ServicesSoftware from './ServicesSoftware';
 import ReadyWin from './ReadyWin';
@@ -11,11 +12,11 @@ const DefaultPageLayoutContainer = props => {
     data.sections.find(
       section => section.fields && section.fields.name === name
     );
-  console.log(data)
 
   if (data && data.sections) {
     const foundDefaultSection = found('defaultSection');
     const foundStatsSection = found('statsSection');
+    const foundChartsCardsContainer = found('chartsCardsContainer');
     const foundServices = found('mainContent');
 
     return (
@@ -24,6 +25,9 @@ const DefaultPageLayoutContainer = props => {
           <DefaultSection id={foundDefaultSection.sys.id} />
         )}
         {foundStatsSection && <StatsSection id={foundStatsSection.sys.id} />}
+        {foundChartsCardsContainer && (
+          <ChartsCardsContainer id={foundChartsCardsContainer.sys.id} />
+        )}
         <ServicesSoftware />
         <ReadyWin />
       </div>
