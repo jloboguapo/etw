@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StatsSection from './StatsSection';
 import ChartsCardsContainer from './ChartsCardsContainer';
+import ExecutionContainer from './ExecutionContainer';
 import DefaultSection from './DefaultSection';
 import ServicesSoftware from './ServicesSoftware';
 import ReadyWin from './ReadyWin';
@@ -17,6 +18,7 @@ const DefaultPageLayoutContainer = props => {
     const foundDefaultSection = found('defaultSection');
     const foundStatsSection = found('statsSection');
     const foundChartsCardsContainer = found('chartsCardsContainer');
+    const foundExecutionContainer = found('executionContainer');
     const foundServices = found('mainContent');
 
     return (
@@ -27,6 +29,9 @@ const DefaultPageLayoutContainer = props => {
         {foundStatsSection && <StatsSection id={foundStatsSection.sys.id} />}
         {foundChartsCardsContainer && (
           <ChartsCardsContainer id={foundChartsCardsContainer.sys.id} />
+        )}
+        {foundExecutionContainer && (
+          <ExecutionContainer id={foundExecutionContainer.sys.id} />
         )}
         <ServicesSoftware />
         <ReadyWin />
