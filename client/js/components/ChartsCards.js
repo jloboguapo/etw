@@ -8,6 +8,7 @@ const ChartsCards = ({ card }) => {
     boldPercentage,
     textPart1,
     highlightedText,
+    highlightColor: color,
     textPart2,
     citeSource
   } = card.fields;
@@ -19,12 +20,11 @@ const ChartsCards = ({ card }) => {
       <img src={url} className="mb-7" />
       <div className="h3">
         <strong>{boldPercentage}</strong>
-        {' ' + textPart1}
-        <span className="text-sea">{highlightedText}</span>{textPart2}
+        {' ' + textPart1 + ' '}
+        <span className={`text-${color}`}>{highlightedText}</span>
+        {' ' + textPart2}
       </div>
-      <p className="cite-p">
-        {citeSource}
-      </p>
+      <p className="cite-p">{citeSource}</p>
     </Col>
   );
 };
