@@ -12,7 +12,6 @@ const ExecutionContainer = props => {
 
   const fetchData = async () => {
     const response = await getEntriesById(id);
-    console.log(response);
     const { title, subtitle, button: link, cardsMenu } = response;
 
     setCardsMenu(cardsMenu);

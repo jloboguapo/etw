@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import CallToAction from './CallToAction';
-import { Row, Col, Card, Container } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import { getEntriesById } from '../utils/contentfulHelpers';
 
 const StatsSection = props => {
