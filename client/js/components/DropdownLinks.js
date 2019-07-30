@@ -4,7 +4,7 @@ import { Badge, Dropdown } from 'react-bootstrap';
 import NavDropdown, { Item } from 'react-bootstrap/NavDropdown';
 import ButtonUp from './Button';
 
-const DropdownLinks = ({ link, button }) => {
+const DropdownLinks = ({ link }) => {
   const toHeaderGroup = group => {
     return (
       <span key={group.fields.title}>
