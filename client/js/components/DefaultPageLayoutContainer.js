@@ -20,6 +20,7 @@ const DefaultPageLayoutContainer = props => {
     const foundChartsCardsContainer = found('chartsCardsContainer');
     const foundExecutionContainer = found('executionContainer');
     const foundServicesSoftware = found('servicesSoftware');
+    const foundReadyWin = found('readyWin');
 
     return (
       <div className="performance-solutions-container">
@@ -36,7 +37,7 @@ const DefaultPageLayoutContainer = props => {
         {foundServicesSoftware && (
           <ServicesSoftware id={foundServicesSoftware.sys.id} />
         )}
-        <ReadyWin />
+        {foundReadyWin && <ReadyWin id={foundReadyWin.sys.id} />}
       </div>
     );
   }

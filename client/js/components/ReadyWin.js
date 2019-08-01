@@ -1,10 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Card, { Body, Footer, Header, Title } from 'react-bootstrap/Card';
 import CallToAction from './CallToAction';
 import ReadyWinForm from './ReadyWinForm';
+import { getEntriesById } from '../utils/contentfulHelpers';
 
-const ReadyWin = () => {
+const ReadyWin = props => {
+  const { id } = props;
+  const [banner, setBanner] = useState('');
+  const [readyToWin, setReadyToWin] = useState('');
+  const [ctaLink, setCtaLink] = useState('');
+
+  const fetchData = async () => {
+    const response = await getEntriesById(id);
+    const items = response.items;
+
+    items.map(section => {
+      if (section.fields.name === 'banner') {
+        setBanner(section.fields);
+      } else if (section.fields.name === 'readyToWin') {
+        setReadyToWin(section.fields);
+      } else if (section.fields.name === 'ctaLink') {
+        setCtaLink(section.fields);
+      }
+    });
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div className="bg-white py-8 py-lg-10">
       <Container>
@@ -12,23 +37,17 @@ const ReadyWin = () => {
           <Col lg={8}>
             <Card className="text-center">
               <Header className="bg-success">
-                <Title className="text-white">
-                  Partner with ETW to strengthen your culture
-                </Title>
+                <Title className="text-white">{banner.text}</Title>
               </Header>
               <Body>
-                <h2>Are you ready to win?</h2>
-                <p className="lead mb-8">
-                  Now is your time to develop high-performance leaders,
-                  establish a value-creation mindset, improve enterprise-wide
-                  habits, and more. Unintentional leaders need not apply.
-                </p>
+                <h2>{readyToWin.text}</h2>
+                <p className="lead mb-8">{readyToWin.subtext}</p>
                 <ReadyWinForm />
               </Body>
               <Footer>
                 <CallToAction
-                  linkUrl="/"
-                  linkName="not convinced? read some case studies"
+                  linkUrl={ctaLink.href}
+                  linkName={ctaLink.text}
                   arrowClassName="arrow"
                   source="arrow.svg"
                 />
