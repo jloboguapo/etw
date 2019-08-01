@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Card, { Footer, Img } from 'react-bootstrap/Card';
 import CallToAction from './CallToAction';
@@ -8,6 +8,10 @@ import Pill from './Pill';
 import SubscribeSection from './SubscribeSection';
 
 const Article = () => {
+  useEffect(() => {
+    document.body.className = 'bg-white';
+  }, []);
+
   return (
     <div className="article-single">
       <Container className="article-layout">
