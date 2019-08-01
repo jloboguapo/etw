@@ -13,6 +13,7 @@ import MainContent from './MainContent';
 import ReadyWin from './ReadyWin';
 import ServicesSoftware from './ServicesSoftware';
 import StatsSection from './StatsSection';
+import Article from './Article';
 
 const ContentContainer = props => {
   const dispatch = useDispatch();
@@ -55,6 +56,7 @@ const ContentContainer = props => {
     heroContent: (id, key) => <HeroContent key={key} id={id} />,
     cardsContainer: (id, key) => <CardsContainer key={key} id={id} />,
     mainContent: (id, key) => <MainContent key={key} id={id} />,
+    article: (id, key) => <Article key={key} id={id} />,
     bannerId: (id, key) => <Banner key={key} id={id} />
   };
 
