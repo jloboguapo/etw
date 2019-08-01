@@ -5,13 +5,18 @@ import TestimonialCardHorizontal from './TestimonialCardHorizontal';
 import { getEntriesById } from '../utils/contentfulHelpers';
 
 const ServicesSoftware = props => {
-  const [testimonialCards, setTestimonialCards] = useState({});
   const { id } = props;
+  const [title, setTitle] = useState('');
+  const [subtitle, setSubtitle] = useState('');
+  const [cards, setCards] = useState([]);
+  const [cardsMenu, setCardsMenu] = useState([]);
 
   const fetchData = async () => {
-    const items = await getEntriesById(id);
-
-    setTestimonialCards(items.testimonialCards);
+    const response = await getEntriesById(id);
+    setTitle(response.title);
+    setSubtitle(response.subtitle);
+    setCards(response.cards);
+    setCardsMenu(response.cardsMenu);
   };
 
   useEffect(() => {
@@ -22,41 +27,57 @@ const ServicesSoftware = props => {
     <Container className="services-software-container py-8 py-lg-11">
       <Row className="justify-content-lg-center text-lg-center mb-10">
         <Col lg={8}>
-          <h2>People-powered brains backed by platform-powered brawn</h2>
-          <p className="lead">
-            Technology alone cannot solve for the complex challenges that
-            C-leaders like you face daily. That's why each of ETW's
-            culture-strengthening solutions are composed of both services and
-            software to deliver the outcomes you crave.
-          </p>
+          <h2>{title}</h2>
+          <p className="lead">{subtitle}</p>
         </Col>
       </Row>
 
       <Row className="text-lg-center mb-8 mb-lg-10">
-        <Col lg={{ span: 4, offset: 2 }} className="mb-5 mb-lg-0">
-          <img src="/strategic-services.svg" className="mb-5" />
-          <h4>Strategic services</h4>
-          <p>
-            Workshops, coaching, implementation, and consulting are the
-            people-powered services you need to strengthen culture.
-          </p>
-        </Col>
-        <Col lg={4}>
-          <img src="/enterprise-software.svg" className="mb-5" />
-          <h4>Enterprise software</h4>
-          <p>
-            Assess and monitor your workforce's competencies with Drive, ETW's{' '}
-            <a href="#" className="text-info">
-              leadership development software
-            </a>
-            .
-          </p>
-        </Col>
+        {cards.map((card, index) => {
+          return index ? (
+            <Col key={card.fields.name} lg={4} className="mb-5">
+              <img src={card.fields.image.fields.file.url} className="mb-5" />
+              <h4>{card.fields.boldPercentage}</h4>
+              <p>
+                {card.fields.textPart1}
+                <a href="#" className="text-info">
+                  {card.fields.highlightedText &&
+                    ' ' + card.fields.highlightedText}
+                </a>
+                {card.fields.textPart2}
+              </p>
+            </Col>
+          ) : (
+            <Col
+              key={card.fields.name}
+              lg={{ span: 4, offset: 2 }}
+              className="mb-5 mb-lg-0"
+            >
+              <img src={card.fields.image.fields.file.url} className="mb-5" />
+              <h4>{card.fields.boldPercentage}</h4>
+              <p>
+                {card.fields.textPart1}
+                <a href="#" className="text-info">
+                  {card.fields.highlightedText &&
+                    ' ' + card.fields.highlightedText}
+                </a>
+                {card.fields.textPart2}
+              </p>
+            </Col>
+          );
+        })}
       </Row>
 
-      {!_isEmpty(testimonialCards) && (
-        <TestimonialCardHorizontal data={testimonialCards.fields} />
-      )}
+      {cardsMenu.map(testimonialCard => {
+        return (
+          !_isEmpty(testimonialCard) && (
+            <TestimonialCardHorizontal
+              key={testimonialCard.sys.id}
+              data={testimonialCard.fields}
+            />
+          )
+        );
+      })}
     </Container>
   );
 };
