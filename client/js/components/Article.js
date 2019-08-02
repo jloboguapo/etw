@@ -7,7 +7,6 @@ import CarouselListener from './CarouselListener';
 import Pill from './Pill';
 import SubscribeSection from './SubscribeSection';
 import { getEntriesById } from '../utils/contentfulHelpers';
-import Subscribe from './Subscribe';
 
 const Article = props => {
   const { id } = props;
@@ -21,21 +20,19 @@ const Article = props => {
     const items = response.items;
     console.log(items);
 
-    items.map(section => {
-      if (section.fields.name === 'heading') {
-        setHeading(section.fields);
-      } else if (section.fields.name === 'card') {
-        setCard(section.fields);
-      } else if (section.fields.name === 'shareInsight') {
-        setShareInsight(section.fields);
-      } else if (section.fields.name === 'subscribe') {
-        setSubscribe(section.fields);
-      }
-    });
-    // setTitle(items.title);
-    // setSubtitle(items.subtitle);
-    // setButton(items.button.fields);
-    // setCards(items.cards);
+    if (response && items) {
+      return items.map(section => {
+        if (section.fields.name === 'heading') {
+          setHeading(section.fields);
+        } else if (section.fields.name === 'card') {
+          setCard(section.fields);
+        } else if (section.fields.name === 'shareInsight') {
+          setShareInsight(section.fields);
+        } else if (section.fields.name === 'subscribe') {
+          setSubscribe(section.fields);
+        }
+      });
+    }
   };
 
   useEffect(() => {
@@ -46,9 +43,9 @@ const Article = props => {
     document.body.className = 'bg-white';
   }, []);
 
+  const headingsAroundBullet = heading.headingsAroundBullet;
   const cardItems = card.items;
   const insightItems = shareInsight.items;
-  console.log(subscribe);
 
   return (
     <div className="article-single">
@@ -58,15 +55,22 @@ const Article = props => {
             <div className="article-header">
               <h1>{heading.text}</h1>
               <div className="article-meta">
-                {/*{heading.headingsAroundBullet.map((tag, index) => {*/}
-                {/*  return (*/}
-                {/*    <span key={tag.sys.id}>*/}
-                {/*      <a href="#">{tag[0]}</a>*/}
-                {/*      <span className="article-meta-divider">&bull;</span>*/}
-                {/*      <span>{index !== 0 && tag}</span>*/}
-                {/*    </span>*/}
-                {/*  );*/}
-                {/*})}*/}
+                {headingsAroundBullet &&
+                  headingsAroundBullet.map((tag, index) => {
+                    return (
+                      <span key={`${tag}${index}`}>
+                        {index === 0 && (
+                          <a href={heading.subtext}>{tag + ' '}</a>
+                        )}
+                        {index !== 0 && (
+                          <>
+                            <span className="article-meta-divider">&bull;</span>
+                            <span>{' ' + tag}</span>
+                          </>
+                        )}
+                      </span>
+                    );
+                  })}
                 <a href="#">
                   <Pill content={heading.highlightedText} />
                 </a>
@@ -78,48 +82,41 @@ const Article = props => {
         <Row>
           <Col xs={{ span: 12, order: 1 }} lg={{ span: 3, order: 0 }}>
             <div className="article-author">
-              {/*{cardItems.map(item => {*/}
-              {/*  return (*/}
-              {/*    <span key={item.fields.name}>*/}
-              {/*      <div*/}
-              {/*        className="article-author-photo"*/}
-              {/*        style={{*/}
-              {/*          backgroundImage: `url(${*/}
-              {/*            item.fields.icon.fields.file.url*/}
-              {/*          })`*/}
-              {/*        }}*/}
-              {/*      />*/}
-              {/*      <h4>{item.fields.title}</h4>*/}
-              {/*      <p>*/}
-              {/*        {item.fields.subtitle}*/}
-              {/*      </p>*/}
-              {/*      <CallToAction*/}
-              {/*        linkUrl={item.fields.href}*/}
-              {/*        linkName={item.fields.cta}*/}
-              {/*        arrowClassName="arrow"*/}
-              {/*        source="/arrow.svg"*/}
-              {/*      />*/}
-              {/*    </span>*/}
-              {/*  );*/}
-              {/*})}*/}
+              {cardItems &&
+                cardItems.map(item => {
+                  return (
+                    <span key={item.sys.id}>
+                      <div
+                        className="article-author-photo"
+                        style={{
+                          backgroundImage: `url(${
+                            item.fields.icon.fields.file.url
+                          })`
+                        }}
+                      />
+                      <h4>{item.fields.title}</h4>
+                      <p>{item.fields.subtitle}</p>
+                      <CallToAction
+                        linkUrl={item.fields.href}
+                        linkName={item.fields.cta}
+                        arrowClassName="arrow"
+                        source="/arrow.svg"
+                      />
+                    </span>
+                  );
+                })}
             </div>
 
             <div className="article-share">
               <h4>Share this insight</h4>
-              {/*{insightItems.map(link => {*/}
-              {/*  return (*/}
-              {/*    <a href={link.href}>*/}
-              {/*      <img src={link.image.fields.file.url} />*/}
-              {/*    </a>*/}
-              {/*  );*/}
-              {/*})}*/}
-
-              <a href="#">
-                <img src="/share-twitter.svg" />
-              </a>
-              <a href="#">
-                <img src="/share-linkedin.svg" />
-              </a>
+              {insightItems &&
+                insightItems.map(link => {
+                  return (
+                    <a key={link.fields.name} href={link.fields.href}>
+                      <img src={link.fields.image.fields.file.url} />
+                    </a>
+                  );
+                })}
             </div>
           </Col>
           <Col xs={{ span: 12, order: 0 }} lg={{ span: 9, order: 1 }}>
