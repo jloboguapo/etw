@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Card, { Footer, Img } from 'react-bootstrap/Card';
 import CallToAction from './CallToAction';
@@ -6,11 +6,49 @@ import CallToActionNoLink from './CallToActionNoLink';
 import CarouselListener from './CarouselListener';
 import Pill from './Pill';
 import SubscribeSection from './SubscribeSection';
+import { getEntriesById } from '../utils/contentfulHelpers';
+import Subscribe from './Subscribe';
 
-const Article = () => {
+const Article = props => {
+  const { id } = props;
+  const [heading, setHeading] = useState({});
+  const [card, setCard] = useState({});
+  const [shareInsight, setShareInsight] = useState({});
+  const [subscribe, setSubscribe] = useState([]);
+
+  const fetchData = async () => {
+    const response = await getEntriesById(id);
+    const items = response.items;
+    console.log(items);
+
+    items.map(section => {
+      if (section.fields.name === 'heading') {
+        setHeading(section.fields);
+      } else if (section.fields.name === 'card') {
+        setCard(section.fields);
+      } else if (section.fields.name === 'shareInsight') {
+        setShareInsight(section.fields);
+      } else if (section.fields.name === 'subscribe') {
+        setSubscribe(section.fields);
+      }
+    });
+    // setTitle(items.title);
+    // setSubtitle(items.subtitle);
+    // setButton(items.button.fields);
+    // setCards(items.cards);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   useEffect(() => {
     document.body.className = 'bg-white';
   }, []);
+
+  const cardItems = card.items;
+  const insightItems = shareInsight.items;
+  console.log(subscribe);
 
   return (
     <div className="article-single">
@@ -18,16 +56,19 @@ const Article = () => {
         <Row>
           <Col>
             <div className="article-header">
-              <h1>
-                Change management is no joke, and the title can be longer if
-                needed
-              </h1>
+              <h1>{heading.text}</h1>
               <div className="article-meta">
-                <a href="#">Leadership Resources</a>
-                <span className="article-meta-divider">&bull;</span>
-                <span>August 8, 2019</span>
+                {/*{heading.headingsAroundBullet.map((tag, index) => {*/}
+                {/*  return (*/}
+                {/*    <span key={tag.sys.id}>*/}
+                {/*      <a href="#">{tag[0]}</a>*/}
+                {/*      <span className="article-meta-divider">&bull;</span>*/}
+                {/*      <span>{index !== 0 && tag}</span>*/}
+                {/*    </span>*/}
+                {/*  );*/}
+                {/*})}*/}
                 <a href="#">
-                  <Pill content="culture" />
+                  <Pill content={heading.highlightedText} />
                 </a>
               </div>
             </div>
@@ -37,27 +78,42 @@ const Article = () => {
         <Row>
           <Col xs={{ span: 12, order: 1 }} lg={{ span: 3, order: 0 }}>
             <div className="article-author">
-              <div
-                className="article-author-photo"
-                style={{ backgroundImage: `url(/lee-benson.jpg)` }}
-              />
-              <h4>Lee Benson</h4>
-              <p>
-                Influencer of youth entrepreneurs, guitar maestro, and ETW's
-                Founder + CEO.
-              </p>
-              <CallToAction
-                linkUrl="#"
-                linkName="Full Bio"
-                arrowClassName="arrow"
-                source="/arrow.svg"
-              />
+              {/*{cardItems.map(item => {*/}
+              {/*  return (*/}
+              {/*    <span key={item.fields.name}>*/}
+              {/*      <div*/}
+              {/*        className="article-author-photo"*/}
+              {/*        style={{*/}
+              {/*          backgroundImage: `url(${*/}
+              {/*            item.fields.icon.fields.file.url*/}
+              {/*          })`*/}
+              {/*        }}*/}
+              {/*      />*/}
+              {/*      <h4>{item.fields.title}</h4>*/}
+              {/*      <p>*/}
+              {/*        {item.fields.subtitle}*/}
+              {/*      </p>*/}
+              {/*      <CallToAction*/}
+              {/*        linkUrl={item.fields.href}*/}
+              {/*        linkName={item.fields.cta}*/}
+              {/*        arrowClassName="arrow"*/}
+              {/*        source="/arrow.svg"*/}
+              {/*      />*/}
+              {/*    </span>*/}
+              {/*  );*/}
+              {/*})}*/}
             </div>
+
             <div className="article-share">
               <h4>Share this insight</h4>
-              <a href="#">
-                <img src="/share-facebook.svg" />
-              </a>
+              {/*{insightItems.map(link => {*/}
+              {/*  return (*/}
+              {/*    <a href={link.href}>*/}
+              {/*      <img src={link.image.fields.file.url} />*/}
+              {/*    </a>*/}
+              {/*  );*/}
+              {/*})}*/}
+
               <a href="#">
                 <img src="/share-twitter.svg" />
               </a>
@@ -156,7 +212,7 @@ const Article = () => {
         </Row>
       </Container>
 
-      <SubscribeSection heading="Get leadership resources in your inbox" />
+      <SubscribeSection heading={subscribe.title} />
 
       <div className="article-related bg-secondary pb-8 pb-lg-11 text-center">
         <h3 className="mb-8">You might also like these resources</h3>
