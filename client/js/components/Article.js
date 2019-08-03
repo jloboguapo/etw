@@ -13,12 +13,11 @@ const Article = props => {
   const [heading, setHeading] = useState({});
   const [card, setCard] = useState({});
   const [shareInsight, setShareInsight] = useState({});
-  const [subscribe, setSubscribe] = useState([]);
+  const [subscription, setSubscription] = useState([]);
 
   const fetchData = async () => {
     const response = await getEntriesById(id);
     const items = response.items;
-    console.log(items);
 
     if (response && items) {
       return items.map(section => {
@@ -29,7 +28,7 @@ const Article = props => {
         } else if (section.fields.name === 'shareInsight') {
           setShareInsight(section.fields);
         } else if (section.fields.name === 'subscribe') {
-          setSubscribe(section.fields);
+          setSubscription(section.fields);
         }
       });
     }
@@ -209,7 +208,7 @@ const Article = props => {
         </Row>
       </Container>
 
-      <SubscribeSection heading={subscribe.title} />
+      {subscription && <SubscribeSection {...subscription} />}
 
       <div className="article-related bg-secondary pb-8 pb-lg-11 text-center">
         <h3 className="mb-8">You might also like these resources</h3>

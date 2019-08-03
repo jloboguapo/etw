@@ -20,8 +20,8 @@ const ChartsCardsContainer = props => {
 
   return (
     <div className="bg-white py-8 py-lg-11">
-      <Container className="stats-section-container">
-        <Row className="stats-section-charts mb-8 mb-lg-11">
+      <Container>
+        <Row className="mb-8 mb-lg-11">
           {cards.map(card => {
             return <ChartsCards key={card.sys.id} card={card} />;
           })}

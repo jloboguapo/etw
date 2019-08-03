@@ -30,7 +30,7 @@ const StatsSection = props => {
 
   return (
     <div className="bg-white py-8 py-lg-11">
-      <Container className="stats-section-container">
+      <Container>
         <Row className="justify-content-lg-center text-lg-center">
           <Col lg={9}>
             {text && (

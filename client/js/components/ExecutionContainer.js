@@ -47,7 +47,7 @@ const ExecutionContainer = props => {
 
   return (
     <div className="bg-white py-8 py-lg-11">
-      <Container className="stats-section-container">
+      <Container>
         <Row className="execution-container">
           <Col lg={6}>
             <h2>{title}</h2>

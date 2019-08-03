@@ -28,7 +28,8 @@ const Subscribe = props => {
         content={button}
       />
       <p className="small">
-        By subscribing, you agree to our <a href={privacyLink}>privacy policy</a>.
+        By subscribing, you agree to our{' '}
+        <a href={privacyLink}>privacy policy</a>.
       </p>
     </form>
   );
