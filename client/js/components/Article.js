@@ -52,8 +52,6 @@ const Article = props => {
   const cardItems = card.items;
   const insightItems = shareInsight.items;
 
-  console.log(carouselCards.items);
-
   return (
     <div className="article-single">
       <Container className="article-layout">
@@ -220,7 +218,9 @@ const Article = props => {
 
       <div className="article-related bg-secondary pb-8 pb-lg-11 text-center">
         <h3 className="mb-8">{resourcesHead.title}</h3>
-        {carouselCards.items && <CarouselListener {...carouselCards.items} />}
+        {carouselCards.items && (
+          <CarouselListener cards={carouselCards.items} />
+        )}
       </div>
     </div>
   );
