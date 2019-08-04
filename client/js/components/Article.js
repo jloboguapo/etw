@@ -14,6 +14,8 @@ const Article = props => {
   const [card, setCard] = useState({});
   const [shareInsight, setShareInsight] = useState({});
   const [subscription, setSubscription] = useState([]);
+  const [resourcesHead, setResourcesHead] = useState({});
+  const [carouselCards, setCarouselCards] = useState([]);
 
   const fetchData = async () => {
     const response = await getEntriesById(id);
@@ -29,6 +31,10 @@ const Article = props => {
           setShareInsight(section.fields);
         } else if (section.fields.name === 'subscribe') {
           setSubscription(section.fields);
+        } else if (section.fields.name === 'resourcesHead') {
+          setResourcesHead(section.fields);
+        } else if (section.fields.name === 'carouselCards') {
+          setCarouselCards(section.fields);
         }
       });
     }
@@ -45,6 +51,8 @@ const Article = props => {
   const headingsAroundBullet = heading.headingsAroundBullet;
   const cardItems = card.items;
   const insightItems = shareInsight.items;
+
+  console.log(carouselCards.items);
 
   return (
     <div className="article-single">
@@ -211,8 +219,8 @@ const Article = props => {
       {subscription && <SubscribeSection {...subscription} />}
 
       <div className="article-related bg-secondary pb-8 pb-lg-11 text-center">
-        <h3 className="mb-8">You might also like these resources</h3>
-        <CarouselListener />
+        <h3 className="mb-8">{resourcesHead.title}</h3>
+        {carouselCards.items && <CarouselListener {...carouselCards.items} />}
       </div>
     </div>
   );
