@@ -22,6 +22,5 @@ yarn lint
 #### Contentful
 
 We use Contentful to host all of the text, data, content, etc.  Routes.js grabs all of the entries
-and builds the routes per page (path, title, id, and pageLayout) and then builds the correct component
-per the layout and id.  The components used currently are `HomePage.js`, `DefaultPageLayoutContainer.js`,
-and `BlogPageLayout.js`.
+and builds the routes per page (path, title, and id) and then builds the correct component
+per the id.  

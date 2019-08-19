@@ -4,7 +4,8 @@ import { Badge, Dropdown } from 'react-bootstrap';
 import NavDropdown, { Item } from 'react-bootstrap/NavDropdown';
 import ButtonUp from './Button';
 
-const DropdownLinks = ({ link, button }) => {
+const DropdownLinks = ({ link }) => {
+  const url = link.fields.image.fields.file.url;
   const toHeaderGroup = group => {
     return (
       <span key={group.fields.title}>
@@ -34,8 +35,8 @@ const DropdownLinks = ({ link, button }) => {
       title={link.fields.title}
       id={`${link.fields.title}NavDropdown`}
     >
-      <Item href="/performanceSolutions" className="dropdown-cap">
-        <img src="/winning-performance-icon.svg" />
+      <Item href={link.fields.href} className="dropdown-cap">
+        {url && <img src={url} />}
         <div className="dropdown-cap-text">
           <h4>{link.fields.title}</h4>
           <p>{link.fields.subtitle}</p>

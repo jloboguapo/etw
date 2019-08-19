@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import CtaCardCarousel from './CtaCardCarousel';
 
-const CarouselListener = () => {
+const CarouselListener = ({ cards }) => {
   const [centerMode, setCenterMode] = useState(
     !window.matchMedia('(max-width: 768px)').matches
   );
@@ -28,11 +28,10 @@ const CarouselListener = () => {
       selectedItem={1}
       showThumbs={false}
     >
-      <CtaCardCarousel url="/camera-desert.svg" />
-      <CtaCardCarousel url="/photo-mountain.svg" />
-      <CtaCardCarousel url="/modern-desk.svg" />
-      <CtaCardCarousel url="/horse-race.jpg" />
-      <CtaCardCarousel url="/spacecraft.jpg" />
+      {cards &&
+        cards.map(card => {
+          return <CtaCardCarousel key={card.sys.id} fields={card.fields} />;
+        })}
     </Carousel>
   );
 };

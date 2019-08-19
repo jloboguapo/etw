@@ -32,7 +32,7 @@ const Routes = () => {
         <Switch>
           {pages.map(({ fields, sys }) => {
             const { id } = sys;
-            const { path, title, pageLayout } = fields;
+            const { path, title } = fields;
 
             return (
               <Route
@@ -44,7 +44,6 @@ const Routes = () => {
                     history={routeProps.history}
                     title={title}
                     id={id}
-                    pageLayout={pageLayout}
                   />
                 )}
               />
