@@ -60,12 +60,14 @@ const ExecutionContainer = props => {
           <Col lg={6}>
             <h2>{title}</h2>
             <p className="lead">{subtitle}</p>
-            <CallToAction
-              linkUrl={link.href}
-              linkName={link.text}
-              arrowClassName="arrow"
-              source="arrow.svg"
-            />
+            <div className="mb-8 mb-lg-0">
+                <CallToAction
+                  linkUrl={link.href}
+                  linkName={link.text}
+                  arrowClassName="arrow"
+                  source="arrow.svg"
+                />
+            </div>
           </Col>
 
           <Col lg={6}>
