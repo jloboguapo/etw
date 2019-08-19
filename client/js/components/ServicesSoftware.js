@@ -20,7 +20,7 @@ const ServicesSoftware = props => {
 
   return (
     <Container className="services-software-container py-8 py-lg-11">
-      <Row className="justify-content-lg-center text-lg-center mb-10">
+      <Row className="justify-content-lg-center text-lg-center mb-5 mb-lg-10">
         <Col lg={8}>
           <h2>People-powered brains backed by platform-powered brawn</h2>
           <p className="lead">
@@ -32,7 +32,7 @@ const ServicesSoftware = props => {
         </Col>
       </Row>
 
-      <Row className="text-lg-center mb-8 mb-lg-10">
+      <Row className="text-lg-center">
         <Col lg={{ span: 4, offset: 2 }} className="mb-5 mb-lg-0">
           <img src="/strategic-services.svg" className="mb-5" />
           <h4>Strategic services</h4>

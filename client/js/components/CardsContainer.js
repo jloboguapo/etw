@@ -34,7 +34,7 @@ const CardsContainer = props => {
     } = card.fields;
 
     return (
-      <Col key={cardTitle} xs={6} lg={3}>
+      <Col key={cardTitle} md={6} lg={3}>
         <a href={href} className="cards-container-card">
           {icon && <img src={icon.fields.file.url} />}
           {cardTitle && <h3>{cardTitle}</h3>}
