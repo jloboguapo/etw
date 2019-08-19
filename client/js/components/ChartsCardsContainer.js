@@ -20,29 +20,15 @@ const ChartsCardsContainer = props => {
   }, []);
 
   return (
-    <>
-      {paddingClass ? (
-        <div className={`bg-white ${paddingClass.join(' ')}`}>
-          <Container>
-            <Row className="">
-              {cards.map(card => {
-                return <ChartsCards key={card.sys.id} card={card} />;
-              })}
-            </Row>
-          </Container>
-        </div>
-      ) : (
-        <div className="bg-white">
-          <Container>
-            <Row className="">
-              {cards.map(card => {
-                return <ChartsCards key={card.sys.id} card={card} />;
-              })}
-            </Row>
-          </Container>
-        </div>
-      )}
-    </>
+    <div className={`bg-white ${paddingClass ? paddingClass.join(' ') : ''}`}>
+      <Container>
+        <Row className="">
+          {cards.map(card => {
+            return <ChartsCards key={card.sys.id} card={card} />;
+          })}
+        </Row>
+      </Container>
+    </div>
   );
 };
 

@@ -54,55 +54,28 @@ const ExecutionContainer = props => {
   };
 
   return (
-    <>
-      {paddingClass ? (
-        <div className={`bg-white ${paddingClass.join(' ')}`}>
-          <Container>
-            <Row className="execution-container">
-              <Col lg={6}>
-                <h2>{title}</h2>
-                <p className="lead">{subtitle}</p>
-                <CallToAction
-                  linkUrl={link.href}
-                  linkName={link.text}
-                  arrowClassName="arrow"
-                  source="arrow.svg"
-                />
-              </Col>
+    <div className={`bg-white ${paddingClass ? paddingClass.join(' ') : ''}`}>
+      <Container>
+        <Row className="execution-container">
+          <Col lg={6}>
+            <h2>{title}</h2>
+            <p className="lead">{subtitle}</p>
+            <CallToAction
+              linkUrl={link.href}
+              linkName={link.text}
+              arrowClassName="arrow"
+              source="arrow.svg"
+            />
+          </Col>
 
-              <Col lg={6}>
-                <Card className="list-card">
-                  <Card.Body>{cardsMenu.map(toMenuGroup)}</Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      ) : (
-        <div className="bg-white ">
-          <Container>
-            <Row className="execution-container">
-              <Col lg={6}>
-                <h2>{title}</h2>
-                <p className="lead">{subtitle}</p>
-                <CallToAction
-                  linkUrl={link.href}
-                  linkName={link.text}
-                  arrowClassName="arrow"
-                  source="arrow.svg"
-                />
-              </Col>
-
-              <Col lg={6}>
-                <Card className="list-card">
-                  <Card.Body>{cardsMenu.map(toMenuGroup)}</Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      )}
-    </>
+          <Col lg={6}>
+            <Card className="list-card">
+              <Card.Body>{cardsMenu.map(toMenuGroup)}</Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 

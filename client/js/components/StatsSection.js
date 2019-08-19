@@ -32,55 +32,28 @@ const StatsSection = props => {
   }, []);
 
   return (
-    <>
-      {paddingClass ? (
-        <div className={`bg-white ${paddingClass.join(' ')}`}>
-          <Container>
-            <Row className="justify-content-lg-center text-lg-center">
-              <Col lg={9}>
-                {text && (
-                  <h2>
-                    {text + ' '}
-                    {highlightedText && (
-                      <span className="text-info">{highlightedText}</span>
-                    )}
-                    {' ' + textPart2}
-                  </h2>
+    <div className={`bg-white ${paddingClass ? paddingClass.join(' ') : ''}`}>
+      <Container>
+        <Row className="justify-content-lg-center text-lg-center">
+          <Col lg={9}>
+            {text && (
+              <h2>
+                {text + ' '}
+                {highlightedText && (
+                  <span className="text-info">{highlightedText}</span>
                 )}
-              </Col>
-            </Row>
-            <Row className="justify-content-lg-center text-lg-center">
-              <Col lg={6}>
-                <p className="lead">{subtext}</p>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      ) : (
-        <div className={'bg-white'}>
-          <Container>
-            <Row className="justify-content-lg-center text-lg-center">
-              <Col lg={9}>
-                {text && (
-                  <h2>
-                    {text + ' '}
-                    {highlightedText && (
-                      <span className="text-info">{highlightedText}</span>
-                    )}
-                    {' ' + textPart2}
-                  </h2>
-                )}
-              </Col>
-            </Row>
-            <Row className="justify-content-lg-center text-lg-center">
-              <Col lg={6}>
-                <p className="lead">{subtext}</p>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      )}
-    </>
+                {' ' + textPart2}
+              </h2>
+            )}
+          </Col>
+        </Row>
+        <Row className="justify-content-lg-center text-lg-center">
+          <Col lg={6}>
+            <p className="lead">{subtext}</p>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 
