@@ -9,15 +9,23 @@ const ExecutionContainer = props => {
   const [link, setLink] = useState('');
   const [title, setTitle] = useState('');
   const [subtitle, setSubtitle] = useState('');
+  const [paddingClass, setPaddingClass] = useState('');
 
   const fetchData = async () => {
     const response = await getEntriesById(id);
-    const { title, subtitle, button: link, cardsMenu } = response;
+    const {
+      title,
+      subtitle,
+      button: link,
+      cardsMenu,
+      paddingChoices
+    } = response;
 
     setCardsMenu(cardsMenu);
     setTitle(title);
     setSubtitle(subtitle);
     setLink(link.fields);
+    setPaddingClass(paddingChoices);
   };
 
   useEffect(() => {
@@ -26,7 +34,7 @@ const ExecutionContainer = props => {
 
   const toMenuGroup = group => {
     return (
-      <span key={group.fields.title}>
+      <span key={group.sys.id}>
         <h6 className="mb-5">{group.fields.title}</h6>
         {group.fields.submenuItems.map(toCards)}
       </span>
@@ -46,28 +54,55 @@ const ExecutionContainer = props => {
   };
 
   return (
-    <div className="bg-white py-8 py-lg-11">
-      <Container>
-        <Row className="execution-container">
-          <Col lg={6}>
-            <h2>{title}</h2>
-            <p className="lead">{subtitle}</p>
-            <CallToAction
-              linkUrl={link.href}
-              linkName={link.text}
-              arrowClassName="arrow"
-              source="arrow.svg"
-            />
-          </Col>
+    <>
+      {paddingClass ? (
+        <div className={`bg-white ${paddingClass.join(' ')}`}>
+          <Container>
+            <Row className="execution-container">
+              <Col lg={6}>
+                <h2>{title}</h2>
+                <p className="lead">{subtitle}</p>
+                <CallToAction
+                  linkUrl={link.href}
+                  linkName={link.text}
+                  arrowClassName="arrow"
+                  source="arrow.svg"
+                />
+              </Col>
 
-          <Col lg={6}>
-            <Card className="list-card">
-              <Card.Body>{cardsMenu.map(toMenuGroup)}</Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+              <Col lg={6}>
+                <Card className="list-card">
+                  <Card.Body>{cardsMenu.map(toMenuGroup)}</Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      ) : (
+        <div className="bg-white ">
+          <Container>
+            <Row className="execution-container">
+              <Col lg={6}>
+                <h2>{title}</h2>
+                <p className="lead">{subtitle}</p>
+                <CallToAction
+                  linkUrl={link.href}
+                  linkName={link.text}
+                  arrowClassName="arrow"
+                  source="arrow.svg"
+                />
+              </Col>
+
+              <Col lg={6}>
+                <Card className="list-card">
+                  <Card.Body>{cardsMenu.map(toMenuGroup)}</Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      )}
+    </>
   );
 };
 

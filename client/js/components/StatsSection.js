@@ -9,15 +9,18 @@ const StatsSection = props => {
   const [highlightedText, setHighlightedText] = useState('');
   const [textPart2, setTextPart2] = useState('');
   const [subtext, setSubtext] = useState('');
+  const [paddingClass, setPaddingClass] = useState('');
 
   const fetchData = async () => {
     const response = await getEntriesById(id);
     const {
+      paddingChoices,
       text,
       highlightedText,
       textPart2,
       subtext
     } = response.defaultSection.fields;
+    setPaddingClass(paddingChoices);
     setText(text);
     setHighlightedText(highlightedText);
     setTextPart2(textPart2);
@@ -29,28 +32,55 @@ const StatsSection = props => {
   }, []);
 
   return (
-    <div className="bg-white py-8 py-lg-11">
-      <Container>
-        <Row className="justify-content-lg-center text-lg-center">
-          <Col lg={9}>
-            {text && (
-              <h2>
-                {text + ' '}
-                {highlightedText && (
-                  <span className="text-info">{highlightedText}</span>
+    <>
+      {paddingClass ? (
+        <div className={`bg-white ${paddingClass.join(' ')}`}>
+          <Container>
+            <Row className="justify-content-lg-center text-lg-center">
+              <Col lg={9}>
+                {text && (
+                  <h2>
+                    {text + ' '}
+                    {highlightedText && (
+                      <span className="text-info">{highlightedText}</span>
+                    )}
+                    {' ' + textPart2}
+                  </h2>
                 )}
-                {' ' + textPart2}
-              </h2>
-            )}
-          </Col>
-        </Row>
-        <Row className="justify-content-lg-center text-lg-center mb-8 mb-lg-10">
-          <Col lg={6}>
-            <p className="lead">{subtext}</p>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+              </Col>
+            </Row>
+            <Row className="justify-content-lg-center text-lg-center">
+              <Col lg={6}>
+                <p className="lead">{subtext}</p>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      ) : (
+        <div className={'bg-white'}>
+          <Container>
+            <Row className="justify-content-lg-center text-lg-center">
+              <Col lg={9}>
+                {text && (
+                  <h2>
+                    {text + ' '}
+                    {highlightedText && (
+                      <span className="text-info">{highlightedText}</span>
+                    )}
+                    {' ' + textPart2}
+                  </h2>
+                )}
+              </Col>
+            </Row>
+            <Row className="justify-content-lg-center text-lg-center">
+              <Col lg={6}>
+                <p className="lead">{subtext}</p>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      )}
+    </>
   );
 };
 

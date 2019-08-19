@@ -7,11 +7,12 @@ import ChartsCards from './ChartsCards';
 const ChartsCardsContainer = props => {
   const { id } = props;
   const [cards, setCards] = useState([]);
+  const [paddingClass, setPaddingClass] = useState('');
 
   const fetchData = async () => {
     const response = await getEntriesById(id);
-    const cards = response.cards;
-    setCards(cards);
+    setPaddingClass(response.paddingChoices);
+    setCards(response.cards);
   };
 
   useEffect(() => {
@@ -19,15 +20,29 @@ const ChartsCardsContainer = props => {
   }, []);
 
   return (
-    <div className="bg-white py-8 py-lg-11">
-      <Container>
-        <Row className="mb-8 mb-lg-11">
-          {cards.map(card => {
-            return <ChartsCards key={card.sys.id} card={card} />;
-          })}
-        </Row>
-      </Container>
-    </div>
+    <>
+      {paddingClass ? (
+        <div className={`bg-white ${paddingClass.join(' ')}`}>
+          <Container>
+            <Row className="">
+              {cards.map(card => {
+                return <ChartsCards key={card.sys.id} card={card} />;
+              })}
+            </Row>
+          </Container>
+        </div>
+      ) : (
+        <div className="bg-white">
+          <Container>
+            <Row className="">
+              {cards.map(card => {
+                return <ChartsCards key={card.sys.id} card={card} />;
+              })}
+            </Row>
+          </Container>
+        </div>
+      )}
+    </>
   );
 };
 
