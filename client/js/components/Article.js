@@ -16,6 +16,8 @@ const Article = props => {
   const [subscription, setSubscription] = useState([]);
   const [resourcesHead, setResourcesHead] = useState({});
   const [carouselCards, setCarouselCards] = useState([]);
+  const [blogPost, setBlogPost] = useState({});
+  const [blogFooterPic, setBlogFooterPic] = useState({});
 
   const fetchData = async () => {
     const response = await getEntriesById(id);
@@ -35,6 +37,10 @@ const Article = props => {
           setResourcesHead(section.fields);
         } else if (section.fields.name === 'carouselCards') {
           setCarouselCards(section.fields);
+        } else if (section.fields.name === 'blogPost') {
+          setBlogPost(section.fields.blog);
+        } else if (section.fields.name === 'blogFooterPic') {
+          setBlogFooterPic(section.fields);
         }
       });
     }
@@ -51,6 +57,145 @@ const Article = props => {
   const headingsAroundBullet = heading.headingsAroundBullet;
   const cardItems = card.items;
   const insightItems = shareInsight.items;
+
+  const buildParagraph = contents => {
+    return contents.map(content => {
+      return content.nodeType === 'hyperlink'
+        ? buildParagraphHighlight(
+            content.content.map(arr => arr.marks),
+            content.content.map(arr => arr.value),
+            content.data.uri
+          )
+        : buildParagraphHighlight(content.marks, content.value);
+    });
+  };
+
+  const textDecorationMap = {
+    bold: content => <strong key={content}>{content}</strong>,
+    italic: content => <em key={content}>{content}</em>,
+    underline: content => <u key={content}>{content}</u>
+  };
+
+  const buildParagraphHighlight = (marks, content, link) => {
+    if (Array.isArray(marks) && Array.isArray(content)) {
+      marks = marks[0];
+      content = content[0];
+    }
+    if (marks && marks.length > 0) {
+      const newText =
+        marks.some(mark => mark.type === 'bold') &&
+        marks.some(mark => mark.type === 'italic') &&
+        marks.some(mark => mark.type === 'underline') ? (
+          <strong key={content}>
+            <em>
+              <u>{content}</u>
+            </em>
+          </strong>
+        ) : marks.some(mark => mark.type === 'bold') &&
+          marks.some(mark => mark.type === 'italic') ? (
+          <strong key={content}>
+            <em>{content}</em>
+          </strong>
+        ) : marks.some(mark => mark.type === 'bold') &&
+          marks.some(mark => mark.type === 'underline') ? (
+          <strong key={content}>
+            <u>{content}</u>
+          </strong>
+        ) : marks.some(mark => mark.type === 'italic') &&
+          marks.some(mark => mark.type === 'underline') ? (
+          <em key={content}>
+            <u>{content}</u>
+          </em>
+        ) : (
+          textDecorationMap[marks[0].type](content)
+        );
+      return link ? (
+        <a key={link + marks + content} href={link}>
+          {newText}
+        </a>
+      ) : (
+        newText
+      );
+    }
+    return link ? (
+      <a key={link + marks + content} href={link}>
+        {content}
+      </a>
+    ) : (
+      content
+    );
+  };
+
+  const mappingFun = {
+    paragraph: (data, content, index) => (
+      <p key={content.map(content => content.value + index)}>
+        {buildParagraph(content)}
+      </p>
+    ),
+    'heading-1': (data, content) => (
+      <h1 key={content.map(content => content.value)}>
+        {content.map(content => content.value)}
+      </h1>
+    ),
+    'heading-2': (data, content) => (
+      <h2 key={content.map(content => content.value)}>
+        {content.map(content => content.value)}
+      </h2>
+    ),
+    'heading-3': (data, content) => (
+      <h3 key={content.map(content => content.value)}>
+        {content.map(content => content.value)}
+      </h3>
+    ),
+    'heading-4': (data, content) => (
+      <h4 key={content.map(content => content.value)}>
+        {content.map(content => content.value)}
+      </h4>
+    ),
+    'heading-5': (data, content) => (
+      <h5 key={content.map(content => content.value)}>
+        {content.map(content => content.value)}
+      </h5>
+    ),
+    'unordered-list': (data, content, index) => (
+      <ul key={index}>
+        {content.map(array =>
+          array.content.map(arr =>
+            arr.content.map(lastArr => (
+              <li key={lastArr.value + index}>{lastArr.value}</li>
+            ))
+          )
+        )}
+      </ul>
+    ),
+    'ordered-list': (data, content, index) => (
+      <ol key={index}>
+        {content.map(array =>
+          array.content.map(arr =>
+            arr.content.map(lastArr => (
+              <li key={lastArr.value}>{lastArr.value}</li>
+            ))
+          )
+        )}
+      </ol>
+    ),
+    'embedded-asset-block': (data, content) => (
+      <img
+        key={data.target.sys.id}
+        className="article-hero rounded"
+        src={data.target.fields.file.url}
+      />
+    )
+  };
+  const buildHTML = ({ data, content, nodeType }, index) => {
+    return mappingFun[nodeType](data, content, index);
+  };
+
+  const renderBlogPost =
+    blogPost.content &&
+    blogPost.content.map((arr, index) => {
+      return buildHTML(arr, index);
+    });
 
   return (
     <div className="article-single">
@@ -125,91 +270,26 @@ const Article = props => {
             </div>
           </Col>
           <Col xs={{ span: 12, order: 0 }} lg={{ span: 9, order: 1 }}>
-            <div className="article-content">
-              <img className="article-hero rounded" src="/typing-hands.svg" />
-              <p>
-                No matter how much it’s desired in business, change is never
-                easy. Or, as leadership development expert Brian Smith says,
-                “it’s going to get messy.”
-              </p>
-              <p>
-                Change management initiatives within organizations are, by
-                design, intended to improve results. And in most cases, those
-                results are defined and communicated throughout the
-                organization. So, why do more than 70% of change management
-                initiatives fail? And, of the other 30%, more than 50% don’t
-                fully deliver the desired results?
-              </p>
-              <ul>
-                <li>Bullet points look like this</li>
-                <li>Another bullet point</li>
-                <li>And one more for good measure</li>
-              </ul>
-              <p>
-                The primary reason: Leadership Development doesn’t mirror the
-                organizations' drivers that cause extraordinary results to
-                happen. That includes successful change management.
-              </p>
-              <h2>4 Essential Steps to Successful Change Management</h2>
-              <p>
-                Organizational habits are extremely hard to change without a
-                systemic, intentional approach.
-              </p>
-              <p>
-                It’s important to get the mindset and processes right before
-                even considering the productive power of having the right
-                technology and tools in place. Having the right mindset means
-                you understand how your Management Operating System elements,
-                including change management, are intended to create value for
-                the organization. If team members are told to do something
-                without having this value-creation mindset, they’ll likely check
-                the box and go back to the way things were done before—due to
-                the inertia of their “this is how we’ve always done it” mindset.
-              </p>
-              <p>Here are a few ways to shift that paradigm.</p>
-              <h3>
-                Scope and Scale: How a Management Operating System Manages
-                Change
-              </h3>
-              <p>
-                Your answers need to become living, breathing
-                continuous-improvement efforts and systems. When leaders are
-                coached and developed to have a value-creation mindset, this
-                process comes naturally. When leaders are not so equipped, many
-                of these responses simply become “events” with just a lot of
-                non-value-added box-checking.
-              </p>
-              <p>
-                Additionally, your MOS should intentionally prioritize, measure,
-                align and effectively communicate all desired outcomes, such as…
-              </p>
-              <ul>
-                <li>Numbered bullet points look like this</li>
-                <li>Another bullet point</li>
-                <li>And one more for good measure</li>
-              </ul>
-              <p>
-                Interested in learning more? I hope you'll join me, Brian Smith,
-                John Sigmon and an exceptional lineup of CEOs and leadership
-                experts at Network Leadership Summit on April 9 in Tempe.{' '}
-                <a href="/">Register now.</a>
-              </p>
-            </div>
+            <div className="article-content">{renderBlogPost}</div>
 
-            <Card
-              as="a"
-              href="#"
-              className="article-cta-card border-0 shadow-none"
-            >
-              <Img variant="top" src="blog-footer-pic.svg" />
-              <Footer className="bg-success rounded-bottom">
-                <CallToActionNoLink
-                  content="Download the ETW guide to change management"
-                  arrowClassName="arrow-white"
-                  source="arrow-white.svg"
-                />
-              </Footer>
-            </Card>
+            {blogFooterPic && (
+              <Card
+                as="a"
+                href={blogFooterPic.href}
+                className="article-cta-card border-0 shadow-none"
+              >
+                {blogFooterPic && blogFooterPic.icon && (
+                  <Img variant="top" src={blogFooterPic.icon.fields.file.url} />
+                )}
+                <Footer className="bg-success rounded-bottom">
+                  <CallToActionNoLink
+                    content={blogFooterPic.cta}
+                    arrowClassName="arrow-white"
+                    source="arrow-white.svg"
+                  />
+                </Footer>
+              </Card>
+            )}
           </Col>
         </Row>
       </Container>
