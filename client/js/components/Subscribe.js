@@ -24,6 +24,7 @@ const Subscribe = props => {
           if (response.errors && response.errors[0].message.includes('email')) {
             return alert('Please enter a valid email address');
           }
+          setValue('');
           return alert('Thank you for your submission!');
         });
     }

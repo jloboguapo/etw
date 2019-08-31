@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ButtonUp from './Button';
 
 const ReadyWinForm = props => {
@@ -25,11 +25,17 @@ const ReadyWinForm = props => {
         .then(response => response.json())
         .then(response => {
           if (response.errors && response.errors[0].message.includes('email')) {
+            // document.getElementById('form-multiple-fields').reset();
             return alert('Please enter a valid email address');
+          } else if (response.status === 'error') {
+            document.getElementById('form-multiple-fields').reset();
+            return alert(
+              'Something went wrong with your submission - please try again later'
+            );
           }
+          document.getElementById('form-multiple-fields').reset();
           return alert('Thank you for your submission!');
         });
-      postSubmission;
     }
   };
 
@@ -39,11 +45,24 @@ const ReadyWinForm = props => {
     setInputs(Object.assign(inputs, { [name]: value }));
   };
 
+  const handleReset = () => {
+    setInputs({});
+  };
+
+  useEffect(() => {
+    handleReset();
+  }, []);
+
   return (
-    <form className="etw-subscribe-container mx-lg-10" onSubmit={handleSubmit}>
+    <form
+      id="form-multiple-fields"
+      className="etw-subscribe-container mx-lg-10"
+      onSubmit={handleSubmit}
+      onReset={handleReset}
+    >
       <div className="form-group">
         <input
-          className="form-control  form-control-lg"
+          className="form-control form-control-lg"
           name="name"
           value={inputs.name}
           onChange={handleInputChange}
