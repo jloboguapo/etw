@@ -5,9 +5,28 @@ const Subscribe = props => {
   const [value, setValue] = useState('');
   const { button, placeholderText, privacyLink } = props;
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.log('this is where it will make the api call to subscribe', value);
+  const handleSubmit = async e => {
+    if (e) {
+      e.preventDefault();
+
+      const postSubmission = await fetch(
+        'https://api.hsforms.com/submissions/v3/integration/submit/3379879/4abd9ecd-a9b3-468f-8ab6-6fa9bb85d9d7',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ fields: [{ name: 'email', value: value }] })
+        }
+      )
+        .then(response => response.json())
+        .then(response => {
+          if (response.errors && response.errors[0].message.includes('email')) {
+            return alert('Please enter a valid email address');
+          }
+          return alert('Thank you for your submission!');
+        });
+    }
   };
 
   return (

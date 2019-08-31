@@ -8,7 +8,7 @@ const DropdownLinks = ({ link }) => {
   const url = link.fields.image.fields.file.url;
   const toHeaderGroup = group => {
     return (
-      <span key={group.fields.title}>
+      <span key={group.sys.id}>
         <Dropdown.Header>{group.fields.title}</Dropdown.Header>
         {group.fields.submenuItems.map(toItem)}
       </span>
@@ -18,7 +18,7 @@ const DropdownLinks = ({ link }) => {
   const toItem = item => (
     <NavDropdown.Item
       href={item.fields.href}
-      key={item.fields.title || item.fields.text}
+      key={item.sys.id}
       className={item.fields.className ? item.fields.className : ''}
     >
       {item.fields.title || (
