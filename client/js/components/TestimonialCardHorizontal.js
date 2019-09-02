@@ -3,11 +3,11 @@ import { Col, Row } from 'react-bootstrap';
 import Card, { Body } from 'react-bootstrap/Card';
 import ButtonUp from './Button';
 
-const TestimonialCardHorizontal = ({ data }) => {
+const TestimonialCardHorizontal = ({ data, style }) => {
   const { button, quote, quoter, text } = data;
 
   return (
-    <Card className="testimonial-card">
+    <Card className="testimonial-card" style={style && style}>
       <Body>
         <Row>
           <Col

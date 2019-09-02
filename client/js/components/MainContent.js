@@ -7,10 +7,10 @@ import CallToAction from './CallToAction';
 import TestimonialCardVertical from './TestimonialCardVertical';
 import CtaCard from './CtaCard';
 import { getEntriesById } from '../utils/contentfulHelpers';
+import TestimonialCardHorizontal from './TestimonialCardHorizontal';
 
-const MainContent = ({ id }) => {
+const MainContent = ({ id, blog }) => {
   const [cta, setCta] = useState({});
-  const [ctaCards, setCtaCards] = useState([]);
   const [subscription, setSubscription] = useState({});
   const [title, setTitle] = useState('');
   const [testimonial, setTestimonial] = useState({});
@@ -19,7 +19,6 @@ const MainContent = ({ id }) => {
     const items = await getEntriesById(id);
 
     setCta(items.cta);
-    setCtaCards(items.ctaCards);
     setSubscription(items.subscription);
     setTitle(items.title);
     setTestimonial(items.testimonialCardVertical);
@@ -29,11 +28,24 @@ const MainContent = ({ id }) => {
     fetchData();
   }, []);
 
-  const renderCards = (card, index) => {
-    const { name } = card.fields;
+  const renderCards = (blogPost, index) => {
     const isLarge = (index + 1) % 3 === 0;
 
-    return <CtaCard key={name} showLarge={isLarge} {...card.fields} />;
+    return (
+      <CtaCard key={blogPost.sys.id} showLarge={isLarge} blog={blogPost} />
+    );
+  };
+
+  const reverseBlog = blog => {
+    let newArray = [];
+    for (let i = blog.length - 1; i >= 0; i--) {
+      newArray.push(blog[i]);
+    }
+    return newArray;
+  };
+
+  let divStyle = {
+    marginBottom: '2.5rem'
   };
 
   return (
@@ -47,11 +59,20 @@ const MainContent = ({ id }) => {
         </Row>
         <div className="main-content-card-container mt-8 mt-lg-11">
           <CardDeck>
-            {!_isEmpty(ctaCards) && ctaCards.map(renderCards)}
-            {!_isEmpty(testimonial) && (
-              <TestimonialCardVertical {...testimonial.fields} />
-            )}
+            {reverseBlog(blog).map(renderCards)}
+            {!_isEmpty(testimonial) &&
+              (blog.length % 2 === 0 || blog.length === 1) && (
+                <TestimonialCardVertical {...testimonial.fields} />
+              )}
           </CardDeck>
+          {testimonial &&
+            !_isEmpty(testimonial) &&
+            !(blog.length % 2 === 0 || blog.length === 1) && (
+              <TestimonialCardHorizontal
+                data={testimonial.fields}
+                style={divStyle}
+              />
+            )}
           {!_isEmpty(cta) && (
             <p className="text-center mb-0">
               <CallToAction

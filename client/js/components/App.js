@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
 import '../../sass/style.scss';
+
+
 import Header from './Header';
 import Footer from './Footer';
 import { useContentful } from '../utils/customHooks';

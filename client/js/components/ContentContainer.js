@@ -18,7 +18,7 @@ import Article from './Article';
 const ContentContainer = props => {
   const dispatch = useDispatch();
   const [entry, setEntry] = useState({});
-  const { id } = props;
+  const { id, blog } = props;
 
   const getEntry = async () => {
     try {
@@ -55,7 +55,7 @@ const ContentContainer = props => {
     readyWin: (id, key) => <ReadyWin key={key} id={id} />,
     heroContent: (id, key) => <HeroContent key={key} id={id} />,
     cardsContainer: (id, key) => <CardsContainer key={key} id={id} />,
-    mainContent: (id, key) => <MainContent key={key} id={id} />,
+    mainContent: (id, key) => <MainContent key={key} id={id} blog={blog} />,
     article: (id, key) => <Article key={key} id={id} />,
     bannerId: (id, key) => <Banner key={key} id={id} />
   };
@@ -71,7 +71,7 @@ const ContentContainer = props => {
         }
 
         return (
-          fields &&
+          fields.name &&
           components[fields.name] &&
           components[fields.name](sys.id, `${sys.id}${index}`)
         );
