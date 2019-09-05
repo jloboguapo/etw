@@ -72,15 +72,13 @@ const Routes = () => {
                   key={foundSection.sys.id}
                   exact
                   path={`/leadership-resources${blogPath.fields.path}`}
-                  render={routeProps => {
-                    return (
-                      <ContentContainer
-                        history={routeProps.history}
-                        title={title}
-                        id={id}
-                      />
-                    );
-                  }}
+                  render={routeProps => (
+                    <ContentContainer
+                      history={routeProps.history}
+                      title={title}
+                      id={id}
+                    />
+                  )}
                 />
               );
             })}
