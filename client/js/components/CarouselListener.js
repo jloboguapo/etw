@@ -27,16 +27,18 @@ const CarouselListener = ({ blog }) => {
     return newArray;
   };
 
+  const lastFiveBlogPosts = reverseBlog(blog).slice(0, 5);
+
   return (
     <Carousel
-      centerMode={blog.length > 2 ? centerMode : false}
+      centerMode={lastFiveBlogPosts.length > 2 ? centerMode : false}
       centerSlidePercentage={
         window.matchMedia('(max-width: 768px)').matches ? 80 : 39
       }
-      selectedItem={blog.length > 1 ? 1 : 0}
+      selectedItem={lastFiveBlogPosts.slice(0, 5).length > 2 ? 1 : 0}
       showThumbs={false}
     >
-      {reverseBlog(blog).map(blogPost => (
+      {lastFiveBlogPosts.map(blogPost => (
         <CtaCardCarousel key={blogPost.sys.id} blogPost={blogPost} />
       ))}
     </Carousel>
