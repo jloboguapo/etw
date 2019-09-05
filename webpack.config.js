@@ -39,7 +39,8 @@ module.exports = {
           'css-loader?sourceMap',
           'postcss-loader?sourceMap',
           'sass-loader?outputStyle=compressed&sourceMap'
-        ]
+        ],
+        exclude: '/main.css'
       },
       {
         test: /\.(svg|png|jpe?g)$/,
