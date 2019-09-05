@@ -177,7 +177,7 @@ const Blog = ({ blog }) => {
                 headingsAroundBullet.map((tag, index) => {
                   return (
                     <span key={`${tag}${index}`}>
-                      {index === 0 && <a href={heading.subtext}>{tag + ' '}</a>}
+                      {index === 0 && <a href='/leadership-resources'>{tag + ' '}</a>}
                       {index !== 0 && (
                         <>
                           <span className="article-meta-divider">&bull;</span>

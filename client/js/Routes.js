@@ -62,30 +62,28 @@ const Routes = () => {
               />
             );
           })}
-          {pages.map(({ fields, sys }) => {
-            const { id } = sys;
-            const { path, title } = fields;
+          {foundSection &&
+            blogPaths.map(blogPath => {
+              const id = foundSection.sys.id;
+              const title = foundSection.fields.title;
 
-            return (
-              <Route
-                key={path}
-                exact
-                path={
-                  blogPaths &&
-                  blogPaths.map(
-                    blogPath => `/leadership-resources${blogPath.fields.path}`
-                  )
-                }
-                render={routeProps => (
-                  <ContentContainer
-                    history={routeProps.history}
-                    title={title}
-                    id={id}
-                  />
-                )}
-              />
-            );
-          })}
+              return (
+                <Route
+                  key={foundSection.sys.id}
+                  exact
+                  path={`/leadership-resources${blogPath.fields.path}`}
+                  render={routeProps => {
+                    return (
+                      <ContentContainer
+                        history={routeProps.history}
+                        title={title}
+                        id={id}
+                      />
+                    );
+                  }}
+                />
+              );
+            })}
         </Switch>
       </App>
     </BrowserRouter>
