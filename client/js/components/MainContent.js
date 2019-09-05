@@ -48,6 +48,8 @@ const MainContent = ({ id, blog }) => {
     marginBottom: '2.5rem'
   };
 
+  const lastFiveBlogPosts = reverseBlog(blog).slice(0, 5);
+
   return (
     <div className="bg-secondary py-8 py-lg-11">
       <Container className="main-content-wrapper">
@@ -59,15 +61,15 @@ const MainContent = ({ id, blog }) => {
         </Row>
         <div className="main-content-card-container mt-8 mt-lg-11">
           <CardDeck>
-            {reverseBlog(blog).map(renderCards)}
+            {lastFiveBlogPosts.map(renderCards)}
             {!_isEmpty(testimonial) &&
-              (blog.length % 2 === 0 || blog.length === 1) && (
+              lastFiveBlogPosts.length === (1 || 4) && (
                 <TestimonialCardVertical {...testimonial.fields} />
               )}
           </CardDeck>
           {testimonial &&
             !_isEmpty(testimonial) &&
-            !(blog.length % 2 === 0 || blog.length === 1) && (
+            !(lastFiveBlogPosts.length === (1 || 4)) && (
               <TestimonialCardHorizontal
                 data={testimonial.fields}
                 style={divStyle}
