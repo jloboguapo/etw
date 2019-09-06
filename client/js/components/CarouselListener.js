@@ -33,7 +33,7 @@ const CarouselListener = ({ blog }) => {
       centerSlidePercentage={
         window.matchMedia('(max-width: 768px)').matches ? 80 : 39
       }
-      selectedItem={blog.length > 2 ? 1 : 0}
+      selectedItem={blog.length > 1 ? 1 : 0}
       showThumbs={false}
     >
       {reverseBlog(blog).map(blogPost => (
