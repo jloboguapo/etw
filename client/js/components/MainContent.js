@@ -63,13 +63,16 @@ const MainContent = ({ id, blog }) => {
           <CardDeck>
             {lastFourBlogPosts.map(renderCards)}
             {!_isEmpty(testimonial) &&
-              lastFourBlogPosts.length === (1 || 4) && (
+              (lastFourBlogPosts.length === 1 ||
+                lastFourBlogPosts.length === 4) && (
                 <TestimonialCardVertical {...testimonial.fields} />
               )}
           </CardDeck>
           {testimonial &&
             !_isEmpty(testimonial) &&
-            !(lastFourBlogPosts.length === (1 || 4)) && (
+            !(
+              lastFourBlogPosts.length === 1 || lastFourBlogPosts.length === 4
+            ) && (
               <TestimonialCardHorizontal
                 data={testimonial.fields}
                 style={divStyle}
