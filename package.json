@@ -10,7 +10,8 @@
     "commit": "yarn lint",
     "dev": "webpack-dev-server --config webpack.config.js",
     "lint": "eslint -c .eslintrc . --ext .js",
-    "postinstall": "webpack -p --config webpack.prod.config.js"
+    "build": "webpack -p --config webpack.prod.config.js",
+    "postinstall": "yarn build"
   },
   "keywords": [
     "Juice",
