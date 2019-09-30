@@ -1,0 +1,107 @@
+.carousel {
+    position: relative;
+
+    .carousel-status,
+    .control-dots,
+    .thumbs-wrapper {
+        display: none;
+    }
+
+    .control-arrow {
+        position        : absolute !important;
+        z-index         : 99 !important;
+        top             : 40% !important;
+        height          : 3.75rem !important;
+        width           : 3.75rem !important;
+        border-radius   : 2.75rem !important;
+        font-size       : 0.875rem !important;
+        background-color: #fff !important;
+        padding         : 0 !important;
+        transition      : $transition-base;
+        opacity         : 1 !important;
+
+        &::before {
+            content         : '';
+            width           : 16px;
+            height          : 16px;
+            background-image: url('/arrow.svg');
+            background-size : contain;
+            margin          : 0 !important;
+            border          : none !important;
+            transition      : $transition-base;
+        }
+
+        &:hover {
+            background-color: $forest !important;
+
+            &::before {
+                background-image: url('/arrow-white.svg');
+            }
+        }
+
+        &.control-prev {
+            left: 1.875rem !important;
+
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+
+        &.control-next {
+            right: 1.875rem !important;
+        }
+
+        &.control-disabled {
+            opacity       : 0.2 !important;
+            display       : block !important;
+            pointer-events: none;
+        }
+    }
+
+    .slider-wrapper.axis-horizontal .slider .slide {
+        background-color: transparent;
+
+        .legend {
+            display: none;
+        }
+    }
+
+    .slide {
+        display: flex;
+
+        .card {
+            text-align  : left;
+            margin-left : 1rem;
+            margin-right: 1rem;
+            flex        : 1;
+
+            .card-img-bg {
+                height: 19rem;
+                flex  : 0 0 auto;
+            }
+
+            .card-body {
+                flex: 1;
+
+                .card-title {
+                    display           : -webkit-box;
+                    line-clamp        : 3;
+                    -webkit-line-clamp: 3;
+                    text-overflow     : ellipsis;
+                    -webkit-box-orient: vertical;
+                    overflow          : hidden;
+                }
+
+                .arrow-link {
+                    margin-top: auto;
+
+                    img {
+                        width         : 10px !important;
+                        vertical-align: unset !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
