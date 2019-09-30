@@ -6,7 +6,7 @@ module.exports = {
   entry: ['./client/js/index.js'],
   devtool: 'inline-source-map',
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -16,7 +16,7 @@ module.exports = {
     historyApiFallback: true,
     compress: true,
     hot: true,
-    contentBase: path.join(__dirname, 'public'),
+    contentBase: path.join(__dirname, 'dist'),
     publicPath: '/',
     open: true
   },
