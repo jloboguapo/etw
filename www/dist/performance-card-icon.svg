@@ -1,0 +1,22 @@
+
+<svg width="82px" height="81px" viewBox="0 0 82 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01a_homepage" transform="translate(-1039.000000, -1157.000000)">
+            <g id="Group-16" transform="translate(1040.000000, 1157.000000)">
+                <rect id="Rectangle-Copy-6" fill-rule="nonzero" x="0" y="0" width="80" height="80"></rect>
+                <g id="icon-performance" transform="translate(0.000000, 1.000000)">
+                    <rect id="Rectangle-Copy-8" fill="#D02B30" fill-rule="nonzero" transform="translate(45.500000, 44.500000) rotate(-45.000000) translate(-45.500000, -44.500000) " x="21" y="20" width="49" height="49"></rect>
+                    <g id="Group-15" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M0,2.64705882 C0,1.18323529 1.12973913,0 2.52173913,0 L55.4782609,0 C56.8727826,0 58,1.18323529 58,2.64705882 L58,42.3529412 C58,43.8167647 56.8727826,45 55.4782609,45 L2.52173913,45 C1.12973913,45 0,43.8167647 0,42.3529412 L0,2.64705882 Z" id="Stroke-1"></path>
+                        <path d="M10.5,34 L10.5,29" id="Stroke-3"></path>
+                        <path d="M17.5,34 L17.5,21" id="Stroke-5"></path>
+                        <path d="M25.5,34 L25.5,26" id="Stroke-7"></path>
+                        <path d="M47.5,34 L47.5,15" id="Stroke-9"></path>
+                        <path d="M40.5,34 L40.5,22" id="Stroke-11"></path>
+                        <path d="M32.5,34 L32.5,10" id="Stroke-13"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

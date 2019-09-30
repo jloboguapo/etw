@@ -1,0 +1,29 @@
+.logos {
+    text-align      : center;
+    background-color: $bisque;
+    padding-top     : 2.5rem;
+    padding-bottom  : 2.5rem;
+
+    h4 {
+        margin-bottom : 1.5rem;
+        font-size     : 0.9375rem;
+        text-transform: uppercase;
+    }
+
+    .logos-list {
+        display        : flex;
+        justify-content: space-around;
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+        }
+
+        img {
+            margin: 0 0.25rem;
+
+            @include media-breakpoint-down(md) {
+                margin: 1.5rem 0;
+            }
+        }
+    }
+}
