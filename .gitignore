@@ -3,5 +3,4 @@ node_modules
 coverage/
 .idea
 .DS_Store
-dist/404.html
 
