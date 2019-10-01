@@ -4,9 +4,6 @@ coverage/
 .idea
 dist/bundle*
 dist/.DS_Store
-.firebaserc
-firebase.json
 dist/404.html
-.firebase/
 dist/main*
 
