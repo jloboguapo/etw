@@ -2,8 +2,6 @@ node_modules
 .nyc_output/
 coverage/
 .idea
-dist/bundle*
 dist/.DS_Store
 dist/404.html
-dist/main*
 
