@@ -50,7 +50,7 @@ const Routes = () => {
               <Route
                 key={path}
                 exact
-                path={path}
+                path={`/#${path}`}
                 render={routeProps => (
                   <ContentContainer
                     history={routeProps.history}
@@ -71,7 +71,9 @@ const Routes = () => {
                 <Route
                   key={foundSection.sys.id}
                   exact
-                  path={`/leadership-resources${blogPath.fields.path}`}
+                  path={`/#/leadership-resources${
+                    blogPath.fields.path
+                  }`}
                   render={routeProps => (
                     <ContentContainer
                       history={routeProps.history}
