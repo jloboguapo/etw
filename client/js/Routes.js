@@ -39,7 +39,7 @@ const Routes = () => {
   }, []);
 
   return (
-    <BrowserRouter basename='/#'>
+    <BrowserRouter basename="/#">
       <App>
         <Switch>
           {pages.map(({ fields, sys }) => {
