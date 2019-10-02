@@ -26,12 +26,12 @@ const CtaCardCarousel = ({ blogPost }) => {
         <Pill content={pill} />
       </div>
       <Body>
-        <Title as="a" href={`/leadership-resources${href}`}>
+        <Title as="a" href={`/#/leadership-resources${href}`}>
           {title}
         </Title>
 
         <CallToAction
-          linkUrl={`/leadership-resources${href}`}
+          linkUrl={`/#/leadership-resources${href}`}
           linkName="Read more"
           arrowClassName="/arrow-svg"
           source="/arrow.svg"

@@ -27,7 +27,7 @@ const CtaCard = ({ showLarge, blog }) => {
     <Card
       className={`insight-card${showLarge ? ' card-lg' : ''}`}
       as="a"
-      href={`/leadership-resources${href}`}
+      href={`/#/leadership-resources${href}`}
     >
       {url && (
         <div
