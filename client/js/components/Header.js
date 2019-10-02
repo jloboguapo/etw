@@ -16,10 +16,8 @@ const Header = props => {
     <>
       {messageBannerContent && <MessageBanner content={messageBannerContent} />}
       <Container className="header">
-        <Navbar expand="lg">
-          <Brand href="/">
-            {logo && <img src={logo.fields.file.url} />}
-          </Brand>
+        <Navbar collapseOnSelect expand="lg">
+          <Brand href="/">{logo && <img src={logo.fields.file.url} />}</Brand>
           <Toggle aria-controls="basic-navbar-nav" />
           <Collapse id="basic-navbar-nav">
             <Nav>
