@@ -11,7 +11,7 @@ yarn dev
 
 #### Compiles and minifies for production
 ```
-yarn postinstall
+yarn build
 ```
 
 #### Lints and fixes files

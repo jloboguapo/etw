@@ -2,6 +2,4 @@ node_modules
 .nyc_output/
 coverage/
 .idea
-dist/.DS_Store
-dist/404.html
-
+.DS_Store
