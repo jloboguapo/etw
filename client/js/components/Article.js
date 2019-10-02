@@ -24,11 +24,11 @@ const Article = ({ id }) => {
     const latestPostIndex = !_isEmpty(filtered) && filtered.length - 1;
 
     const getProperBlogPost =
-      window.location.pathname === '/leadership-resources' ||
-      window.location.pathname === '/leadership-resources/'
+      window.location.hash === '#/leadership-resources' ||
+      window.location.hash === '#/leadership-resources/'
         ? filtered[latestPostIndex]
         : filtered.find(
-            blog => blog.fields.path === window.location.pathname.slice(21)
+            blog => blog.fields.path === window.location.hash.slice(22)
           );
     setBlogPostsArray(filtered);
     setBlogPost(getProperBlogPost);
