@@ -26,7 +26,17 @@ const CtaCardCarousel = ({ blogPost }) => {
         <Pill content={pill} />
       </div>
       <Body>
-        <Title as="a" href={`/#/leadership-resources${href}`}>
+        <Title
+          onClick={e => {
+            if (location.href !== e.currentTarget.href) {
+              location.href = e.currentTarget.href;
+              location.reload()(location.href);
+            }
+            window.scrollTo(0, 0);
+          }}
+          as="a"
+          href={`/#/leadership-resources${href}`}
+        >
           {title}
         </Title>
 
@@ -35,6 +45,13 @@ const CtaCardCarousel = ({ blogPost }) => {
           linkName="Read more"
           arrowClassName="/arrow-svg"
           source="/arrow.svg"
+          onClick={e => {
+            if (location.href !== e.currentTarget.href) {
+              location.href = e.currentTarget.href;
+              location.reload()(location.href);
+            }
+            window.scrollTo(0, 0);
+          }}
         />
       </Body>
     </Card>
