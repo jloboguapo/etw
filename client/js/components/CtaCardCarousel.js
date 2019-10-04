@@ -48,7 +48,7 @@ const CtaCardCarousel = ({ blogPost }) => {
           linkUrl={`/#/leadership-resources${href}`}
           linkName="Read more"
           arrowClassName="/arrow-svg"
-          source="/arrow.svg"
+          source="arrow.svg"
           onClick={e => {
             linkReload(e);
           }}
