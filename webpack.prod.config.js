@@ -34,7 +34,11 @@ module.exports = {
       },
       {
         test: /\.(svg|png|jpe?g)$/,
-        loader: 'url-loader'
+        loader: 'url-loader',
+        options: {
+          contentBase: path.join(__dirname, 'dist'),
+          publicPath: '/'
+        }
       }
     ]
   },
