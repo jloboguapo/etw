@@ -34,13 +34,7 @@ module.exports = {
       },
       {
         test: /\.(svg|png|jpe?g)$/,
-        loader: 'url-loader',
-        options: {
-          output: {
-            path: path.join(__dirname, 'dist'),
-            publicPath: '/'
-          }
-        }
+        loader: 'url-loader'
       }
     ]
   },

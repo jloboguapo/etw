@@ -216,7 +216,7 @@ const Blog = ({ blog }) => {
                       linkUrl={item.fields.href}
                       linkName={item.fields.cta}
                       arrowClassName="arrow"
-                      source="/arrow.svg"
+                      source="arrow.svg"
                     />
                   </span>
                 );
