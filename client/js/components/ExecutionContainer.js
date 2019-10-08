@@ -65,7 +65,7 @@ const ExecutionContainer = props => {
                   linkUrl={link.href}
                   linkName={link.text}
                   arrowClassName="arrow"
-                  source="arrow.svg"
+                  source="arrow.png"
                 />
             </div>
           </Col>

@@ -12,7 +12,7 @@ const HeroContentCard = ({ href, src, title, subtitle, ctaContent }) => (
         <CallToActionNoLink
           content={ctaContent}
           arrowClassName="arrow-svg"
-          source="arrow.svg"
+          source="arrow.png"
         />
       )}
     </Body>

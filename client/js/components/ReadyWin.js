@@ -49,7 +49,7 @@ const ReadyWin = props => {
                   linkUrl={ctaLink.href}
                   linkName={ctaLink.text}
                   arrowClassName="arrow"
-                  source="arrow.svg"
+                  source="arrow.png"
                 />
               </Footer>
             </Card>

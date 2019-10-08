@@ -84,7 +84,7 @@ const MainContent = ({ id, blog }) => {
                 linkUrl={cta.fields.href}
                 linkName={cta.fields.text}
                 arrowClassName="arrow-svg"
-                source="arrow.svg"
+                source="arrow.png"
               />
             </p>
           )}

@@ -24,7 +24,7 @@
             content         : '';
             width           : 16px;
             height          : 16px;
-            background-image: url('/arrow.svg');
+            background-image: url('/arrow.png');
             background-size : contain;
             margin          : 0 !important;
             border          : none !important;
@@ -35,7 +35,7 @@
             background-color: $forest !important;
 
             &::before {
-                background-image: url('/arrow-white.svg');
+                background-image: url('/arrow-white.png');
             }
         }
 
