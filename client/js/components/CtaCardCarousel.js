@@ -1,9 +1,12 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setExpandedState } from '../actionCreators';
 import Card, { Body, Title } from 'react-bootstrap/Card';
 import CallToAction from './CallToAction';
 import Pill from './Pill';
 
 const CtaCardCarousel = ({ blogPost }) => {
+  const dispatch = useDispatch();
   const items = blogPost.fields.items && blogPost.fields.items;
 
   const href = blogPost.fields.path && blogPost.fields.path;
@@ -26,6 +29,7 @@ const CtaCardCarousel = ({ blogPost }) => {
       location.reload(true)();
     }
     window.scrollTo(0, 0);
+    dispatch(setExpandedState(false));
   };
 
   return (

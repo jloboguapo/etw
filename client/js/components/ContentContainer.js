@@ -40,8 +40,13 @@ const ContentContainer = props => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   useEffect(() => {
     getEntry();
+    scrollToTop();
   }, []);
 
   const components = {

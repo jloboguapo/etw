@@ -1,11 +1,14 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Badge, Dropdown } from 'react-bootstrap';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Item } from 'react-bootstrap/Nav';
 import ButtonUp from './Button';
+import { setExpandedState } from '../actionCreators';
 
 const DropdownLinks = ({ link }) => {
+  const dispatch = useDispatch();
   const url = link.fields.image.fields.file.url;
   const toHeaderGroup = group => {
     return (
@@ -18,6 +21,10 @@ const DropdownLinks = ({ link }) => {
   const toItem = item => (
     <NavDropdown.Item
       href={item.fields.href}
+      active={false}
+      onClick={() => {
+        dispatch(setExpandedState(false));
+      }}
       key={item.sys.id}
       className={item.fields.className ? item.fields.className : ''}
     >
