@@ -36,19 +36,12 @@ const Article = ({ id }) => {
     setResourcesHead(getNames('resourcesHead'));
   };
 
-  const scrollToTop = () => {
-    if (window.location.hash.slice(0, 22) === '#/leadership-resources') {
-      window.scrollTo(0, 0);
-    }
-  };
-
   useEffect(() => {
     fetchData();
   }, []);
 
   useEffect(() => {
     document.body.className = 'bg-white';
-    scrollToTop();
   }, []);
 
   const blog = !_isEmpty(blogPost) && blogPost;
