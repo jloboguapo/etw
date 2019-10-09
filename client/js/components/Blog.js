@@ -216,7 +216,7 @@ const Blog = ({ blog }) => {
                       linkUrl={item.fields.href}
                       linkName={item.fields.cta}
                       arrowClassName="arrow"
-                      source="arrow.svg"
+                      source="arrow.png"
                     />
                   </span>
                 );
@@ -251,7 +251,7 @@ const Blog = ({ blog }) => {
                 <CallToActionNoLink
                   content={blogFooterPic.cta}
                   arrowClassName="arrow-white"
-                  source="arrow-white.svg"
+                  source="arrow-white.png"
                 />
               </Footer>
             </Card>

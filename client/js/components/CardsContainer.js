@@ -43,7 +43,7 @@ const CardsContainer = props => {
             <CallToActionNoLink
               content={cta}
               arrowClassName="arrow-svg"
-              source="arrow.svg"
+              source="arrow.png"
             />
           )}
         </a>

@@ -42,7 +42,7 @@ const CtaCard = ({ showLarge, blog }) => {
         <CallToActionNoLink
           content="Read more"
           arrowClassName="arrow-svg"
-          source="arrow.svg"
+          source="arrow.png"
         />
       </Body>
     </Card>
