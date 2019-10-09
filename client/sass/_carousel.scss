@@ -10,7 +10,7 @@
     .control-arrow {
         position        : absolute !important;
         z-index         : 99 !important;
-        top             : 40% !important;
+        top             : 37% !important;
         height          : 3.75rem !important;
         width           : 3.75rem !important;
         border-radius   : 2.75rem !important;
@@ -74,10 +74,11 @@
             margin-left : 1rem;
             margin-right: 1rem;
             flex        : 1;
+            min-height: 33rem;
 
             .card-img-bg {
                 height: 19rem;
-                flex  : 0 0 auto;
+                flex  : none;
             }
 
             .card-body {
