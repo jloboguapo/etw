@@ -16,7 +16,7 @@ const FooterMenus = ({ link, index }) => {
 
   const toItem = item => (
     <li
-      key={item.fields.title}
+      key={item.sys.id}
       className={item.fields.className ? item.fields.className : ''}
     >
       <a href={item.fields.href}>{item.fields.title}</a>
