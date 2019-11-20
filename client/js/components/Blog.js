@@ -152,12 +152,21 @@ const Blog = ({ blog }) => {
         )}
       </ol>
     ),
-    'embedded-asset-block': (data, content) => (
+    'embedded-asset-block': data => (
       <img
         key={data.target.sys.id}
         className="article-hero rounded"
         src={data.target.fields.file.url}
       />
+    ),
+    'embedded-entry-block': data => (
+      <a key={data.target.sys.id} href={data.target.fields.href}>
+        <img
+          key={data.target.fields.image.sys.id}
+          className="article-hero rounded"
+          src={data.target.fields.image.fields.file.url}
+        />
+      </a>
     )
   };
 
