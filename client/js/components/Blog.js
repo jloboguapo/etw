@@ -4,12 +4,15 @@ import Pill from './Pill';
 import CallToAction from './CallToAction';
 import Card, { Footer, Img } from 'react-bootstrap/Card';
 import CallToActionNoLink from './CallToActionNoLink';
+import _isEmpty from 'lodash.isempty';
 
 const Blog = ({ blog }) => {
   const getNames = name => {
-    const sectionFields = blog.fields.items.filter(
+    const section = blog.fields.items.filter(
       array => array.fields.name === name
-    )[0].fields;
+    )[0];
+
+    const sectionFields = !_isEmpty(section) && section.fields;
     return sectionFields;
   };
 
@@ -177,7 +180,9 @@ const Blog = ({ blog }) => {
                 headingsAroundBullet.map((tag, index) => {
                   return (
                     <span key={`${tag}${index}`}>
-                      {index === 0 && <a href='/#/leadership-resources'>{tag + ' '}</a>}
+                      {index === 0 && (
+                        <a href="/#/leadership-resources">{tag + ' '}</a>
+                      )}
                       {index !== 0 && (
                         <>
                           <span className="article-meta-divider">&bull;</span>
