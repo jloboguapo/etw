@@ -1,35 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Pill from './Pill';
-import CallToAction from './CallToAction';
-import Card, { Footer, Img } from 'react-bootstrap/Card';
-import CallToActionNoLink from './CallToActionNoLink';
 import _isEmpty from 'lodash.isempty';
+import { getEntriesById } from '../utils/contentfulHelpers';
 
-const Blog = ({ blog }) => {
-  const getNames = name => {
-    const section = blog.fields.items.filter(
-      array => array.fields.name === name
-    )[0];
+const RichText = ({ id }) => {
+  const [blog, setBlog] = useState({});
 
-    const sectionFields = !_isEmpty(section) && section.fields;
-    return sectionFields;
+  const fetchData = async () => {
+    const items = await getEntriesById(id);
+
+    setBlog(items.blog);
   };
 
-  const heading = getNames('heading');
-  const card = getNames('card');
-  const shareInsight = getNames('shareInsight');
-  const blogFooterPic = getNames('blogFooterPic');
-
-  const cardItems = card.items;
-  const headingsAroundBullet = heading.headingsAroundBullet;
-  const insightItems = shareInsight.items;
-
-  const foundBlogPost = blog.fields.items.find(
-    blog => blog.fields.name === 'blogPost'
-  );
-
-  const blogPost = foundBlogPost.fields.blog;
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const buildParagraph = contents => {
     return contents.map(content => {
@@ -174,106 +159,21 @@ const Blog = ({ blog }) => {
     return mapThroughRichText[nodeType](data, content, index);
   };
 
-  const renderBlogPost = blogPost.content.map((arr, index) => {
-    return buildHTML(arr, index);
-  });
+  const renderBlogPost =
+    !_isEmpty(blog) &&
+    blog.content.map((arr, index) => {
+      return buildHTML(arr, index);
+    });
 
   return (
-    <Container className="article-layout">
+    <Container>
       <Row>
-        <Col>
-          <div className="article-header">
-            <h1>{heading.text}</h1>
-            <div className="article-meta">
-              {headingsAroundBullet &&
-                headingsAroundBullet.map((tag, index) => {
-                  return (
-                    <span key={`${tag}${index}`}>
-                      {index === 0 && (
-                        <a href="/#/leadership-resources">{tag + ' '}</a>
-                      )}
-                      {index !== 0 && (
-                        <>
-                          <span className="article-meta-divider">&bull;</span>
-                          <span>{' ' + tag}</span>
-                        </>
-                      )}
-                    </span>
-                  );
-                })}
-              <a href="#">
-                <Pill content={heading.highlightedText} />
-              </a>
-            </div>
-          </div>
-        </Col>
-      </Row>
-
-      <Row>
-        <Col xs={{ span: 12, order: 1 }} lg={{ span: 3, order: 0 }}>
-          <div className="article-author">
-            {cardItems &&
-              cardItems.map(item => {
-                return (
-                  <span key={item.sys.id}>
-                    <div
-                      className="article-author-photo"
-                      style={{
-                        backgroundImage: `url(${
-                          item.fields.icon.fields.file.url
-                        })`
-                      }}
-                    />
-                    <h4>{item.fields.title}</h4>
-                    <p>{item.fields.subtitle}</p>
-                    <CallToAction
-                      linkUrl={item.fields.href}
-                      linkName={item.fields.cta}
-                      arrowClassName="arrow"
-                      source="arrow.png"
-                    />
-                  </span>
-                );
-              })}
-          </div>
-
-          <div className="article-share">
-            <h4>Share this insight</h4>
-            {insightItems &&
-              insightItems.map(link => {
-                return (
-                  <a key={link.fields.name} href={link.fields.href}>
-                    <img src={link.fields.image.fields.file.url} />
-                  </a>
-                );
-              })}
-          </div>
-        </Col>
-        <Col xs={{ span: 12, order: 0 }} lg={{ span: 9, order: 1 }}>
-          <div className="article-content">{renderBlogPost}</div>
-
-          {blogFooterPic && (
-            <Card
-              as="a"
-              href={blogFooterPic.href}
-              className="article-cta-card border-0 shadow-none"
-            >
-              {blogFooterPic && blogFooterPic.icon && (
-                <Img variant="top" src={blogFooterPic.icon.fields.file.url} />
-              )}
-              <Footer className="bg-success rounded-bottom">
-                <CallToActionNoLink
-                  content={blogFooterPic.cta}
-                  arrowClassName="arrow-white"
-                  source="arrow-white.png"
-                />
-              </Footer>
-            </Card>
-          )}
+        <Col xs={{ span: 12, order: 0 }} className="col-lg-10 col-centered">
+          <div>{renderBlogPost}</div>
         </Col>
       </Row>
     </Container>
   );
 };
 
-export default Blog;
+export default RichText;
