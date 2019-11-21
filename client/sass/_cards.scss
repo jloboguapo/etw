@@ -113,6 +113,7 @@
             img {
                 flex        : 0 0 auto;
                 margin-right: 1.25rem;
+                max-width: 14%;
 
                 @include media-breakpoint-down(md) {
                     margin-right : 0;
