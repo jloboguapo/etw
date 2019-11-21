@@ -1,0 +1,30 @@
+# Check our guides at https://confluence.atlassian.com/x/5Q4SMw for more examples.
+# Only use spaces to indent your .yml configuration.
+image: atlassian/default-image:2
+
+pipelines:
+  default:
+    - step:
+        name: Build
+        caches:
+          - node
+        script:
+          - yarn build
+    - step:
+        name: Deploy
+        script:
+          - pipe: atlassian/aws-s3-deploy:0.3.7
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET
+              AWS_DEFAULT_REGION: 'us-east-1'
+              S3_BUCKET: 'beta.etw.com'
+              LOCAL_PATH: 'dist'
+              # CONTENT_ENCODING: '<string>' # Optional.
+              # ACL: '<string>' # Optional.
+              # STORAGE_CLASS: '<string>' # Optional.
+              # CACHE_CONTROL: '<string>' # Optional.
+              # EXPIRES: '<timestamp>' # Optional.
+              # DELETE_FLAG: '<boolean>' # Optional.
+              # EXTRA_ARGS: '<string>' # Optional.
+              # DEBUG: '<boolean>' # Optional.
