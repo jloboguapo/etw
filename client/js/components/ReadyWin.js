@@ -44,14 +44,16 @@ const ReadyWin = props => {
                 <p className="lead mb-8">{readyToWin.subtext}</p>
                 <ReadyWinForm />
               </Body>
-              <Footer>
-                <CallToAction
-                  linkUrl={ctaLink.href}
-                  linkName={ctaLink.text}
-                  arrowClassName="arrow"
-                  source="arrow.png"
-                />
-              </Footer>
+              {ctaLink && (
+                <Footer>
+                  <CallToAction
+                    linkUrl={ctaLink.href}
+                    linkName={ctaLink.text}
+                    arrowClassName="arrow"
+                    source="arrow.png"
+                  />
+                </Footer>
+              )}
             </Card>
           </Col>
         </Row>
