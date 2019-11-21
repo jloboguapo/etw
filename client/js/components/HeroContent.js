@@ -47,7 +47,10 @@ const HeroContent = props => {
               <HeroContentCard
                 key={card.sys.id}
                 href={card.fields.href}
-                src={card.fields.icon.fields.file.url}
+                src={
+                  !_isEmpty(card.fields.icon) &&
+                  card.fields.icon.fields.file.url
+                }
                 title={card.fields.title}
                 subtitle={card.fields.subtitle}
                 ctaContent={card.fields.cta}
