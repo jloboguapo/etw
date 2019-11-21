@@ -10,14 +10,22 @@ const DefaultSection = props => {
   const [highlightedText, setHighlightedText] = useState('');
   const [subtext, setSubtext] = useState('');
   const [headingsAroundBullet, setHeadingsAroundBullet] = useState('');
+  const [paddingClass, setPaddingClass] = useState('');
 
   const fetchData = async () => {
     const response = await getEntriesById(id);
 
-    setText(response.text);
-    setHighlightedText(response.highlightedText);
-    setSubtext(response.subtext);
-    setHeadingsAroundBullet(response.headingsAroundBullet);
+    !_isEmpty(response.paddingChoices)
+      ? setPaddingClass(response.paddingChoices)
+      : null;
+    !_isEmpty(response.text) ? setText(response.text) : null;
+    !_isEmpty(response.highlightedText)
+      ? setHighlightedText(response.highlightedText)
+      : null;
+    !_isEmpty(response.subtext) ? setSubtext(response.subtext) : null;
+    !_isEmpty(response.headingsAroundBullet)
+      ? setHeadingsAroundBullet(response.headingsAroundBullet)
+      : null;
   };
 
   useEffect(() => {
@@ -25,7 +33,11 @@ const DefaultSection = props => {
   }, []);
 
   return (
-    <Container className="hero hero-simple py-8 py-lg-11">
+    <Container
+      className={`hero hero-simple ${
+        paddingClass ? paddingClass.join(' ') : 'py-8 py-lg-11'
+      }`}
+    >
       <ul className="hero-meta">
         {!_isEmpty(headingsAroundBullet) &&
           headingsAroundBullet.map(heading => (

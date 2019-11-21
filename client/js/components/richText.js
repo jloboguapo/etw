@@ -5,11 +5,13 @@ import { getEntriesById } from '../utils/contentfulHelpers';
 
 const RichText = ({ id }) => {
   const [blog, setBlog] = useState({});
+  const [entryTitle, setEntryTitle] = useState('');
 
   const fetchData = async () => {
     const items = await getEntriesById(id);
 
-    setBlog(items.blog);
+    !_isEmpty(items.blog) ? setBlog(items.blog) : null;
+    !_isEmpty(items.entryTitle) ? setEntryTitle(items.entryTitle) : null;
   };
 
   useEffect(() => {
@@ -166,8 +168,23 @@ const RichText = ({ id }) => {
     });
 
   return (
-    <Container>
-      <Row>
+    <Container className="mb-8">
+      {entryTitle === 'story text' && (
+        <Row className="pb-8">
+          <Col xs={{ span: 12, order: 0 }} className="col-lg-10 col-centered">
+            <iframe
+              className="col-centered"
+              width="100%"
+              height="400"
+              src="https://www.youtube.com/embed/iC2Vyw96wuI"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </Col>
+        </Row>
+      )}
+      <Row className="pb-8">
         <Col xs={{ span: 12, order: 0 }} className="col-lg-10 col-centered">
           <div>{renderBlogPost}</div>
         </Col>
