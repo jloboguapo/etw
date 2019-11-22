@@ -101,7 +101,11 @@ const Blog = ({ blog }) => {
 
   const mapThroughRichText = {
     paragraph: (data, content, index) => (
-      <p key={content.map(content => content.value + index)}>
+      <p
+        key={content.map(content =>
+          content.value === '' ? index : content.value
+        )}
+      >
         {buildParagraph(content)}
       </p>
     ),
@@ -226,28 +230,31 @@ const Blog = ({ blog }) => {
                     />
                     <h4>{item.fields.title}</h4>
                     <p>{item.fields.subtitle}</p>
-                    <CallToAction
-                      linkUrl={item.fields.href}
-                      linkName={item.fields.cta}
-                      arrowClassName="arrow"
-                      source="arrow.png"
-                    />
+                    {item.fields.cta && (
+                      <CallToAction
+                        linkUrl={item.fields.href}
+                        linkName={item.fields.cta}
+                        arrowClassName="arrow"
+                        source="arrow.png"
+                      />
+                    )}
                   </span>
                 );
               })}
           </div>
 
-          <div className="article-share">
-            <h4>Share this insight</h4>
-            {insightItems &&
-              insightItems.map(link => {
+          {insightItems && (
+            <div className="article-share">
+              <h4>Share this insight</h4>
+              {insightItems.map(link => {
                 return (
                   <a key={link.fields.name} href={link.fields.href}>
                     <img src={link.fields.image.fields.file.url} />
                   </a>
                 );
               })}
-          </div>
+            </div>
+          )}
         </Col>
         <Col xs={{ span: 12, order: 0 }} lg={{ span: 9, order: 1 }}>
           <div className="article-content">{renderBlogPost}</div>
