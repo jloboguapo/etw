@@ -173,12 +173,11 @@ const RichText = ({ id }) => {
         <Row className="pb-8">
           <Col xs={{ span: 12, order: 0 }} className="col-lg-10 col-centered">
             <iframe
-              className="col-centered"
+              src="https://player.vimeo.com/video/374755428?title=0&byline=0&portrait=0"
               width="100%"
-              height="400"
-              src="https://www.youtube.com/embed/iC2Vyw96wuI"
+              height="420"
               frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allow="autoplay; fullscreen"
               allowFullScreen
             />
           </Col>
