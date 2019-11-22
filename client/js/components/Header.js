@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar, { Brand, Toggle, Collapse } from 'react-bootstrap/Navbar';
 import DropdownLinks from './DropdownLinks';
@@ -22,6 +22,15 @@ const Header = props => {
   };
 
   window.addEventListener('hashchange', hashChanged);
+
+  const linkReload = e => {
+    if (location.href !== e.currentTarget.href) {
+      location.href = e.currentTarget.href;
+      location.reload(true)();
+    }
+    dispatch(setExpandedState(false));
+    window.scrollTo(0, 0);
+  };
 
   return (
     <>
@@ -51,12 +60,16 @@ const Header = props => {
                   />
                 );
               })}
-              <ButtonUp
-                variant="primary"
+              <Button
                 className="navbar-button"
-                content={button.fields.text}
                 href={button.fields.href}
-              />
+                variant="primary"
+                onClick={e => {
+                  linkReload(e);
+                }}
+              >
+                {button.fields.text}
+              </Button>
             </Nav>
           </Collapse>
         </Navbar>
