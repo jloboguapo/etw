@@ -2,6 +2,7 @@ import React from 'react';
 import Card, { Body, Title } from 'react-bootstrap/Card';
 import CallToActionNoLink from './CallToActionNoLink';
 import Pill from './Pill';
+import { setExpandedState } from '../actionCreators';
 
 const CtaCard = ({ showLarge, blog }) => {
   const items = blog.fields.items && blog.fields.items;
@@ -23,11 +24,23 @@ const CtaCard = ({ showLarge, blog }) => {
         image => image.nodeType === 'embedded-asset-block'
       ).data.target.fields.file.url;
 
+  const linkReload = e => {
+    if (location.href !== e.currentTarget.href) {
+      location.href = e.currentTarget.href;
+      location.reload(true)();
+    }
+    dispatch(setExpandedState(false));
+    window.scrollTo(0, 0);
+  };
+
   return (
     <Card
       className={`insight-card${showLarge ? ' card-lg' : ''}`}
       as="a"
       href={`/#/leadership-resources${href}`}
+      onClick={e => {
+        linkReload(e);
+      }}
     >
       {url && (
         <div
