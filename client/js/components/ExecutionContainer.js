@@ -61,12 +61,20 @@ const ExecutionContainer = props => {
             <h2>{title}</h2>
             <p className="lead">{subtitle}</p>
             <div className="mb-8 mb-lg-0">
-                <CallToAction
-                  linkUrl={link.href}
-                  linkName={link.text}
-                  arrowClassName="arrow"
-                  source="arrow.png"
-                />
+              <CallToAction
+                linkUrl={link.href}
+                linkName={link.text}
+                arrowClassName="arrow"
+                source="arrow.png"
+                onClick={() => {
+                  location.hash === '#/experience'
+                    ? scrollTo(
+                        0,
+                        document.getElementById('form').offsetTop - 40
+                      )
+                    : null;
+                }}
+              />
             </div>
           </Col>
 
