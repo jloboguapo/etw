@@ -40,10 +40,6 @@ const Article = ({ id }) => {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    document.body.className = 'bg-white';
-  }, []);
-
   const blog = !_isEmpty(blogPost) && blogPost;
 
   return (

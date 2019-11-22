@@ -10,6 +10,14 @@ import { setExpandedState } from '../actionCreators';
 const DropdownLinks = ({ link }) => {
   const dispatch = useDispatch();
   const url = link.fields.image.fields.file.url;
+  const linkReload = e => {
+    if (location.href !== e.currentTarget.href) {
+      location.href = e.currentTarget.href;
+      location.reload(true)();
+    }
+    dispatch(setExpandedState(false));
+    window.scrollTo(0, 0);
+  };
   const toHeaderGroup = group => {
     return (
       <span key={group.sys.id}>
@@ -22,8 +30,8 @@ const DropdownLinks = ({ link }) => {
     <NavDropdown.Item
       href={item.fields.href}
       active={false}
-      onClick={() => {
-        dispatch(setExpandedState(false));
+      onClick={e => {
+        linkReload(e);
       }}
       key={item.sys.id}
       className={item.fields.className ? item.fields.className : ''}

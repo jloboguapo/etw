@@ -32,7 +32,7 @@ const ReadyWin = props => {
 
   return (
     <div className="bg-white py-8 py-lg-10">
-      <Container>
+      <Container id="form">
         <Row className="justify-content-center">
           <Col lg={8}>
             <Card className="text-center">
