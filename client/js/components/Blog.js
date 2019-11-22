@@ -101,7 +101,11 @@ const Blog = ({ blog }) => {
 
   const mapThroughRichText = {
     paragraph: (data, content, index) => (
-      <p key={content.map(content => content.value + index)}>
+      <p
+        key={content.map(content =>
+          content.value === '' ? index : content.value
+        )}
+      >
         {buildParagraph(content)}
       </p>
     ),
