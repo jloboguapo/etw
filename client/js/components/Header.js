@@ -5,7 +5,6 @@ import { Button, Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar, { Brand, Toggle, Collapse } from 'react-bootstrap/Navbar';
 import DropdownLinks from './DropdownLinks';
-import ButtonUp from './Button';
 import MessageBanner from './MessageBanner';
 import { setExpandedState } from '../actionCreators';
 
@@ -16,21 +15,6 @@ const Header = props => {
 
   const { dropdownMenu, logo, button } = props;
   const messageBannerContent = useSelector(state => state.messageBannerContent);
-
-  const hashChanged = () => {
-    dispatch(setExpandedState(false));
-  };
-
-  window.addEventListener('hashchange', hashChanged);
-
-  const linkReload = e => {
-    if (location.href !== e.currentTarget.href) {
-      location.href = e.currentTarget.href;
-      location.reload(true)();
-    }
-    dispatch(setExpandedState(false));
-    window.scrollTo(0, 0);
-  };
 
   return (
     <>
@@ -64,8 +48,9 @@ const Header = props => {
                 className="navbar-button"
                 href={button.fields.href}
                 variant="primary"
-                onClick={e => {
-                  linkReload(e);
+                onClick={() => {
+                  dispatch(setExpandedState(false));
+                  window.scrollTo(0, 0);
                 }}
               >
                 {button.fields.text}
