@@ -1,29 +1,26 @@
-# www-temp
-
-## Project setup
+# etw
+### Project setup
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+yarn
 ```
 
-### Compiles and minifies for production
+#### Compiles and hot-reloads for development
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
+yarn dev
 ```
 
-### Lints and fixes files
+#### Compiles and minifies for production
 ```
-npm run lint
+yarn build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Lints and fixes files
+```
+yarn lint
+```
+
+#### Contentful
+
+We use Contentful to host all of the text, data, content, etc.  Routes.js grabs all of the entries
+and builds the routes per page (path, title, and id) and then builds the correct component
+per the id.  

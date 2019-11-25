@@ -1,0 +1,30 @@
+.etw-cards-container-main-container {
+    .cards-container-card {
+        transition: $transition-base;
+        padding   : 1.25rem;
+        display   : block;
+
+        img:not(.arrow-svg) {
+            width        : 5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .arrow-link {
+            opacity: 0;
+
+            @include media-breakpoint-down(md) {
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            background-color: rgba($bisque, 0.5);
+            text-decoration : none;
+            color           : $gray-800;
+
+            .arrow-link {
+                opacity: 1;
+            }
+        }
+    }
+}
