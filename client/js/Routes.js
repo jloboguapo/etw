@@ -38,13 +38,6 @@ const Routes = () => {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    window.location.hash.slice(0, 22) === '#/leadership-resources' ||
-    window.location.hash.slice(0, 7) === '#/story'
-      ? (document.body.className = 'bg-white')
-      : null;
-  }, []);
-
   return (
     <BrowserRouter basename="/#">
       <App>
@@ -55,7 +48,7 @@ const Routes = () => {
 
             return (
               <Route
-                key={path}
+                key={Math.random()}
                 exact
                 path={path}
                 render={routeProps => (
@@ -76,7 +69,7 @@ const Routes = () => {
 
               return (
                 <Route
-                  key={foundSection.sys.id}
+                  key={Math.random()}
                   exact
                   path={`/leadership-resources${blogPath.fields.path}`}
                   render={routeProps => (

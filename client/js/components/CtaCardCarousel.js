@@ -23,15 +23,6 @@ const CtaCardCarousel = ({ blogPost }) => {
         image => image.nodeType === 'embedded-asset-block'
       ).data.target.fields.file.url;
 
-  const linkReload = e => {
-    if (location.href !== e.currentTarget.href) {
-      location.href = e.currentTarget.href;
-      location.reload(true)();
-    }
-    window.scrollTo(0, 0);
-    dispatch(setExpandedState(false));
-  };
-
   return (
     <Card key={blogPost.sys.id} className="insight-card">
       <div className="card-img-bg" style={{ backgroundImage: `url("${url}")` }}>
@@ -39,8 +30,9 @@ const CtaCardCarousel = ({ blogPost }) => {
       </div>
       <Body>
         <Title
-          onClick={e => {
-            linkReload(e);
+          onClick={() => {
+            dispatch(setExpandedState(false));
+            window.scrollTo(0, 0);
           }}
           as="a"
           href={`/#/leadership-resources${href}`}
@@ -53,8 +45,9 @@ const CtaCardCarousel = ({ blogPost }) => {
           linkName="Read more"
           arrowClassName="/arrow-svg"
           source="arrow.png"
-          onClick={e => {
-            linkReload(e);
+          onClick={() => {
+            dispatch(setExpandedState(false));
+            window.scrollTo(0, 0);
           }}
         />
       </Body>

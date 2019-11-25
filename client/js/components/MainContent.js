@@ -29,15 +29,6 @@ const MainContent = ({ id, blog }) => {
     fetchData();
   }, []);
 
-  const linkReload = e => {
-    if (location.href !== e.currentTarget.href) {
-      location.href = e.currentTarget.href;
-      location.reload(true)();
-    }
-    dispatch(setExpandedState(false));
-    window.scrollTo(0, 0);
-  };
-
   const renderCards = (blogPost, index) => {
     const isLarge = (index + 1) % 3 === 0;
 
@@ -95,8 +86,9 @@ const MainContent = ({ id, blog }) => {
                 linkName={cta.fields.text}
                 arrowClassName="arrow-svg"
                 source="arrow.png"
-                onClick={e => {
-                  linkReload(e);
+                onClick={() => {
+                  dispatch(setExpandedState(false));
+                  window.scrollTo(0, 0);
                 }}
               />
             </p>

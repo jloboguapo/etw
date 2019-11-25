@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import _isEmpty from 'lodash.isempty';
 import { useDispatch } from 'react-redux';
 import { setMessageBannerContent } from '../actionCreators';
 import { getEntriesById } from '../utils/contentfulHelpers';
@@ -49,6 +50,22 @@ const ContentContainer = props => {
     getEntry();
     scrollToTop();
   }, []);
+
+  const bodyColorSection =
+    !_isEmpty(entry) &&
+    entry.sections.find(
+      section =>
+        section.sys.id === '3BsGM1W5cbFoYtCsIKmjDr' ||
+        section.sys.id === 'OxLmrRa8x6eAWR7bWpkXb'
+    );
+
+  useEffect(() => {
+    bodyColorSection &&
+    (bodyColorSection.sys.id === '3BsGM1W5cbFoYtCsIKmjDr' ||
+      bodyColorSection.sys.id === 'OxLmrRa8x6eAWR7bWpkXb')
+      ? (document.body.className = 'bg-white')
+      : (document.body.className = '');
+  }, [bodyColorSection]);
 
   const components = {
     defaultSection: (id, key) => <DefaultSection key={key} id={id} />,
