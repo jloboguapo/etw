@@ -156,6 +156,16 @@ const Blog = ({ blog }) => {
         )}
       </ol>
     ),
+    blockquote: (data, content, index) =>
+      content.map(array => {
+        <p
+          key={content.map(content =>
+            content.value === '' ? index : content.value
+          )}
+        >
+          {buildParagraph(content)}
+        </p>;
+      }),
     'embedded-asset-block': data => (
       <img
         key={data.target.sys.id}
