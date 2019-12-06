@@ -34,7 +34,11 @@ const CardsContainer = props => {
     } = card.fields;
 
     return (
-      <Col key={cardTitle} md={6} lg={3}>
+      <Col
+        key={cardTitle}
+        md={cards.length % 2 === 1 ? 12 : 6}
+        lg={12 / cards.length}
+      >
         <a href={href} className="cards-container-card">
           {icon && <img src={icon.fields.file.url} />}
           {cardTitle && <h3>{cardTitle}</h3>}
@@ -60,7 +64,9 @@ const CardsContainer = props => {
             {subtext && <p className="lead mb-8">{subtext}</p>}
           </Col>
         </Row>
-        <Row className="mb-8 mb-lg-11">{!_isEmpty(cards) && cards.map(renderCard)}</Row>
+        <Row className="mb-8 mb-lg-11">
+          {!_isEmpty(cards) && cards.map(renderCard)}
+        </Row>
         {!_isEmpty(testimonialCards) && (
           <TestimonialCardHorizontal data={testimonialCards.fields} />
         )}
