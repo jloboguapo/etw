@@ -88,7 +88,11 @@ a {
     }
 }
 
-blockquote {
+.blockquote-richtext {
+        margin: 1em;
+}
+
+.blockquote-image {
     &::before {
         content            : '';
         display            : inline-block;

@@ -33,7 +33,11 @@ const Blog = ({ blog }) => {
 
   const buildParagraph = contents => {
     return contents.map(content => {
-      return content.nodeType === 'hyperlink'
+      return content.nodeType === 'paragraph'
+        ? content.content.map(arr =>
+            buildParagraphHighlight(arr.marks, arr.value)
+          )
+        : content.nodeType === 'hyperlink'
         ? buildParagraphHighlight(
             content.content.map(arr => arr.marks),
             content.content.map(arr => arr.value),
@@ -156,16 +160,16 @@ const Blog = ({ blog }) => {
         )}
       </ol>
     ),
-    blockquote: (data, content, index) =>
-      content.map(array => {
-        <p
-          key={content.map(content =>
-            content.value === '' ? index : content.value
-          )}
-        >
-          {buildParagraph(content)}
-        </p>;
-      }),
+    blockquote: (data, content) => (
+      <blockquote
+        className="blockquote-richtext"
+        key={content.map(array => {
+          return array.content[array.content.length - 1].value;
+        })}
+      >
+        {buildParagraph(content)}
+      </blockquote>
+    ),
     'embedded-asset-block': data => (
       <img
         key={data.target.sys.id}
