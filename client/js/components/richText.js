@@ -169,20 +169,6 @@ const RichText = ({ id }) => {
 
   return (
     <Container className="mb-8">
-      {entryTitle === 'story text' && (
-        <Row className="pb-8">
-          <Col xs={{ span: 12, order: 0 }} className="col-lg-10 col-centered">
-            <iframe
-              src="https://player.vimeo.com/video/374755428?title=0&byline=0&portrait=0"
-              width="100%"
-              height="420"
-              frameBorder="0"
-              allow="autoplay; fullscreen"
-              allowFullScreen
-            />
-          </Col>
-        </Row>
-      )}
       <Row className="pb-8">
         <Col xs={{ span: 12, order: 0 }} className="col-lg-10 col-centered">
           <div>{renderBlogPost}</div>
