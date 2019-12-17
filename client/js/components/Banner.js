@@ -50,10 +50,8 @@ const Banner = props => {
         <div className="logos-list">
           {centerMode ? (
             <Carousel
-              centerMode={true}
               autoPlay={true}
               interval={3000}
-              centerSlidePercentage={100}
               selectedItem={0}
               infiniteLoop={true}
               showThumbs={false}
