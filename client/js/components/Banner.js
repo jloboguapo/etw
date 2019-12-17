@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import _isEmpty from 'lodash.isempty';
 import { useContentful } from '../utils/customHooks';
+import { Carousel } from 'react-responsive-carousel';
 
 const Banner = props => {
   const [title, setTitle] = useState('');
@@ -47,11 +48,27 @@ const Banner = props => {
       <Container>
         <h4>{title}</h4>
         <div className="logos-list">
-          {centerMode
-            ? !_isEmpty(img) && <img src={img[1].fields.file.url} />
-            : img.map(img => {
-                return <img key={img.sys.id} src={img.fields.file.url} />;
-              })}
+          {centerMode ? (
+            <Carousel
+              centerMode={true}
+              autoPlay={true}
+              interval={3000}
+              centerSlidePercentage={100}
+              selectedItem={0}
+              infiniteLoop={true}
+              showThumbs={false}
+              showArrows={false}
+            >
+              {!_isEmpty(img) &&
+                img.map(img => {
+                  return <img key={img.sys.id} src={img.fields.file.url} />;
+                })}
+            </Carousel>
+          ) : (
+            img.map(img => {
+              return <img key={img.sys.id} src={img.fields.file.url} />;
+            })
+          )}
         </div>
       </Container>
     </div>
