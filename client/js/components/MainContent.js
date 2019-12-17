@@ -30,7 +30,7 @@ const MainContent = ({ id, blog }) => {
   }, []);
 
   const renderCards = (blogPost, index) => {
-    const isLarge = index + (1 % 2) === 1 && (index + 1) % 3 === 0;
+    const isLarge = (index + 1) % 2 === 1 && (index + 1) % 3 === 0;
 
     return (
       <CtaCard key={blogPost.sys.id} showLarge={isLarge} blog={blogPost} />
@@ -49,7 +49,7 @@ const MainContent = ({ id, blog }) => {
     marginBottom: '2.5rem'
   };
 
-  const lastFourBlogPosts = reverseBlog(blog).slice(0, 4);
+  const lastFiveBlogPosts = reverseBlog(blog).slice(0, 5);
 
   return (
     <div className="bg-secondary py-8 py-lg-11">
@@ -62,17 +62,17 @@ const MainContent = ({ id, blog }) => {
         </Row>
         <div className="main-content-card-container mt-8 mt-lg-11">
           <CardDeck>
-            {lastFourBlogPosts.map(renderCards)}
+            {lastFiveBlogPosts.map(renderCards)}
             {!_isEmpty(testimonial) &&
-              (lastFourBlogPosts.length === 1 ||
-                lastFourBlogPosts.length === 4) && (
+              (lastFiveBlogPosts.length === 1 ||
+                lastFiveBlogPosts.length === 4) && (
                 <TestimonialCardVertical {...testimonial.fields} />
               )}
           </CardDeck>
           {testimonial &&
             !_isEmpty(testimonial) &&
             !(
-              lastFourBlogPosts.length === 1 || lastFourBlogPosts.length === 4
+              lastFiveBlogPosts.length === 1 || lastFiveBlogPosts.length === 4
             ) && (
               <TestimonialCardHorizontal
                 data={testimonial.fields}
