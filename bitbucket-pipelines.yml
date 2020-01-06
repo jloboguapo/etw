@@ -24,7 +24,7 @@ pipelines:
              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
              AWS_SECRET_ACCESS_KEY: $AWS_ACCESS_KEY
              AWS_DEFAULT_REGION: 'us-east-1'
-             S3_BUCKET: 'beta.etw.com'
+             S3_BUCKET: 'etw.com'
              LOCAL_PATH: 'dist'
              # CONTENT_ENCODING: '<string>' # Optional.
              # ACL: '<string>' # Optional.
