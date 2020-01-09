@@ -17,6 +17,7 @@ pipelines:
           - dist/**
     - step:
        name: Deploy
+       deployment: Stage
        script:
          - pipe: atlassian/aws-s3-deploy:0.3.7
            variables:
