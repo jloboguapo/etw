@@ -17,7 +17,7 @@ pipelines:
           - dist/**
     - step:
        name: Deploy
-       deployment: $BITBUCKET_DEPLOYMENT_ENVIRONMENT
+       deployment: $TYPE
        script:
          - pipe: atlassian/aws-s3-deploy:0.3.7
            variables:
