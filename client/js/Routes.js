@@ -39,7 +39,7 @@ const Routes = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/#">
       <App>
         <Switch>
           {pages.map(({ fields, sys }) => {
@@ -48,7 +48,7 @@ const Routes = () => {
 
             return (
               <Route
-                key={path}
+                key={Math.random()}
                 exact
                 path={path}
                 render={routeProps => (
@@ -69,7 +69,7 @@ const Routes = () => {
 
               return (
                 <Route
-                  key={foundSection.sys.id}
+                  key={Math.random()}
                   exact
                   path={`/leadership-resources${blogPath.fields.path}`}
                   render={routeProps => (

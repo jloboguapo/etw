@@ -1,9 +1,12 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { setExpandedState } from '../actionCreators';
 import Card, { Body, Title } from 'react-bootstrap/Card';
 import CallToAction from './CallToAction';
 import Pill from './Pill';
 
 const CtaCardCarousel = ({ blogPost }) => {
+  const dispatch = useDispatch();
   const items = blogPost.fields.items && blogPost.fields.items;
 
   const href = blogPost.fields.path && blogPost.fields.path;
@@ -26,15 +29,26 @@ const CtaCardCarousel = ({ blogPost }) => {
         <Pill content={pill} />
       </div>
       <Body>
-        <Title as="a" href={`/leadership-resources${href}`}>
+        <Title
+          onClick={() => {
+            dispatch(setExpandedState(false));
+            window.scrollTo(0, 0);
+          }}
+          as="a"
+          href={`/#/leadership-resources${href}`}
+        >
           {title}
         </Title>
 
         <CallToAction
-          linkUrl={`/leadership-resources${href}`}
+          linkUrl={`/#/leadership-resources${href}`}
           linkName="Read more"
           arrowClassName="/arrow-svg"
-          source="/arrow.svg"
+          source="arrow.png"
+          onClick={() => {
+            dispatch(setExpandedState(false));
+            window.scrollTo(0, 0);
+          }}
         />
       </Body>
     </Card>

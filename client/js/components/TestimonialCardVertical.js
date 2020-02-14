@@ -11,7 +11,7 @@ const TestimonialCardVertical = props => {
       <Body>
         <div className="testimonial-quote">
           {quote && (
-            <blockquote>
+            <blockquote className="blockquote-image">
               <p>{quote}</p>
               {quoter && (
                 <footer className="blockquote-footer">{quoter}</footer>

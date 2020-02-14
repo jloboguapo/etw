@@ -26,7 +26,7 @@ const TestimonialCardHorizontal = ({ data, style }) => {
           </Col>
           {quote && (
             <Col className="testimonial-quote">
-              <blockquote>
+              <blockquote className="blockquote-image">
                 <p>{quote}</p>
                 {quoter && (
                   <footer className="blockquote-footer">{quoter}</footer>

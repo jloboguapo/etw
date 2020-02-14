@@ -1,210 +1,214 @@
 .h1,
 h1 {
-    margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
 
-    @include media-breakpoint-down(md) {
-        font-size: 2.25rem;
-    }
+  @include media-breakpoint-down(md) {
+    font-size: 2.25rem;
+  }
 }
 
 .h2,
 h2 {
-    @include media-breakpoint-down(md) {
-        font-size: 1.875rem;
-    }
+  @include media-breakpoint-down(md) {
+    font-size: 1.875rem;
+  }
 }
 
 .h3,
 h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 .h4,
 h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
 .h5,
 h5 {
-    font-family   : 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-weight   : 600;
-    letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .h6,
 h6 {
-    font-family   : 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-weight   : 600;
-    letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 p {
-    font-size: 0.9375rem;
+  font-size: 0.9375rem;
 
-    &.cite-p {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size  : 9px;
-        text-align : left;
-    }
+  &.cite-p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 9px;
+    text-align: left;
+  }
 }
 
 a {
-    transition: $transition-base;
+  transition: $transition-base;
 }
 
 ::selection {
-    background-color: rgba($info, 0.3);
+  background-color: rgba($info, 0.3);
 }
 
 .arrow-link {
-    transition : $transition-base;
-    font-family: 'Poppins', sans-serif;
+  transition: $transition-base;
+  font-family: 'Poppins', sans-serif;
 
-    .call-to-action {
-        font-size     : 0.8125rem;
-        text-transform: uppercase;
-        font-weight   : 600;
-        color         : $forest;
-        letter-spacing: 0.5px;
-    }
+  .call-to-action {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $forest;
+    letter-spacing: 0.5px;
+  }
+
+  img {
+    width: 10px;
+    margin-left: 0.25rem;
+    transition: $transition-base;
+  }
+
+  &:hover {
+    text-decoration: none;
 
     img {
-        width      : 10px;
-        margin-left: 0.25rem;
-        transition : $transition-base;
+      transform: translateX(0.5rem);
     }
-
-    &:hover {
-        text-decoration: none;
-
-        img {
-            transform: translateX(0.5rem);
-        }
-    }
+  }
 }
 
-blockquote {
+.blockquote-richtext {
+  margin: 1em;
+}
+
+.blockquote-image {
+  &::before {
+    content: '';
+    display: inline-block;
+    margin: 0 auto 1.25rem;
+    width: 43px;
+    height: 32px;
+    background-image: url('/quote.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  p {
+    font-family: $headings-font-family;
+    font-size: 1.75rem;
+    color: $gray-800;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .blockquote-footer {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    color: $gray-900;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
     &::before {
-        content            : '';
-        display            : inline-block;
-        margin             : 0 auto 1.25rem;
-        width              : 43px;
-        height             : 32px;
-        background-image   : url('/quote.svg');
-        background-size    : cover;
-        background-position: center center;
-        background-repeat  : no-repeat;
+      display: none;
     }
-
-    p {
-        font-family: $headings-font-family;
-        font-size  : 1.75rem;
-        color      : $gray-800;
-
-        @include media-breakpoint-down(md) {
-            font-size: 1.25rem;
-        }
-    }
-
-    .blockquote-footer {
-        font-size     : 0.8125rem;
-        text-transform: uppercase;
-        color         : $gray-900;
-        letter-spacing: 0.5px;
-        font-weight   : 600;
-        font-family   : 'Poppins', sans-serif;
-
-        &::before {
-            display: none;
-        }
-    }
+  }
 }
 
 .highlight {
-    position: relative;
+  position: relative;
 
+  &::before {
+    content: '';
+    width: 100%;
+    height: 1.25rem;
+    position: absolute;
+    bottom: 0.25rem;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  &.highlight-primary {
     &::before {
-        content : '';
-        width   : 100%;
-        height  : 1.25rem;
-        position: absolute;
-        bottom  : 0.25rem;
-        opacity : 0.3;
-        z-index : -1;
+      background-color: $primary;
     }
+  }
 
-    &.highlight-primary {
-        &::before {
-            background-color: $primary;
-        }
+  &.highlight-success {
+    &::before {
+      background-color: $success;
     }
+  }
 
-    &.highlight-success {
-        &::before {
-            background-color: $success;
-        }
+  &.highlight-warning {
+    &::before {
+      background-color: $warning;
     }
+  }
 
-    &.highlight-warning {
-        &::before {
-            background-color: $warning;
-        }
+  &.highlight-danger {
+    &::before {
+      background-color: $danger;
     }
+  }
 
-    &.highlight-danger {
-        &::before {
-            background-color: $danger;
-        }
+  &.highlight-info {
+    &::before {
+      background-color: $info;
     }
-
-    &.highlight-info {
-        &::before {
-            background-color: $info;
-        }
-    }
+  }
 }
 
 .text-night {
-    color: #254c5a;
+  color: #254c5a;
 }
 
 .text-forest {
-    color: #007278;
+  color: #007278;
 }
 
 .text-sea {
-    color: #41bdac;
+  color: #41bdac;
 }
 
 .text-sky {
-    color: #b3dfd8;
+  color: #b3dfd8;
 }
 
 .text-rain {
-    color: #e0f1ee;
+  color: #e0f1ee;
 }
 
 .text-heart {
-    color: #d02b30;
+  color: #d02b30;
 }
 
 .text-dusk {
-    color: #605063;
+  color: #605063;
 }
 
 .text-fire {
-    color: #f5634a;
+  color: #f5634a;
 }
 
 .text-ember {
-    color: #ff9c5b;
+  color: #ff9c5b;
 }
 
 .text-sun {
-    color: #f9d423;
+  color: #f9d423;
 }

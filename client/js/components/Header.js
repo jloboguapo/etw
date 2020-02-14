@@ -1,14 +1,18 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar, { Brand, Toggle, Collapse } from 'react-bootstrap/Navbar';
 import DropdownLinks from './DropdownLinks';
-import ButtonUp from './Button';
 import MessageBanner from './MessageBanner';
+import { setExpandedState } from '../actionCreators';
 
 const Header = props => {
+  const dispatch = useDispatch();
+  const setExpanded = () => dispatch(setExpandedState(!expandedState));
+  const expandedState = useSelector(state => state.expandedState);
+
   const { dropdownMenu, logo, button } = props;
   const messageBannerContent = useSelector(state => state.messageBannerContent);
 
@@ -16,11 +20,19 @@ const Header = props => {
     <>
       {messageBannerContent && <MessageBanner content={messageBannerContent} />}
       <Container className="header">
-        <Navbar expand="lg">
-          <Brand href="/">
-            {logo && <img src={logo.fields.file.url} />}
-          </Brand>
-          <Toggle aria-controls="basic-navbar-nav" />
+        <Navbar
+          collapseOnSelect
+          expand="lg"
+          onToggle={() => setExpanded()}
+          expanded={expandedState}
+        >
+          <Brand href="/">{logo && <img src={logo.fields.file.url} />}</Brand>
+          <Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={() => {
+              setExpanded();
+            }}
+          />
           <Collapse id="basic-navbar-nav">
             <Nav>
               {dropdownMenu.map(link => {
@@ -32,12 +44,17 @@ const Header = props => {
                   />
                 );
               })}
-              <ButtonUp
-                variant="primary"
+              <Button
                 className="navbar-button"
-                content={button.fields.text}
                 href={button.fields.href}
-              />
+                variant="primary"
+                onClick={() => {
+                  dispatch(setExpandedState(false));
+                  window.scrollTo(0, 0);
+                }}
+              >
+                {button.fields.text}
+              </Button>
             </Nav>
           </Collapse>
         </Navbar>

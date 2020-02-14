@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import _isEmpty from 'lodash.isempty';
 import { useDispatch } from 'react-redux';
 import { setMessageBannerContent } from '../actionCreators';
 import { getEntriesById } from '../utils/contentfulHelpers';
@@ -14,6 +15,7 @@ import ReadyWin from './ReadyWin';
 import ServicesSoftware from './ServicesSoftware';
 import StatsSection from './StatsSection';
 import Article from './Article';
+import RichText from './RichText';
 
 const ContentContainer = props => {
   const dispatch = useDispatch();
@@ -40,9 +42,30 @@ const ContentContainer = props => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   useEffect(() => {
     getEntry();
+    scrollToTop();
   }, []);
+
+  const bodyColorSection =
+    !_isEmpty(entry) &&
+    entry.sections.find(
+      section =>
+        section.sys.id === '3BsGM1W5cbFoYtCsIKmjDr' ||
+        section.sys.id === 'OxLmrRa8x6eAWR7bWpkXb'
+    );
+
+  useEffect(() => {
+    bodyColorSection &&
+    (bodyColorSection.sys.id === '3BsGM1W5cbFoYtCsIKmjDr' ||
+      bodyColorSection.sys.id === 'OxLmrRa8x6eAWR7bWpkXb')
+      ? (document.body.className = 'bg-white')
+      : (document.body.className = '');
+  }, [bodyColorSection]);
 
   const components = {
     defaultSection: (id, key) => <DefaultSection key={key} id={id} />,
@@ -53,6 +76,7 @@ const ContentContainer = props => {
     executionContainer: (id, key) => <ExecutionContainer key={key} id={id} />,
     servicesSoftware: (id, key) => <ServicesSoftware key={key} id={id} />,
     readyWin: (id, key) => <ReadyWin key={key} id={id} />,
+    richText: (id, key) => <RichText key={key} id={id} />,
     heroContent: (id, key) => <HeroContent key={key} id={id} />,
     cardsContainer: (id, key) => <CardsContainer key={key} id={id} />,
     mainContent: (id, key) => <MainContent key={key} id={id} blog={blog} />,

@@ -13,6 +13,10 @@ const ReadyWinForm = props => {
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
+
+          context: {
+            hutk: self.__hsUserToken
+          },
           body: JSON.stringify({
             fields: [
               { name: 'name', value: inputs.name },

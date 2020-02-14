@@ -8,10 +8,9 @@ const MessageBanner = ({ content }) => (
       linkUrl="/"
       linkName="RSVP Now"
       arrowClassName="arrow-white"
-      source="/arrow-white.svg"
+      source="arrow-white.png"
     />
   </div>
 );
 
 export default MessageBanner;
-

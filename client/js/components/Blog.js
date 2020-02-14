@@ -4,12 +4,15 @@ import Pill from './Pill';
 import CallToAction from './CallToAction';
 import Card, { Footer, Img } from 'react-bootstrap/Card';
 import CallToActionNoLink from './CallToActionNoLink';
+import _isEmpty from 'lodash.isempty';
 
 const Blog = ({ blog }) => {
   const getNames = name => {
-    const sectionFields = blog.fields.items.filter(
+    const section = blog.fields.items.filter(
       array => array.fields.name === name
-    )[0].fields;
+    )[0];
+
+    const sectionFields = !_isEmpty(section) && section.fields;
     return sectionFields;
   };
 
@@ -30,7 +33,11 @@ const Blog = ({ blog }) => {
 
   const buildParagraph = contents => {
     return contents.map(content => {
-      return content.nodeType === 'hyperlink'
+      return content.nodeType === 'paragraph'
+        ? content.content.map(arr =>
+            buildParagraphHighlight(arr.marks, arr.value)
+          )
+        : content.nodeType === 'hyperlink'
         ? buildParagraphHighlight(
             content.content.map(arr => arr.marks),
             content.content.map(arr => arr.value),
@@ -98,7 +105,11 @@ const Blog = ({ blog }) => {
 
   const mapThroughRichText = {
     paragraph: (data, content, index) => (
-      <p key={content.map(content => content.value + index)}>
+      <p
+        key={content.map(content =>
+          content.value === '' ? index : content.value
+        )}
+      >
         {buildParagraph(content)}
       </p>
     ),
@@ -149,12 +160,31 @@ const Blog = ({ blog }) => {
         )}
       </ol>
     ),
-    'embedded-asset-block': (data, content) => (
+    blockquote: (data, content) => (
+      <blockquote
+        className="blockquote-richtext"
+        key={content.map(array => {
+          return array.content[array.content.length - 1].value;
+        })}
+      >
+        {buildParagraph(content)}
+      </blockquote>
+    ),
+    'embedded-asset-block': data => (
       <img
         key={data.target.sys.id}
         className="article-hero rounded"
         src={data.target.fields.file.url}
       />
+    ),
+    'embedded-entry-block': data => (
+      <a key={data.target.sys.id} href={data.target.fields.href}>
+        <img
+          key={data.target.fields.image.sys.id}
+          className="article-hero rounded"
+          src={data.target.fields.image.fields.file.url}
+        />
+      </a>
     )
   };
 
@@ -177,7 +207,9 @@ const Blog = ({ blog }) => {
                 headingsAroundBullet.map((tag, index) => {
                   return (
                     <span key={`${tag}${index}`}>
-                      {index === 0 && <a href='/leadership-resources'>{tag + ' '}</a>}
+                      {index === 0 && (
+                        <a href="/#/leadership-resources">{tag + ' '}</a>
+                      )}
                       {index !== 0 && (
                         <>
                           <span className="article-meta-divider">&bull;</span>
@@ -212,28 +244,31 @@ const Blog = ({ blog }) => {
                     />
                     <h4>{item.fields.title}</h4>
                     <p>{item.fields.subtitle}</p>
-                    <CallToAction
-                      linkUrl={item.fields.href}
-                      linkName={item.fields.cta}
-                      arrowClassName="arrow"
-                      source="/arrow.svg"
-                    />
+                    {item.fields.cta && (
+                      <CallToAction
+                        linkUrl={item.fields.href}
+                        linkName={item.fields.cta}
+                        arrowClassName="arrow"
+                        source="arrow.png"
+                      />
+                    )}
                   </span>
                 );
               })}
           </div>
 
-          <div className="article-share">
-            <h4>Share this insight</h4>
-            {insightItems &&
-              insightItems.map(link => {
+          {insightItems && (
+            <div className="article-share">
+              <h4>Share this insight</h4>
+              {insightItems.map(link => {
                 return (
                   <a key={link.fields.name} href={link.fields.href}>
                     <img src={link.fields.image.fields.file.url} />
                   </a>
                 );
               })}
-          </div>
+            </div>
+          )}
         </Col>
         <Col xs={{ span: 12, order: 0 }} lg={{ span: 9, order: 1 }}>
           <div className="article-content">{renderBlogPost}</div>
@@ -251,7 +286,7 @@ const Blog = ({ blog }) => {
                 <CallToActionNoLink
                   content={blogFooterPic.cta}
                   arrowClassName="arrow-white"
-                  source="arrow-white.svg"
+                  source="arrow-white.png"
                 />
               </Footer>
             </Card>

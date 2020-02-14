@@ -2,8 +2,12 @@ import React from 'react';
 import Card, { Body, Title } from 'react-bootstrap/Card';
 import CallToActionNoLink from './CallToActionNoLink';
 import Pill from './Pill';
+import { setExpandedState } from '../actionCreators';
+import { useDispatch } from 'react-redux';
 
 const CtaCard = ({ showLarge, blog }) => {
+  const dispatch = useDispatch();
+
   const items = blog.fields.items && blog.fields.items;
 
   const href = blog.fields.path && blog.fields.path;
@@ -27,7 +31,11 @@ const CtaCard = ({ showLarge, blog }) => {
     <Card
       className={`insight-card${showLarge ? ' card-lg' : ''}`}
       as="a"
-      href={`/leadership-resources${href}`}
+      href={`/#/leadership-resources${href}`}
+      onClick={() => {
+        dispatch(setExpandedState(false));
+        window.scrollTo(0, 0);
+      }}
     >
       {url && (
         <div
@@ -42,7 +50,7 @@ const CtaCard = ({ showLarge, blog }) => {
         <CallToActionNoLink
           content="Read more"
           arrowClassName="arrow-svg"
-          source="arrow.svg"
+          source="arrow.png"
         />
       </Body>
     </Card>

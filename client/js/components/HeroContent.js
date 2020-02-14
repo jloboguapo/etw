@@ -16,10 +16,10 @@ const HeroContent = props => {
   const fetchData = async () => {
     const items = await getEntriesById(id);
 
-    setTitle(items.title);
-    setSubtitle(items.subtitle);
-    setButton(items.button.fields);
-    setCards(items.cards);
+    !_isEmpty(items.title) ? setTitle(items.title) : null;
+    !_isEmpty(items.subtitle) ? setSubtitle(items.subtitle) : null;
+    !_isEmpty(items.button) ? setButton(items.button.fields) : null;
+    !_isEmpty(items.cards) ? setCards(items.cards) : null;
   };
 
   useEffect(() => {
@@ -47,7 +47,10 @@ const HeroContent = props => {
               <HeroContentCard
                 key={card.sys.id}
                 href={card.fields.href}
-                src={card.fields.icon.fields.file.url}
+                src={
+                  !_isEmpty(card.fields.icon) &&
+                  card.fields.icon.fields.file.url
+                }
                 title={card.fields.title}
                 subtitle={card.fields.subtitle}
                 ctaContent={card.fields.cta}

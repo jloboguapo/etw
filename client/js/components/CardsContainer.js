@@ -34,7 +34,11 @@ const CardsContainer = props => {
     } = card.fields;
 
     return (
-      <Col key={cardTitle} md={6} lg={3}>
+      <Col
+        key={cardTitle}
+        md={cards.length % 2 === 1 ? 12 : 6}
+        lg={12 / cards.length}
+      >
         <a href={href} className="cards-container-card">
           {icon && <img src={icon.fields.file.url} />}
           {cardTitle && <h3>{cardTitle}</h3>}
@@ -43,7 +47,7 @@ const CardsContainer = props => {
             <CallToActionNoLink
               content={cta}
               arrowClassName="arrow-svg"
-              source="arrow.svg"
+              source="arrow.png"
             />
           )}
         </a>
@@ -60,7 +64,21 @@ const CardsContainer = props => {
             {subtext && <p className="lead mb-8">{subtext}</p>}
           </Col>
         </Row>
-        <Row className="mb-8 mb-lg-11">{!_isEmpty(cards) && cards.map(renderCard)}</Row>
+        <Row className="mb-8 mb-lg-11">
+          {!_isEmpty(cards) && cards.map(renderCard)}
+        </Row>
+        <Row className="pb-10">
+          <Col xs={{ span: 12, order: 0 }} className="col-lg-10 col-centered">
+            <iframe
+              src="https://player.vimeo.com/video/374755428?title=0&byline=0&portrait=0"
+              width="100%"
+              height="420"
+              frameBorder="0"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+            />
+          </Col>
+        </Row>
         {!_isEmpty(testimonialCards) && (
           <TestimonialCardHorizontal data={testimonialCards.fields} />
         )}

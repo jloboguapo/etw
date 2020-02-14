@@ -2,11 +2,4 @@ node_modules
 .nyc_output/
 coverage/
 .idea
-dist/bundle*
-dist/.DS_Store
-.firebaserc
-firebase.json
-dist/404.html
-.firebase/
-dist/main*
-
+.DS_Store
