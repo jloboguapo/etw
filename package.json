@@ -24,7 +24,7 @@
     "bootstrap": "4.3.1",
     "contentful": "^7.8.1",
     "core-js": "2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash.isempty": "^4.4.0",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
